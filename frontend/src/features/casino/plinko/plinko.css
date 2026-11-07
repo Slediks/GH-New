@@ -1,0 +1,55 @@
+.plinko-group {
+  padding: 16px;
+}
+.plinko-group .casino-plinko {
+  display: block;
+  width: 100%;
+  max-height: 560px;
+  margin: auto;
+}
+.plinko-group .plinko-moving-ball {
+  transition: none;
+  filter: drop-shadow(0 0 3px #fff8);
+}
+.plinko-group-summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: space-between;
+  padding: 16px 0;
+  font-size: 14px;
+}
+.plinko-ball-results {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(165px, 1fr));
+  gap: 8px;
+  max-height: 220px;
+  overflow: auto;
+}
+.plinko-ball-results > div {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  border: 1px solid #ffffff25;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 11px;
+}
+.plinko-ball-results > .landed {
+  border-color: #c7ae72;
+  background: #ffe5a00a;
+}
+.plinko-ball-results strong {
+  margin-left: auto;
+}
+.plinko-launch-preview {
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  display: grid;
+  gap: 8px;
+}
+.plinko-launch-preview small {
+  font-size: 11px;
+}

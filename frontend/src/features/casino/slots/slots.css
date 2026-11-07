@@ -1,0 +1,196 @@
+.casino-slot-layout > .casino-scene {
+  height: 690px;
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+  overflow: hidden;
+}
+.casino-slot-layout > .casino-scene > h2 {
+  margin: 0 0 16px;
+}
+.slot-machine {
+  --slot-accent: #efd193;
+  display: grid;
+  grid-template-rows: 48px 54px 296px 110px minmax(0, 1fr);
+  min-height: 0;
+  border-radius: 18px;
+  border: 1px solid #efd19365;
+  background: radial-gradient(ellipse at top, #653744, #241b2b 70%);
+  box-shadow:
+    inset 0 0 24px #0008,
+    0 8px 24px #0004;
+  padding: 12px 18px;
+}
+.slot-machine.variant-cascade {
+  --slot-accent: #bab4fc;
+  background: radial-gradient(ellipse at top, #464e8c, #181e3c 70%);
+}
+.slot-machine.variant-hold {
+  background: radial-gradient(ellipse at top, #745524, #242427 70%);
+}
+.slot-marquee {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  color: var(--slot-accent);
+  font-size: 12px;
+  letter-spacing: 0.1em;
+}
+.slot-marquee i {
+  font-style: normal;
+  opacity: 0.7;
+}
+.running .slot-marquee i {
+  animation: slot-glow 1s ease-in-out 2 alternate;
+}
+.slot-status {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 12px;
+  color: #e4daed;
+}
+.slot-status button {
+  font-size: 11px;
+  padding: 8px 12px;
+  flex-shrink: 0;
+}
+.slot-window {
+  padding: 14px 8px;
+  border: 3px ridge var(--slot-accent);
+  border-radius: 14px;
+  background: #0c101c;
+  box-shadow: 0 0 18px #efd19318;
+}
+.slot-reel-stage {
+  display: grid;
+  gap: 8px;
+  height: 260px;
+}
+.slot-reel {
+  position: relative;
+  height: 260px;
+  overflow: hidden;
+  border-radius: 8px;
+  background: linear-gradient(#e7d4b9, #fff8e7 30%, #fff8e7 70%, #e7d4b9);
+  box-shadow: inset 0 0 0 1px #ffffff50;
+}
+.slot-reel-strip {
+  will-change: transform;
+}
+.slot-reel .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+}
+.slot-series-summary {
+  min-height: 24px;
+}
+.slot-symbol {
+  height: var(--slot-cell-height);
+  display: grid;
+  place-items: center;
+  font-size: 34px;
+  font-weight: 800;
+  color: #9e3146;
+  text-shadow: 0 2px #fff;
+  border-bottom: 1px solid #a9843620;
+}
+.variant-hold .slot-symbol {
+  font-size: 23px;
+  color: #79500e;
+}
+.slot-symbol.lit {
+  background: #f7d777;
+  color: #683214;
+  box-shadow: inset 0 0 0 3px #be8426;
+  text-shadow: none;
+}
+.slot-reel[data-phase='stopped'] {
+  box-shadow: inset 0 0 0 2px var(--slot-accent);
+}
+.slot-reel[data-phase='spinning'] .slot-reel-strip {
+  filter: blur(0.6px);
+}
+.slot-cascade-overlay {
+  position: absolute;
+  inset: 0;
+  background: #fff8e7;
+}
+.falling .slot-cascade-overlay .slot-symbol {
+  animation: casino-fall var(--slot-fall-time) ease-out both;
+}
+.slot-locked {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: #f7d777;
+  border-radius: 8px;
+}
+.slot-win-zone {
+  display: grid;
+  align-content: center;
+  gap: 4px;
+  text-align: center;
+  overflow: hidden;
+  color: #fff0c9;
+}
+.slot-win-zone small {
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  color: var(--slot-accent);
+}
+.slot-win-zone strong {
+  font-size: 30px;
+  line-height: 1.15;
+  font-variant-numeric: tabular-nums;
+}
+.slot-win-zone span {
+  font-size: 12px;
+}
+.slot-win-amount {
+  animation: slot-win 0.45s ease-out;
+  text-shadow: 0 0 20px #f1c75e70;
+}
+.slot-bonus-zone {
+  display: flex;
+  align-content: start;
+  flex-wrap: wrap;
+  gap: 5px 16px;
+  overflow: auto;
+  min-height: 0;
+  font-size: 11px;
+  color: #e4daed;
+}
+.casino-slot-layout .casino-controls > button.primary {
+  box-shadow: 0 4px 14px #e4bb5540;
+  transition: filter 0.15s;
+}
+.casino-slot-layout .casino-controls > button.primary:hover:not(:disabled) {
+  filter: brightness(1.12);
+}
+@keyframes slot-glow {
+  to {
+    opacity: 1;
+    text-shadow: 0 0 12px var(--slot-accent);
+  }
+}
+@keyframes slot-win {
+  from {
+    opacity: 0.5;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .slot-machine * {
+    animation: none !important;
+    transition: none !important;
+  }
+}

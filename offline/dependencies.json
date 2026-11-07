@@ -1,0 +1,12 @@
+﻿{
+    "platform":  "linux/amd64",
+    "node":  "22.23.4",
+    "npm":  "10.9.9",
+    "python":  "3.11.18",
+    "package_lock_sha256":  "3d15acd918fa335b931ffc67388df72b1e2b7625f313f2019eb66c78b6f711ea",
+    "requirements_lock_sha256":  "efe0be726b8e169f2656c919dac0e3723d23d5417b7329cf29116636d65b89fc",
+    "npm_cache_files":  480,
+    "python_wheels":  45,
+    "created_utc":  "2026-11-07T15:10:48.9118046Z",
+    "license_note":  "Package licenses are retained inside npm cache tarballs and wheel distributions; Arena audio credits are in frontend/public/audio/arena/CREDITS.md."
+}

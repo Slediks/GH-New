@@ -1,0 +1,67 @@
+# Local configuration and persistent data
+.env
+!.env.example
+/data/
+/backups/
+/local-backups/
+*.dump
+*.sql.gz
+*.db
+
+# Generated builds and dependency installations. The offline cache/wheels below
+# are deliberately committed; installed node_modules and virtualenvs are not.
+/frontend/node_modules/
+/frontend/dist/
+/frontend/frontend/
+/.venv/
+**/__pycache__/
+*.py[cod]
+*.egg-info/
+*.tsbuildinfo
+/.cache/
+**/.cache/
+/offline/npm/context/
+/offline/npm/verify/
+/offline/npm/cache/_logs/
+/offline/images/
+
+# Tests, captures and local measurements
+/.pytest_cache/
+/.ruff_cache/
+/.playwright/
+/frontend/.review/
+/frontend/test-results/
+/frontend/playwright-report/
+/docs/screenshots/
+/docs/football-visual-review/
+/docs/audio/
+/docs/*.json
+/docs/offline-audit.md
+/docs/casino-audit-2026-09.md
+/docs/football-v2-report.md
+/docs/delivery.md
+/docs/verification.md
+/docs/plinko-todo.md
+/docs/offline-start.md
+**/coverage/
+**/test-results/
+**/playwright-report/
+/frontend/e2e/screenshots/
+/frontend/e2e/captures/
+/frontend/e2e/recordings/
+*.log
+*.trace
+.coverage
+
+# Local release artifacts and reference material
+/release/
+/reference-zavodmusic/
+/tmp/
+/temp/
+/logs/
+
+# Editors and OS
+/.idea/
+/.vscode/
+.DS_Store
+Thumbs.db

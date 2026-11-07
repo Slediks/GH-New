@@ -1,0 +1,252 @@
+[
+  {
+    "file": "pistol-1.wav",
+    "source": "firearms/Prepared SFX Library/1911/A_42P.wav",
+    "cut_start": 0.93,
+    "duration": 0.64065,
+    "sample_rate": 48000,
+    "peak": 0.6749,
+    "rms": 0.036,
+    "clipped_samples": 0
+  },
+  {
+    "file": "pistol-2.wav",
+    "source": "firearms/Prepared SFX Library/1911/A_42P.wav",
+    "cut_start": 4.99,
+    "duration": 0.64067,
+    "sample_rate": 48000,
+    "peak": 0.7189,
+    "rms": 0.036,
+    "clipped_samples": 0
+  },
+  {
+    "file": "pistol-3.wav",
+    "source": "firearms/Prepared SFX Library/1911/A_34P.wav",
+    "cut_start": 1.53,
+    "duration": 0.64035,
+    "sample_rate": 48000,
+    "peak": 0.3727,
+    "rms": 0.03599,
+    "clipped_samples": 0
+  },
+  {
+    "file": "rifle-1.wav",
+    "source": "firearms/Prepared SFX Library/AK-47/C_28P.wav",
+    "cut_start": 0.6,
+    "duration": 0.65633,
+    "sample_rate": 48000,
+    "peak": 0.6449,
+    "rms": 0.041,
+    "clipped_samples": 0
+  },
+  {
+    "file": "rifle-2.wav",
+    "source": "firearms/Prepared SFX Library/AK-47/C_28P.wav",
+    "cut_start": 3.245,
+    "duration": 0.53748,
+    "sample_rate": 48000,
+    "peak": 0.72,
+    "rms": 0.04091,
+    "clipped_samples": 0
+  },
+  {
+    "file": "rifle-3.wav",
+    "source": "firearms/Prepared SFX Library/AK-47/C_28P.wav",
+    "cut_start": 6.01,
+    "duration": 0.53738,
+    "sample_rate": 48000,
+    "peak": 0.7168,
+    "rms": 0.041,
+    "clipped_samples": 0
+  },
+  {
+    "file": "shotgun-1.wav",
+    "source": "firearms/Prepared SFX Library/Mossberg/N_26P.wav",
+    "cut_start": 0.775,
+    "duration": 1.09133,
+    "sample_rate": 48000,
+    "peak": 0.72,
+    "rms": 0.03376,
+    "clipped_samples": 0
+  },
+  {
+    "file": "shotgun-2.wav",
+    "source": "firearms/Prepared SFX Library/Mossberg/N_26P.wav",
+    "cut_start": 4.565,
+    "duration": 1.09308,
+    "sample_rate": 48000,
+    "peak": 0.72,
+    "rms": 0.03276,
+    "clipped_samples": 0
+  },
+  {
+    "file": "shotgun-3.wav",
+    "source": "firearms/Prepared SFX Library/Mossberg/N_26P.wav",
+    "cut_start": 7.935,
+    "duration": 1.08969,
+    "sample_rate": 48000,
+    "peak": 0.7169,
+    "rms": 0.03399,
+    "clipped_samples": 0
+  },
+  {
+    "file": "sniper-1.wav",
+    "source": "firearms/Prepared SFX Library/Tikka/W_29P.wav",
+    "cut_start": 0.565,
+    "duration": 1.02781,
+    "sample_rate": 48000,
+    "peak": 0.4036,
+    "rms": 0.038,
+    "clipped_samples": 0
+  },
+  {
+    "file": "sniper-2.wav",
+    "source": "firearms/Prepared SFX Library/Tikka/W_29P.wav",
+    "cut_start": 5.655,
+    "duration": 1.02785,
+    "sample_rate": 48000,
+    "peak": 0.3635,
+    "rms": 0.038,
+    "clipped_samples": 0
+  },
+  {
+    "file": "sniper-3.wav",
+    "source": "firearms/Prepared SFX Library/Tikka/W_24P.wav",
+    "cut_start": 0.745,
+    "duration": 1.39254,
+    "sample_rate": 48000,
+    "peak": 0.707,
+    "rms": 0.038,
+    "clipped_samples": 0
+  },
+  {
+    "file": "step-1.wav",
+    "source": "impact/Audio/footstep_concrete_000.ogg",
+    "cut_start": 0,
+    "duration": 0.10592,
+    "sample_rate": 44100,
+    "peak": 0.55,
+    "rms": 0.05445,
+    "clipped_samples": 0
+  },
+  {
+    "file": "step-2.wav",
+    "source": "impact/Audio/footstep_concrete_001.ogg",
+    "cut_start": 0,
+    "duration": 0.10764,
+    "sample_rate": 44100,
+    "peak": 0.55,
+    "rms": 0.04695,
+    "clipped_samples": 0
+  },
+  {
+    "file": "step-3.wav",
+    "source": "impact/Audio/footstep_concrete_002.ogg",
+    "cut_start": 0,
+    "duration": 0.11279,
+    "sample_rate": 44100,
+    "peak": 0.55,
+    "rms": 0.0443,
+    "clipped_samples": 0
+  },
+  {
+    "file": "step-4.wav",
+    "source": "impact/Audio/footstep_concrete_003.ogg",
+    "cut_start": 0,
+    "duration": 0.1105,
+    "sample_rate": 44100,
+    "peak": 0.55,
+    "rms": 0.05055,
+    "clipped_samples": 0
+  },
+  {
+    "file": "step-5.wav",
+    "source": "impact/Audio/footstep_concrete_004.ogg",
+    "cut_start": 0,
+    "duration": 0.11435,
+    "sample_rate": 44100,
+    "peak": 0.55,
+    "rms": 0.05302,
+    "clipped_samples": 0
+  },
+  {
+    "file": "reload-pistol-1.wav",
+    "source": "pistol-reload.wav",
+    "cut_start": 0,
+    "duration": 1.57896,
+    "sample_rate": 44100,
+    "peak": 0.55,
+    "rms": 0.06163,
+    "clipped_samples": 0
+  },
+  {
+    "file": "reload-rifle-1.wav",
+    "source": "rifle-reload.wav",
+    "cut_start": 0,
+    "duration": 1.46664,
+    "sample_rate": 44100,
+    "peak": 0.55,
+    "rms": 0.03501,
+    "clipped_samples": 0
+  },
+  {
+    "file": "reload-shotgun-1.wav",
+    "source": "shotgun-action.wav",
+    "cut_start": 0,
+    "duration": 0.47383,
+    "sample_rate": 44100,
+    "peak": 0.55,
+    "rms": 0.13937,
+    "clipped_samples": 0
+  },
+  {
+    "file": "reload-sniper-1.wav",
+    "source": "rifle-reload.wav",
+    "cut_start": 0,
+    "duration": 1.46664,
+    "sample_rate": 44100,
+    "peak": 0.55,
+    "rms": 0.03501,
+    "clipped_samples": 0
+  },
+  {
+    "file": "jump-1.wav",
+    "source": "impact/Audio/footstep_carpet_002.ogg",
+    "cut_start": 0,
+    "duration": 0.14478,
+    "sample_rate": 44100,
+    "peak": 0.4,
+    "rms": 0.04705,
+    "clipped_samples": 0
+  },
+  {
+    "file": "land-1.wav",
+    "source": "impact/Audio/impactSoft_heavy_000.ogg",
+    "cut_start": 0,
+    "duration": 0.5051,
+    "sample_rate": 44100,
+    "peak": 0.65,
+    "rms": 0.09936,
+    "clipped_samples": 0
+  },
+  {
+    "file": "death-1.wav",
+    "source": "impact/Audio/impactSoft_heavy_002.ogg",
+    "cut_start": 0,
+    "duration": 0.57231,
+    "sample_rate": 44100,
+    "peak": 0.65,
+    "rms": 0.0997,
+    "clipped_samples": 0
+  },
+  {
+    "file": "dry-1.wav",
+    "source": "impact/Audio/impactMetal_light_000.ogg",
+    "cut_start": 0,
+    "duration": 0.25247,
+    "sample_rate": 44100,
+    "peak": 0.3,
+    "rms": 0.03552,
+    "clipped_samples": 0
+  }
+]

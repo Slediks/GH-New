@@ -1,0 +1,215 @@
+.casino-slot-layout > .casino-scene:has(.slot-feature) {
+  height: 850px;
+}
+.slot-feature {
+  grid-template-rows: 32px 42px minmax(0, 1fr) 80px;
+}
+.slot-feature .feature-stage {
+  min-height: 0;
+  position: relative;
+  overflow: hidden;
+}
+.slot-feature.variant-lock {
+  --slot-accent: #62d6ef;
+  background: radial-gradient(at 50% 0, #254b59, #101c27 75%);
+}
+.slot-feature.variant-streak {
+  --slot-accent: #ffae58;
+  background: radial-gradient(at 50% 0, #682d28, #22171b 75%);
+}
+.slot-feature.variant-wheel {
+  --slot-accent: #e5b9ff;
+  background: radial-gradient(at 50% 0, #643c7c, #24172e 75%);
+}
+.lock-switches {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px;
+  margin-top: 12px;
+}
+.lock-decision-space {
+  min-height: 180px;
+}
+.variant-lock .slot-reel[role='button'] {
+  cursor: pointer;
+}
+.variant-lock .slot-reel[role='button']:focus-visible {
+  outline: 3px solid #ffe493;
+  outline-offset: -4px;
+}
+.lock-switches button {
+  min-height: 60px;
+  border: 2px solid #547588;
+  background: #182b38;
+  color: #dfebf4;
+}
+.lock-switches button[aria-pressed='true'] {
+  border-color: #65e2ee;
+  background: #245568;
+  box-shadow: 0 0 16px #65e2ee50;
+}
+.lock-switches small {
+  display: block;
+  font-size: 11px;
+  margin-top: 4px;
+}
+.slot-feature .slot-reel[data-locked='true'] {
+  outline: 3px solid #65e2ee;
+  outline-offset: -3px;
+  box-shadow: inset 0 0 24px #65e2ee80;
+}
+.variant-streak .slot-reel:nth-child(n + 2):nth-child(-n + 4)::after,
+.variant-lock .slot-reel::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: calc(100% / 3);
+  height: calc(100% / 3);
+  border: 2px solid var(--slot-accent);
+  background: transparent;
+  pointer-events: none;
+  box-sizing: border-box;
+}
+.feature-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+.feature-actions button {
+  min-height: 46px;
+}
+.lock-decision p,
+.streak-decision p {
+  text-align: center;
+  min-height: 24px;
+  color: #e0e8f0;
+}
+.streak-steps {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  padding: 12px;
+}
+.streak-steps span {
+  padding: 8px 20px;
+  border: 1px solid #925748;
+  border-radius: 12px;
+  color: #e8c4b5;
+}
+.streak-steps .current {
+  background: #fca45c;
+  color: #34130b;
+  box-shadow: 0 0 22px #e76c4560;
+}
+.streak-amounts {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  color: #f6d9c4;
+}
+.streak-amounts strong {
+  display: block;
+  font-size: 25px;
+}
+.wheel-tokens {
+  text-align: center;
+  padding: 22px;
+  color: #f4d9ff;
+}
+.wheel-tokens span {
+  display: inline-block;
+  border: 1px solid #c59cd9;
+  border-radius: 12px;
+  padding: 12px;
+  margin: 4px;
+  background: #704885;
+}
+.slot-wheel-scene {
+  text-align: center;
+  color: #f4ddff;
+}
+.slot-wheel-scene > strong {
+  display: block;
+  font-size: 36px;
+  margin: 22px;
+}
+.slot-bonus-wheel {
+  width: 330px;
+  height: 330px;
+  position: relative;
+  margin: 25px auto;
+}
+.slot-wheel-disc {
+  position: absolute;
+  inset: 0;
+  border: 8px solid #e6b650;
+  border-radius: 50%;
+  background: conic-gradient(
+    #70498f 0deg 45deg,
+    #b679ac 45deg 90deg,
+    #583c80 90deg 135deg,
+    #ab7252 135deg 180deg,
+    #70498f 180deg 225deg,
+    #b679ac 225deg 270deg,
+    #583c80 270deg 315deg,
+    #ab7252 315deg
+  );
+  box-shadow:
+    0 0 0 8px #603e59,
+    0 0 40px #c895cb44;
+}
+.slot-wheel-disc span {
+  position: absolute;
+  left: calc(50% - 42px);
+  top: calc(50% - 14px);
+  width: 84px;
+  height: 28px;
+  font-size: 16px;
+  font-weight: 800;
+  color: white;
+}
+.slot-wheel-pointer {
+  position: absolute;
+  top: -18px;
+  left: calc(50% - 16px);
+  font-size: 36px;
+  z-index: 3;
+  color: #ffe4a0;
+  text-shadow: 0 2px 4px black;
+}
+.slot-wheel-hub {
+  position: absolute;
+  inset: calc(50% - 32px);
+  border-radius: 50%;
+  background: #342539;
+  display: grid;
+  place-items: center;
+  font-size: 32px;
+  border: 3px solid #e6b650;
+}
+.slot-mode-options {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin: 16px 0;
+}
+.slot-mode-options a {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  text-align: left;
+}
+.slot-mode-options small {
+  font-weight: 400;
+  opacity: 0.8;
+}
+.slot-mode-options .active {
+  outline: 2px solid var(--gold, #d4af59);
+}
+@media (prefers-reduced-motion: reduce) {
+  .slot-feature * {
+    animation: none !important;
+    transition: none !important;
+  }
+}

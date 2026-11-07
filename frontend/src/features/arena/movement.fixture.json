@@ -1,0 +1,4720 @@
+{
+  "movement": {
+    "walk_speed": 5.5,
+    "crouch_speed": 3.1,
+    "acceleration": 45.0,
+    "deceleration": 55.0,
+    "air_acceleration": 14.0,
+    "jump_force": 7.2,
+    "gravity": 21.0,
+    "terminal_speed": 24.0,
+    "jump_cooldown": 0.22,
+    "radius": 0.36,
+    "standing_height": 1.88,
+    "crouch_height": 1.18,
+    "standing_eye": 1.62,
+    "crouch_eye": 1.02,
+    "step_height": 0.28,
+    "max_slope": 45.0,
+    "bound_x": 23.0,
+    "bound_z": 19.0
+  },
+  "tick": 0.03333333333333333,
+  "boxes": [
+    [-24, 0, 0, 1, 6, 40],
+    [24, 0, 0, 1, 6, 40],
+    [0, 0, -20, 49, 6, 1],
+    [0, 0, 20, 49, 6, 1],
+    [-9, 0, -6, 9, 3.4, 3],
+    [9, 0, 6, 9, 3.4, 3],
+    [-9, 0, 8, 5, 2.4, 4],
+    [9, 0, -8, 5, 2.4, 4],
+    [0, 0, 0, 3, 4.5, 8],
+    [-18, 0, 0, 3, 2, 5],
+    [18, 0, 0, 3, 2, 5],
+    [-3, 0, 13, 5, 1.1, 2],
+    [3, 0, -13, 5, 1.1, 2]
+  ],
+  "frames": [
+    {
+      "input": {
+        "seq": 0,
+        "yaw": 0.0,
+        "pitch": 0,
+        "forward": 1,
+        "side": 1,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -19.96464466094067,
+        "y": 0.0,
+        "z": -14.035355339059327,
+        "vx": 1.0606601717798212,
+        "vy": 0.0,
+        "vz": -1.0606601717798212,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 1,
+        "yaw": 0.03,
+        "pitch": 0,
+        "forward": 1,
+        "side": 1,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -19.892506201516028,
+        "y": 0.0,
+        "z": -14.10457809691889,
+        "vx": 2.164153782739322,
+        "vy": 0.0,
+        "vz": -2.076682735786922,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 2,
+        "yaw": 0.06,
+        "pitch": 0,
+        "forward": 1,
+        "side": 1,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -19.78143442369277,
+        "y": 0.0,
+        "z": -14.205172764482393,
+        "vx": 3.3321533346977654,
+        "vy": 0.0,
+        "vz": -3.017840026905083,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 3,
+        "yaw": 0.09,
+        "pitch": 0,
+        "forward": 1,
+        "side": 1,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -19.640671335498983,
+        "y": 0.0,
+        "z": -14.32263281774843,
+        "vx": 4.222892645813482,
+        "vy": 0.0,
+        "vz": -3.5238015979811363,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 4,
+        "yaw": 0.12,
+        "pitch": 0,
+        "forward": 1,
+        "side": 1,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -19.49644831289275,
+        "y": 0.0,
+        "z": -14.435817758714235,
+        "vx": 4.326690678187014,
+        "vy": 0.0,
+        "vz": -3.3955482289741648,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 5,
+        "yaw": 0.15,
+        "pitch": 0,
+        "forward": 1,
+        "side": 1,
+        "jump": true,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -19.34889514685965,
+        "y": 0.21666666666666667,
+        "z": -14.544625728572692,
+        "vx": 4.4265949809930385,
+        "vy": 6.5,
+        "vz": -3.264239095753746,
+        "grounded": false,
+        "crouched": false,
+        "jump_held": true,
+        "jump_cooldown": 0.22
+      }
+    },
+    {
+      "input": {
+        "seq": 6,
+        "yaw": 0.18,
+        "pitch": 0,
+        "forward": 1,
+        "side": 1,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -19.19814462528957,
+        "y": 0.41000000000000003,
+        "z": -14.648958807495246,
+        "vx": 4.522515647102367,
+        "vy": 5.8,
+        "vz": -3.129992367676679,
+        "grounded": false,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.18666666666666668
+      }
+    },
+    {
+      "input": {
+        "seq": 7,
+        "yaw": 0.21,
+        "pitch": 0,
+        "forward": 1,
+        "side": 1,
+        "jump": true,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -19.04433241347657,
+        "y": 0.5800000000000001,
+        "z": -14.748723102753141,
+        "vx": 4.61436635438995,
+        "vy": 5.1,
+        "vz": -2.992928857736849,
+        "grounded": false,
+        "crouched": false,
+        "jump_held": true,
+        "jump_cooldown": 0.15333333333333335
+      }
+    },
+    {
+      "input": {
+        "seq": 8,
+        "yaw": 0.24,
+        "pitch": 0,
+        "forward": 1,
+        "side": 1,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -18.887596932029272,
+        "y": 0.7266666666666667,
+        "z": -14.843828833214532,
+        "vx": 4.702064443418967,
+        "vy": 4.3999999999999995,
+        "vz": -2.853171913841693,
+        "grounded": false,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.12000000000000002
+      }
+    },
+    {
+      "input": {
+        "seq": 9,
+        "yaw": 0.27,
+        "pitch": 0,
+        "forward": 1,
+        "side": 1,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -18.72807923230165,
+        "y": 0.85,
+        "z": -14.934190410141445,
+        "vx": 4.785530991828736,
+        "vy": 3.6999999999999993,
+        "vz": -2.7108473078074065,
+        "grounded": false,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0866666666666667
+      }
+    },
+    {
+      "input": {
+        "seq": 10,
+        "yaw": 0.3,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -18.580679581960037,
+        "y": 0.95,
+        "z": -15.03430535508767,
+        "vx": 4.421989510248338,
+        "vy": 2.999999999999999,
+        "vz": -3.0034483483867365,
+        "grounded": false,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.053333333333333365
+      }
+    },
+    {
+      "input": {
+        "seq": 11,
+        "yaw": 0.32999999999999996,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -18.445230061571824,
+        "y": 1.0266666666666666,
+        "z": -15.144378698637029,
+        "vx": 4.063485611646432,
+        "vy": 2.299999999999999,
+        "vz": -3.3022003064807586,
+        "grounded": false,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.02000000000000003
+      }
+    },
+    {
+      "input": {
+        "seq": 12,
+        "yaw": 0.36,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -18.32152826676652,
+        "y": 1.0799999999999998,
+        "z": -15.264648426460754,
+        "vx": 3.7110538441590486,
+        "vy": 1.599999999999999,
+        "vz": -3.6080918347117588,
+        "grounded": false,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 13,
+        "yaw": 0.39,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -18.209314866137948,
+        "y": 1.1099999999999999,
+        "z": -15.395405866517473,
+        "vx": 3.3664020188571824,
+        "vy": 0.899999999999999,
+        "vz": -3.922723201701558,
+        "grounded": false,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 14,
+        "yaw": 0.42,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -18.108221228935577,
+        "y": 1.1166666666666665,
+        "z": -15.53704108989559,
+        "vx": 3.032809116071164,
+        "vy": 0.19999999999999907,
+        "vz": -4.2490567013435285,
+        "grounded": false,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 15,
+        "yaw": 0.44999999999999996,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -18.017600715840548,
+        "y": 1.0999999999999999,
+        "z": -15.690178007934678,
+        "vx": 2.7186153928508943,
+        "vy": -0.5000000000000009,
+        "vz": -4.5941075411726215,
+        "grounded": false,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 16,
+        "yaw": 0.48,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -17.93294120032461,
+        "y": 1.0599999999999998,
+        "z": -15.852793743777548,
+        "vx": 2.5397854654781558,
+        "vy": -1.2000000000000008,
+        "vz": -4.878472075286063,
+        "grounded": false,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 17,
+        "yaw": 0.51,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -17.843442038396073,
+        "y": 0.9966666666666665,
+        "z": -16.0127969035126,
+        "vx": 2.684974857855991,
+        "vy": -1.9000000000000008,
+        "vz": -4.800094792051632,
+        "grounded": false,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 18,
+        "yaw": 0.54,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -17.74918377325967,
+        "y": 0.9099999999999998,
+        "z": -16.170043495095968,
+        "vx": 2.8277479540921218,
+        "vy": -2.6000000000000005,
+        "vz": -4.717397747501033,
+        "grounded": false,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 19,
+        "yaw": 0.57,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -17.650251230991774,
+        "y": 0.7999999999999998,
+        "z": -16.32439200720905,
+        "vx": 2.9679762680368307,
+        "vy": -3.3000000000000007,
+        "vz": -4.630455363392477,
+        "grounded": false,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 20,
+        "yaw": 0.6,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -17.546733444202683,
+        "y": 0.6666666666666665,
+        "z": -16.47570353660916,
+        "vx": 3.1055336036726944,
+        "vy": -4.000000000000001,
+        "vz": -4.53934588200323,
+        "grounded": false,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 21,
+        "yaw": 0.63,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -17.43872357191327,
+        "y": 0.5099999999999998,
+        "z": -16.623841913133056,
+        "vx": 3.240296168682482,
+        "vy": -4.700000000000001,
+        "vz": -4.444151295716836,
+        "grounded": false,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 22,
+        "yaw": 0.6599999999999999,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -17.326318815718135,
+        "y": 0.32999999999999974,
+        "z": -16.768673822240906,
+        "vx": 3.3721426858538854,
+        "vy": -5.400000000000001,
+        "vz": -4.344957273235509,
+        "grounded": false,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 23,
+        "yaw": 0.69,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -17.209620332310774,
+        "y": 0.12666666666666637,
+        "z": -16.910068924990377,
+        "vx": 3.5009545022208233,
+        "vy": -6.100000000000001,
+        "vz": -4.241853082484087,
+        "grounded": false,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 24,
+        "yaw": 0.72,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -17.08873314244934,
+        "y": 0.0,
+        "z": -17.047899975332875,
+        "vx": 3.626615695843102,
+        "vy": 0.0,
+        "vz": -4.134931510274923,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 25,
+        "yaw": 0.75,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -16.96376603644506,
+        "y": 0.0,
+        "z": -17.18204293462641,
+        "vx": 3.7490131801283377,
+        "vy": 0.0,
+        "vz": -4.024288778806015,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 26,
+        "yaw": 0.78,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -16.83483147625832,
+        "y": 0.0,
+        "z": -17.312377083261993,
+        "vx": 3.8680368056022565,
+        "vy": 0.0,
+        "vz": -3.9100244590675253,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 27,
+        "yaw": 0.8099999999999999,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -16.702045494290463,
+        "y": 0.0,
+        "z": -17.43878512930315,
+        "vx": 3.9835794590357834,
+        "vy": 0.0,
+        "vz": -3.792241381234609,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 28,
+        "yaw": 0.84,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -16.56552758896247,
+        "y": 0.0,
+        "z": -17.561153314040723,
+        "vx": 4.0955371598397265,
+        "vy": 0.0,
+        "vz": -3.6710455421271946,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 29,
+        "yaw": 0.87,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -16.425400617174464,
+        "y": 0.0,
+        "z": -17.679371514368057,
+        "vx": 4.203809153640278,
+        "vy": 0.0,
+        "vz": -3.546546009820007,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 30,
+        "yaw": 0.8999999999999999,
+        "pitch": 0,
+        "forward": 1,
+        "side": 1,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -16.27082770713917,
+        "y": 0.0,
+        "z": -17.749722033864213,
+        "vx": 4.637187301058826,
+        "vy": 0.0,
+        "vz": -2.1105155848846344,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 31,
+        "yaw": 0.9299999999999999,
+        "pitch": 0,
+        "forward": 1,
+        "side": 1,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -16.10288791255025,
+        "y": 0.0,
+        "z": -17.77189240809979,
+        "vx": 5.038193837667492,
+        "vy": 0.0,
+        "vz": -0.6651112270673756,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 32,
+        "yaw": 0.96,
+        "pitch": 0,
+        "forward": 1,
+        "side": 1,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -15.923585076525503,
+        "y": 0.0,
+        "z": -17.745371086027607,
+        "vx": 5.37908508074245,
+        "vy": 0.0,
+        "vz": 0.7956396621655595,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 33,
+        "yaw": 0.99,
+        "pitch": 0,
+        "forward": 1,
+        "side": 1,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -15.744075717210121,
+        "y": 0.0,
+        "z": -17.70812191114692,
+        "vx": 5.385280779461492,
+        "vy": 0.0,
+        "vz": 1.1174752464205309,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 34,
+        "yaw": 1.02,
+        "pitch": 0,
+        "forward": 1,
+        "side": 1,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -15.565764438680846,
+        "y": 0.0,
+        "z": -17.665505024114115,
+        "vx": 5.349338355878217,
+        "vy": 0.0,
+        "vz": 1.2785066109841332,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 35,
+        "yaw": 1.05,
+        "pitch": 0,
+        "forward": 1,
+        "side": 1,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -15.388811709052709,
+        "y": 0.0,
+        "z": -17.617558777250967,
+        "vx": 5.3085818888441585,
+        "vy": 0.0,
+        "vz": 1.438387405894457,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 36,
+        "yaw": 1.08,
+        "pitch": 0,
+        "forward": 1,
+        "side": 1,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -15.213376773838421,
+        "y": 0.0,
+        "z": -17.564326318943376,
+        "vx": 5.2630480564286675,
+        "vy": 0.0,
+        "vz": 1.5969737492277125,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 37,
+        "yaw": 1.1099999999999999,
+        "pitch": 0,
+        "forward": 1,
+        "side": 1,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -15.039617512638172,
+        "y": 0.0,
+        "z": -17.50585555481074,
+        "vx": 5.212777836007478,
+        "vy": 0.0,
+        "vz": 1.7541229239791571,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 38,
+        "yaw": 1.14,
+        "pitch": 0,
+        "forward": 1,
+        "side": 1,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -14.867690297058646,
+        "y": 0.0,
+        "z": -17.442199104594113,
+        "vx": 5.15781646738583,
+        "vy": 0.0,
+        "vz": 1.909693506498766,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 39,
+        "yaw": 1.17,
+        "pitch": 0,
+        "forward": 1,
+        "side": 1,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -14.69774984998912,
+        "y": 0.0,
+        "z": -17.37341425480201,
+        "vx": 5.098213412085702,
+        "vy": 0.0,
+        "vz": 2.063545493762972,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 40,
+        "yaw": 1.2,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -14.527464267915255,
+        "y": 0.0,
+        "z": -17.35462821381401,
+        "vx": 5.108567462215979,
+        "vy": 0.0,
+        "vz": 0.5635812296400229,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 41,
+        "yaw": 1.23,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -14.35561566100723,
+        "y": 0.0,
+        "z": -17.385817736388294,
+        "vx": 5.155458207240763,
+        "vy": 0.0,
+        "vz": -0.935685677228471,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 42,
+        "yaw": 1.26,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -14.181065765048968,
+        "y": 0.0,
+        "z": -17.44188416959098,
+        "vx": 5.236496878747837,
+        "vy": 0.0,
+        "vz": -1.6819929960805915,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 43,
+        "yaw": 1.29,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -14.004912669944522,
+        "y": 0.0,
+        "z": -17.492689663351353,
+        "vx": 5.284592853133399,
+        "vy": 0.0,
+        "vz": -1.5241648128110667,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 44,
+        "yaw": 1.3199999999999998,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -13.827314901589508,
+        "y": 0.0,
+        "z": -17.538188496154287,
+        "vx": 5.327933050650459,
+        "vy": 0.0,
+        "vz": -1.3649649840880522,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 45,
+        "yaw": 1.3499999999999999,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -13.648432285987953,
+        "y": 0.0,
+        "z": -17.578339722121346,
+        "vx": 5.366478468046624,
+        "vy": 0.0,
+        "vz": -1.2045367790117292,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 46,
+        "yaw": 1.38,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -13.468425805419686,
+        "y": 0.0,
+        "z": -17.613107207859283,
+        "vx": 5.400194417047978,
+        "vy": 0.0,
+        "vz": -1.0430245721380895,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 47,
+        "yaw": 1.41,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -13.287457453567148,
+        "y": 0.0,
+        "z": -17.642459664977668,
+        "vx": 5.429050555576177,
+        "vy": 0.0,
+        "vz": -0.880573713551572,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 48,
+        "yaw": 1.44,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -13.105690089732006,
+        "y": 0.0,
+        "z": -17.666370678246327,
+        "vx": 5.453020915054275,
+        "vy": 0.0,
+        "vz": -0.7173303980598005,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 49,
+        "yaw": 1.47,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -12.923287292272784,
+        "y": 0.0,
+        "z": -17.68481872936726,
+        "vx": 5.472083923776695,
+        "vy": 0.0,
+        "vz": -0.5534415336281245,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 50,
+        "yaw": 1.5,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -12.740413211395373,
+        "y": 0.0,
+        "z": -17.697787216339673,
+        "vx": 5.486222426322299,
+        "vy": 0.0,
+        "vz": -0.38905460917236595,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 51,
+        "yaw": 1.53,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -12.557232421428935,
+        "y": 0.0,
+        "z": -17.70526446840063,
+        "vx": 5.495423698993118,
+        "vy": 0.0,
+        "vz": -0.22431756182875068,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 52,
+        "yaw": 1.56,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -12.373909772720108,
+        "y": 0.0,
+        "z": -17.707243756527983,
+        "vx": 5.499679461264814,
+        "vy": 0.0,
+        "vz": -0.059378643820470645,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 53,
+        "yaw": 1.5899999999999999,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -12.190610243278822,
+        "y": 0.0,
+        "z": -17.70372329949601,
+        "vx": 5.4989858832386,
+        "vy": 0.0,
+        "vz": 0.10561371095930835,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 54,
+        "yaw": 1.6199999999999999,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -12.007498790309228,
+        "y": 0.0,
+        "z": -17.694706265478413,
+        "vx": 5.493343589087882,
+        "vy": 0.0,
+        "vz": 0.2705110205279368,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 55,
+        "yaw": 1.65,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -11.824740201759344,
+        "y": 0.0,
+        "z": -17.68020076919718,
+        "vx": 5.4827576564965534,
+        "vy": 0.0,
+        "vz": 0.43516488843703616,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 56,
+        "yaw": 1.68,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -11.642498948023029,
+        "y": 0.0,
+        "z": -17.660219864619872,
+        "vx": 5.467237612089418,
+        "vy": 0.0,
+        "vz": 0.5994271373192911,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 57,
+        "yaw": 1.71,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -11.460939033927733,
+        "y": 0.0,
+        "z": -17.63478153321194,
+        "vx": 5.446797422858869,
+        "vy": 0.0,
+        "vz": 0.7631499422380765,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 58,
+        "yaw": 1.74,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -11.280223851141216,
+        "y": 0.0,
+        "z": -17.603908667754606,
+        "vx": 5.421455483595544,
+        "vy": 0.0,
+        "vz": 0.9261859637199236,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 59,
+        "yaw": 1.77,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -11.100516031130073,
+        "y": 0.0,
+        "z": -17.567629051742937,
+        "vx": 5.39123460033425,
+        "vy": 0.0,
+        "vz": 1.0883884803500996,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 60,
+        "yaw": 1.7999999999999998,
+        "pitch": 0,
+        "forward": 1,
+        "side": 1,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -10.949324514399919,
+        "y": 0.0,
+        "z": -17.490278516004693,
+        "vx": 4.535745501904626,
+        "vy": 0.0,
+        "vz": 2.320516072147341,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 61,
+        "yaw": 1.8299999999999998,
+        "pitch": 0,
+        "forward": 1,
+        "side": 1,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -10.82756481327888,
+        "y": 0.0,
+        "z": -17.37250808133101,
+        "vx": 3.6527910336311775,
+        "vy": 0.0,
+        "vz": 3.533113040210494,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 62,
+        "yaw": 1.8599999999999999,
+        "pitch": 0,
+        "forward": 1,
+        "side": 1,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -10.736883248324737,
+        "y": 0.0,
+        "z": -17.21556942672851,
+        "vx": 2.720446948624316,
+        "vy": 0.0,
+        "vz": 4.708159638074902,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 63,
+        "yaw": 1.89,
+        "pitch": 0,
+        "forward": 1,
+        "side": 1,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -10.654476722221876,
+        "y": 0.0,
+        "z": -17.05180045663109,
+        "vx": 2.4721957830858723,
+        "vy": 0.0,
+        "vz": 4.913069102922574,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 64,
+        "yaw": 1.92,
+        "pitch": 0,
+        "forward": 1,
+        "side": 1,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -10.577019608450343,
+        "y": 0.0,
+        "z": -16.88563335207277,
+        "vx": 2.323713413145999,
+        "vy": 0.0,
+        "vz": 4.985013136749528,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 65,
+        "yaw": 1.95,
+        "pitch": 0,
+        "forward": 1,
+        "side": 1,
+        "jump": true,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -10.504581613184335,
+        "y": 0.21666666666666667,
+        "z": -16.717217652231714,
+        "vx": 2.173139857980244,
+        "vy": 6.5,
+        "vz": 5.052470995231699,
+        "grounded": false,
+        "crouched": false,
+        "jump_held": true,
+        "jump_cooldown": 0.22
+      }
+    },
+    {
+      "input": {
+        "seq": 66,
+        "yaw": 1.98,
+        "pitch": 0,
+        "forward": 1,
+        "side": 1,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -10.437227925730173,
+        "y": 0.41000000000000003,
+        "z": -16.546704919870056,
+        "vx": 2.0206106236248464,
+        "vy": 5.8,
+        "vz": 5.115381970849724,
+        "grounded": false,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.18666666666666668
+      }
+    },
+    {
+      "input": {
+        "seq": 67,
+        "yaw": 2.01,
+        "pitch": 0,
+        "forward": 1,
+        "side": 1,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -10.37501915986033,
+        "y": 0.5800000000000001,
+        "z": -16.37424860493766,
+        "vx": 1.866262976095314,
+        "vy": 5.1,
+        "vz": 5.173689447971907,
+        "grounded": false,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.15333333333333335
+      }
+    },
+    {
+      "input": {
+        "seq": 68,
+        "yaw": 2.04,
+        "pitch": 0,
+        "forward": 1,
+        "side": 1,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -10.31801129926512,
+        "y": 0.7266666666666667,
+        "z": -16.20000390647751,
+        "vx": 1.7102358178562647,
+        "vy": 4.3999999999999995,
+        "vz": 5.227340953804478,
+        "grounded": false,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.12000000000000002
+      }
+    },
+    {
+      "input": {
+        "seq": 69,
+        "yaw": 2.07,
+        "pitch": 0,
+        "forward": 1,
+        "side": 1,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -10.266255647171167,
+        "y": 0.85,
+        "z": -16.024127632957057,
+        "vx": 1.5526695628186018,
+        "vy": 3.6999999999999993,
+        "vz": 5.276288205613554,
+        "grounded": false,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0866666666666667
+      }
+    },
+    {
+      "input": {
+        "seq": 70,
+        "yaw": 2.1,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -10.202248454534429,
+        "y": 0.95,
+        "z": -15.857836507477739,
+        "vx": 1.9202157791021717,
+        "vy": 2.999999999999999,
+        "vz": 4.988733764379535,
+        "grounded": false,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.053333333333333365
+      }
+    },
+    {
+      "input": {
+        "seq": 71,
+        "yaw": 2.13,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": true,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -10.160237009513189,
+        "y": 1.0266666666666666,
+        "z": -15.763428794524797,
+        "vx": 1.2603433506371844,
+        "vy": 2.299999999999999,
+        "vz": 2.8322313885882693,
+        "grounded": false,
+        "crouched": true,
+        "jump_held": false,
+        "jump_cooldown": 0.02000000000000003
+      }
+    },
+    {
+      "input": {
+        "seq": 72,
+        "yaw": 2.16,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": true,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -10.10632942703555,
+        "y": 1.0799999999999998,
+        "z": -15.67904391661292,
+        "vx": 1.6172274743291586,
+        "vy": 1.599999999999999,
+        "vz": 2.531546337356271,
+        "grounded": false,
+        "crouched": true,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 73,
+        "yaw": 2.19,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": true,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -10.040317830939953,
+        "y": 1.1099999999999999,
+        "z": -15.60442981978437,
+        "vx": 1.9803478828678984,
+        "vy": 0.899999999999999,
+        "vz": 2.2384229048565194,
+        "grounded": false,
+        "crouched": true,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 74,
+        "yaw": 2.2199999999999998,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": true,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -9.961831941467443,
+        "y": 1.1166666666666665,
+        "z": -15.53910912456065,
+        "vx": 2.354576684175317,
+        "vy": 0.19999999999999907,
+        "vz": 1.959620856711621,
+        "grounded": false,
+        "crouched": true,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 75,
+        "yaw": 2.25,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": true,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -9.881431044455692,
+        "y": 1.0999999999999999,
+        "z": -15.474197850212633,
+        "vx": 2.412026910352556,
+        "vy": -0.5000000000000009,
+        "vz": 1.9473382304404914,
+        "grounded": false,
+        "crouched": true,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 76,
+        "yaw": 2.28,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": true,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -9.803013371276997,
+        "y": 1.0599999999999998,
+        "z": -15.406904118624787,
+        "vx": 2.3525301953608584,
+        "vy": -1.2000000000000008,
+        "vz": 2.0188119476353914,
+        "grounded": false,
+        "crouched": true,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 77,
+        "yaw": 2.31,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": true,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -9.726649492544185,
+        "y": 0.9966666666666665,
+        "z": -15.33728848961335,
+        "vx": 2.2909163619843596,
+        "vy": -1.9000000000000008,
+        "vz": 2.088468870343139,
+        "grounded": false,
+        "crouched": true,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 78,
+        "yaw": 2.34,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": true,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -9.65240813059371,
+        "y": 0.9099999999999998,
+        "z": -15.265413612545517,
+        "vx": 2.2272408585142913,
+        "vy": -2.6000000000000005,
+        "vz": 2.1562463120349964,
+        "grounded": false,
+        "crouched": true,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 79,
+        "yaw": 2.37,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": true,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -9.580356097640182,
+        "y": 0.7999999999999998,
+        "z": -15.19134416995924,
+        "vx": 2.161560988605807,
+        "vy": -3.3000000000000007,
+        "vz": 2.222083277588283,
+        "grounded": false,
+        "crouched": true,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 80,
+        "yaw": 2.4,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": true,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -9.510558235649897,
+        "y": 0.6666666666666665,
+        "z": -15.115146819353312,
+        "vx": 2.093935859708568,
+        "vy": -4.000000000000001,
+        "vz": 2.285920518177861,
+        "grounded": false,
+        "crouched": true,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 81,
+        "yaw": 2.4299999999999997,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": true,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -9.44307735798743,
+        "y": 0.5099999999999998,
+        "z": -15.036890133200108,
+        "vx": 2.024426329874022,
+        "vy": -4.700000000000001,
+        "vz": 2.3477005845960845,
+        "grounded": false,
+        "crouched": true,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 82,
+        "yaw": 2.46,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": true,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -9.377974192887855,
+        "y": 0.32999999999999974,
+        "z": -14.956644537235002,
+        "vx": 1.9530949529872659,
+        "vy": -5.400000000000001,
+        "vz": 2.4073678789532087,
+        "grounded": false,
+        "crouched": true,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 83,
+        "yaw": 2.4899999999999998,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": true,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -9.31530732880543,
+        "y": 0.12666666666666637,
+        "z": -14.874482247077944,
+        "vx": 1.8800059224727768,
+        "vy": -6.100000000000001,
+        "vz": 2.4648687047117304,
+        "grounded": false,
+        "crouched": true,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 84,
+        "yaw": 2.52,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": true,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -9.255133161687942,
+        "y": 0.0,
+        "z": -14.790477203244288,
+        "vx": 1.805225013524654,
+        "vy": 0.0,
+        "vz": 2.520151315009659,
+        "grounded": true,
+        "crouched": true,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 85,
+        "yaw": 2.55,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": true,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -9.197505844224162,
+        "y": 0.0,
+        "z": -14.704705004603316,
+        "vx": 1.7288195239133928,
+        "vy": 0.0,
+        "vz": 2.5731659592291884,
+        "grounded": true,
+        "crouched": true,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 86,
+        "yaw": 2.58,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": true,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -9.142477237110082,
+        "y": 0.0,
+        "z": -14.617242840344352,
+        "vx": 1.6508582134224257,
+        "vy": 0.0,
+        "vz": 2.6238649277689046,
+        "grounded": true,
+        "crouched": true,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 87,
+        "yaw": 2.61,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": true,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -9.090096862377782,
+        "y": 0.0,
+        "z": -14.528169420511711,
+        "vx": 1.5714112419689656,
+        "vy": 0.0,
+        "vz": 2.672202594979197,
+        "grounded": true,
+        "crouched": true,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 88,
+        "yaw": 2.6399999999999997,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": true,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -9.040411858828955,
+        "y": 0.0,
+        "z": -14.43756490517097,
+        "vx": 1.4905501064648108,
+        "vy": 0.0,
+        "vz": 2.718135460222272,
+        "grounded": true,
+        "crouched": true,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 89,
+        "yaw": 2.67,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": true,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -8.993466939613157,
+        "y": 0.0,
+        "z": -14.34551083227031,
+        "vx": 1.4083475764739501,
+        "vy": 0.0,
+        "vz": 2.761622187019787,
+        "grounded": true,
+        "crouched": true,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 90,
+        "yaw": 2.6999999999999997,
+        "pitch": 0,
+        "forward": 1,
+        "side": 1,
+        "jump": false,
+        "crouch": true,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -8.996419995400027,
+        "y": 0.0,
+        "z": -14.250264253984664,
+        "vx": -0.0885916736060739,
+        "vy": 0.0,
+        "vz": 2.857397348569401,
+        "grounded": true,
+        "crouched": true,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 91,
+        "yaw": 2.73,
+        "pitch": 0,
+        "forward": 1,
+        "side": 1,
+        "jump": false,
+        "crouch": true,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -9.034153276601637,
+        "y": 0.0,
+        "z": -14.154066659069105,
+        "vx": -1.1319984360483324,
+        "vy": 0.0,
+        "vz": 2.8859278474667605,
+        "grounded": true,
+        "crouched": true,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 92,
+        "yaw": 2.76,
+        "pitch": 0,
+        "forward": 1,
+        "side": 1,
+        "jump": false,
+        "crouch": true,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -9.074755074077936,
+        "y": 0.0,
+        "z": -14.05904417846861,
+        "vx": -1.2180539242889883,
+        "vy": 0.0,
+        "vz": 2.850674418014831,
+        "grounded": true,
+        "crouched": true,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 93,
+        "yaw": 2.79,
+        "pitch": 0,
+        "forward": 1,
+        "side": 1,
+        "jump": false,
+        "crouch": true,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -9.118188848951736,
+        "y": 0.0,
+        "z": -13.965282326001896,
+        "vx": -1.3030132462139583,
+        "vy": 0.0,
+        "vz": 2.8128555740014383,
+        "grounded": true,
+        "crouched": true,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 94,
+        "yaw": 2.82,
+        "pitch": 0,
+        "forward": 1,
+        "side": 1,
+        "jump": false,
+        "crouch": true,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -9.164415513757339,
+        "y": 0.0,
+        "z": -13.872865481007446,
+        "vx": -1.3867999441680907,
+        "vy": 0.0,
+        "vz": 2.7725053498334997,
+        "grounded": true,
+        "crouched": true,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 95,
+        "yaw": 2.85,
+        "pitch": 0,
+        "forward": 1,
+        "side": 1,
+        "jump": false,
+        "crouch": true,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -9.213393467616628,
+        "y": 0.0,
+        "z": -13.781876812407805,
+        "vx": -1.469338615778661,
+        "vy": 0.0,
+        "vz": 2.7296600579892085,
+        "grounded": true,
+        "crouched": true,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 96,
+        "yaw": 2.88,
+        "pitch": 0,
+        "forward": 1,
+        "side": 1,
+        "jump": false,
+        "crouch": true,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -9.265078633677042,
+        "y": 0.0,
+        "z": -13.692398203863164,
+        "vx": -1.55055498181241,
+        "vy": 0.0,
+        "vz": 2.6843582563392534,
+        "grounded": true,
+        "crouched": true,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 97,
+        "yaw": 2.9099999999999997,
+        "pitch": 0,
+        "forward": 1,
+        "side": 1,
+        "jump": false,
+        "crouch": true,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -9.31942449877777,
+        "y": 0.0,
+        "z": -13.604510180081586,
+        "vx": -1.6303759530218496,
+        "vy": 0.0,
+        "vz": 2.6366407134473393,
+        "grounded": true,
+        "crouched": true,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 98,
+        "yaw": 2.94,
+        "pitch": 0,
+        "forward": 1,
+        "side": 1,
+        "jump": false,
+        "crouch": true,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -9.376382155308459,
+        "y": 0.0,
+        "z": -13.518291834352212,
+        "vx": -1.708729695920646,
+        "vy": 0.0,
+        "vz": 2.586550371881231,
+        "grounded": true,
+        "crouched": true,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 99,
+        "yaw": 2.9699999999999998,
+        "pitch": 0,
+        "forward": 1,
+        "side": 1,
+        "jump": false,
+        "crouch": true,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -9.435900345222755,
+        "y": 0.0,
+        "z": -13.433820757366634,
+        "vx": -1.7855456974289075,
+        "vy": 0.0,
+        "vz": 2.534132309567343,
+        "grounded": true,
+        "crouched": true,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 100,
+        "yaw": 3.0,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": true,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -9.446805729032388,
+        "y": 0.0,
+        "z": -13.337653737382293,
+        "vx": -0.32716151428897433,
+        "vy": 0.0,
+        "vz": 2.885010599530216,
+        "grounded": true,
+        "crouched": true,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 101,
+        "yaw": 3.03,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": true,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -9.435298406201435,
+        "y": 0.0,
+        "z": -13.234963137525042,
+        "vx": 0.3452196849286151,
+        "vy": 0.0,
+        "vz": 3.0807179957175226,
+        "grounded": true,
+        "crouched": true,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 102,
+        "yaw": 3.06,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": true,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -9.426876517186207,
+        "y": 0.0,
+        "z": -13.131973577067718,
+        "vx": 0.25265667045683426,
+        "vy": 0.0,
+        "vz": 3.0896868137197444,
+        "grounded": true,
+        "crouched": true,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 103,
+        "yaw": 3.09,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": true,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -9.421547641118359,
+        "y": 0.0,
+        "z": -13.028777739663145,
+        "vx": 0.15986628203545739,
+        "vy": 0.0,
+        "vz": 3.095875122137222,
+        "grounded": true,
+        "crouched": true,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 104,
+        "yaw": 3.12,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": true,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -9.419316573626663,
+        "y": 0.0,
+        "z": -12.925468494599475,
+        "vx": 0.06693202475089748,
+        "vy": 0.0,
+        "vz": 3.099277351910078,
+        "grounded": true,
+        "crouched": true,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 105,
+        "yaw": 3.15,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": true,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -9.420185322521268,
+        "y": 0.0,
+        "z": -12.822138813224102,
+        "vx": -0.026062466838160714,
+        "vy": 0.0,
+        "vz": 3.0998904412611603,
+        "grounded": true,
+        "crouched": true,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 106,
+        "yaw": 3.1799999999999997,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": true,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -9.424153105986809,
+        "y": 0.0,
+        "z": -12.71888168527572,
+        "vx": -0.1190335039662283,
+        "vy": 0.0,
+        "vz": 3.097713838451435,
+        "grounded": true,
+        "crouched": true,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 107,
+        "yaw": 3.21,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": true,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -9.431216353285985,
+        "y": 0.0,
+        "z": -12.615790035199836,
+        "vx": -0.2118974189752481,
+        "vy": 0.0,
+        "vz": 3.0927495022765146,
+        "grounded": true,
+        "crouched": true,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 108,
+        "yaw": 3.2399999999999998,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": true,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -9.441368707972979,
+        "y": 0.0,
+        "z": -12.51295663852304,
+        "vx": -0.3045706406098356,
+        "vy": 0.0,
+        "vz": 3.0850019003038742,
+        "grounded": true,
+        "crouched": true,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 109,
+        "yaw": 3.27,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": true,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -9.454601033613837,
+        "y": 0.0,
+        "z": -12.410474038361295,
+        "vx": -0.396969769225777,
+        "vy": 0.0,
+        "vz": 3.0744780048523412,
+        "grounded": true,
+        "crouched": true,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 110,
+        "yaw": 3.3,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -9.477625149864151,
+        "y": 0.0,
+        "z": -12.258959603268961,
+        "vx": -0.6907234875094386,
+        "vy": 0.0,
+        "vz": 4.5454330527700275,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 111,
+        "yaw": 3.33,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -9.511962504847018,
+        "y": 0.0,
+        "z": -12.078870577606951,
+        "vx": -1.0301206494859674,
+        "vy": 0.0,
+        "vz": 5.402670769860274,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 112,
+        "yaw": 3.36,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -9.551686269584705,
+        "y": 0.0,
+        "z": -11.89989255206701,
+        "vx": -1.1917129421305879,
+        "vy": 0.0,
+        "vz": 5.369340766198254,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 113,
+        "yaw": 3.3899999999999997,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -9.596760695370223,
+        "y": 0.0,
+        "z": -11.722186594791468,
+        "vx": -1.3522327735655013,
+        "vy": 0.0,
+        "vz": 5.331178718266285,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 114,
+        "yaw": 3.42,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -9.647145218262795,
+        "y": 0.0,
+        "z": -11.54591262914708,
+        "vx": -1.511535686777182,
+        "vy": 0.0,
+        "vz": 5.288218969331643,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 115,
+        "yaw": 3.4499999999999997,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -9.702794495592672,
+        "y": 0.0,
+        "z": -11.371229289804793,
+        "vx": -1.669478319896359,
+        "vy": 0.0,
+        "vz": 5.240500180268676,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 116,
+        "yaw": 3.48,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -9.763658446766472,
+        "y": 0.0,
+        "z": -11.19829377997924,
+        "vx": -1.8259185352140375,
+        "vy": 0.0,
+        "vz": 5.188065294766617,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 117,
+        "yaw": 3.51,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -9.829682298336332,
+        "y": 0.0,
+        "z": -11.027261729956466,
+        "vx": -1.9807155470958249,
+        "vy": 0.0,
+        "vz": 5.13096150068317,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 118,
+        "yaw": 3.54,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -9.900806633292314,
+        "y": 0.0,
+        "z": -10.85828705703718,
+        "vx": -2.1337300486795168,
+        "vy": 0.0,
+        "vz": 5.069240187578618,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 119,
+        "yaw": 3.57,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -9.976967444533708,
+        "y": 0.0,
+        "z": -10.691521827021555,
+        "vx": -2.284824337241852,
+        "vy": 0.0,
+        "vz": 5.0029569004686945,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 120,
+        "yaw": 3.5999999999999996,
+        "pitch": 0,
+        "forward": 1,
+        "side": 1,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -10.086646109810472,
+        "y": 0.0,
+        "z": -10.561858530390374,
+        "vx": -3.2903599583029406,
+        "vy": 0.0,
+        "vz": 3.8898988989354004,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 121,
+        "yaw": 3.63,
+        "pitch": 0,
+        "forward": 1,
+        "side": 1,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -10.229000627748837,
+        "y": 0.0,
+        "z": -10.47004082336799,
+        "vx": -4.270635538150977,
+        "vy": 0.0,
+        "vz": 2.7545312106715514,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 122,
+        "yaw": 3.6599999999999997,
+        "pitch": 0,
+        "forward": 1,
+        "side": 1,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -10.402438006234318,
+        "y": 0.0,
+        "z": -10.417387587237071,
+        "vx": -5.203121354564445,
+        "vy": 0.0,
+        "vz": 1.5795970839275422,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 123,
+        "yaw": 3.69,
+        "pitch": 0,
+        "forward": 1,
+        "side": 1,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -10.580646965122002,
+        "y": 0.0,
+        "z": -10.37434484007476,
+        "vx": -5.346268766630535,
+        "vy": 0.0,
+        "vz": 1.2912824148693467,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 124,
+        "yaw": 3.7199999999999998,
+        "pitch": 0,
+        "forward": 1,
+        "side": 1,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -10.760066824723781,
+        "y": 0.0,
+        "z": -10.336666927558424,
+        "vx": -5.382595788053401,
+        "vy": 0.0,
+        "vz": 1.1303373754900679,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 125,
+        "yaw": 3.75,
+        "pitch": 0,
+        "forward": 1,
+        "side": 1,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -10.940536119276492,
+        "y": 0.0,
+        "z": -10.304387757266147,
+        "vx": -5.414078836581337,
+        "vy": 0.0,
+        "vz": 0.9683751087683302,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 126,
+        "yaw": 3.78,
+        "pitch": 0,
+        "forward": 1,
+        "side": 1,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -11.12189243859635,
+        "y": 0.0,
+        "z": -10.27753637827241,
+        "vx": -5.440689579595706,
+        "vy": 0.0,
+        "vz": 0.8055413698120616,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 127,
+        "yaw": 3.81,
+        "pitch": 0,
+        "forward": 1,
+        "side": 1,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -11.303972574237148,
+        "y": 0.0,
+        "z": -10.256136955005898,
+        "vx": -5.46240406922397,
+        "vy": 0.0,
+        "vz": 0.6419826979953713,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 128,
+        "yaw": 3.84,
+        "pitch": 0,
+        "forward": 1,
+        "side": 1,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -11.486612666366854,
+        "y": 0.0,
+        "z": -10.24020874550313,
+        "vx": -5.479202763891145,
+        "vy": 0.0,
+        "vz": 0.47784628508301985,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 129,
+        "yaw": 3.8699999999999997,
+        "pitch": 0,
+        "forward": 1,
+        "side": 1,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -11.669648351230384,
+        "y": 0.0,
+        "z": -10.229766084077538,
+        "vx": -5.491070545905909,
+        "vy": 0.0,
+        "vz": 0.3132798427677501,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 130,
+        "yaw": 3.9,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -11.831627578118045,
+        "y": 0.0,
+        "z": -10.173973388721302,
+        "vx": -4.859376806629849,
+        "vy": 0.0,
+        "vz": 1.6737808606870421,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 131,
+        "yaw": 3.9299999999999997,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -11.973661341845684,
+        "y": 0.0,
+        "z": -10.072331173200379,
+        "vx": -4.26101291182918,
+        "vy": 0.0,
+        "vz": 3.049266465627702,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 132,
+        "yaw": 3.96,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -12.107505374666221,
+        "y": 0.0,
+        "z": -9.947043959210099,
+        "vx": -4.015320984616148,
+        "vy": 0.0,
+        "vz": 3.758616419708349,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 133,
+        "yaw": 3.9899999999999998,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -12.245047234841707,
+        "y": 0.0,
+        "z": -9.82582783895137,
+        "vx": -4.126255805264552,
+        "vy": 0.0,
+        "vz": 3.636483607761841,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 134,
+        "yaw": 4.02,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -12.38616314398178,
+        "y": 0.0,
+        "z": -9.708791898750583,
+        "vx": -4.233477274202131,
+        "vy": 0.0,
+        "vz": 3.5110782060236274,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 135,
+        "yaw": 4.05,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -12.530726107293248,
+        "y": 0.0,
+        "z": -9.596041463054227,
+        "vx": -4.336888899344073,
+        "vy": 0.0,
+        "vz": 3.3825130708906594,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 136,
+        "yaw": 4.08,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -12.678606027866842,
+        "y": 0.0,
+        "z": -9.487677999644006,
+        "vx": -4.436397617207823,
+        "vy": 0.0,
+        "vz": 3.2509039023066726,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 137,
+        "yaw": 4.109999999999999,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -12.82966982375564,
+        "y": 0.0,
+        "z": -9.38379902832267,
+        "vx": -4.531913876663939,
+        "vy": 0.0,
+        "vz": 3.116369139640044,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 138,
+        "yaw": 4.14,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -12.983781547739841,
+        "y": 0.0,
+        "z": -9.284498033152794,
+        "vx": -4.623351719526069,
+        "vy": 0.0,
+        "vz": 2.979029855096342,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 139,
+        "yaw": 4.17,
+        "pitch": 0,
+        "forward": 1,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -13.140802509670092,
+        "y": 0.0,
+        "z": -9.18986437832741,
+        "vx": -4.710628857907507,
+        "vy": 0.0,
+        "vz": 2.839009644761536,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 140,
+        "yaw": 4.2,
+        "pitch": 0,
+        "forward": 0,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -13.245483150956925,
+        "y": 0.0,
+        "z": -9.126775275110488,
+        "vx": -3.1404192386050047,
+        "vy": 0.0,
+        "vz": 1.8926730965076908,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 141,
+        "yaw": 4.2299999999999995,
+        "pitch": 0,
+        "forward": 0,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -13.297823471600342,
+        "y": 0.0,
+        "z": -9.095230723502025,
+        "vx": -1.5702096193025026,
+        "vy": 0.0,
+        "vz": 0.9463365482538455,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 142,
+        "yaw": 4.26,
+        "pitch": 0,
+        "forward": 0,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -13.297823471600342,
+        "y": 0.0,
+        "z": -9.095230723502025,
+        "vx": -4.440892098500626e-16,
+        "vy": 0.0,
+        "vz": 3.3306690738754696e-16,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 143,
+        "yaw": 4.29,
+        "pitch": 0,
+        "forward": 0,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -13.297823471600342,
+        "y": 0.0,
+        "z": -9.095230723502025,
+        "vx": 0.0,
+        "vy": 0.0,
+        "vz": 0.0,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 144,
+        "yaw": 4.32,
+        "pitch": 0,
+        "forward": 0,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -13.297823471600342,
+        "y": 0.0,
+        "z": -9.095230723502025,
+        "vx": 0.0,
+        "vy": 0.0,
+        "vz": 0.0,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 145,
+        "yaw": 4.35,
+        "pitch": 0,
+        "forward": 0,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -13.297823471600342,
+        "y": 0.0,
+        "z": -9.095230723502025,
+        "vx": 0.0,
+        "vy": 0.0,
+        "vz": 0.0,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 146,
+        "yaw": 4.38,
+        "pitch": 0,
+        "forward": 0,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -13.297823471600342,
+        "y": 0.0,
+        "z": -9.095230723502025,
+        "vx": 0.0,
+        "vy": 0.0,
+        "vz": 0.0,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 147,
+        "yaw": 4.41,
+        "pitch": 0,
+        "forward": 0,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -13.297823471600342,
+        "y": 0.0,
+        "z": -9.095230723502025,
+        "vx": 0.0,
+        "vy": 0.0,
+        "vz": 0.0,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 148,
+        "yaw": 4.4399999999999995,
+        "pitch": 0,
+        "forward": 0,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -13.297823471600342,
+        "y": 0.0,
+        "z": -9.095230723502025,
+        "vx": 0.0,
+        "vy": 0.0,
+        "vz": 0.0,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 149,
+        "yaw": 4.47,
+        "pitch": 0,
+        "forward": 0,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -13.297823471600342,
+        "y": 0.0,
+        "z": -9.095230723502025,
+        "vx": 0.0,
+        "vy": 0.0,
+        "vz": 0.0,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 150,
+        "yaw": 4.5,
+        "pitch": 0,
+        "forward": 0,
+        "side": 1,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -13.30836326157188,
+        "y": 0.0,
+        "z": -9.14410722938528,
+        "vx": -0.3161936991461695,
+        "vy": 0.0,
+        "vz": -1.4662951764976455,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 151,
+        "yaw": 4.53,
+        "pitch": 0,
+        "forward": 0,
+        "side": 1,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -13.327418491580229,
+        "y": 0.0,
+        "z": -9.242253272317097,
+        "vx": -0.5716569002504248,
+        "vy": 0.0,
+        "vz": -2.9443812879544735,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 152,
+        "yaw": 4.56,
+        "pitch": 0,
+        "forward": 0,
+        "side": 1,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -13.35172649403304,
+        "y": 0.0,
+        "z": -9.390122633537686,
+        "vx": -0.7292400735843427,
+        "vy": 0.0,
+        "vz": -4.43608083661768,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 153,
+        "yaw": 4.59,
+        "pitch": 0,
+        "forward": 0,
+        "side": 1,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -13.374108499058904,
+        "y": 0.0,
+        "z": -9.57208459923968,
+        "vx": -0.6714601507758838,
+        "vy": 0.0,
+        "vz": -5.458858971059797,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 154,
+        "yaw": 4.62,
+        "pitch": 0,
+        "forward": 0,
+        "side": 1,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -13.391022392758815,
+        "y": 0.0,
+        "z": -9.754636047634424,
+        "vx": -0.5074168109973142,
+        "vy": 0.0,
+        "vz": -5.47654345184235,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 155,
+        "yaw": 4.6499999999999995,
+        "pitch": 0,
+        "forward": 0,
+        "side": 1,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -13.402452953770096,
+        "y": 0.0,
+        "z": -9.937612694740217,
+        "vx": -0.342916830338459,
+        "vy": 0.0,
+        "vz": -5.489299413173836,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 156,
+        "yaw": 4.68,
+        "pitch": 0,
+        "forward": 0,
+        "side": 1,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -13.40838989535938,
+        "y": 0.0,
+        "z": -10.12084987392522,
+        "vx": -0.17810824767848601,
+        "vy": 0.0,
+        "vz": -5.497115375550062,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 157,
+        "yaw": 4.71,
+        "pitch": 0,
+        "forward": 0,
+        "side": 1,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -13.408827874679963,
+        "y": 0.0,
+        "z": -10.3041826840963,
+        "vx": -0.013139379617548463,
+        "vy": 0.0,
+        "vz": -5.499984305132449,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 158,
+        "yaw": 4.74,
+        "pitch": 0,
+        "forward": 0,
+        "side": 1,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -13.403766497580024,
+        "y": 0.0,
+        "z": -10.4874461380989,
+        "vx": 0.15184131299816336,
+        "vy": 0.0,
+        "vz": -5.49790362007802,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 159,
+        "yaw": 4.77,
+        "pitch": 0,
+        "forward": 0,
+        "side": 1,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -13.39321031895732,
+        "y": 0.0,
+        "z": -10.67047531119433,
+        "vx": 0.3166853586811531,
+        "vy": 0.0,
+        "vz": -5.490875192862882,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 160,
+        "yaw": 4.8,
+        "pitch": 0,
+        "forward": 0,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -13.386172866542184,
+        "y": 0.0,
+        "z": -10.792494759924617,
+        "vx": 0.21112357245410207,
+        "vy": 0.0,
+        "vz": -3.660583461908588,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 161,
+        "yaw": 4.83,
+        "pitch": 0,
+        "forward": 0,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -13.382654140334616,
+        "y": 0.0,
+        "z": -10.85350448428976,
+        "vx": 0.10556178622705105,
+        "vy": 0.0,
+        "vz": -1.8302917309542943,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 162,
+        "yaw": 4.859999999999999,
+        "pitch": 0,
+        "forward": 0,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -13.382654140334616,
+        "y": 0.0,
+        "z": -10.85350448428976,
+        "vx": 2.7755575615628914e-17,
+        "vy": 0.0,
+        "vz": -4.440892098500626e-16,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 163,
+        "yaw": 4.89,
+        "pitch": 0,
+        "forward": 0,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -13.382654140334616,
+        "y": 0.0,
+        "z": -10.85350448428976,
+        "vx": 0.0,
+        "vy": 0.0,
+        "vz": 0.0,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 164,
+        "yaw": 4.92,
+        "pitch": 0,
+        "forward": 0,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -13.382654140334616,
+        "y": 0.0,
+        "z": -10.85350448428976,
+        "vx": 0.0,
+        "vy": 0.0,
+        "vz": 0.0,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 165,
+        "yaw": 4.95,
+        "pitch": 0,
+        "forward": 0,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -13.382654140334616,
+        "y": 0.0,
+        "z": -10.85350448428976,
+        "vx": 0.0,
+        "vy": 0.0,
+        "vz": 0.0,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 166,
+        "yaw": 4.9799999999999995,
+        "pitch": 0,
+        "forward": 0,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -13.382654140334616,
+        "y": 0.0,
+        "z": -10.85350448428976,
+        "vx": 0.0,
+        "vy": 0.0,
+        "vz": 0.0,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 167,
+        "yaw": 5.01,
+        "pitch": 0,
+        "forward": 0,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -13.382654140334616,
+        "y": 0.0,
+        "z": -10.85350448428976,
+        "vx": 0.0,
+        "vy": 0.0,
+        "vz": 0.0,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 168,
+        "yaw": 5.04,
+        "pitch": 0,
+        "forward": 0,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -13.382654140334616,
+        "y": 0.0,
+        "z": -10.85350448428976,
+        "vx": 0.0,
+        "vy": 0.0,
+        "vz": 0.0,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 169,
+        "yaw": 5.069999999999999,
+        "pitch": 0,
+        "forward": 0,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -13.382654140334616,
+        "y": 0.0,
+        "z": -10.85350448428976,
+        "vx": 0.0,
+        "vy": 0.0,
+        "vz": 0.0,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 170,
+        "yaw": 5.1,
+        "pitch": 0,
+        "forward": 0,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -13.382654140334616,
+        "y": 0.0,
+        "z": -10.85350448428976,
+        "vx": 0.0,
+        "vy": 0.0,
+        "vz": 0.0,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 171,
+        "yaw": 5.13,
+        "pitch": 0,
+        "forward": 0,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -13.382654140334616,
+        "y": 0.0,
+        "z": -10.85350448428976,
+        "vx": 0.0,
+        "vy": 0.0,
+        "vz": 0.0,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 172,
+        "yaw": 5.16,
+        "pitch": 0,
+        "forward": 0,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -13.382654140334616,
+        "y": 0.0,
+        "z": -10.85350448428976,
+        "vx": 0.0,
+        "vy": 0.0,
+        "vz": 0.0,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 173,
+        "yaw": 5.1899999999999995,
+        "pitch": 0,
+        "forward": 0,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -13.382654140334616,
+        "y": 0.0,
+        "z": -10.85350448428976,
+        "vx": 0.0,
+        "vy": 0.0,
+        "vz": 0.0,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 174,
+        "yaw": 5.22,
+        "pitch": 0,
+        "forward": 0,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -13.382654140334616,
+        "y": 0.0,
+        "z": -10.85350448428976,
+        "vx": 0.0,
+        "vy": 0.0,
+        "vz": 0.0,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 175,
+        "yaw": 5.25,
+        "pitch": 0,
+        "forward": 0,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -13.382654140334616,
+        "y": 0.0,
+        "z": -10.85350448428976,
+        "vx": 0.0,
+        "vy": 0.0,
+        "vz": 0.0,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 176,
+        "yaw": 5.279999999999999,
+        "pitch": 0,
+        "forward": 0,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -13.382654140334616,
+        "y": 0.0,
+        "z": -10.85350448428976,
+        "vx": 0.0,
+        "vy": 0.0,
+        "vz": 0.0,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 177,
+        "yaw": 5.31,
+        "pitch": 0,
+        "forward": 0,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -13.382654140334616,
+        "y": 0.0,
+        "z": -10.85350448428976,
+        "vx": 0.0,
+        "vy": 0.0,
+        "vz": 0.0,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 178,
+        "yaw": 5.34,
+        "pitch": 0,
+        "forward": 0,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -13.382654140334616,
+        "y": 0.0,
+        "z": -10.85350448428976,
+        "vx": 0.0,
+        "vy": 0.0,
+        "vz": 0.0,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    },
+    {
+      "input": {
+        "seq": 179,
+        "yaw": 5.37,
+        "pitch": 0,
+        "forward": 0,
+        "side": 0,
+        "jump": false,
+        "crouch": false,
+        "fire": false,
+        "reload": false,
+        "weapon": "rifle"
+      },
+      "state": {
+        "x": -13.382654140334616,
+        "y": 0.0,
+        "z": -10.85350448428976,
+        "vx": 0.0,
+        "vy": 0.0,
+        "vz": 0.0,
+        "grounded": true,
+        "crouched": false,
+        "jump_held": false,
+        "jump_cooldown": 0.0
+      }
+    }
+  ]
+}

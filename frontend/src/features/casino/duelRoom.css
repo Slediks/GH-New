@@ -1,0 +1,189 @@
+.duel-room {
+  margin: 20px 0;
+  border: 1px solid var(--border-strong);
+  border-radius: 18px;
+  background: var(--surface-color);
+  overflow: hidden;
+}
+.duel-room-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  padding: 22px 26px;
+  border-bottom: 1px solid var(--border);
+  background: var(--surface-alt);
+}
+.duel-room-header h3 {
+  font-size: 24px;
+  margin: 4px 0;
+}
+.duel-room-header div > span,
+.duel-room-eyebrow {
+  color: var(--muted-color);
+  font-size: 12px;
+}
+.duel-room-eyebrow {
+  letter-spacing: 0.07em;
+}
+.duel-room-status {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  border: 1px solid var(--border-strong);
+  background: var(--primary-soft);
+  color: var(--text-color);
+  border-radius: 20px;
+  padding: 6px 12px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+.duel-room-lobby {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 22px 26px;
+  border-bottom: 1px solid var(--border);
+}
+.duel-room-roster {
+  flex: 1 1 420px;
+  min-width: 0;
+}
+.duel-roster-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.duel-roster-heading small {
+  color: var(--muted-color);
+}
+.duel-room-seats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+.duel-room-seat {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  min-height: 88px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface-alt);
+}
+.duel-room-seat.vacant {
+  border-style: dashed;
+  background: transparent;
+  color: var(--muted-color);
+}
+.duel-seat-number {
+  display: grid;
+  place-items: center;
+  flex: 0 0 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--surface-muted);
+  color: var(--primary-strong);
+  font-weight: 700;
+}
+.duel-room-seat > div {
+  min-width: 0;
+}
+.duel-room-seat strong {
+  display: block;
+  overflow-wrap: anywhere;
+  font-size: 14px;
+}
+.duel-room-seat small {
+  display: block;
+  color: var(--muted-color);
+  font-size: 11px;
+}
+.duel-room-entry {
+  flex: 0 1 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.duel-room-entry p {
+  font-size: 12px;
+  color: var(--muted-color);
+  margin: 0 0 4px;
+}
+.duel-room-entry button {
+  width: 100%;
+}
+.duel-room-game {
+  padding: 22px 26px;
+}
+.duel-room-game > .casino-duel {
+  margin: 0;
+}
+.duel-room-waiting {
+  min-height: 380px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px dashed var(--border-strong);
+  border-radius: 18px;
+  color: var(--muted-color);
+  background: var(--surface-alt);
+  padding: 24px;
+}
+.duel-room-waiting > span {
+  font-size: 40px;
+  color: var(--primary-color);
+}
+.duel-room-waiting h3 {
+  color: var(--text-color);
+  margin: 12px 0 0;
+}
+.duel-room-notice {
+  display: block;
+  min-height: 150px;
+  margin: 0;
+  padding: 20px 26px;
+  border-top: 1px solid var(--border);
+  background: var(--surface-alt);
+}
+.duel-room-notice p {
+  margin: 8px 0;
+  color: var(--muted-color);
+}
+.duel-room-notice small {
+  color: var(--muted-color);
+}
+.duel-table-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 24px;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  background: var(--surface-color);
+}
+.duel-table-card h3,
+.duel-table-card p {
+  margin: 0;
+}
+.duel-card-stake {
+  font-size: 26px;
+}
+.duel-card-stake small {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--muted-color);
+}
+.duel-table-card p {
+  color: var(--muted-color);
+  font-size: 13px;
+}
+.duel-table-card button {
+  width: 100%;
+  margin-top: auto;
+}

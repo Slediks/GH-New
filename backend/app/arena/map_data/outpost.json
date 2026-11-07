@@ -1,0 +1,9293 @@
+{
+  "schemaVersion": 1,
+  "metadata": {
+    "name": "Outpost",
+    "description": ""
+  },
+  "environment": {
+    "background": "#c4c6bd",
+    "ambientColor": "#e9f4ff",
+    "ambientGround": "#6f766d",
+    "ambientIntensity": 2.5,
+    "sunColor": "#ffe3b2",
+    "sunPosition": [
+      -45,
+      65,
+      28
+    ],
+    "sunIntensity": 2.25,
+    "sunShadow": [
+      -60,
+      60,
+      55,
+      -55,
+      0.5,
+      190
+    ],
+    "fogEnabled": true,
+    "fogNear": 75,
+    "fogFar": 190,
+    "ground": false,
+    "cameraFar": 180
+  },
+  "objects": [
+    {
+      "id": "detail-0000",
+      "assetId": "system.decoration.34ba5515e1",
+      "assetVersion": 1,
+      "name": "Покрытие 0000",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Command"
+    },
+    {
+      "id": "body-000",
+      "assetId": "system.cliff.22cd14fde1",
+      "assetVersion": 1,
+      "name": "Скала каньона 1",
+      "position": [
+        -41,
+        0,
+        -37
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Ridge"
+    },
+    {
+      "id": "body-001",
+      "assetId": "system.cliff.18eca6a180",
+      "assetVersion": 1,
+      "name": "Скала каньона 2",
+      "position": [
+        44,
+        0,
+        -37
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Ridge"
+    },
+    {
+      "id": "body-002",
+      "assetId": "system.cliff.f8923e5977",
+      "assetVersion": 1,
+      "name": "Скала каньона 3",
+      "position": [
+        -50,
+        0,
+        -24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Ridge"
+    },
+    {
+      "id": "body-003",
+      "assetId": "system.cliff.7599bdcd00",
+      "assetVersion": 1,
+      "name": "Скала каньона 4",
+      "position": [
+        51,
+        0,
+        -24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Ridge"
+    },
+    {
+      "id": "body-004",
+      "assetId": "system.cliff.000a4d2606",
+      "assetVersion": 1,
+      "name": "Скала каньона 5",
+      "position": [
+        -56,
+        0,
+        -3
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "body-005",
+      "assetId": "system.cliff.5b5f6f966e",
+      "assetVersion": 1,
+      "name": "Скала каньона 6",
+      "position": [
+        56,
+        0,
+        -3
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "body-006",
+      "assetId": "system.cliff.e0194766c5",
+      "assetVersion": 1,
+      "name": "Скала каньона 7",
+      "position": [
+        -51,
+        0,
+        21
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Garage"
+    },
+    {
+      "id": "body-007",
+      "assetId": "system.cliff.6446c3b292",
+      "assetVersion": 1,
+      "name": "Скала каньона 8",
+      "position": [
+        51,
+        0,
+        21
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "body-008",
+      "assetId": "system.cliff.039093ba76",
+      "assetVersion": 1,
+      "name": "Скала каньона 9",
+      "position": [
+        -46,
+        0,
+        36
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Garage"
+    },
+    {
+      "id": "body-009",
+      "assetId": "system.cliff.a69502dba4",
+      "assetVersion": 1,
+      "name": "Скала каньона 10",
+      "position": [
+        40,
+        0,
+        36
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "body-010",
+      "assetId": "system.cliff.4e531fc126",
+      "assetVersion": 1,
+      "name": "Скала каньона 11",
+      "position": [
+        0,
+        0,
+        -49
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Ridge"
+    },
+    {
+      "id": "body-011",
+      "assetId": "system.cliff.0dfba3dd00",
+      "assetVersion": 1,
+      "name": "Скала каньона 12",
+      "position": [
+        0,
+        0,
+        47
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "body-012",
+      "assetId": "system.rock.196dd8eeff",
+      "assetVersion": 1,
+      "name": "Скала 13",
+      "position": [
+        -29,
+        0,
+        -10
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "body-013",
+      "assetId": "system.rock.1cd848eb2e",
+      "assetVersion": 1,
+      "name": "Скала 14",
+      "position": [
+        30,
+        0,
+        10
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "body-014",
+      "assetId": "system.rock.7afe99e94c",
+      "assetVersion": 1,
+      "name": "Скала 15",
+      "position": [
+        -15,
+        0,
+        25
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Garage"
+    },
+    {
+      "id": "body-015",
+      "assetId": "system.rock.22e3cf11e4",
+      "assetVersion": 1,
+      "name": "Скала 16",
+      "position": [
+        7,
+        0,
+        27
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "body-016",
+      "assetId": "system.rock.d6bd9ea6b0",
+      "assetVersion": 1,
+      "name": "Скала 17",
+      "position": [
+        -30,
+        0,
+        34
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Garage"
+    },
+    {
+      "id": "body-017",
+      "assetId": "system.rock.8237e8bfaa",
+      "assetVersion": 1,
+      "name": "Скала 18",
+      "position": [
+        17,
+        0,
+        36
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "body-064",
+      "assetId": "system.rock.9e22521d5d",
+      "assetVersion": 1,
+      "name": "Скала 65",
+      "position": [
+        -36,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "body-018",
+      "assetId": "system.plateau.ad4d1b4523",
+      "assetVersion": 1,
+      "name": "Плато 19",
+      "position": [
+        -8.5,
+        0,
+        -28
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Ridge"
+    },
+    {
+      "id": "body-019",
+      "assetId": "system.plateau.1cb8e42ecb",
+      "assetVersion": 1,
+      "name": "Плато 20",
+      "position": [
+        11.5,
+        0,
+        -28
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Ridge"
+    },
+    {
+      "id": "body-020",
+      "assetId": "system.plateau.b0275db2b0",
+      "assetVersion": 1,
+      "name": "Плато 21",
+      "position": [
+        0,
+        2.7,
+        -28
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Ridge"
+    },
+    {
+      "id": "body-021",
+      "assetId": "system.terrain.73f04b96d3",
+      "assetVersion": 1,
+      "name": "Склон 22",
+      "position": [
+        -33.5,
+        0,
+        -27
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Ridge"
+    },
+    {
+      "id": "body-022",
+      "assetId": "system.terrain.147944cb9c",
+      "assetVersion": 1,
+      "name": "Склон 23",
+      "position": [
+        39.5,
+        0,
+        -26
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Ridge"
+    },
+    {
+      "id": "body-023",
+      "assetId": "system.terrain.52291f180d",
+      "assetVersion": 1,
+      "name": "Склон 24",
+      "position": [
+        -32.5,
+        0,
+        -27
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Ridge"
+    },
+    {
+      "id": "body-024",
+      "assetId": "system.terrain.ac12235ad4",
+      "assetVersion": 1,
+      "name": "Склон 25",
+      "position": [
+        38.5,
+        0,
+        -26
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Ridge"
+    },
+    {
+      "id": "body-025",
+      "assetId": "system.terrain.361364690a",
+      "assetVersion": 1,
+      "name": "Склон 26",
+      "position": [
+        -31.5,
+        0,
+        -27
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Ridge"
+    },
+    {
+      "id": "body-026",
+      "assetId": "system.terrain.44b13fcc22",
+      "assetVersion": 1,
+      "name": "Склон 27",
+      "position": [
+        37.5,
+        0,
+        -26
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Ridge"
+    },
+    {
+      "id": "body-027",
+      "assetId": "system.terrain.75184e2e50",
+      "assetVersion": 1,
+      "name": "Склон 28",
+      "position": [
+        -30.5,
+        0,
+        -27
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Ridge"
+    },
+    {
+      "id": "body-028",
+      "assetId": "system.terrain.6a5423297d",
+      "assetVersion": 1,
+      "name": "Склон 29",
+      "position": [
+        36.5,
+        0,
+        -26
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Ridge"
+    },
+    {
+      "id": "body-029",
+      "assetId": "system.terrain.85e4fa7585",
+      "assetVersion": 1,
+      "name": "Склон 30",
+      "position": [
+        -29.5,
+        0,
+        -27
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Ridge"
+    },
+    {
+      "id": "body-030",
+      "assetId": "system.terrain.580b2cc8b0",
+      "assetVersion": 1,
+      "name": "Склон 31",
+      "position": [
+        35.5,
+        0,
+        -26
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Ridge"
+    },
+    {
+      "id": "body-031",
+      "assetId": "system.terrain.18ca6a0979",
+      "assetVersion": 1,
+      "name": "Склон 32",
+      "position": [
+        -28.5,
+        0,
+        -27
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Ridge"
+    },
+    {
+      "id": "body-032",
+      "assetId": "system.terrain.0e711f58fc",
+      "assetVersion": 1,
+      "name": "Склон 33",
+      "position": [
+        34.5,
+        0,
+        -26
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Ridge"
+    },
+    {
+      "id": "body-033",
+      "assetId": "system.terrain.9317bab420",
+      "assetVersion": 1,
+      "name": "Склон 34",
+      "position": [
+        -27.5,
+        0,
+        -27
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Ridge"
+    },
+    {
+      "id": "body-034",
+      "assetId": "system.terrain.1c8e54f0a2",
+      "assetVersion": 1,
+      "name": "Склон 35",
+      "position": [
+        33.5,
+        0,
+        -26
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Ridge"
+    },
+    {
+      "id": "body-035",
+      "assetId": "system.terrain.4da123adad",
+      "assetVersion": 1,
+      "name": "Склон 36",
+      "position": [
+        -26.5,
+        0,
+        -27
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Ridge"
+    },
+    {
+      "id": "body-036",
+      "assetId": "system.terrain.ffb44d4a58",
+      "assetVersion": 1,
+      "name": "Склон 37",
+      "position": [
+        32.5,
+        0,
+        -26
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Ridge"
+    },
+    {
+      "id": "body-037",
+      "assetId": "system.terrain.60daceecf1",
+      "assetVersion": 1,
+      "name": "Склон 38",
+      "position": [
+        -25.5,
+        0,
+        -27
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Ridge"
+    },
+    {
+      "id": "body-038",
+      "assetId": "system.terrain.b6029da051",
+      "assetVersion": 1,
+      "name": "Склон 39",
+      "position": [
+        31.5,
+        0,
+        -26
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Ridge"
+    },
+    {
+      "id": "body-039",
+      "assetId": "system.terrain.7b1209fbb6",
+      "assetVersion": 1,
+      "name": "Склон 40",
+      "position": [
+        -24.5,
+        0,
+        -27
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Ridge"
+    },
+    {
+      "id": "body-040",
+      "assetId": "system.terrain.cc2f4f8ea7",
+      "assetVersion": 1,
+      "name": "Склон 41",
+      "position": [
+        30.5,
+        0,
+        -26
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Ridge"
+    },
+    {
+      "id": "body-041",
+      "assetId": "system.terrain.6da004ee77",
+      "assetVersion": 1,
+      "name": "Склон 42",
+      "position": [
+        -23.5,
+        0,
+        -27
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Ridge"
+    },
+    {
+      "id": "body-042",
+      "assetId": "system.terrain.d36d8be9ee",
+      "assetVersion": 1,
+      "name": "Склон 43",
+      "position": [
+        29.5,
+        0,
+        -26
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Ridge"
+    },
+    {
+      "id": "body-043",
+      "assetId": "system.terrain.7b911583a7",
+      "assetVersion": 1,
+      "name": "Склон 44",
+      "position": [
+        -22.5,
+        0,
+        -27
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Ridge"
+    },
+    {
+      "id": "body-044",
+      "assetId": "system.terrain.4341011d8f",
+      "assetVersion": 1,
+      "name": "Склон 45",
+      "position": [
+        28.5,
+        0,
+        -26
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Ridge"
+    },
+    {
+      "id": "body-045",
+      "assetId": "system.terrain.70517e6b61",
+      "assetVersion": 1,
+      "name": "Склон 46",
+      "position": [
+        -21.5,
+        0,
+        -27
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Ridge"
+    },
+    {
+      "id": "body-046",
+      "assetId": "system.terrain.454297b7a8",
+      "assetVersion": 1,
+      "name": "Склон 47",
+      "position": [
+        27.5,
+        0,
+        -26
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Ridge"
+    },
+    {
+      "id": "body-047",
+      "assetId": "system.terrain.30676e18ca",
+      "assetVersion": 1,
+      "name": "Склон 48",
+      "position": [
+        -20.5,
+        0,
+        -27
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Ridge"
+    },
+    {
+      "id": "body-048",
+      "assetId": "system.terrain.107a60d34a",
+      "assetVersion": 1,
+      "name": "Склон 49",
+      "position": [
+        26.5,
+        0,
+        -26
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Ridge"
+    },
+    {
+      "id": "body-049",
+      "assetId": "system.terrain.1604bde0fd",
+      "assetVersion": 1,
+      "name": "Склон 50",
+      "position": [
+        -19.5,
+        0,
+        -27
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Ridge"
+    },
+    {
+      "id": "body-050",
+      "assetId": "system.terrain.2a62d72799",
+      "assetVersion": 1,
+      "name": "Склон 51",
+      "position": [
+        25.5,
+        0,
+        -26
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Ridge"
+    },
+    {
+      "id": "body-051",
+      "assetId": "system.terrain.475fc96c3e",
+      "assetVersion": 1,
+      "name": "Склон 52",
+      "position": [
+        -18.5,
+        0,
+        -27
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Ridge"
+    },
+    {
+      "id": "body-052",
+      "assetId": "system.terrain.6f3a677d05",
+      "assetVersion": 1,
+      "name": "Склон 53",
+      "position": [
+        24.5,
+        0,
+        -26
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Ridge"
+    },
+    {
+      "id": "body-053",
+      "assetId": "system.terrain.927d45cc87",
+      "assetVersion": 1,
+      "name": "Склон 54",
+      "position": [
+        -17.5,
+        0,
+        -27
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Ridge"
+    },
+    {
+      "id": "body-054",
+      "assetId": "system.terrain.d35b6788b1",
+      "assetVersion": 1,
+      "name": "Склон 55",
+      "position": [
+        23.5,
+        0,
+        -26
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Ridge"
+    },
+    {
+      "id": "body-055",
+      "assetId": "system.terrain.06f5f7ce90",
+      "assetVersion": 1,
+      "name": "Склон 56",
+      "position": [
+        -16.5,
+        0,
+        -27
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Ridge"
+    },
+    {
+      "id": "body-056",
+      "assetId": "system.terrain.03d91b3ac2",
+      "assetVersion": 1,
+      "name": "Склон 57",
+      "position": [
+        22.5,
+        0,
+        -26
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Ridge"
+    },
+    {
+      "id": "body-057",
+      "assetId": "system.terrain.9fcccfea2d",
+      "assetVersion": 1,
+      "name": "Склон 58",
+      "position": [
+        -15.5,
+        0,
+        -27
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Ridge"
+    },
+    {
+      "id": "body-058",
+      "assetId": "system.terrain.d8125b2247",
+      "assetVersion": 1,
+      "name": "Склон 59",
+      "position": [
+        21.5,
+        0,
+        -26
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Ridge"
+    },
+    {
+      "id": "body-059",
+      "assetId": "system.terrain.6e008cb1f8",
+      "assetVersion": 1,
+      "name": "Склон 60",
+      "position": [
+        -14.5,
+        0,
+        -27
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Ridge"
+    },
+    {
+      "id": "body-060",
+      "assetId": "system.terrain.43aa76faac",
+      "assetVersion": 1,
+      "name": "Склон 61",
+      "position": [
+        20.5,
+        0,
+        -26
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Ridge"
+    },
+    {
+      "id": "body-061",
+      "assetId": "system.sandbag.b910f285c2",
+      "assetVersion": 1,
+      "name": "Мешки 62",
+      "position": [
+        -6,
+        4,
+        -29
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Ridge"
+    },
+    {
+      "id": "body-062",
+      "assetId": "system.sandbag.aad63655ef",
+      "assetVersion": 1,
+      "name": "Мешки 63",
+      "position": [
+        13,
+        4,
+        -30
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Ridge"
+    },
+    {
+      "id": "body-063",
+      "assetId": "system.radar.e448885bea",
+      "assetVersion": 1,
+      "name": "Радар 64",
+      "position": [
+        1,
+        4,
+        -32
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Ridge"
+    },
+    {
+      "id": "body-065",
+      "assetId": "system.bunker.29b11bd650",
+      "assetVersion": 1,
+      "name": "Укрытие 66",
+      "position": [
+        36,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "body-066",
+      "assetId": "system.vehicle.2908ba211e",
+      "assetVersion": 1,
+      "name": "Машина 67",
+      "position": [
+        -45,
+        0,
+        -11
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "body-067",
+      "assetId": "system.container.95deb8a142",
+      "assetVersion": 1,
+      "name": "Контейнер 68",
+      "position": [
+        46,
+        0,
+        10
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "body-068",
+      "assetId": "system.cargo.b8070e7ca3",
+      "assetVersion": 1,
+      "name": "Груз 69",
+      "position": [
+        -49,
+        0,
+        10
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "body-069",
+      "assetId": "system.generator.70703ed622",
+      "assetVersion": 1,
+      "name": "Генератор 70",
+      "position": [
+        48,
+        0,
+        -7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "body-070",
+      "assetId": "system.concrete.91c818e01c",
+      "assetVersion": 1,
+      "name": "Бетонная стена 71",
+      "position": [
+        -7,
+        0,
+        -7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Command"
+    },
+    {
+      "id": "body-071",
+      "assetId": "system.concrete.1aa2b25736",
+      "assetVersion": 1,
+      "name": "Бетонная стена 72",
+      "position": [
+        -7,
+        0,
+        7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Command"
+    },
+    {
+      "id": "body-072",
+      "assetId": "system.concrete.0fade3656e",
+      "assetVersion": 1,
+      "name": "Бетонная стена 73",
+      "position": [
+        7,
+        0,
+        -7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Command"
+    },
+    {
+      "id": "body-073",
+      "assetId": "system.concrete.80091780ed",
+      "assetVersion": 1,
+      "name": "Бетонная стена 74",
+      "position": [
+        7,
+        0,
+        7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Command"
+    },
+    {
+      "id": "body-074",
+      "assetId": "system.concrete.d55295f84b",
+      "assetVersion": 1,
+      "name": "Бетонная стена 75",
+      "position": [
+        -3.5,
+        0,
+        -7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Command"
+    },
+    {
+      "id": "body-075",
+      "assetId": "system.concrete.65562686bd",
+      "assetVersion": 1,
+      "name": "Бетонная стена 76",
+      "position": [
+        -3.5,
+        2.5,
+        -7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Command"
+    },
+    {
+      "id": "body-076",
+      "assetId": "system.concrete.10681fa2f5",
+      "assetVersion": 1,
+      "name": "Бетонная стена 77",
+      "position": [
+        -3.5,
+        0,
+        7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Command"
+    },
+    {
+      "id": "body-077",
+      "assetId": "system.concrete.abbd4a3fc1",
+      "assetVersion": 1,
+      "name": "Бетонная стена 78",
+      "position": [
+        3.5,
+        0,
+        -7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Command"
+    },
+    {
+      "id": "body-078",
+      "assetId": "system.concrete.5710af25a4",
+      "assetVersion": 1,
+      "name": "Бетонная стена 79",
+      "position": [
+        3.5,
+        2.5,
+        -7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Command"
+    },
+    {
+      "id": "body-079",
+      "assetId": "system.concrete.059d28e010",
+      "assetVersion": 1,
+      "name": "Бетонная стена 80",
+      "position": [
+        3.5,
+        0,
+        7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Command"
+    },
+    {
+      "id": "body-080",
+      "assetId": "system.concrete.ebea9ce3fe",
+      "assetVersion": 1,
+      "name": "Бетонная стена 81",
+      "position": [
+        -9,
+        0,
+        -4.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Command"
+    },
+    {
+      "id": "body-081",
+      "assetId": "system.concrete.a0c7393cab",
+      "assetVersion": 1,
+      "name": "Бетонная стена 82",
+      "position": [
+        -9,
+        0,
+        4.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Command"
+    },
+    {
+      "id": "body-082",
+      "assetId": "system.concrete.ba1218e0ca",
+      "assetVersion": 1,
+      "name": "Бетонная стена 83",
+      "position": [
+        9,
+        0,
+        -4.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Command"
+    },
+    {
+      "id": "body-083",
+      "assetId": "system.concrete.052ca31d7b",
+      "assetVersion": 1,
+      "name": "Бетонная стена 84",
+      "position": [
+        9,
+        0,
+        4.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Command"
+    },
+    {
+      "id": "body-084",
+      "assetId": "system.interior.6ec711d85c",
+      "assetVersion": 1,
+      "name": "Перегородка 85",
+      "position": [
+        0,
+        0,
+        -4.8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Command"
+    },
+    {
+      "id": "body-085",
+      "assetId": "system.interior.4907614f58",
+      "assetVersion": 1,
+      "name": "Перегородка 86",
+      "position": [
+        0,
+        0,
+        4.8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Command"
+    },
+    {
+      "id": "body-086",
+      "assetId": "system.roof.96918d8a29",
+      "assetVersion": 1,
+      "name": "Крыша 87",
+      "position": [
+        0,
+        5.5,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Command"
+    },
+    {
+      "id": "body-087",
+      "assetId": "system.desk.ccf6f83063",
+      "assetVersion": 1,
+      "name": "Стол 88",
+      "position": [
+        -6,
+        0,
+        4.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Command"
+    },
+    {
+      "id": "body-088",
+      "assetId": "system.cabinet.f80633f463",
+      "assetVersion": 1,
+      "name": "Шкаф 89",
+      "position": [
+        6.8,
+        0,
+        -4.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Command"
+    },
+    {
+      "id": "body-089",
+      "assetId": "system.canopy.34b81c7208",
+      "assetVersion": 1,
+      "name": "Навес 90",
+      "position": [
+        -24,
+        5.5,
+        18
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Garage"
+    },
+    {
+      "id": "body-090",
+      "assetId": "system.post.0732abe2a1",
+      "assetVersion": 1,
+      "name": "Опора 91",
+      "position": [
+        -31,
+        0,
+        13
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Garage"
+    },
+    {
+      "id": "body-091",
+      "assetId": "system.post.90efe566ef",
+      "assetVersion": 1,
+      "name": "Опора 92",
+      "position": [
+        -31,
+        0,
+        23
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Garage"
+    },
+    {
+      "id": "body-092",
+      "assetId": "system.post.aca1ffea88",
+      "assetVersion": 1,
+      "name": "Опора 93",
+      "position": [
+        -17,
+        0,
+        13
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Garage"
+    },
+    {
+      "id": "body-093",
+      "assetId": "system.post.bf069cfb3d",
+      "assetVersion": 1,
+      "name": "Опора 94",
+      "position": [
+        -17,
+        0,
+        23
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Garage"
+    },
+    {
+      "id": "body-094",
+      "assetId": "system.bunker.7da634e238",
+      "assetVersion": 1,
+      "name": "Укрытие 95",
+      "position": [
+        -24,
+        0,
+        23.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Garage"
+    },
+    {
+      "id": "body-095",
+      "assetId": "system.vehicle.201ddb2fb9",
+      "assetVersion": 1,
+      "name": "Машина 96",
+      "position": [
+        -26,
+        0,
+        18
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Garage"
+    },
+    {
+      "id": "body-096",
+      "assetId": "system.generator.af0ba9c536",
+      "assetVersion": 1,
+      "name": "Генератор 97",
+      "position": [
+        -19,
+        0,
+        21
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Garage"
+    },
+    {
+      "id": "body-097",
+      "assetId": "system.container.8efed04137",
+      "assetVersion": 1,
+      "name": "Контейнер 98",
+      "position": [
+        25,
+        0,
+        20
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "body-098",
+      "assetId": "system.tower.ab5059a65a",
+      "assetVersion": 1,
+      "name": "Башня 99",
+      "position": [
+        16,
+        0,
+        22
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "body-099",
+      "assetId": "system.canopy.fbe27dcc7e",
+      "assetVersion": 1,
+      "name": "Навес 100",
+      "position": [
+        16,
+        8,
+        22
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "body-100",
+      "assetId": "system.sandbag.af9f033c6b",
+      "assetVersion": 1,
+      "name": "Мешки 101",
+      "position": [
+        -18,
+        0,
+        -4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "body-101",
+      "assetId": "system.sandbag.66ecaf5f95",
+      "assetVersion": 1,
+      "name": "Мешки 102",
+      "position": [
+        24,
+        0,
+        -9
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "body-102",
+      "assetId": "system.cargo.9fa3453962",
+      "assetVersion": 1,
+      "name": "Груз 103",
+      "position": [
+        -17,
+        0,
+        9
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "body-103",
+      "assetId": "system.generator.410b978733",
+      "assetVersion": 1,
+      "name": "Генератор 104",
+      "position": [
+        16,
+        0,
+        12
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "body-104",
+      "assetId": "system.sandbag.fec97dbb73",
+      "assetVersion": 1,
+      "name": "Мешки 105",
+      "position": [
+        -5,
+        0,
+        17
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Garage"
+    },
+    {
+      "id": "body-105",
+      "assetId": "system.sandbag.e806c98604",
+      "assetVersion": 1,
+      "name": "Мешки 106",
+      "position": [
+        5,
+        0,
+        19
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "body-106",
+      "assetId": "system.cargo.64b37d892a",
+      "assetVersion": 1,
+      "name": "Груз 107",
+      "position": [
+        -22,
+        0,
+        -19
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "body-107",
+      "assetId": "system.cargo.db9b7b7624",
+      "assetVersion": 1,
+      "name": "Груз 108",
+      "position": [
+        29,
+        0,
+        -17
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0001",
+      "assetId": "system.decoration.59751f6575",
+      "assetVersion": 1,
+      "name": "olive / cylinder",
+      "position": [
+        -50,
+        0.55,
+        10.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Garage"
+    },
+    {
+      "id": "detail-0002",
+      "assetId": "system.decoration.48eef0cfc4",
+      "assetVersion": 1,
+      "name": "dark / cylinder",
+      "position": [
+        -50,
+        0.15,
+        10.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Garage"
+    },
+    {
+      "id": "detail-0003",
+      "assetId": "system.decoration.6b6d44bf20",
+      "assetVersion": 1,
+      "name": "dark / cylinder",
+      "position": [
+        -50,
+        0.92,
+        10.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Garage"
+    },
+    {
+      "id": "detail-0004",
+      "assetId": "system.decoration.9301b94105",
+      "assetVersion": 1,
+      "name": "olive / cylinder",
+      "position": [
+        -49.35,
+        0.55,
+        10.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Garage"
+    },
+    {
+      "id": "detail-0005",
+      "assetId": "system.decoration.6d53d181b7",
+      "assetVersion": 1,
+      "name": "dark / cylinder",
+      "position": [
+        -49.35,
+        0.15,
+        10.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Garage"
+    },
+    {
+      "id": "detail-0006",
+      "assetId": "system.decoration.62914a4a32",
+      "assetVersion": 1,
+      "name": "dark / cylinder",
+      "position": [
+        -49.35,
+        0.92,
+        10.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Garage"
+    },
+    {
+      "id": "detail-0007",
+      "assetId": "system.decoration.acf8d4d6bf",
+      "assetVersion": 1,
+      "name": "olive / cylinder",
+      "position": [
+        -48.7,
+        0.55,
+        10.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Garage"
+    },
+    {
+      "id": "detail-0008",
+      "assetId": "system.decoration.7acba16546",
+      "assetVersion": 1,
+      "name": "dark / cylinder",
+      "position": [
+        -48.7,
+        0.15,
+        10.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Garage"
+    },
+    {
+      "id": "detail-0009",
+      "assetId": "system.decoration.c260b7c2d1",
+      "assetVersion": 1,
+      "name": "dark / cylinder",
+      "position": [
+        -48.7,
+        0.92,
+        10.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Garage"
+    },
+    {
+      "id": "detail-0010",
+      "assetId": "system.decoration.b8d7c7c3f4",
+      "assetVersion": 1,
+      "name": "olive / cylinder",
+      "position": [
+        47,
+        0.55,
+        -6.6
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0011",
+      "assetId": "system.decoration.bcd2227bc4",
+      "assetVersion": 1,
+      "name": "dark / cylinder",
+      "position": [
+        47,
+        0.15,
+        -6.6
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0012",
+      "assetId": "system.decoration.73d610c475",
+      "assetVersion": 1,
+      "name": "dark / cylinder",
+      "position": [
+        47,
+        0.92,
+        -6.6
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0013",
+      "assetId": "system.decoration.db1c572069",
+      "assetVersion": 1,
+      "name": "olive / cylinder",
+      "position": [
+        47.65,
+        0.55,
+        -6.6
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0014",
+      "assetId": "system.decoration.6774a3ccac",
+      "assetVersion": 1,
+      "name": "dark / cylinder",
+      "position": [
+        47.65,
+        0.15,
+        -6.6
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0015",
+      "assetId": "system.decoration.a07a4c2d65",
+      "assetVersion": 1,
+      "name": "dark / cylinder",
+      "position": [
+        47.65,
+        0.92,
+        -6.6
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0016",
+      "assetId": "system.decoration.ad627fda7b",
+      "assetVersion": 1,
+      "name": "olive / cylinder",
+      "position": [
+        48.3,
+        0.55,
+        -6.6
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0017",
+      "assetId": "system.decoration.a7a661a50c",
+      "assetVersion": 1,
+      "name": "dark / cylinder",
+      "position": [
+        48.3,
+        0.15,
+        -6.6
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0018",
+      "assetId": "system.decoration.340ec2c496",
+      "assetVersion": 1,
+      "name": "dark / cylinder",
+      "position": [
+        48.3,
+        0.92,
+        -6.6
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0019",
+      "assetId": "system.decoration.f2a349e857",
+      "assetVersion": 1,
+      "name": "olive / cylinder",
+      "position": [
+        -20,
+        0.55,
+        21.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Garage"
+    },
+    {
+      "id": "detail-0020",
+      "assetId": "system.decoration.34d93954dd",
+      "assetVersion": 1,
+      "name": "dark / cylinder",
+      "position": [
+        -20,
+        0.15,
+        21.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Garage"
+    },
+    {
+      "id": "detail-0021",
+      "assetId": "system.decoration.78a8b3f55b",
+      "assetVersion": 1,
+      "name": "dark / cylinder",
+      "position": [
+        -20,
+        0.92,
+        21.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Garage"
+    },
+    {
+      "id": "detail-0022",
+      "assetId": "system.decoration.c304364b7e",
+      "assetVersion": 1,
+      "name": "olive / cylinder",
+      "position": [
+        -19.35,
+        0.55,
+        21.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Garage"
+    },
+    {
+      "id": "detail-0023",
+      "assetId": "system.decoration.7d3eb73d15",
+      "assetVersion": 1,
+      "name": "dark / cylinder",
+      "position": [
+        -19.35,
+        0.15,
+        21.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Garage"
+    },
+    {
+      "id": "detail-0024",
+      "assetId": "system.decoration.a23a87862d",
+      "assetVersion": 1,
+      "name": "dark / cylinder",
+      "position": [
+        -19.35,
+        0.92,
+        21.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Garage"
+    },
+    {
+      "id": "detail-0025",
+      "assetId": "system.decoration.b691df0ef1",
+      "assetVersion": 1,
+      "name": "olive / cylinder",
+      "position": [
+        -18.7,
+        0.55,
+        21.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Garage"
+    },
+    {
+      "id": "detail-0026",
+      "assetId": "system.decoration.28fa4f78c4",
+      "assetVersion": 1,
+      "name": "dark / cylinder",
+      "position": [
+        -18.7,
+        0.15,
+        21.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Garage"
+    },
+    {
+      "id": "detail-0027",
+      "assetId": "system.decoration.9f8f15bfe7",
+      "assetVersion": 1,
+      "name": "dark / cylinder",
+      "position": [
+        -18.7,
+        0.92,
+        21.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Garage"
+    },
+    {
+      "id": "detail-0028",
+      "assetId": "system.decoration.da2782ab4a",
+      "assetVersion": 1,
+      "name": "olive / cylinder",
+      "position": [
+        15,
+        0.55,
+        12.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "detail-0029",
+      "assetId": "system.decoration.50d4eab5b2",
+      "assetVersion": 1,
+      "name": "dark / cylinder",
+      "position": [
+        15,
+        0.15,
+        12.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "detail-0030",
+      "assetId": "system.decoration.858dfd59e8",
+      "assetVersion": 1,
+      "name": "dark / cylinder",
+      "position": [
+        15,
+        0.92,
+        12.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "detail-0031",
+      "assetId": "system.decoration.efa98ce0b6",
+      "assetVersion": 1,
+      "name": "olive / cylinder",
+      "position": [
+        15.65,
+        0.55,
+        12.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "detail-0032",
+      "assetId": "system.decoration.e0c4297ac4",
+      "assetVersion": 1,
+      "name": "dark / cylinder",
+      "position": [
+        15.65,
+        0.15,
+        12.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "detail-0033",
+      "assetId": "system.decoration.7927069b5c",
+      "assetVersion": 1,
+      "name": "dark / cylinder",
+      "position": [
+        15.65,
+        0.92,
+        12.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "detail-0034",
+      "assetId": "system.decoration.7bb3e21eac",
+      "assetVersion": 1,
+      "name": "olive / cylinder",
+      "position": [
+        16.3,
+        0.55,
+        12.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "detail-0035",
+      "assetId": "system.decoration.e5d57a7e59",
+      "assetVersion": 1,
+      "name": "dark / cylinder",
+      "position": [
+        16.3,
+        0.15,
+        12.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "detail-0036",
+      "assetId": "system.decoration.5b6f34acd4",
+      "assetVersion": 1,
+      "name": "dark / cylinder",
+      "position": [
+        16.3,
+        0.92,
+        12.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "detail-0037",
+      "assetId": "system.decoration.545db6734f",
+      "assetVersion": 1,
+      "name": "olive / cylinder",
+      "position": [
+        24,
+        0.55,
+        20.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "detail-0038",
+      "assetId": "system.decoration.a0114d6944",
+      "assetVersion": 1,
+      "name": "dark / cylinder",
+      "position": [
+        24,
+        0.15,
+        20.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "detail-0039",
+      "assetId": "system.decoration.d1988e9255",
+      "assetVersion": 1,
+      "name": "dark / cylinder",
+      "position": [
+        24,
+        0.92,
+        20.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "detail-0040",
+      "assetId": "system.decoration.0f7b73b458",
+      "assetVersion": 1,
+      "name": "olive / cylinder",
+      "position": [
+        24.65,
+        0.55,
+        20.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "detail-0041",
+      "assetId": "system.decoration.5a56a81fa4",
+      "assetVersion": 1,
+      "name": "dark / cylinder",
+      "position": [
+        24.65,
+        0.15,
+        20.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "detail-0042",
+      "assetId": "system.decoration.e77d3174de",
+      "assetVersion": 1,
+      "name": "dark / cylinder",
+      "position": [
+        24.65,
+        0.92,
+        20.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "detail-0043",
+      "assetId": "system.decoration.5e351c1ee9",
+      "assetVersion": 1,
+      "name": "olive / cylinder",
+      "position": [
+        25.3,
+        0.55,
+        20.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "detail-0044",
+      "assetId": "system.decoration.a5e0b0e178",
+      "assetVersion": 1,
+      "name": "dark / cylinder",
+      "position": [
+        25.3,
+        0.15,
+        20.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "detail-0045",
+      "assetId": "system.decoration.1742011dfa",
+      "assetVersion": 1,
+      "name": "dark / cylinder",
+      "position": [
+        25.3,
+        0.92,
+        20.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "detail-0046",
+      "assetId": "system.decoration.327b765104",
+      "assetVersion": 1,
+      "name": "glow / box",
+      "position": [
+        -6,
+        5.28,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Command"
+    },
+    {
+      "id": "detail-0047",
+      "assetId": "system.decoration.8d43b73ce3",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        -6,
+        5.34,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Command"
+    },
+    {
+      "id": "detail-0048",
+      "assetId": "system.decoration.dbfd021e37",
+      "assetVersion": 1,
+      "name": "glow / box",
+      "position": [
+        6,
+        5.28,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Command"
+    },
+    {
+      "id": "detail-0049",
+      "assetId": "system.decoration.9f97b56f21",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        6,
+        5.34,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Command"
+    },
+    {
+      "id": "detail-0050",
+      "assetId": "system.decoration.560d8ba7ac",
+      "assetVersion": 1,
+      "name": "glass / box",
+      "position": [
+        -6,
+        1.4,
+        4.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Command"
+    },
+    {
+      "id": "detail-0051",
+      "assetId": "system.decoration.dce4a337b8",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        -6,
+        1.12,
+        4.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Command"
+    },
+    {
+      "id": "detail-0052",
+      "assetId": "system.decoration.4324432c5f",
+      "assetVersion": 1,
+      "name": "paint / box",
+      "position": [
+        -8.65,
+        2.2,
+        4.8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Command"
+    },
+    {
+      "id": "detail-0053",
+      "assetId": "system.decoration.6c480ea2eb",
+      "assetVersion": 1,
+      "name": "olive / box",
+      "position": [
+        -8.62,
+        1.7,
+        4.8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Command"
+    },
+    {
+      "id": "detail-0054",
+      "assetId": "system.decoration.b66c5aa782",
+      "assetVersion": 1,
+      "name": "olive / box",
+      "position": [
+        -8.62,
+        1.92,
+        4.8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Command"
+    },
+    {
+      "id": "detail-0055",
+      "assetId": "system.decoration.667c3f3b81",
+      "assetVersion": 1,
+      "name": "olive / box",
+      "position": [
+        -8.62,
+        2.14,
+        4.8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Command"
+    },
+    {
+      "id": "detail-0056",
+      "assetId": "system.decoration.9138fb8fa0",
+      "assetVersion": 1,
+      "name": "olive / box",
+      "position": [
+        -8.62,
+        2.36,
+        4.8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Command"
+    },
+    {
+      "id": "detail-0057",
+      "assetId": "system.decoration.75ddc82400",
+      "assetVersion": 1,
+      "name": "olive / box",
+      "position": [
+        -8.62,
+        2.58,
+        4.8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Command"
+    },
+    {
+      "id": "detail-0058",
+      "assetId": "system.decoration.37d9726e5c",
+      "assetVersion": 1,
+      "name": "glow / box",
+      "position": [
+        -29,
+        5.28,
+        18
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Garage"
+    },
+    {
+      "id": "detail-0059",
+      "assetId": "system.decoration.eaed03dc61",
+      "assetVersion": 1,
+      "name": "glow / box",
+      "position": [
+        -21,
+        5.28,
+        18
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Garage"
+    },
+    {
+      "id": "detail-0060",
+      "assetId": "system.decoration.c9739abc3b",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        -35,
+        3,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0061",
+      "assetId": "system.decoration.278d66c441",
+      "assetVersion": 1,
+      "name": "glow / box",
+      "position": [
+        -35,
+        5.9,
+        8.2
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0062",
+      "assetId": "system.decoration.22ddbcf9da",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        35,
+        3,
+        -8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0063",
+      "assetId": "system.decoration.454cf7b5cf",
+      "assetVersion": 1,
+      "name": "glow / box",
+      "position": [
+        35,
+        5.9,
+        -7.8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0064",
+      "assetId": "system.decoration.46d0b082c3",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        -12,
+        3,
+        9
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0065",
+      "assetId": "system.decoration.57d200ab5f",
+      "assetVersion": 1,
+      "name": "glow / box",
+      "position": [
+        -12,
+        5.9,
+        9.2
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0066",
+      "assetId": "system.decoration.11ff1375d2",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        12,
+        3,
+        9
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0067",
+      "assetId": "system.decoration.9839189325",
+      "assetVersion": 1,
+      "name": "glow / box",
+      "position": [
+        12,
+        5.9,
+        9.2
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0068",
+      "assetId": "system.decoration.2ef3140807",
+      "assetVersion": 1,
+      "name": "Деталь 0068",
+      "position": [
+        1,
+        10,
+        -32
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Ridge"
+    },
+    {
+      "id": "detail-0069",
+      "assetId": "system.decoration.078ba77e5f",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        1,
+        9,
+        -32
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Ridge"
+    },
+    {
+      "id": "detail-0070",
+      "assetId": "system.decoration.b72cc320e9",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        1,
+        11.5,
+        -31.2
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Ridge"
+    },
+    {
+      "id": "detail-0071",
+      "assetId": "system.decoration.79d460254b",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        1,
+        9,
+        -32
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Ridge"
+    },
+    {
+      "id": "detail-0072",
+      "assetId": "system.decoration.f16a6597d4",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        1,
+        9.6,
+        -32
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Ridge"
+    },
+    {
+      "id": "detail-0073",
+      "assetId": "system.decoration.9962966a6d",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        1,
+        10.2,
+        -32
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Ridge"
+    },
+    {
+      "id": "detail-0074",
+      "assetId": "system.decoration.da360fd17b",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        1,
+        10.8,
+        -32
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Ridge"
+    },
+    {
+      "id": "detail-0075",
+      "assetId": "system.decoration.ebcd0a266c",
+      "assetVersion": 1,
+      "name": "Покрытие 0075",
+      "position": [
+        0,
+        4.4,
+        7.34
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Command"
+    },
+    {
+      "id": "detail-0076",
+      "assetId": "system.decoration.c4aa99ee2d",
+      "assetVersion": 1,
+      "name": "Покрытие 0076",
+      "position": [
+        -24,
+        4.7,
+        23.84
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Garage"
+    },
+    {
+      "id": "detail-0077",
+      "assetId": "system.decoration.97feb5ce6c",
+      "assetVersion": 1,
+      "name": "Покрытие 0077",
+      "position": [
+        25,
+        2.2,
+        22.04
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "detail-0078",
+      "assetId": "system.decoration.c910ed238b",
+      "assetVersion": 1,
+      "name": "Покрытие 0078",
+      "position": [
+        -6,
+        4.7,
+        -23.95
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Ridge"
+    },
+    {
+      "id": "detail-0079",
+      "assetId": "system.decoration.50a55f93d2",
+      "assetVersion": 1,
+      "name": "rock / box",
+      "position": [
+        -24,
+        0.008,
+        -17
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0080",
+      "assetId": "system.decoration.35096e9576",
+      "assetVersion": 1,
+      "name": "rock / box",
+      "position": [
+        -21.663489946148097,
+        0.008,
+        -14.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0081",
+      "assetId": "system.decoration.0a6af490f4",
+      "assetVersion": 1,
+      "name": "rock / box",
+      "position": [
+        -19.695863454602865,
+        0.008,
+        -12
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0082",
+      "assetId": "system.decoration.9704753636",
+      "assetVersion": 1,
+      "name": "rock / box",
+      "position": [
+        -18.40776548419664,
+        0.008,
+        -9.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0083",
+      "assetId": "system.decoration.bd6466e6a5",
+      "assetVersion": 1,
+      "name": "rock / box",
+      "position": [
+        -18.00255838175097,
+        0.008,
+        -7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0084",
+      "assetId": "system.decoration.f4e490ca51",
+      "assetVersion": 1,
+      "name": "rock / box",
+      "position": [
+        -18.54421543904591,
+        0.008,
+        -4.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0085",
+      "assetId": "system.decoration.30f94e9334",
+      "assetVersion": 1,
+      "name": "rock / box",
+      "position": [
+        -19.947220916693098,
+        0.008,
+        -2
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0086",
+      "assetId": "system.decoration.7ab8341cce",
+      "assetVersion": 1,
+      "name": "rock / box",
+      "position": [
+        -21.990071099064572,
+        0.008,
+        0.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0087",
+      "assetId": "system.decoration.de6409a6b3",
+      "assetVersion": 1,
+      "name": "rock / box",
+      "position": [
+        -24.350244860565482,
+        0.008,
+        3
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0088",
+      "assetId": "system.decoration.f00c62ded6",
+      "assetVersion": 1,
+      "name": "rock / box",
+      "position": [
+        -26.655122659769116,
+        0.008,
+        5.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0089",
+      "assetId": "system.decoration.fd919b0131",
+      "assetVersion": 1,
+      "name": "rock / box",
+      "position": [
+        -28.540814971847567,
+        0.008,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0090",
+      "assetId": "system.decoration.5e3f1b7efa",
+      "assetVersion": 1,
+      "name": "rock / box",
+      "position": [
+        -29.709612443337097,
+        0.008,
+        10.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Garage"
+    },
+    {
+      "id": "detail-0091",
+      "assetId": "system.decoration.cfb994722a",
+      "assetVersion": 1,
+      "name": "rock / box",
+      "position": [
+        -29.976987653015044,
+        0.008,
+        13
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Garage"
+    },
+    {
+      "id": "detail-0092",
+      "assetId": "system.decoration.9468b8d3df",
+      "assetVersion": 1,
+      "name": "rock / box",
+      "position": [
+        -29.300727934320918,
+        0.008,
+        15.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Garage"
+    },
+    {
+      "id": "detail-0093",
+      "assetId": "system.decoration.a23ed063b3",
+      "assetVersion": 1,
+      "name": "rock / box",
+      "position": [
+        -27.787599827233926,
+        0.008,
+        18
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Garage"
+    },
+    {
+      "id": "detail-0094",
+      "assetId": "system.decoration.ecbdb439fc",
+      "assetVersion": 1,
+      "name": "rock / box",
+      "position": [
+        -25.676492989193555,
+        0.008,
+        20.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Garage"
+    },
+    {
+      "id": "detail-0095",
+      "assetId": "system.decoration.270145dd1e",
+      "assetVersion": 1,
+      "name": "rock / box",
+      "position": [
+        -23.30070477089704,
+        0.008,
+        23
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Garage"
+    },
+    {
+      "id": "detail-0096",
+      "assetId": "system.decoration.04877bec51",
+      "assetVersion": 1,
+      "name": "rock / box",
+      "position": [
+        -21.035319893168346,
+        0.008,
+        25.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Garage"
+    },
+    {
+      "id": "detail-0097",
+      "assetId": "system.decoration.ffb7ddecd4",
+      "assetVersion": 1,
+      "name": "rock / box",
+      "position": [
+        24,
+        0.008,
+        -17
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0098",
+      "assetId": "system.decoration.ff78817111",
+      "assetVersion": 1,
+      "name": "rock / box",
+      "position": [
+        26.336510053851903,
+        0.008,
+        -14.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0099",
+      "assetId": "system.decoration.59ea829f68",
+      "assetVersion": 1,
+      "name": "rock / box",
+      "position": [
+        28.304136545397135,
+        0.008,
+        -12
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0100",
+      "assetId": "system.decoration.e2891c3f3a",
+      "assetVersion": 1,
+      "name": "rock / box",
+      "position": [
+        29.59223451580336,
+        0.008,
+        -9.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0101",
+      "assetId": "system.decoration.dab724371a",
+      "assetVersion": 1,
+      "name": "rock / box",
+      "position": [
+        29.99744161824903,
+        0.008,
+        -7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0102",
+      "assetId": "system.decoration.b1c3964986",
+      "assetVersion": 1,
+      "name": "rock / box",
+      "position": [
+        29.45578456095409,
+        0.008,
+        -4.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0103",
+      "assetId": "system.decoration.1b96d5061b",
+      "assetVersion": 1,
+      "name": "rock / box",
+      "position": [
+        28.052779083306902,
+        0.008,
+        -2
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0104",
+      "assetId": "system.decoration.dc81714c20",
+      "assetVersion": 1,
+      "name": "rock / box",
+      "position": [
+        26.009928900935428,
+        0.008,
+        0.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0105",
+      "assetId": "system.decoration.d4a81eb75a",
+      "assetVersion": 1,
+      "name": "rock / box",
+      "position": [
+        23.649755139434518,
+        0.008,
+        3
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0106",
+      "assetId": "system.decoration.b02b7ef210",
+      "assetVersion": 1,
+      "name": "rock / box",
+      "position": [
+        21.344877340230884,
+        0.008,
+        5.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0107",
+      "assetId": "system.decoration.6472e21ba7",
+      "assetVersion": 1,
+      "name": "rock / box",
+      "position": [
+        19.459185028152433,
+        0.008,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0108",
+      "assetId": "system.decoration.7c3b5f8d7b",
+      "assetVersion": 1,
+      "name": "rock / box",
+      "position": [
+        18.290387556662903,
+        0.008,
+        10.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "detail-0109",
+      "assetId": "system.decoration.f64cbbe419",
+      "assetVersion": 1,
+      "name": "rock / box",
+      "position": [
+        18.023012346984956,
+        0.008,
+        13
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "detail-0110",
+      "assetId": "system.decoration.6c67e906b3",
+      "assetVersion": 1,
+      "name": "rock / box",
+      "position": [
+        18.699272065679082,
+        0.008,
+        15.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "detail-0111",
+      "assetId": "system.decoration.49ece3f0b1",
+      "assetVersion": 1,
+      "name": "rock / box",
+      "position": [
+        20.212400172766074,
+        0.008,
+        18
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "detail-0112",
+      "assetId": "system.decoration.4807b5bfb4",
+      "assetVersion": 1,
+      "name": "rock / box",
+      "position": [
+        22.323507010806445,
+        0.008,
+        20.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "detail-0113",
+      "assetId": "system.decoration.ee259473e9",
+      "assetVersion": 1,
+      "name": "rock / box",
+      "position": [
+        24.69929522910296,
+        0.008,
+        23
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "detail-0114",
+      "assetId": "system.decoration.d2596b05de",
+      "assetVersion": 1,
+      "name": "rock / box",
+      "position": [
+        26.964680106831654,
+        0.008,
+        25.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "detail-0115",
+      "assetId": "system.decoration.b5ed02c5fb",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        -31,
+        0.025,
+        -18
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0116",
+      "assetId": "system.decoration.b987979dab",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        -8,
+        0.025,
+        -1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Command"
+    },
+    {
+      "id": "detail-0117",
+      "assetId": "system.decoration.5eaeab5a4b",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        15,
+        0.025,
+        16
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "detail-0118",
+      "assetId": "system.decoration.77579f2c45",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        -25,
+        0.025,
+        -13
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0119",
+      "assetId": "system.decoration.d9c613e3d3",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        -2,
+        0.025,
+        4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Command"
+    },
+    {
+      "id": "detail-0120",
+      "assetId": "system.decoration.0f575ba61c",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        21,
+        0.025,
+        21
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "detail-0121",
+      "assetId": "system.decoration.b310ee9391",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        -19,
+        0.025,
+        -8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0122",
+      "assetId": "system.decoration.95690111fe",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        4,
+        0.025,
+        9
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Command"
+    },
+    {
+      "id": "detail-0123",
+      "assetId": "system.decoration.ed0a681811",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        27,
+        0.025,
+        26
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "detail-0124",
+      "assetId": "system.decoration.81eea251eb",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        -13,
+        0.025,
+        -3
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0125",
+      "assetId": "system.decoration.cf7157fa8b",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        10,
+        0.025,
+        14
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "detail-0126",
+      "assetId": "system.decoration.0a9a9651e0",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        -30,
+        0.025,
+        -15
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0127",
+      "assetId": "system.decoration.bd0b7b930d",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        -7,
+        0.025,
+        2
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Command"
+    },
+    {
+      "id": "detail-0128",
+      "assetId": "system.decoration.ae54d12547",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        16,
+        0.025,
+        19
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "detail-0129",
+      "assetId": "system.decoration.35c3f1abe4",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        -24,
+        0.025,
+        -10
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0130",
+      "assetId": "system.decoration.2007fbf630",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        -1,
+        0.025,
+        7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Command"
+    },
+    {
+      "id": "detail-0131",
+      "assetId": "system.decoration.0476dfb93c",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        22,
+        0.025,
+        24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "detail-0132",
+      "assetId": "system.decoration.2f01c22d52",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        -18,
+        0.025,
+        -5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0133",
+      "assetId": "system.decoration.800045450a",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        5,
+        0.025,
+        12
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "detail-0134",
+      "assetId": "system.decoration.a329e7d827",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        28,
+        0.025,
+        -17
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0135",
+      "assetId": "system.decoration.85e034da4f",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        -12,
+        0.025,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0136",
+      "assetId": "system.decoration.9061dd7408",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        11,
+        0.025,
+        17
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "detail-0137",
+      "assetId": "system.decoration.71683c7d45",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        -29,
+        0.025,
+        -12
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0138",
+      "assetId": "system.decoration.4b880cd2f2",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        -6,
+        0.025,
+        5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Command"
+    },
+    {
+      "id": "detail-0139",
+      "assetId": "system.decoration.b234b88bc8",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        17,
+        0.025,
+        22
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "detail-0140",
+      "assetId": "system.decoration.7e4d4ba4f3",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        -23,
+        0.025,
+        -7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0141",
+      "assetId": "system.decoration.22c00db3ad",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        0,
+        0.025,
+        10
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Command"
+    },
+    {
+      "id": "detail-0142",
+      "assetId": "system.decoration.96afeb390c",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        23,
+        0.025,
+        27
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "detail-0143",
+      "assetId": "system.decoration.211a4bd058",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        -17,
+        0.025,
+        -2
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0144",
+      "assetId": "system.decoration.561ab91482",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        6,
+        0.025,
+        15
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "detail-0145",
+      "assetId": "system.decoration.0de70c2ca1",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        29,
+        0.025,
+        -14
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0146",
+      "assetId": "system.decoration.069c5c48dc",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        -11,
+        0.025,
+        3
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Command"
+    },
+    {
+      "id": "detail-0147",
+      "assetId": "system.decoration.c7daa9724d",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        12,
+        0.025,
+        20
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "detail-0148",
+      "assetId": "system.decoration.0e1f74fb36",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        -28,
+        0.025,
+        -9
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0149",
+      "assetId": "system.decoration.3a3269d82a",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        -5,
+        0.025,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Command"
+    },
+    {
+      "id": "detail-0150",
+      "assetId": "system.decoration.38aa378166",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        18,
+        0.025,
+        25
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "detail-0151",
+      "assetId": "system.decoration.31aedabfc6",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        -22,
+        0.025,
+        -4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0152",
+      "assetId": "system.decoration.9f371b314b",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        1,
+        0.025,
+        13
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "detail-0153",
+      "assetId": "system.decoration.ab27c5aaa2",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        24,
+        0.025,
+        -16
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0154",
+      "assetId": "system.decoration.6078a9c86e",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        -16,
+        0.025,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0155",
+      "assetId": "system.decoration.61a096c2c3",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        7,
+        0.025,
+        18
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "detail-0156",
+      "assetId": "system.decoration.da190875bb",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        30,
+        0.025,
+        -11
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0157",
+      "assetId": "system.decoration.1cf4de8d7c",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        -10,
+        0.025,
+        6
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Command"
+    },
+    {
+      "id": "detail-0158",
+      "assetId": "system.decoration.982ab01f06",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        13,
+        0.025,
+        23
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "detail-0159",
+      "assetId": "system.decoration.91dda10ced",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        -27,
+        0.025,
+        -6
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0160",
+      "assetId": "system.decoration.bd17c3de85",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        -4,
+        0.025,
+        11
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Garage"
+    },
+    {
+      "id": "detail-0161",
+      "assetId": "system.decoration.3eff623bdb",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        19,
+        0.025,
+        -18
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0162",
+      "assetId": "system.decoration.f349b2585b",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        -21,
+        0.025,
+        -1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0163",
+      "assetId": "system.decoration.74b2ada5e9",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        2,
+        0.025,
+        16
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "detail-0164",
+      "assetId": "system.decoration.b3e1b49b08",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        25,
+        0.025,
+        -13
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0165",
+      "assetId": "system.decoration.c404b491a9",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        -15,
+        0.025,
+        4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0166",
+      "assetId": "system.decoration.3ca452b33b",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        8,
+        0.025,
+        21
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "detail-0167",
+      "assetId": "system.decoration.5f773c207b",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        31,
+        0.025,
+        -8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0168",
+      "assetId": "system.decoration.3281e714ba",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        -9,
+        0.025,
+        9
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Command"
+    },
+    {
+      "id": "detail-0169",
+      "assetId": "system.decoration.0a833c4744",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        14,
+        0.025,
+        26
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "detail-0170",
+      "assetId": "system.decoration.3699227d8c",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        -26,
+        0.025,
+        -3
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0171",
+      "assetId": "system.decoration.fdf8e28785",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        -3,
+        0.025,
+        14
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Garage"
+    },
+    {
+      "id": "detail-0172",
+      "assetId": "system.decoration.8dd5d8daa4",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        20,
+        0.025,
+        -15
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0173",
+      "assetId": "system.decoration.24983a445d",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        -20,
+        0.025,
+        2
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0174",
+      "assetId": "system.decoration.43c1e42ca5",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        3,
+        0.025,
+        19
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "detail-0175",
+      "assetId": "system.decoration.f32f3b2b17",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        26,
+        0.025,
+        -10
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0176",
+      "assetId": "system.decoration.f0acc2c47d",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        -14,
+        0.025,
+        7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0177",
+      "assetId": "system.decoration.08a1a4ffbb",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        9,
+        0.025,
+        24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "detail-0178",
+      "assetId": "system.decoration.b28017e15b",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        -31,
+        0.025,
+        -5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0179",
+      "assetId": "system.decoration.b9ec6e7905",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        -8,
+        0.025,
+        12
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Garage"
+    },
+    {
+      "id": "detail-0180",
+      "assetId": "system.decoration.c863614e9e",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        15,
+        0.025,
+        -17
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0181",
+      "assetId": "system.decoration.764451e9be",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        -25,
+        0.025,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0182",
+      "assetId": "system.decoration.e75c29d67e",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        -2,
+        0.025,
+        17
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Garage"
+    },
+    {
+      "id": "detail-0183",
+      "assetId": "system.decoration.9c701fc39a",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        21,
+        0.025,
+        -12
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0184",
+      "assetId": "system.decoration.4d0fc17ac3",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        -19,
+        0.025,
+        5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0185",
+      "assetId": "system.decoration.8268d77e53",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        4,
+        0.025,
+        22
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "detail-0186",
+      "assetId": "system.decoration.d811365261",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        27,
+        0.025,
+        -7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0187",
+      "assetId": "system.decoration.63b5731c81",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        -13,
+        0.025,
+        10
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0188",
+      "assetId": "system.decoration.d76d2f831b",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        10,
+        0.025,
+        27
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "detail-0189",
+      "assetId": "system.decoration.b0c4221297",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        -30,
+        0.025,
+        -2
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0190",
+      "assetId": "system.decoration.9ed6534239",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        -7,
+        0.025,
+        15
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Garage"
+    },
+    {
+      "id": "detail-0191",
+      "assetId": "system.decoration.b083b01648",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        16,
+        0.025,
+        -14
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0192",
+      "assetId": "system.decoration.157a8abcec",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        -24,
+        0.025,
+        3
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0193",
+      "assetId": "system.decoration.481a8bb084",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        -1,
+        0.025,
+        20
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Garage"
+    },
+    {
+      "id": "detail-0194",
+      "assetId": "system.decoration.c37d28690c",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        22,
+        0.025,
+        -9
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0195",
+      "assetId": "system.decoration.948c5be6eb",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        -18,
+        0.025,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0196",
+      "assetId": "system.decoration.0bdeae1463",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        5,
+        0.025,
+        25
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "detail-0197",
+      "assetId": "system.decoration.df7a6dce1f",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        28,
+        0.025,
+        -4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0198",
+      "assetId": "system.decoration.63a3e2f165",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        -12,
+        0.025,
+        13
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Garage"
+    },
+    {
+      "id": "detail-0199",
+      "assetId": "system.decoration.60086a6a2c",
+      "assetVersion": 1,
+      "name": "rock / rock",
+      "position": [
+        11,
+        0.025,
+        -16
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Command"
+    },
+    {
+      "id": "detail-0200",
+      "assetId": "system.decoration.109d38af22",
+      "assetVersion": 1,
+      "name": "distant / rock",
+      "position": [
+        0,
+        7,
+        94
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "detail-0201",
+      "assetId": "system.decoration.4a2a7eb2e5",
+      "assetVersion": 1,
+      "name": "distant / rock",
+      "position": [
+        34.97557636045604,
+        10,
+        95.81601671043265
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "detail-0202",
+      "assetId": "system.decoration.55233512fe",
+      "assetVersion": 1,
+      "name": "distant / rock",
+      "position": [
+        70.86394559614601,
+        13,
+        84.13264060129373
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "detail-0203",
+      "assetId": "system.decoration.9cd418e2c0",
+      "assetVersion": 1,
+      "name": "distant / rock",
+      "position": [
+        102.35594062009399,
+        7,
+        58.7133836512238
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "detail-0204",
+      "assetId": "system.decoration.81f89642a7",
+      "assetVersion": 1,
+      "name": "distant / rock",
+      "position": [
+        92.63227461891525,
+        10,
+        15.976911432622657
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "detail-0205",
+      "assetId": "system.decoration.3d9c54e345",
+      "assetVersion": 1,
+      "name": "distant / rock",
+      "position": [
+        100.36656658114157,
+        13,
+        -18.181097676248193
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0206",
+      "assetId": "system.decoration.7e9792c9bb",
+      "assetVersion": 1,
+      "name": "distant / rock",
+      "position": [
+        94.95303033137613,
+        7,
+        -55.53307150598428
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Ridge"
+    },
+    {
+      "id": "detail-0207",
+      "assetId": "system.decoration.ccfa2ba5f3",
+      "assetVersion": 1,
+      "name": "distant / rock",
+      "position": [
+        75.25623485187147,
+        10,
+        -90.88728797758225
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Ridge"
+    },
+    {
+      "id": "detail-0208",
+      "assetId": "system.decoration.a81d975bab",
+      "assetVersion": 1,
+      "name": "distant / rock",
+      "position": [
+        31.48888611465508,
+        13,
+        -88.56890002285385
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Ridge"
+    },
+    {
+      "id": "detail-0209",
+      "assetId": "system.decoration.4c8b0ef8ab",
+      "assetVersion": 1,
+      "name": "distant / rock",
+      "position": [
+        -0.8575392314491591,
+        7,
+        -101.99639516407689
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Ridge"
+    },
+    {
+      "id": "detail-0210",
+      "assetId": "system.decoration.21e3550cc5",
+      "assetVersion": 1,
+      "name": "distant / rock",
+      "position": [
+        -38.586155045858185,
+        10,
+        -103.0102356019876
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Ridge"
+    },
+    {
+      "id": "detail-0211",
+      "assetId": "system.decoration.33b0413b63",
+      "assetVersion": 1,
+      "name": "distant / rock",
+      "position": [
+        -76.77376617368971,
+        13,
+        -89.60908897822597
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Ridge"
+    },
+    {
+      "id": "detail-0212",
+      "assetId": "system.decoration.25612baf99",
+      "assetVersion": 1,
+      "name": "distant / rock",
+      "position": [
+        -81.92812260687725,
+        7,
+        -46.08451720602582
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Ridge"
+    },
+    {
+      "id": "detail-0213",
+      "assetId": "system.decoration.75e6ad5494",
+      "assetVersion": 1,
+      "name": "distant / rock",
+      "position": [
+        -100.65807356733012,
+        10,
+        -16.490974068076024
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Canyon"
+    },
+    {
+      "id": "detail-0214",
+      "assetId": "system.decoration.c3bb0e62fb",
+      "assetVersion": 1,
+      "name": "distant / rock",
+      "position": [
+        -108.06978738867659,
+        13,
+        20.516360636483235
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Garage"
+    },
+    {
+      "id": "detail-0215",
+      "assetId": "system.decoration.185b952648",
+      "assetVersion": 1,
+      "name": "distant / rock",
+      "position": [
+        -101.35427022433785,
+        7,
+        60.42608631453721
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Garage"
+    },
+    {
+      "id": "detail-0216",
+      "assetId": "system.decoration.0591675e2b",
+      "assetVersion": 1,
+      "name": "distant / rock",
+      "position": [
+        -59.339063959998235,
+        10,
+        72.90319257996346
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Garage"
+    },
+    {
+      "id": "detail-0217",
+      "assetId": "system.decoration.4dbedc32cf",
+      "assetVersion": 1,
+      "name": "distant / rock",
+      "position": [
+        -33.35959111671363,
+        13,
+        96.39054767209117
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Garage"
+    },
+    {
+      "id": "detail-0218",
+      "assetId": "system.decoration.292bcaef47",
+      "assetVersion": 1,
+      "name": "distant / box",
+      "position": [
+        -70,
+        10,
+        -45
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Ridge"
+    },
+    {
+      "id": "detail-0219",
+      "assetId": "system.decoration.c459048e8d",
+      "assetVersion": 1,
+      "name": "distant / box",
+      "position": [
+        -70,
+        12,
+        -45
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Ridge"
+    },
+    {
+      "id": "detail-0220",
+      "assetId": "system.decoration.44f4680997",
+      "assetVersion": 1,
+      "name": "distant / box",
+      "position": [
+        -70,
+        15,
+        -45
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Ridge"
+    },
+    {
+      "id": "detail-0221",
+      "assetId": "system.decoration.cd2886ea49",
+      "assetVersion": 1,
+      "name": "distant / box",
+      "position": [
+        -70,
+        18,
+        -45
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Ridge"
+    },
+    {
+      "id": "detail-0222",
+      "assetId": "system.decoration.08d0d1dd63",
+      "assetVersion": 1,
+      "name": "distant / box",
+      "position": [
+        78,
+        10,
+        12
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "detail-0223",
+      "assetId": "system.decoration.046dcbd226",
+      "assetVersion": 1,
+      "name": "distant / box",
+      "position": [
+        78,
+        12,
+        12
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "detail-0224",
+      "assetId": "system.decoration.ab4dcc3437",
+      "assetVersion": 1,
+      "name": "distant / box",
+      "position": [
+        78,
+        15,
+        12
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "detail-0225",
+      "assetId": "system.decoration.1f8785900b",
+      "assetVersion": 1,
+      "name": "distant / box",
+      "position": [
+        78,
+        18,
+        12
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "detail-0226",
+      "assetId": "system.decoration.8bc135741e",
+      "assetVersion": 1,
+      "name": "distant / box",
+      "position": [
+        40,
+        10,
+        77
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "detail-0227",
+      "assetId": "system.decoration.8675d9959b",
+      "assetVersion": 1,
+      "name": "distant / box",
+      "position": [
+        40,
+        12,
+        77
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "detail-0228",
+      "assetId": "system.decoration.0c5def7529",
+      "assetVersion": 1,
+      "name": "distant / box",
+      "position": [
+        40,
+        15,
+        77
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "detail-0229",
+      "assetId": "system.decoration.226c6dcc40",
+      "assetVersion": 1,
+      "name": "distant / box",
+      "position": [
+        40,
+        18,
+        77
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Supply"
+    },
+    {
+      "id": "spawn-alpha-1",
+      "assetId": "gameplay.spawn_a",
+      "assetVersion": 1,
+      "name": "Старт Alpha 1",
+      "position": [
+        -43,
+        0,
+        -5
+      ],
+      "rotation": [
+        0,
+        96.63251461513848,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "Alpha",
+        "modes": [
+          "elimination",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-alpha-2",
+      "assetId": "gameplay.spawn_a",
+      "assetVersion": 1,
+      "name": "Старт Alpha 2",
+      "position": [
+        -43,
+        0,
+        -1
+      ],
+      "rotation": [
+        0,
+        91.33221985386963,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "Alpha",
+        "modes": [
+          "elimination",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-alpha-3",
+      "assetId": "gameplay.spawn_a",
+      "assetVersion": 1,
+      "name": "Старт Alpha 3",
+      "position": [
+        -43,
+        0,
+        3
+      ],
+      "rotation": [
+        0,
+        86.00908690157023,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "Alpha",
+        "modes": [
+          "elimination",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-alpha-4",
+      "assetId": "gameplay.spawn_a",
+      "assetVersion": 1,
+      "name": "Старт Alpha 4",
+      "position": [
+        -43,
+        0,
+        5
+      ],
+      "rotation": [
+        0,
+        83.36748538486154,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "Alpha",
+        "modes": [
+          "elimination",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-alpha-5",
+      "assetId": "gameplay.spawn_a",
+      "assetVersion": 1,
+      "name": "Старт Alpha 5",
+      "position": [
+        -47,
+        0,
+        -5
+      ],
+      "rotation": [
+        0,
+        96.07245640720771,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "Alpha",
+        "modes": [
+          "elimination",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-alpha-6",
+      "assetId": "gameplay.spawn_a",
+      "assetVersion": 1,
+      "name": "Старт Alpha 6",
+      "position": [
+        -47,
+        0,
+        -1
+      ],
+      "rotation": [
+        0,
+        91.2188752351313,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "Alpha",
+        "modes": [
+          "elimination",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-alpha-7",
+      "assetId": "gameplay.spawn_a",
+      "assetVersion": 1,
+      "name": "Старт Alpha 7",
+      "position": [
+        -47,
+        0,
+        3
+      ],
+      "rotation": [
+        0,
+        86.34777721969367,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "Alpha",
+        "modes": [
+          "elimination",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-alpha-8",
+      "assetId": "gameplay.spawn_a",
+      "assetVersion": 1,
+      "name": "Старт Alpha 8",
+      "position": [
+        -47,
+        0,
+        5
+      ],
+      "rotation": [
+        0,
+        83.9275435927923,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "Alpha",
+        "modes": [
+          "elimination",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-bravo-1",
+      "assetId": "gameplay.spawn_b",
+      "assetVersion": 1,
+      "name": "Старт Bravo 1",
+      "position": [
+        43,
+        0,
+        -4
+      ],
+      "rotation": [
+        0,
+        -95.31454566994475,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "Bravo",
+        "modes": [
+          "elimination",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-bravo-2",
+      "assetId": "gameplay.spawn_b",
+      "assetVersion": 1,
+      "name": "Старт Bravo 2",
+      "position": [
+        43,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        -90.0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "Bravo",
+        "modes": [
+          "elimination",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-bravo-3",
+      "assetId": "gameplay.spawn_b",
+      "assetVersion": 1,
+      "name": "Старт Bravo 3",
+      "position": [
+        43,
+        0,
+        4
+      ],
+      "rotation": [
+        0,
+        -84.68545433005525,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "Bravo",
+        "modes": [
+          "elimination",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-bravo-4",
+      "assetId": "gameplay.spawn_b",
+      "assetVersion": 1,
+      "name": "Старт Bravo 4",
+      "position": [
+        43,
+        0,
+        6
+      ],
+      "rotation": [
+        0,
+        -82.05652818940959,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "Bravo",
+        "modes": [
+          "elimination",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-bravo-5",
+      "assetId": "gameplay.spawn_b",
+      "assetVersion": 1,
+      "name": "Старт Bravo 5",
+      "position": [
+        46,
+        0,
+        -4
+      ],
+      "rotation": [
+        0,
+        -94.96974072811031,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "Bravo",
+        "modes": [
+          "elimination",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-bravo-6",
+      "assetId": "gameplay.spawn_b",
+      "assetVersion": 1,
+      "name": "Старт Bravo 6",
+      "position": [
+        46,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        -90.0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "Bravo",
+        "modes": [
+          "elimination",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-bravo-7",
+      "assetId": "gameplay.spawn_b",
+      "assetVersion": 1,
+      "name": "Старт Bravo 7",
+      "position": [
+        46,
+        0,
+        4
+      ],
+      "rotation": [
+        0,
+        -85.0302592718897,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "Bravo",
+        "modes": [
+          "elimination",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-bravo-8",
+      "assetId": "gameplay.spawn_b",
+      "assetVersion": 1,
+      "name": "Старт Bravo 8",
+      "position": [
+        46,
+        0,
+        6
+      ],
+      "rotation": [
+        0,
+        -82.5685920288275,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "Bravo",
+        "modes": [
+          "elimination",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-1",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 1",
+      "position": [
+        -44,
+        0,
+        -5
+      ],
+      "rotation": [
+        0,
+        96.48307369289724,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-2",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 2",
+      "position": [
+        -43,
+        0,
+        6
+      ],
+      "rotation": [
+        0,
+        82.05652818940959,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-3",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 3",
+      "position": [
+        43,
+        0,
+        -5
+      ],
+      "rotation": [
+        0,
+        -96.63251461513848,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-4",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 4",
+      "position": [
+        43,
+        0,
+        5
+      ],
+      "rotation": [
+        0,
+        -83.36748538486154,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-5",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 5",
+      "position": [
+        -33,
+        0,
+        -17
+      ],
+      "rotation": [
+        0,
+        117.25532837494308,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-6",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 6",
+      "position": [
+        34,
+        0,
+        -17
+      ],
+      "rotation": [
+        0,
+        -116.56505117707799,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-7",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 7",
+      "position": [
+        -35,
+        0,
+        18
+      ],
+      "rotation": [
+        0,
+        62.78388844269253,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-8",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 8",
+      "position": [
+        35,
+        0,
+        16
+      ],
+      "rotation": [
+        0,
+        -65.4328286793987,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-9",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 9",
+      "position": [
+        -35,
+        0,
+        26
+      ],
+      "rotation": [
+        0,
+        53.3929251873925,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-10",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 10",
+      "position": [
+        24,
+        0,
+        28
+      ],
+      "rotation": [
+        0,
+        -40.60129464500447,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-11",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 11",
+      "position": [
+        -26,
+        0,
+        38
+      ],
+      "rotation": [
+        0,
+        34.38034472384487,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-12",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 12",
+      "position": [
+        -15,
+        0,
+        37
+      ],
+      "rotation": [
+        0,
+        22.06789956241022,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-13",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 13",
+      "position": [
+        0,
+        0,
+        37
+      ],
+      "rotation": [
+        0,
+        0.0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-14",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 14",
+      "position": [
+        10,
+        0,
+        34
+      ],
+      "rotation": [
+        0,
+        -16.389540334034784,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-15",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 15",
+      "position": [
+        -6,
+        0,
+        28
+      ],
+      "rotation": [
+        0,
+        12.094757077012101,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-16",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 16",
+      "position": [
+        -3,
+        0,
+        23
+      ],
+      "rotation": [
+        0,
+        7.431407971172507,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-17",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 17",
+      "position": [
+        -12,
+        0,
+        15
+      ],
+      "rotation": [
+        0,
+        38.65980825409009,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-18",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 18",
+      "position": [
+        12,
+        0,
+        17
+      ],
+      "rotation": [
+        0,
+        -35.21759296819271,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-19",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 19",
+      "position": [
+        -5,
+        0,
+        3
+      ],
+      "rotation": [
+        0,
+        59.03624346792648,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-20",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 20",
+      "position": [
+        5,
+        0,
+        -2
+      ],
+      "rotation": [
+        0,
+        -111.80140948635182,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-21",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 21",
+      "position": [
+        -15,
+        0,
+        -12
+      ],
+      "rotation": [
+        0,
+        128.6598082540901,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-22",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 22",
+      "position": [
+        8,
+        0,
+        -17
+      ],
+      "rotation": [
+        0,
+        -154.79887635452494,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-23",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 23",
+      "position": [
+        28,
+        0,
+        -3
+      ],
+      "rotation": [
+        0,
+        -96.11550356628541,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-24",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 24",
+      "position": [
+        -23,
+        0,
+        1
+      ],
+      "rotation": [
+        0,
+        87.51044707800085,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-25",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 25",
+      "position": [
+        -24,
+        0,
+        -22
+      ],
+      "rotation": [
+        0,
+        132.51044707800085,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-26",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 26",
+      "position": [
+        32,
+        0,
+        -21
+      ],
+      "rotation": [
+        0,
+        -123.27488798483492,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-27",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 27",
+      "position": [
+        -14,
+        0,
+        -38
+      ],
+      "rotation": [
+        0,
+        159.77514056883192,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-28",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 28",
+      "position": [
+        15,
+        0,
+        -39
+      ],
+      "rotation": [
+        0,
+        -158.96248897457818,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-29",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 29",
+      "position": [
+        0,
+        0,
+        -36
+      ],
+      "rotation": [
+        0,
+        180.0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-30",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 30",
+      "position": [
+        -3,
+        0,
+        -14
+      ],
+      "rotation": [
+        0,
+        167.90524292298792,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "playable-1",
+      "assetId": "gameplay.playable",
+      "assetVersion": 1,
+      "name": "Каньон: область 1",
+      "position": [
+        3.0,
+        0,
+        -37.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        5.0,
+        6.4,
+        1.4
+      ],
+      "properties": {},
+      "group": "Gameplay"
+    },
+    {
+      "id": "playable-2",
+      "assetId": "gameplay.playable",
+      "assetVersion": 1,
+      "name": "Каньон: область 2",
+      "position": [
+        1.0,
+        0,
+        -24.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        8.2,
+        6.4,
+        1.2
+      ],
+      "properties": {},
+      "group": "Gameplay"
+    },
+    {
+      "id": "playable-3",
+      "assetId": "gameplay.playable",
+      "assetVersion": 1,
+      "name": "Каньон: область 3",
+      "position": [
+        0.0,
+        0,
+        -3.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        10.4,
+        6.4,
+        3.0
+      ],
+      "properties": {},
+      "group": "Gameplay"
+    },
+    {
+      "id": "playable-4",
+      "assetId": "gameplay.playable",
+      "assetVersion": 1,
+      "name": "Каньон: область 4",
+      "position": [
+        0.0,
+        0,
+        21.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        8.4,
+        6.4,
+        1.8
+      ],
+      "properties": {},
+      "group": "Gameplay"
+    },
+    {
+      "id": "playable-5",
+      "assetId": "gameplay.playable",
+      "assetVersion": 1,
+      "name": "Каньон: область 5",
+      "position": [
+        -6.0,
+        0,
+        36.0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        5.2,
+        6.4,
+        1.2
+      ],
+      "properties": {},
+      "group": "Gameplay"
+    }
+  ],
+  "groups": [
+    {
+      "id": "Command",
+      "name": "Command"
+    },
+    {
+      "id": "Ridge",
+      "name": "Ridge"
+    },
+    {
+      "id": "Canyon",
+      "name": "Canyon"
+    },
+    {
+      "id": "Garage",
+      "name": "Garage"
+    },
+    {
+      "id": "Supply",
+      "name": "Supply"
+    },
+    {
+      "id": "Gameplay",
+      "name": "Gameplay"
+    }
+  ],
+  "settings": {
+    "modes": [
+      "elimination",
+      "tdm",
+      "dm"
+    ],
+    "respawnPolicy": "neutral",
+    "respawnFallback": true
+  }
+}

@@ -1,0 +1,159 @@
+.asset-manager {
+  padding: 16px 0;
+}
+.asset-manager-layout {
+  display: grid;
+  grid-template-columns: 240px minmax(0, 1fr);
+  gap: 16px;
+}
+.asset-list {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  max-height: 85vh;
+  overflow: auto;
+  padding: 10px;
+  background: var(--surface-color);
+  border-radius: 12px;
+}
+.asset-list button {
+  text-align: left;
+}
+.asset-list small {
+  display: block;
+  opacity: 0.7;
+  margin-top: 5px;
+}
+.asset-manager .active {
+  outline: 2px solid #4cb8b0;
+}
+.asset-workbench {
+  min-width: 0;
+}
+.asset-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding: 12px;
+  background: var(--surface-color);
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+.asset-toolbar strong {
+  margin-right: 10px;
+}
+.asset-workspace {
+  display: grid;
+  grid-template-columns: minmax(300px, 1fr) 310px;
+  gap: 14px;
+}
+.asset-stage {
+  min-width: 0;
+}
+.asset-preview {
+  height: 560px;
+  min-height: 320px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid #6e7e85;
+}
+.asset-preview canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.asset-view-controls {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.asset-manager .asset-check {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+}
+.asset-view-controls select {
+  width: auto;
+}
+.asset-manager .asset-check input {
+  width: auto;
+}
+.asset-inspector {
+  max-height: 80vh;
+  overflow: auto;
+  padding: 10px;
+  background: var(--surface-color);
+  border-radius: 10px;
+}
+.asset-inspector > select {
+  width: 100%;
+  margin-bottom: 12px;
+}
+.asset-inspector fieldset {
+  min-width: 0;
+  padding: 10px;
+  border: 1px solid #68747d55;
+}
+.asset-inspector label {
+  display: block;
+  margin: 8px 0;
+}
+.asset-inspector label input,
+.asset-inspector textarea,
+.asset-inspector select {
+  width: 100%;
+  min-width: 0;
+}
+.asset-vector {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 5px;
+}
+.asset-box-fields {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 5px;
+}
+.asset-collider {
+  border-bottom: 1px solid #68747d55;
+  padding: 10px 0;
+}
+.asset-inspector small {
+  display: block;
+  opacity: 0.75;
+}
+.asset-inspector code {
+  overflow-wrap: anywhere;
+}
+.asset-inspector summary {
+  cursor: pointer;
+  padding: 10px 0;
+  font-weight: 700;
+}
+.asset-inspector pre {
+  max-height: 400px;
+  overflow: auto;
+  font-size: 11px;
+}
+.asset-inspector dl > div {
+  display: flex;
+  justify-content: space-between;
+}
+.asset-thumbnail {
+  display: block;
+  width: 220px;
+  margin: 10px 0;
+}
+.asset-empty {
+  padding: 50px;
+  text-align: center;
+}
+.asset-inspector button {
+  margin: 4px 3px 4px 0;
+}

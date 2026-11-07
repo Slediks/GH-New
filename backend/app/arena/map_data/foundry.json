@@ -1,0 +1,10335 @@
+{
+  "schemaVersion": 1,
+  "metadata": {
+    "name": "Foundry",
+    "description": ""
+  },
+  "environment": {
+    "background": "#9aaeb9",
+    "ambientColor": "#e9f4ff",
+    "ambientGround": "#6f766d",
+    "ambientIntensity": 2.5,
+    "sunColor": "#e1eaf5",
+    "sunPosition": [
+      -36,
+      55,
+      22
+    ],
+    "sunIntensity": 2.4,
+    "sunShadow": [
+      -53,
+      53,
+      45,
+      -45,
+      0.5,
+      150
+    ],
+    "fogEnabled": true,
+    "fogNear": 65,
+    "fogFar": 145,
+    "ground": false,
+    "cameraFar": 180
+  },
+  "objects": [
+    {
+      "id": "detail-0000",
+      "assetId": "system.decoration.4fb365fc08",
+      "assetVersion": 1,
+      "name": "Покрытие 0000",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "detail-0001",
+      "assetId": "system.decoration.85ccb4e286",
+      "assetVersion": 1,
+      "name": "Покрытие 0001",
+      "position": [
+        0,
+        0,
+        -26
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "detail-0002",
+      "assetId": "system.decoration.b91a0f1229",
+      "assetVersion": 1,
+      "name": "Покрытие 0002",
+      "position": [
+        0,
+        0,
+        25.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "detail-0003",
+      "assetId": "system.decoration.047c285ddd",
+      "assetVersion": 1,
+      "name": "Покрытие 0003",
+      "position": [
+        -38,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0004",
+      "assetId": "system.decoration.55b33a5d39",
+      "assetVersion": 1,
+      "name": "Покрытие 0004",
+      "position": [
+        38,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0005",
+      "assetId": "system.decoration.2012103500",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        -28,
+        0.008,
+        -18
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "detail-0006",
+      "assetId": "system.decoration.78a20a6b01",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        -24,
+        0.008,
+        -18
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "detail-0007",
+      "assetId": "system.decoration.e48e3d91bf",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        -20,
+        0.008,
+        -18
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "detail-0008",
+      "assetId": "system.decoration.747c9aecd2",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        -16,
+        0.008,
+        -18
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "detail-0009",
+      "assetId": "system.decoration.67b83a4cf6",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        -12,
+        0.008,
+        -18
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "detail-0010",
+      "assetId": "system.decoration.a54e9bca7b",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        -8,
+        0.008,
+        -18
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "detail-0011",
+      "assetId": "system.decoration.2d310a01df",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        -4,
+        0.008,
+        -18
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "detail-0012",
+      "assetId": "system.decoration.821710c29e",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        0,
+        0.008,
+        -18
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "detail-0013",
+      "assetId": "system.decoration.86fc87cf1b",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        4,
+        0.008,
+        -18
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "detail-0014",
+      "assetId": "system.decoration.a48df9d2b6",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        8,
+        0.008,
+        -18
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "detail-0015",
+      "assetId": "system.decoration.350503bbb7",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        12,
+        0.008,
+        -18
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "detail-0016",
+      "assetId": "system.decoration.707fd8f93d",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        16,
+        0.008,
+        -18
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "detail-0017",
+      "assetId": "system.decoration.22ad1b2b53",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        20,
+        0.008,
+        -18
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "detail-0018",
+      "assetId": "system.decoration.5fd87df0c2",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        24,
+        0.008,
+        -18
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "detail-0019",
+      "assetId": "system.decoration.4c8adc9316",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        28,
+        0.008,
+        -18
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "detail-0020",
+      "assetId": "system.decoration.e434d9f788",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        -28,
+        0.008,
+        16
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "detail-0021",
+      "assetId": "system.decoration.5e6610dde3",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        -24,
+        0.008,
+        16
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "detail-0022",
+      "assetId": "system.decoration.8c9fe7d7e9",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        -20,
+        0.008,
+        16
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "detail-0023",
+      "assetId": "system.decoration.92acb52953",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        -16,
+        0.008,
+        16
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "detail-0024",
+      "assetId": "system.decoration.0b94b5ee39",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        -12,
+        0.008,
+        16
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "detail-0025",
+      "assetId": "system.decoration.33865f7478",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        -8,
+        0.008,
+        16
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "detail-0026",
+      "assetId": "system.decoration.7c3e4e11a6",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        -4,
+        0.008,
+        16
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "detail-0027",
+      "assetId": "system.decoration.a32c28c77b",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        0,
+        0.008,
+        16
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "detail-0028",
+      "assetId": "system.decoration.4785ee9bc5",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        4,
+        0.008,
+        16
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "detail-0029",
+      "assetId": "system.decoration.3fe92369fe",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        8,
+        0.008,
+        16
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "detail-0030",
+      "assetId": "system.decoration.54bf3b4cb7",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        12,
+        0.008,
+        16
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "detail-0031",
+      "assetId": "system.decoration.96861d5806",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        16,
+        0.008,
+        16
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "detail-0032",
+      "assetId": "system.decoration.96196761b1",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        20,
+        0.008,
+        16
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "detail-0033",
+      "assetId": "system.decoration.67833fdd27",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        24,
+        0.008,
+        16
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "detail-0034",
+      "assetId": "system.decoration.5103af674b",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        28,
+        0.008,
+        16
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "detail-0035",
+      "assetId": "system.decoration.48d7701fff",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        -7,
+        0.008,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "detail-0036",
+      "assetId": "system.decoration.cbba8db7b5",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        -15,
+        0.008,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "detail-0037",
+      "assetId": "system.decoration.5f611e55ca",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        -26,
+        0.008,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "detail-0038",
+      "assetId": "system.decoration.18e77ec66d",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        -38,
+        0.008,
+        -14
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0039",
+      "assetId": "system.decoration.a7f838e660",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        -38,
+        0.008,
+        -10
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0040",
+      "assetId": "system.decoration.93653a6b75",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        -38,
+        0.008,
+        -6
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0041",
+      "assetId": "system.decoration.545d8a93aa",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        -38,
+        0.008,
+        -2
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0042",
+      "assetId": "system.decoration.ce10ac86ae",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        -38,
+        0.008,
+        2
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0043",
+      "assetId": "system.decoration.7e451d935d",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        -38,
+        0.008,
+        6
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0044",
+      "assetId": "system.decoration.c104785f63",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        -38,
+        0.008,
+        10
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0045",
+      "assetId": "system.decoration.713b0ae7c4",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        -38,
+        0.008,
+        14
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0046",
+      "assetId": "system.decoration.b69ca06833",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        -28,
+        0.008,
+        -18
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "detail-0047",
+      "assetId": "system.decoration.0a94d46e7a",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        -24,
+        0.008,
+        -18
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "detail-0048",
+      "assetId": "system.decoration.e7defb3e3a",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        -20,
+        0.008,
+        -18
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "detail-0049",
+      "assetId": "system.decoration.a71fa8addb",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        -16,
+        0.008,
+        -18
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "detail-0050",
+      "assetId": "system.decoration.a9d0731a85",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        -12,
+        0.008,
+        -18
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "detail-0051",
+      "assetId": "system.decoration.30dce24622",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        -8,
+        0.008,
+        -18
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "detail-0052",
+      "assetId": "system.decoration.ba46d9fb1c",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        -4,
+        0.008,
+        -18
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "detail-0053",
+      "assetId": "system.decoration.85fe56d4a2",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        0,
+        0.008,
+        -18
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "detail-0054",
+      "assetId": "system.decoration.14cac72f76",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        4,
+        0.008,
+        -18
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "detail-0055",
+      "assetId": "system.decoration.3813b5f427",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        8,
+        0.008,
+        -18
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "detail-0056",
+      "assetId": "system.decoration.afb18bcac6",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        12,
+        0.008,
+        -18
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "detail-0057",
+      "assetId": "system.decoration.651c067357",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        16,
+        0.008,
+        -18
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "detail-0058",
+      "assetId": "system.decoration.5a2dfcb34a",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        20,
+        0.008,
+        -18
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "detail-0059",
+      "assetId": "system.decoration.5f85ff660d",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        24,
+        0.008,
+        -18
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "detail-0060",
+      "assetId": "system.decoration.5a633cf39e",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        28,
+        0.008,
+        -18
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "detail-0061",
+      "assetId": "system.decoration.944f5cd580",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        -28,
+        0.008,
+        16
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "detail-0062",
+      "assetId": "system.decoration.fb6793a832",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        -24,
+        0.008,
+        16
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "detail-0063",
+      "assetId": "system.decoration.87e3fce346",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        -20,
+        0.008,
+        16
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "detail-0064",
+      "assetId": "system.decoration.1fc733e6e6",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        -16,
+        0.008,
+        16
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "detail-0065",
+      "assetId": "system.decoration.9db5f9e5e3",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        -12,
+        0.008,
+        16
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "detail-0066",
+      "assetId": "system.decoration.7fed498a55",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        -8,
+        0.008,
+        16
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "detail-0067",
+      "assetId": "system.decoration.af754d6bbb",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        -4,
+        0.008,
+        16
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "detail-0068",
+      "assetId": "system.decoration.c96637fc6c",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        0,
+        0.008,
+        16
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "detail-0069",
+      "assetId": "system.decoration.8bb29bd443",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        4,
+        0.008,
+        16
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "detail-0070",
+      "assetId": "system.decoration.86f37e511c",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        8,
+        0.008,
+        16
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "detail-0071",
+      "assetId": "system.decoration.4e5ee93056",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        12,
+        0.008,
+        16
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "detail-0072",
+      "assetId": "system.decoration.818788926e",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        16,
+        0.008,
+        16
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "detail-0073",
+      "assetId": "system.decoration.1e7c5e6c2e",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        20,
+        0.008,
+        16
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "detail-0074",
+      "assetId": "system.decoration.2506a8c11b",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        24,
+        0.008,
+        16
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "detail-0075",
+      "assetId": "system.decoration.731112bc5d",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        28,
+        0.008,
+        16
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "detail-0076",
+      "assetId": "system.decoration.b3560173bd",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        7,
+        0.008,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "detail-0077",
+      "assetId": "system.decoration.5700c6b834",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        15,
+        0.008,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "detail-0078",
+      "assetId": "system.decoration.2af1c350d8",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        26,
+        0.008,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "detail-0079",
+      "assetId": "system.decoration.b412004e2d",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        38,
+        0.008,
+        -14
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0080",
+      "assetId": "system.decoration.4641281f28",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        38,
+        0.008,
+        -10
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0081",
+      "assetId": "system.decoration.732ecf9139",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        38,
+        0.008,
+        -6
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0082",
+      "assetId": "system.decoration.c985a2a714",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        38,
+        0.008,
+        -2
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0083",
+      "assetId": "system.decoration.55736c1362",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        38,
+        0.008,
+        2
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0084",
+      "assetId": "system.decoration.9ed9e265a4",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        38,
+        0.008,
+        6
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0085",
+      "assetId": "system.decoration.c5f4fcf698",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        38,
+        0.008,
+        10
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0086",
+      "assetId": "system.decoration.83541ff56e",
+      "assetVersion": 1,
+      "name": "yellow / box",
+      "position": [
+        38,
+        0.008,
+        14
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "body-000",
+      "assetId": "system.boundary.6c8914bb45",
+      "assetVersion": 1,
+      "name": "Периметр 1",
+      "position": [
+        -45,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "body-001",
+      "assetId": "system.boundary.fe9dac1284",
+      "assetVersion": 1,
+      "name": "Периметр 2",
+      "position": [
+        45,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "body-002",
+      "assetId": "system.boundary.0120132646",
+      "assetVersion": 1,
+      "name": "Периметр 3",
+      "position": [
+        0,
+        0,
+        -35
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "body-003",
+      "assetId": "system.boundary.308b402b87",
+      "assetVersion": 1,
+      "name": "Периметр 4",
+      "position": [
+        0,
+        0,
+        35
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "body-004",
+      "assetId": "system.concrete.e578448b19",
+      "assetVersion": 1,
+      "name": "Бетонная стена 5",
+      "position": [
+        -31,
+        0,
+        -11
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "body-005",
+      "assetId": "system.concrete.6bc0011493",
+      "assetVersion": 1,
+      "name": "Бетонная стена 6",
+      "position": [
+        -31,
+        0,
+        11
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "body-006",
+      "assetId": "system.concrete.a2fa99d1f3",
+      "assetVersion": 1,
+      "name": "Бетонная стена 7",
+      "position": [
+        -34,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "body-007",
+      "assetId": "system.crate.dc57a7cab6",
+      "assetVersion": 1,
+      "name": "Ящик 8",
+      "position": [
+        -37,
+        0,
+        -27
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "body-008",
+      "assetId": "system.crate.c082c108ff",
+      "assetVersion": 1,
+      "name": "Ящик 9",
+      "position": [
+        -37,
+        0,
+        27
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "body-009",
+      "assetId": "system.transformer.6ace53ca53",
+      "assetVersion": 1,
+      "name": "Трансформатор 10",
+      "position": [
+        -27,
+        0,
+        -6
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "body-010",
+      "assetId": "system.compressor.2a3fd690b7",
+      "assetVersion": 1,
+      "name": "Компрессор 11",
+      "position": [
+        -27,
+        0,
+        9
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "body-011",
+      "assetId": "system.concrete.fc75c796db",
+      "assetVersion": 1,
+      "name": "Бетонная стена 12",
+      "position": [
+        31,
+        0,
+        -11
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "body-012",
+      "assetId": "system.concrete.7f55756934",
+      "assetVersion": 1,
+      "name": "Бетонная стена 13",
+      "position": [
+        31,
+        0,
+        11
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "body-013",
+      "assetId": "system.concrete.4b767052ac",
+      "assetVersion": 1,
+      "name": "Бетонная стена 14",
+      "position": [
+        34,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "body-014",
+      "assetId": "system.crate.9d3420c9d3",
+      "assetVersion": 1,
+      "name": "Ящик 15",
+      "position": [
+        37,
+        0,
+        -27
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "body-015",
+      "assetId": "system.crate.a34bd8ec7e",
+      "assetVersion": 1,
+      "name": "Ящик 16",
+      "position": [
+        37,
+        0,
+        27
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "body-016",
+      "assetId": "system.transformer.aac848cdcd",
+      "assetVersion": 1,
+      "name": "Трансформатор 17",
+      "position": [
+        27,
+        0,
+        -6
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "body-017",
+      "assetId": "system.compressor.61d9b10bbc",
+      "assetVersion": 1,
+      "name": "Компрессор 18",
+      "position": [
+        27,
+        0,
+        9
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "body-018",
+      "assetId": "system.furnace.662dd35b75",
+      "assetVersion": 1,
+      "name": "Печь 19",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "body-019",
+      "assetId": "system.machine.9fe8495f0e",
+      "assetVersion": 1,
+      "name": "Станок 20",
+      "position": [
+        -11,
+        0,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "body-020",
+      "assetId": "system.tank.d8a39e6070",
+      "assetVersion": 1,
+      "name": "Резервуар 21",
+      "position": [
+        -18,
+        0,
+        9
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "body-021",
+      "assetId": "system.column.ad83af303c",
+      "assetVersion": 1,
+      "name": "Колонна 22",
+      "position": [
+        -23,
+        0,
+        -14
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "body-022",
+      "assetId": "system.column.46ac0a0b40",
+      "assetVersion": 1,
+      "name": "Колонна 23",
+      "position": [
+        -23,
+        0,
+        14
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "body-023",
+      "assetId": "system.machine.50799b6c1a",
+      "assetVersion": 1,
+      "name": "Станок 24",
+      "position": [
+        11,
+        0,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "body-024",
+      "assetId": "system.tank.148400b100",
+      "assetVersion": 1,
+      "name": "Резервуар 25",
+      "position": [
+        18,
+        0,
+        9
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "body-025",
+      "assetId": "system.column.faa55102cd",
+      "assetVersion": 1,
+      "name": "Колонна 26",
+      "position": [
+        23,
+        0,
+        -14
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "body-026",
+      "assetId": "system.column.a5266774bb",
+      "assetVersion": 1,
+      "name": "Колонна 27",
+      "position": [
+        23,
+        0,
+        14
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "body-027",
+      "assetId": "system.beam.f23954fed2",
+      "assetVersion": 1,
+      "name": "Крановая балка 28",
+      "position": [
+        0,
+        9,
+        -14
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "body-028",
+      "assetId": "system.beam.78f8675b84",
+      "assetVersion": 1,
+      "name": "Крановая балка 29",
+      "position": [
+        0,
+        9,
+        14
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "body-029",
+      "assetId": "system.beam.a6bde68797",
+      "assetVersion": 1,
+      "name": "Крановая балка 30",
+      "position": [
+        -23,
+        9,
+        -14
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "body-030",
+      "assetId": "system.beam.23d0b00d7c",
+      "assetVersion": 1,
+      "name": "Крановая балка 31",
+      "position": [
+        -23,
+        9,
+        14
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "body-031",
+      "assetId": "system.beam.f824919ae5",
+      "assetVersion": 1,
+      "name": "Крановая балка 32",
+      "position": [
+        -23,
+        11.4,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "body-032",
+      "assetId": "system.beam.7a3747011b",
+      "assetVersion": 1,
+      "name": "Крановая балка 33",
+      "position": [
+        -15,
+        10.6,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "body-033",
+      "assetId": "system.beam.226b464a6c",
+      "assetVersion": 1,
+      "name": "Крановая балка 34",
+      "position": [
+        23,
+        9,
+        -14
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "body-034",
+      "assetId": "system.beam.815bd66fd1",
+      "assetVersion": 1,
+      "name": "Крановая балка 35",
+      "position": [
+        23,
+        9,
+        14
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "body-035",
+      "assetId": "system.beam.2bf3e30895",
+      "assetVersion": 1,
+      "name": "Крановая балка 36",
+      "position": [
+        23,
+        11.4,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "body-036",
+      "assetId": "system.beam.f5c87f960b",
+      "assetVersion": 1,
+      "name": "Крановая балка 37",
+      "position": [
+        15,
+        10.6,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "body-037",
+      "assetId": "system.beam.b8256d3b14",
+      "assetVersion": 1,
+      "name": "Крановая балка 38",
+      "position": [
+        0,
+        11.425,
+        -14
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "body-038",
+      "assetId": "system.beam.07ffff112d",
+      "assetVersion": 1,
+      "name": "Крановая балка 39",
+      "position": [
+        0,
+        11.425,
+        14
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "body-039",
+      "assetId": "system.deck.3550a29beb",
+      "assetVersion": 1,
+      "name": "Платформа 40",
+      "position": [
+        0,
+        3.25,
+        -11
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "body-040",
+      "assetId": "system.step.22045f3f22",
+      "assetVersion": 1,
+      "name": "Ступень 41",
+      "position": [
+        -20,
+        0,
+        -21.1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "body-041",
+      "assetId": "system.step.8a66686010",
+      "assetVersion": 1,
+      "name": "Ступень 42",
+      "position": [
+        -20,
+        0,
+        -20.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "body-042",
+      "assetId": "system.step.bb01ee094a",
+      "assetVersion": 1,
+      "name": "Ступень 43",
+      "position": [
+        -20,
+        0,
+        -19.900000000000002
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "body-043",
+      "assetId": "system.step.9614686e29",
+      "assetVersion": 1,
+      "name": "Ступень 44",
+      "position": [
+        -20,
+        0,
+        -19.3
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "body-044",
+      "assetId": "system.step.d62d5da570",
+      "assetVersion": 1,
+      "name": "Ступень 45",
+      "position": [
+        -20,
+        0,
+        -18.700000000000003
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "body-045",
+      "assetId": "system.step.1fce1818b9",
+      "assetVersion": 1,
+      "name": "Ступень 46",
+      "position": [
+        -20,
+        0,
+        -18.1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "body-046",
+      "assetId": "system.step.2e31e11da3",
+      "assetVersion": 1,
+      "name": "Ступень 47",
+      "position": [
+        -20,
+        0,
+        -17.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "body-047",
+      "assetId": "system.step.158a5606d6",
+      "assetVersion": 1,
+      "name": "Ступень 48",
+      "position": [
+        -20,
+        0,
+        -16.900000000000002
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "body-048",
+      "assetId": "system.step.1ad5efa42c",
+      "assetVersion": 1,
+      "name": "Ступень 49",
+      "position": [
+        -20,
+        0,
+        -16.3
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "body-049",
+      "assetId": "system.step.1645740980",
+      "assetVersion": 1,
+      "name": "Ступень 50",
+      "position": [
+        -20,
+        0,
+        -15.700000000000003
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "body-050",
+      "assetId": "system.step.701326163c",
+      "assetVersion": 1,
+      "name": "Ступень 51",
+      "position": [
+        -20,
+        0,
+        -15.100000000000001
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "body-051",
+      "assetId": "system.step.e8ed492820",
+      "assetVersion": 1,
+      "name": "Ступень 52",
+      "position": [
+        -20,
+        0,
+        -14.500000000000002
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "body-052",
+      "assetId": "system.step.35b17ad621",
+      "assetVersion": 1,
+      "name": "Ступень 53",
+      "position": [
+        -20,
+        0,
+        -13.900000000000002
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "body-053",
+      "assetId": "system.step.e2787b7e28",
+      "assetVersion": 1,
+      "name": "Ступень 54",
+      "position": [
+        -20,
+        0,
+        -13.3
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "body-054",
+      "assetId": "system.rail.6dd8e77fb8",
+      "assetVersion": 1,
+      "name": "Ограждение 55",
+      "position": [
+        -13,
+        3.5,
+        -8.95
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "body-055",
+      "assetId": "system.step.2b35d1cc8b",
+      "assetVersion": 1,
+      "name": "Ступень 56",
+      "position": [
+        20,
+        0,
+        -21.1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "body-056",
+      "assetId": "system.step.3ce99f2262",
+      "assetVersion": 1,
+      "name": "Ступень 57",
+      "position": [
+        20,
+        0,
+        -20.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "body-057",
+      "assetId": "system.step.8866f69b53",
+      "assetVersion": 1,
+      "name": "Ступень 58",
+      "position": [
+        20,
+        0,
+        -19.900000000000002
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "body-058",
+      "assetId": "system.step.a6a5dc3aad",
+      "assetVersion": 1,
+      "name": "Ступень 59",
+      "position": [
+        20,
+        0,
+        -19.3
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "body-059",
+      "assetId": "system.step.cf7e8f2127",
+      "assetVersion": 1,
+      "name": "Ступень 60",
+      "position": [
+        20,
+        0,
+        -18.700000000000003
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "body-060",
+      "assetId": "system.step.8ead407177",
+      "assetVersion": 1,
+      "name": "Ступень 61",
+      "position": [
+        20,
+        0,
+        -18.1
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "body-061",
+      "assetId": "system.step.108a3f6bfe",
+      "assetVersion": 1,
+      "name": "Ступень 62",
+      "position": [
+        20,
+        0,
+        -17.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "body-062",
+      "assetId": "system.step.1bc8b4f20e",
+      "assetVersion": 1,
+      "name": "Ступень 63",
+      "position": [
+        20,
+        0,
+        -16.900000000000002
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "body-063",
+      "assetId": "system.step.a049ffa450",
+      "assetVersion": 1,
+      "name": "Ступень 64",
+      "position": [
+        20,
+        0,
+        -16.3
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "body-064",
+      "assetId": "system.step.eb66fd0949",
+      "assetVersion": 1,
+      "name": "Ступень 65",
+      "position": [
+        20,
+        0,
+        -15.700000000000003
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "body-065",
+      "assetId": "system.step.8a028d54fc",
+      "assetVersion": 1,
+      "name": "Ступень 66",
+      "position": [
+        20,
+        0,
+        -15.100000000000001
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "body-066",
+      "assetId": "system.step.a56c6f1881",
+      "assetVersion": 1,
+      "name": "Ступень 67",
+      "position": [
+        20,
+        0,
+        -14.500000000000002
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "body-067",
+      "assetId": "system.step.24f5158e5e",
+      "assetVersion": 1,
+      "name": "Ступень 68",
+      "position": [
+        20,
+        0,
+        -13.900000000000002
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "body-068",
+      "assetId": "system.step.5bb539053a",
+      "assetVersion": 1,
+      "name": "Ступень 69",
+      "position": [
+        20,
+        0,
+        -13.3
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "body-069",
+      "assetId": "system.rail.74787ddd55",
+      "assetVersion": 1,
+      "name": "Ограждение 70",
+      "position": [
+        13,
+        3.5,
+        -8.95
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "body-070",
+      "assetId": "system.rail.e4a813e2a2",
+      "assetVersion": 1,
+      "name": "Ограждение 71",
+      "position": [
+        0,
+        3.5,
+        -13.05
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "body-071",
+      "assetId": "system.container.1670691490",
+      "assetVersion": 1,
+      "name": "Контейнер 72",
+      "position": [
+        -22,
+        0,
+        -27
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "body-072",
+      "assetId": "system.container.566c529cda",
+      "assetVersion": 1,
+      "name": "Контейнер 73",
+      "position": [
+        -9,
+        0,
+        -24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "body-073",
+      "assetId": "system.container.b90552f70a",
+      "assetVersion": 1,
+      "name": "Контейнер 74",
+      "position": [
+        -22,
+        3,
+        -27
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "body-074",
+      "assetId": "system.cargo.ed8b3e2edd",
+      "assetVersion": 1,
+      "name": "Груз 75",
+      "position": [
+        -35,
+        0,
+        -31
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "body-075",
+      "assetId": "system.container.3406a7a309",
+      "assetVersion": 1,
+      "name": "Контейнер 76",
+      "position": [
+        22,
+        0,
+        -27
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "body-076",
+      "assetId": "system.container.33a46b4a60",
+      "assetVersion": 1,
+      "name": "Контейнер 77",
+      "position": [
+        9,
+        0,
+        -24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "body-077",
+      "assetId": "system.container.b0a98ae6cd",
+      "assetVersion": 1,
+      "name": "Контейнер 78",
+      "position": [
+        22,
+        3,
+        -27
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "body-078",
+      "assetId": "system.cargo.b8519d2a4c",
+      "assetVersion": 1,
+      "name": "Груз 79",
+      "position": [
+        35,
+        0,
+        -31
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "body-079",
+      "assetId": "system.cargo.360b78883b",
+      "assetVersion": 1,
+      "name": "Груз 80",
+      "position": [
+        0,
+        0,
+        -31
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "body-080",
+      "assetId": "system.warehouse.f3b4d0aaed",
+      "assetVersion": 1,
+      "name": "Стена склада 81",
+      "position": [
+        -14,
+        0,
+        18
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "body-081",
+      "assetId": "system.warehouse.b7ce90a5f7",
+      "assetVersion": 1,
+      "name": "Стена склада 82",
+      "position": [
+        -14,
+        0,
+        33
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "body-082",
+      "assetId": "system.warehouse.d313b6a176",
+      "assetVersion": 1,
+      "name": "Стена склада 83",
+      "position": [
+        -24,
+        0,
+        19.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "body-083",
+      "assetId": "system.warehouse.772a5e8024",
+      "assetVersion": 1,
+      "name": "Стена склада 84",
+      "position": [
+        -24,
+        0,
+        30
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "body-084",
+      "assetId": "system.rack.9e43f01812",
+      "assetVersion": 1,
+      "name": "Стеллаж 85",
+      "position": [
+        -11,
+        0,
+        25
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "body-085",
+      "assetId": "system.cargo.d3821fb0f4",
+      "assetVersion": 1,
+      "name": "Груз 86",
+      "position": [
+        -5,
+        0,
+        22
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "body-086",
+      "assetId": "system.step.47c192a6da",
+      "assetVersion": 1,
+      "name": "Ступень 87",
+      "position": [
+        -18,
+        0,
+        22.75
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "body-087",
+      "assetId": "system.step.c47d665e92",
+      "assetVersion": 1,
+      "name": "Ступень 88",
+      "position": [
+        -18,
+        0,
+        23.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "body-088",
+      "assetId": "system.step.f8fa4db28a",
+      "assetVersion": 1,
+      "name": "Ступень 89",
+      "position": [
+        -18,
+        0,
+        23.75
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "body-089",
+      "assetId": "system.step.1aad10eaf6",
+      "assetVersion": 1,
+      "name": "Ступень 90",
+      "position": [
+        -18,
+        0,
+        24.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "body-090",
+      "assetId": "system.step.c6fbfa1259",
+      "assetVersion": 1,
+      "name": "Ступень 91",
+      "position": [
+        -18,
+        0,
+        24.75
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "body-091",
+      "assetId": "system.step.ca1221c825",
+      "assetVersion": 1,
+      "name": "Ступень 92",
+      "position": [
+        -18,
+        0,
+        25.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "body-092",
+      "assetId": "system.step.799c188334",
+      "assetVersion": 1,
+      "name": "Ступень 93",
+      "position": [
+        -18,
+        0,
+        25.75
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "body-093",
+      "assetId": "system.step.d1ff6b2d23",
+      "assetVersion": 1,
+      "name": "Ступень 94",
+      "position": [
+        -18,
+        0,
+        26.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "body-094",
+      "assetId": "system.step.c104fb1d1d",
+      "assetVersion": 1,
+      "name": "Ступень 95",
+      "position": [
+        -18,
+        0,
+        26.75
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "body-095",
+      "assetId": "system.step.6dfaa5eadd",
+      "assetVersion": 1,
+      "name": "Ступень 96",
+      "position": [
+        -18,
+        0,
+        27.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "body-096",
+      "assetId": "system.step.e6b4221971",
+      "assetVersion": 1,
+      "name": "Ступень 97",
+      "position": [
+        -18,
+        0,
+        27.75
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "body-097",
+      "assetId": "system.step.80b6002650",
+      "assetVersion": 1,
+      "name": "Ступень 98",
+      "position": [
+        -18,
+        0,
+        28.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "body-098",
+      "assetId": "system.warehouse.3f7fd4b26d",
+      "assetVersion": 1,
+      "name": "Стена склада 99",
+      "position": [
+        14,
+        0,
+        18
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "body-099",
+      "assetId": "system.warehouse.7a4bff7662",
+      "assetVersion": 1,
+      "name": "Стена склада 100",
+      "position": [
+        14,
+        0,
+        33
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "body-100",
+      "assetId": "system.warehouse.2ca1eaa0e4",
+      "assetVersion": 1,
+      "name": "Стена склада 101",
+      "position": [
+        24,
+        0,
+        19.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "body-101",
+      "assetId": "system.warehouse.686a49aad1",
+      "assetVersion": 1,
+      "name": "Стена склада 102",
+      "position": [
+        24,
+        0,
+        30
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "body-102",
+      "assetId": "system.rack.a52893511a",
+      "assetVersion": 1,
+      "name": "Стеллаж 103",
+      "position": [
+        11,
+        0,
+        25
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "body-103",
+      "assetId": "system.cargo.f0547c44d6",
+      "assetVersion": 1,
+      "name": "Груз 104",
+      "position": [
+        5,
+        0,
+        22
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "body-104",
+      "assetId": "system.step.78125de3fd",
+      "assetVersion": 1,
+      "name": "Ступень 105",
+      "position": [
+        18,
+        0,
+        22.75
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "body-105",
+      "assetId": "system.step.4cf548d5b5",
+      "assetVersion": 1,
+      "name": "Ступень 106",
+      "position": [
+        18,
+        0,
+        23.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "body-106",
+      "assetId": "system.step.b906f58b8f",
+      "assetVersion": 1,
+      "name": "Ступень 107",
+      "position": [
+        18,
+        0,
+        23.75
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "body-107",
+      "assetId": "system.step.db49599c48",
+      "assetVersion": 1,
+      "name": "Ступень 108",
+      "position": [
+        18,
+        0,
+        24.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "body-108",
+      "assetId": "system.step.1b7299d06f",
+      "assetVersion": 1,
+      "name": "Ступень 109",
+      "position": [
+        18,
+        0,
+        24.75
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "body-109",
+      "assetId": "system.step.5b08ce0c37",
+      "assetVersion": 1,
+      "name": "Ступень 110",
+      "position": [
+        18,
+        0,
+        25.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "body-110",
+      "assetId": "system.step.d150bbc124",
+      "assetVersion": 1,
+      "name": "Ступень 111",
+      "position": [
+        18,
+        0,
+        25.75
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "body-111",
+      "assetId": "system.step.f780f1219f",
+      "assetVersion": 1,
+      "name": "Ступень 112",
+      "position": [
+        18,
+        0,
+        26.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "body-112",
+      "assetId": "system.step.6b944f5cfe",
+      "assetVersion": 1,
+      "name": "Ступень 113",
+      "position": [
+        18,
+        0,
+        26.75
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "body-113",
+      "assetId": "system.step.0e28d4dda4",
+      "assetVersion": 1,
+      "name": "Ступень 114",
+      "position": [
+        18,
+        0,
+        27.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "body-114",
+      "assetId": "system.step.e62245cdac",
+      "assetVersion": 1,
+      "name": "Ступень 115",
+      "position": [
+        18,
+        0,
+        27.75
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "body-115",
+      "assetId": "system.step.47d7cbb5c3",
+      "assetVersion": 1,
+      "name": "Ступень 116",
+      "position": [
+        18,
+        0,
+        28.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "body-116",
+      "assetId": "system.roof.5a4af21a2a",
+      "assetVersion": 1,
+      "name": "Крыша 117",
+      "position": [
+        0,
+        8,
+        25.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "body-117",
+      "assetId": "system.deck.274b48dbca",
+      "assetVersion": 1,
+      "name": "Платформа 118",
+      "position": [
+        0,
+        2.75,
+        30
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "body-118",
+      "assetId": "system.rail.e5af586057",
+      "assetVersion": 1,
+      "name": "Ограждение 119",
+      "position": [
+        0,
+        3,
+        28.45
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "body-119",
+      "assetId": "system.rail.3f8a0bc22d",
+      "assetVersion": 1,
+      "name": "Ограждение 120",
+      "position": [
+        0,
+        3,
+        31.55
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "detail-0087",
+      "assetId": "system.decoration.a6b67dbcd9",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        -15,
+        8.8,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "detail-0088",
+      "assetId": "system.decoration.9f16522080",
+      "assetVersion": 1,
+      "name": "steel / ring",
+      "position": [
+        -15,
+        7.1,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "detail-0089",
+      "assetId": "system.decoration.3ba2b52f63",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        0,
+        7.55,
+        20
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "detail-0090",
+      "assetId": "system.decoration.7c45d0ffae",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        -18,
+        7.2,
+        20
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "detail-0091",
+      "assetId": "system.decoration.c4ec450461",
+      "assetVersion": 1,
+      "name": "lamp / box",
+      "position": [
+        -18,
+        7.05,
+        20
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "detail-0092",
+      "assetId": "system.decoration.4f730a5cfa",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        -6,
+        7.2,
+        20
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "detail-0093",
+      "assetId": "system.decoration.92a75ab13c",
+      "assetVersion": 1,
+      "name": "lamp / box",
+      "position": [
+        -6,
+        7.05,
+        20
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "detail-0094",
+      "assetId": "system.decoration.074d33b853",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        6,
+        7.2,
+        20
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "detail-0095",
+      "assetId": "system.decoration.a9c251050e",
+      "assetVersion": 1,
+      "name": "lamp / box",
+      "position": [
+        6,
+        7.05,
+        20
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "detail-0096",
+      "assetId": "system.decoration.08bd4eea3a",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        18,
+        7.2,
+        20
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "detail-0097",
+      "assetId": "system.decoration.5017f2ba97",
+      "assetVersion": 1,
+      "name": "lamp / box",
+      "position": [
+        18,
+        7.05,
+        20
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "detail-0098",
+      "assetId": "system.decoration.7ec4135bc0",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        0,
+        7.55,
+        24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "detail-0099",
+      "assetId": "system.decoration.2925f36ded",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        -18,
+        7.2,
+        24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "detail-0100",
+      "assetId": "system.decoration.66152db137",
+      "assetVersion": 1,
+      "name": "lamp / box",
+      "position": [
+        -18,
+        7.05,
+        24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "detail-0101",
+      "assetId": "system.decoration.2e2e97b030",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        -6,
+        7.2,
+        24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "detail-0102",
+      "assetId": "system.decoration.dbe28d936d",
+      "assetVersion": 1,
+      "name": "lamp / box",
+      "position": [
+        -6,
+        7.05,
+        24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "detail-0103",
+      "assetId": "system.decoration.edf7e28c34",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        6,
+        7.2,
+        24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "detail-0104",
+      "assetId": "system.decoration.325b911d67",
+      "assetVersion": 1,
+      "name": "lamp / box",
+      "position": [
+        6,
+        7.05,
+        24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "detail-0105",
+      "assetId": "system.decoration.633d216683",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        18,
+        7.2,
+        24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "detail-0106",
+      "assetId": "system.decoration.c474c42265",
+      "assetVersion": 1,
+      "name": "lamp / box",
+      "position": [
+        18,
+        7.05,
+        24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "detail-0107",
+      "assetId": "system.decoration.c1cf5459c7",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        0,
+        7.55,
+        28
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "detail-0108",
+      "assetId": "system.decoration.7e443af73d",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        -18,
+        7.2,
+        28
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "detail-0109",
+      "assetId": "system.decoration.5feb95efb7",
+      "assetVersion": 1,
+      "name": "lamp / box",
+      "position": [
+        -18,
+        7.05,
+        28
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "detail-0110",
+      "assetId": "system.decoration.054d8d9fa0",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        -6,
+        7.2,
+        28
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "detail-0111",
+      "assetId": "system.decoration.ad3438dbca",
+      "assetVersion": 1,
+      "name": "lamp / box",
+      "position": [
+        -6,
+        7.05,
+        28
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "detail-0112",
+      "assetId": "system.decoration.314c9fde9d",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        6,
+        7.2,
+        28
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "detail-0113",
+      "assetId": "system.decoration.78ba29cfb3",
+      "assetVersion": 1,
+      "name": "lamp / box",
+      "position": [
+        6,
+        7.05,
+        28
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "detail-0114",
+      "assetId": "system.decoration.c0b552a71a",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        18,
+        7.2,
+        28
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "detail-0115",
+      "assetId": "system.decoration.01694a0606",
+      "assetVersion": 1,
+      "name": "lamp / box",
+      "position": [
+        18,
+        7.05,
+        28
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "detail-0116",
+      "assetId": "system.decoration.5e77f4de5d",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        0,
+        7.55,
+        32
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "detail-0117",
+      "assetId": "system.decoration.3dbd975cda",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        -18,
+        7.2,
+        32
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "detail-0118",
+      "assetId": "system.decoration.db7a7d96cd",
+      "assetVersion": 1,
+      "name": "lamp / box",
+      "position": [
+        -18,
+        7.05,
+        32
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "detail-0119",
+      "assetId": "system.decoration.1437516f3a",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        -6,
+        7.2,
+        32
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "detail-0120",
+      "assetId": "system.decoration.25b3ca641f",
+      "assetVersion": 1,
+      "name": "lamp / box",
+      "position": [
+        -6,
+        7.05,
+        32
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "detail-0121",
+      "assetId": "system.decoration.2107f69518",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        6,
+        7.2,
+        32
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "detail-0122",
+      "assetId": "system.decoration.9aa3da2196",
+      "assetVersion": 1,
+      "name": "lamp / box",
+      "position": [
+        6,
+        7.05,
+        32
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "detail-0123",
+      "assetId": "system.decoration.f0ef05b2b3",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        18,
+        7.2,
+        32
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "detail-0124",
+      "assetId": "system.decoration.e7195b8a25",
+      "assetVersion": 1,
+      "name": "lamp / box",
+      "position": [
+        18,
+        7.05,
+        32
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "detail-0125",
+      "assetId": "system.decoration.574e623b98",
+      "assetVersion": 1,
+      "name": "blue / box",
+      "position": [
+        -43,
+        1,
+        -24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "detail-0126",
+      "assetId": "system.decoration.cf17e27d95",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        -43,
+        1.4,
+        -23.76
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "detail-0127",
+      "assetId": "system.decoration.6ff5545fe3",
+      "assetVersion": 1,
+      "name": "glow / box",
+      "position": [
+        -42.72,
+        0.75,
+        -23.75
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "detail-0128",
+      "assetId": "system.decoration.c7d06121d9",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        -43,
+        0.2,
+        -23.76
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "detail-0129",
+      "assetId": "system.decoration.7d22961ac7",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        -43,
+        0.28,
+        -23.76
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "detail-0130",
+      "assetId": "system.decoration.a3304e65dc",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        -43,
+        0.36,
+        -23.76
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "detail-0131",
+      "assetId": "system.decoration.d947a091ec",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        -43,
+        0.44,
+        -23.76
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "detail-0132",
+      "assetId": "system.decoration.6c60dfcee9",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        -43,
+        0.52,
+        -23.76
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "detail-0133",
+      "assetId": "system.decoration.5fd5c97117",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        -43,
+        6,
+        -24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "detail-0134",
+      "assetId": "system.decoration.6ceffd6cb7",
+      "assetVersion": 1,
+      "name": "lamp / box",
+      "position": [
+        -42.8,
+        7.3,
+        -24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "detail-0135",
+      "assetId": "system.decoration.655f2d876b",
+      "assetVersion": 1,
+      "name": "blue / box",
+      "position": [
+        -43,
+        1,
+        -12
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0136",
+      "assetId": "system.decoration.c68cc7cc60",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        -43,
+        1.4,
+        -11.76
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0137",
+      "assetId": "system.decoration.a6c177a066",
+      "assetVersion": 1,
+      "name": "glow / box",
+      "position": [
+        -42.72,
+        0.75,
+        -11.75
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0138",
+      "assetId": "system.decoration.953743a6d9",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        -43,
+        0.2,
+        -11.76
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0139",
+      "assetId": "system.decoration.85f4028f45",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        -43,
+        0.28,
+        -11.76
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0140",
+      "assetId": "system.decoration.cd75057404",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        -43,
+        0.36,
+        -11.76
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0141",
+      "assetId": "system.decoration.f750b19926",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        -43,
+        0.44,
+        -11.76
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0142",
+      "assetId": "system.decoration.5b174e037b",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        -43,
+        0.52,
+        -11.76
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0143",
+      "assetId": "system.decoration.3ada3ce9ea",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        -43,
+        6,
+        -12
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0144",
+      "assetId": "system.decoration.f0aa4c4f62",
+      "assetVersion": 1,
+      "name": "lamp / box",
+      "position": [
+        -42.8,
+        7.3,
+        -12
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0145",
+      "assetId": "system.decoration.8512a746de",
+      "assetVersion": 1,
+      "name": "blue / box",
+      "position": [
+        -43,
+        1,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0146",
+      "assetId": "system.decoration.a2f5b8a105",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        -43,
+        1.4,
+        0.24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0147",
+      "assetId": "system.decoration.627b9dcd45",
+      "assetVersion": 1,
+      "name": "glow / box",
+      "position": [
+        -42.72,
+        0.75,
+        0.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0148",
+      "assetId": "system.decoration.c9c4a3e430",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        -43,
+        0.2,
+        0.24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0149",
+      "assetId": "system.decoration.47f6eae453",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        -43,
+        0.28,
+        0.24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0150",
+      "assetId": "system.decoration.9c7c068d53",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        -43,
+        0.36,
+        0.24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0151",
+      "assetId": "system.decoration.62abfa5bcd",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        -43,
+        0.44,
+        0.24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0152",
+      "assetId": "system.decoration.be479d3260",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        -43,
+        0.52,
+        0.24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0153",
+      "assetId": "system.decoration.c7c1ab2cae",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        -43,
+        6,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0154",
+      "assetId": "system.decoration.0188872dd0",
+      "assetVersion": 1,
+      "name": "lamp / box",
+      "position": [
+        -42.8,
+        7.3,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0155",
+      "assetId": "system.decoration.19808c8dcf",
+      "assetVersion": 1,
+      "name": "blue / box",
+      "position": [
+        -43,
+        1,
+        12
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0156",
+      "assetId": "system.decoration.48d6c25e16",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        -43,
+        1.4,
+        12.24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0157",
+      "assetId": "system.decoration.12a056522a",
+      "assetVersion": 1,
+      "name": "glow / box",
+      "position": [
+        -42.72,
+        0.75,
+        12.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0158",
+      "assetId": "system.decoration.3201201a34",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        -43,
+        0.2,
+        12.24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0159",
+      "assetId": "system.decoration.243e44dc90",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        -43,
+        0.28,
+        12.24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0160",
+      "assetId": "system.decoration.b4d2ea06ad",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        -43,
+        0.36,
+        12.24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0161",
+      "assetId": "system.decoration.f8591102e1",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        -43,
+        0.44,
+        12.24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0162",
+      "assetId": "system.decoration.aaf68cadd9",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        -43,
+        0.52,
+        12.24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0163",
+      "assetId": "system.decoration.8d6f0b5cef",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        -43,
+        6,
+        12
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0164",
+      "assetId": "system.decoration.e2e6356f57",
+      "assetVersion": 1,
+      "name": "lamp / box",
+      "position": [
+        -42.8,
+        7.3,
+        12
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0165",
+      "assetId": "system.decoration.591212c9b4",
+      "assetVersion": 1,
+      "name": "blue / box",
+      "position": [
+        -43,
+        1,
+        24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "detail-0166",
+      "assetId": "system.decoration.798186f3db",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        -43,
+        1.4,
+        24.24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "detail-0167",
+      "assetId": "system.decoration.f059f4ed63",
+      "assetVersion": 1,
+      "name": "glow / box",
+      "position": [
+        -42.72,
+        0.75,
+        24.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "detail-0168",
+      "assetId": "system.decoration.570c91a380",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        -43,
+        0.2,
+        24.24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "detail-0169",
+      "assetId": "system.decoration.10bf9d3a80",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        -43,
+        0.28,
+        24.24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "detail-0170",
+      "assetId": "system.decoration.b02a28ba38",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        -43,
+        0.36,
+        24.24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "detail-0171",
+      "assetId": "system.decoration.d3cf509172",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        -43,
+        0.44,
+        24.24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "detail-0172",
+      "assetId": "system.decoration.2777a375be",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        -43,
+        0.52,
+        24.24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "detail-0173",
+      "assetId": "system.decoration.13bd96c77b",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        -43,
+        6,
+        24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "detail-0174",
+      "assetId": "system.decoration.dbc55389b9",
+      "assetVersion": 1,
+      "name": "lamp / box",
+      "position": [
+        -42.8,
+        7.3,
+        24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "detail-0175",
+      "assetId": "system.decoration.f01fc2b4e1",
+      "assetVersion": 1,
+      "name": "distantSteel / box",
+      "position": [
+        -57,
+        7,
+        -26
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "detail-0176",
+      "assetId": "system.decoration.93272cd6eb",
+      "assetVersion": 1,
+      "name": "distantConcrete / cylinder",
+      "position": [
+        -55,
+        18,
+        -26
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "detail-0177",
+      "assetId": "system.decoration.917dcca64e",
+      "assetVersion": 1,
+      "name": "distantDark / ring",
+      "position": [
+        -55,
+        24,
+        -26
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "detail-0178",
+      "assetId": "system.decoration.676d00670b",
+      "assetVersion": 1,
+      "name": "distantSteel / box",
+      "position": [
+        -57,
+        7,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0179",
+      "assetId": "system.decoration.524d9544fd",
+      "assetVersion": 1,
+      "name": "distantConcrete / cylinder",
+      "position": [
+        -55,
+        18,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0180",
+      "assetId": "system.decoration.e696e66e6b",
+      "assetVersion": 1,
+      "name": "distantDark / ring",
+      "position": [
+        -55,
+        24,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0181",
+      "assetId": "system.decoration.0f468ec64c",
+      "assetVersion": 1,
+      "name": "distantSteel / box",
+      "position": [
+        -57,
+        7,
+        26
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "detail-0182",
+      "assetId": "system.decoration.c4c800f893",
+      "assetVersion": 1,
+      "name": "distantConcrete / cylinder",
+      "position": [
+        -55,
+        18,
+        26
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "detail-0183",
+      "assetId": "system.decoration.cb6ecd2959",
+      "assetVersion": 1,
+      "name": "distantDark / ring",
+      "position": [
+        -55,
+        24,
+        26
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "detail-0184",
+      "assetId": "system.decoration.b5456f009c",
+      "assetVersion": 1,
+      "name": "distantDark / cylinder",
+      "position": [
+        -28,
+        22,
+        -48
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "detail-0185",
+      "assetId": "system.decoration.c9b30ee48d",
+      "assetVersion": 1,
+      "name": "red / ring",
+      "position": [
+        -28,
+        12,
+        -48
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "detail-0186",
+      "assetId": "system.decoration.0f4a3272a7",
+      "assetVersion": 1,
+      "name": "red / ring",
+      "position": [
+        -28,
+        20,
+        -48
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "detail-0187",
+      "assetId": "system.decoration.4a6a151613",
+      "assetVersion": 1,
+      "name": "red / ring",
+      "position": [
+        -28,
+        28,
+        -48
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "detail-0188",
+      "assetId": "system.decoration.b5c39a685f",
+      "assetVersion": 1,
+      "name": "red / ring",
+      "position": [
+        -28,
+        36,
+        -48
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "detail-0189",
+      "assetId": "system.decoration.534095da97",
+      "assetVersion": 1,
+      "name": "distantDark / box",
+      "position": [
+        -46,
+        6.2,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0190",
+      "assetId": "system.decoration.b29b96fc14",
+      "assetVersion": 1,
+      "name": "distantSteel / box",
+      "position": [
+        -46,
+        6.2,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0191",
+      "assetId": "system.decoration.a92a971d1d",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        15,
+        8.8,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "detail-0192",
+      "assetId": "system.decoration.00bcb6e2c5",
+      "assetVersion": 1,
+      "name": "steel / ring",
+      "position": [
+        15,
+        7.1,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "detail-0193",
+      "assetId": "system.decoration.24adffb056",
+      "assetVersion": 1,
+      "name": "blue / box",
+      "position": [
+        43,
+        1,
+        -24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "detail-0194",
+      "assetId": "system.decoration.1351766838",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        43,
+        1.4,
+        -23.76
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "detail-0195",
+      "assetId": "system.decoration.0c79dcbb4c",
+      "assetVersion": 1,
+      "name": "glow / box",
+      "position": [
+        43.28,
+        0.75,
+        -23.75
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "detail-0196",
+      "assetId": "system.decoration.adee3cc700",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        43,
+        0.2,
+        -23.76
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "detail-0197",
+      "assetId": "system.decoration.7069b0b3cb",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        43,
+        0.28,
+        -23.76
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "detail-0198",
+      "assetId": "system.decoration.7c07aef0f9",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        43,
+        0.36,
+        -23.76
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "detail-0199",
+      "assetId": "system.decoration.4b45e65218",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        43,
+        0.44,
+        -23.76
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "detail-0200",
+      "assetId": "system.decoration.f0b248a27d",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        43,
+        0.52,
+        -23.76
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "detail-0201",
+      "assetId": "system.decoration.df59b1d58c",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        43,
+        6,
+        -24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "detail-0202",
+      "assetId": "system.decoration.d495f96fbe",
+      "assetVersion": 1,
+      "name": "lamp / box",
+      "position": [
+        42.8,
+        7.3,
+        -24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "detail-0203",
+      "assetId": "system.decoration.fc73530c1e",
+      "assetVersion": 1,
+      "name": "blue / box",
+      "position": [
+        43,
+        1,
+        -12
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0204",
+      "assetId": "system.decoration.9d2a602ef7",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        43,
+        1.4,
+        -11.76
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0205",
+      "assetId": "system.decoration.ba80d73e3a",
+      "assetVersion": 1,
+      "name": "glow / box",
+      "position": [
+        43.28,
+        0.75,
+        -11.75
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0206",
+      "assetId": "system.decoration.f2bf88b913",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        43,
+        0.2,
+        -11.76
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0207",
+      "assetId": "system.decoration.2db80241de",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        43,
+        0.28,
+        -11.76
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0208",
+      "assetId": "system.decoration.5b940712c4",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        43,
+        0.36,
+        -11.76
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0209",
+      "assetId": "system.decoration.a4450f18eb",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        43,
+        0.44,
+        -11.76
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0210",
+      "assetId": "system.decoration.d71e2302c6",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        43,
+        0.52,
+        -11.76
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0211",
+      "assetId": "system.decoration.1737ca201e",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        43,
+        6,
+        -12
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0212",
+      "assetId": "system.decoration.a5eb1c7b75",
+      "assetVersion": 1,
+      "name": "lamp / box",
+      "position": [
+        42.8,
+        7.3,
+        -12
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0213",
+      "assetId": "system.decoration.4c64278512",
+      "assetVersion": 1,
+      "name": "blue / box",
+      "position": [
+        43,
+        1,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0214",
+      "assetId": "system.decoration.ab929f6094",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        43,
+        1.4,
+        0.24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0215",
+      "assetId": "system.decoration.c6424cda09",
+      "assetVersion": 1,
+      "name": "glow / box",
+      "position": [
+        43.28,
+        0.75,
+        0.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0216",
+      "assetId": "system.decoration.cbe2a44f0b",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        43,
+        0.2,
+        0.24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0217",
+      "assetId": "system.decoration.94c0e06a0a",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        43,
+        0.28,
+        0.24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0218",
+      "assetId": "system.decoration.fd2540b473",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        43,
+        0.36,
+        0.24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0219",
+      "assetId": "system.decoration.861f19f7cc",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        43,
+        0.44,
+        0.24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0220",
+      "assetId": "system.decoration.689bae4d9a",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        43,
+        0.52,
+        0.24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0221",
+      "assetId": "system.decoration.7575f3209d",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        43,
+        6,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0222",
+      "assetId": "system.decoration.1d83939000",
+      "assetVersion": 1,
+      "name": "lamp / box",
+      "position": [
+        42.8,
+        7.3,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0223",
+      "assetId": "system.decoration.79f03a131c",
+      "assetVersion": 1,
+      "name": "blue / box",
+      "position": [
+        43,
+        1,
+        12
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0224",
+      "assetId": "system.decoration.722187f9ef",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        43,
+        1.4,
+        12.24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0225",
+      "assetId": "system.decoration.fd9dcc5daa",
+      "assetVersion": 1,
+      "name": "glow / box",
+      "position": [
+        43.28,
+        0.75,
+        12.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0226",
+      "assetId": "system.decoration.d83b582e9b",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        43,
+        0.2,
+        12.24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0227",
+      "assetId": "system.decoration.91c8ba364b",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        43,
+        0.28,
+        12.24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0228",
+      "assetId": "system.decoration.ece1bea723",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        43,
+        0.36,
+        12.24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0229",
+      "assetId": "system.decoration.261ee55c96",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        43,
+        0.44,
+        12.24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0230",
+      "assetId": "system.decoration.16b768b810",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        43,
+        0.52,
+        12.24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0231",
+      "assetId": "system.decoration.853bafeda0",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        43,
+        6,
+        12
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0232",
+      "assetId": "system.decoration.2f9183e3b8",
+      "assetVersion": 1,
+      "name": "lamp / box",
+      "position": [
+        42.8,
+        7.3,
+        12
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0233",
+      "assetId": "system.decoration.109c5bf168",
+      "assetVersion": 1,
+      "name": "blue / box",
+      "position": [
+        43,
+        1,
+        24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "detail-0234",
+      "assetId": "system.decoration.ce03963b1d",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        43,
+        1.4,
+        24.24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "detail-0235",
+      "assetId": "system.decoration.4284c23a3a",
+      "assetVersion": 1,
+      "name": "glow / box",
+      "position": [
+        43.28,
+        0.75,
+        24.25
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "detail-0236",
+      "assetId": "system.decoration.634c6dc7d7",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        43,
+        0.2,
+        24.24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "detail-0237",
+      "assetId": "system.decoration.b41821987c",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        43,
+        0.28,
+        24.24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "detail-0238",
+      "assetId": "system.decoration.a208a1f8db",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        43,
+        0.36,
+        24.24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "detail-0239",
+      "assetId": "system.decoration.e52b535b56",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        43,
+        0.44,
+        24.24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "detail-0240",
+      "assetId": "system.decoration.686685b222",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        43,
+        0.52,
+        24.24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "detail-0241",
+      "assetId": "system.decoration.7fb4c495f9",
+      "assetVersion": 1,
+      "name": "dark / box",
+      "position": [
+        43,
+        6,
+        24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "detail-0242",
+      "assetId": "system.decoration.f853ad0109",
+      "assetVersion": 1,
+      "name": "lamp / box",
+      "position": [
+        42.8,
+        7.3,
+        24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "detail-0243",
+      "assetId": "system.decoration.f8e8baf6ab",
+      "assetVersion": 1,
+      "name": "distantSteel / box",
+      "position": [
+        57,
+        7,
+        -26
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "detail-0244",
+      "assetId": "system.decoration.7e60e7db8d",
+      "assetVersion": 1,
+      "name": "distantConcrete / cylinder",
+      "position": [
+        55,
+        18,
+        -26
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "detail-0245",
+      "assetId": "system.decoration.5e3171574e",
+      "assetVersion": 1,
+      "name": "distantDark / ring",
+      "position": [
+        55,
+        24,
+        -26
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "detail-0246",
+      "assetId": "system.decoration.dd056f3b3d",
+      "assetVersion": 1,
+      "name": "distantSteel / box",
+      "position": [
+        57,
+        7,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0247",
+      "assetId": "system.decoration.aaa013353f",
+      "assetVersion": 1,
+      "name": "distantConcrete / cylinder",
+      "position": [
+        55,
+        18,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0248",
+      "assetId": "system.decoration.cf4486f492",
+      "assetVersion": 1,
+      "name": "distantDark / ring",
+      "position": [
+        55,
+        24,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0249",
+      "assetId": "system.decoration.d1e2f92f9d",
+      "assetVersion": 1,
+      "name": "distantSteel / box",
+      "position": [
+        57,
+        7,
+        26
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "detail-0250",
+      "assetId": "system.decoration.72d0019113",
+      "assetVersion": 1,
+      "name": "distantConcrete / cylinder",
+      "position": [
+        55,
+        18,
+        26
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "detail-0251",
+      "assetId": "system.decoration.99e48422e5",
+      "assetVersion": 1,
+      "name": "distantDark / ring",
+      "position": [
+        55,
+        24,
+        26
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "detail-0252",
+      "assetId": "system.decoration.fbec6569fe",
+      "assetVersion": 1,
+      "name": "distantDark / cylinder",
+      "position": [
+        28,
+        22,
+        -48
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "detail-0253",
+      "assetId": "system.decoration.8d23cae6d4",
+      "assetVersion": 1,
+      "name": "red / ring",
+      "position": [
+        28,
+        12,
+        -48
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "detail-0254",
+      "assetId": "system.decoration.82f8d6a90d",
+      "assetVersion": 1,
+      "name": "red / ring",
+      "position": [
+        28,
+        20,
+        -48
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "detail-0255",
+      "assetId": "system.decoration.d79a14c407",
+      "assetVersion": 1,
+      "name": "red / ring",
+      "position": [
+        28,
+        28,
+        -48
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "detail-0256",
+      "assetId": "system.decoration.aada68124b",
+      "assetVersion": 1,
+      "name": "red / ring",
+      "position": [
+        28,
+        36,
+        -48
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "detail-0257",
+      "assetId": "system.decoration.6f8578bc08",
+      "assetVersion": 1,
+      "name": "distantDark / box",
+      "position": [
+        46,
+        6.2,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0258",
+      "assetId": "system.decoration.b523589045",
+      "assetVersion": 1,
+      "name": "distantSteel / box",
+      "position": [
+        46,
+        6.2,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0259",
+      "assetId": "system.decoration.ce1107b20b",
+      "assetVersion": 1,
+      "name": "Покрытие 0259",
+      "position": [
+        0,
+        6,
+        -5.08
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Core"
+    },
+    {
+      "id": "detail-0260",
+      "assetId": "system.decoration.44bc9f4b2e",
+      "assetVersion": 1,
+      "name": "Покрытие 0260",
+      "position": [
+        0,
+        4.8,
+        -34.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Yard"
+    },
+    {
+      "id": "detail-0261",
+      "assetId": "system.decoration.c44b87d8de",
+      "assetVersion": 1,
+      "name": "Покрытие 0261",
+      "position": [
+        0,
+        5.7,
+        32.65
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Warehouse"
+    },
+    {
+      "id": "detail-0262",
+      "assetId": "system.decoration.b46c995906",
+      "assetVersion": 1,
+      "name": "Покрытие 0262",
+      "position": [
+        -44.4,
+        4,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "detail-0263",
+      "assetId": "system.decoration.8e4d6e273e",
+      "assetVersion": 1,
+      "name": "Покрытие 0263",
+      "position": [
+        44.4,
+        4,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Flanks"
+    },
+    {
+      "id": "spawn-alpha-1",
+      "assetId": "gameplay.spawn_a",
+      "assetVersion": 1,
+      "name": "Старт Alpha 1",
+      "position": [
+        -38,
+        0,
+        -10
+      ],
+      "rotation": [
+        0,
+        104.74356283647074,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "Alpha",
+        "modes": [
+          "elimination",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-alpha-2",
+      "assetId": "gameplay.spawn_a",
+      "assetVersion": 1,
+      "name": "Старт Alpha 2",
+      "position": [
+        -38,
+        0,
+        -6
+      ],
+      "rotation": [
+        0,
+        98.9726266148964,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "Alpha",
+        "modes": [
+          "elimination",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-alpha-3",
+      "assetId": "gameplay.spawn_a",
+      "assetVersion": 1,
+      "name": "Старт Alpha 3",
+      "position": [
+        -38,
+        0,
+        -2
+      ],
+      "rotation": [
+        0,
+        93.01278750418334,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "Alpha",
+        "modes": [
+          "elimination",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-alpha-4",
+      "assetId": "gameplay.spawn_a",
+      "assetVersion": 1,
+      "name": "Старт Alpha 4",
+      "position": [
+        -38,
+        0,
+        2
+      ],
+      "rotation": [
+        0,
+        86.98721249581666,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "Alpha",
+        "modes": [
+          "elimination",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-alpha-5",
+      "assetId": "gameplay.spawn_a",
+      "assetVersion": 1,
+      "name": "Старт Alpha 5",
+      "position": [
+        -38,
+        0,
+        6
+      ],
+      "rotation": [
+        0,
+        81.02737338510362,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "Alpha",
+        "modes": [
+          "elimination",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-alpha-6",
+      "assetId": "gameplay.spawn_a",
+      "assetVersion": 1,
+      "name": "Старт Alpha 6",
+      "position": [
+        -38,
+        0,
+        10
+      ],
+      "rotation": [
+        0,
+        75.25643716352927,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "Alpha",
+        "modes": [
+          "elimination",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-alpha-7",
+      "assetId": "gameplay.spawn_a",
+      "assetVersion": 1,
+      "name": "Старт Alpha 7",
+      "position": [
+        -41,
+        0,
+        -6
+      ],
+      "rotation": [
+        0,
+        98.32565033042684,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "Alpha",
+        "modes": [
+          "elimination",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-alpha-8",
+      "assetId": "gameplay.spawn_a",
+      "assetVersion": 1,
+      "name": "Старт Alpha 8",
+      "position": [
+        -41,
+        0,
+        6
+      ],
+      "rotation": [
+        0,
+        81.67434966957316,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "Alpha",
+        "modes": [
+          "elimination",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-bravo-1",
+      "assetId": "gameplay.spawn_b",
+      "assetVersion": 1,
+      "name": "Старт Bravo 1",
+      "position": [
+        38,
+        0,
+        -10
+      ],
+      "rotation": [
+        0,
+        -104.74356283647074,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "Bravo",
+        "modes": [
+          "elimination",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-bravo-2",
+      "assetId": "gameplay.spawn_b",
+      "assetVersion": 1,
+      "name": "Старт Bravo 2",
+      "position": [
+        38,
+        0,
+        -6
+      ],
+      "rotation": [
+        0,
+        -98.9726266148964,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "Bravo",
+        "modes": [
+          "elimination",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-bravo-3",
+      "assetId": "gameplay.spawn_b",
+      "assetVersion": 1,
+      "name": "Старт Bravo 3",
+      "position": [
+        38,
+        0,
+        -2
+      ],
+      "rotation": [
+        0,
+        -93.01278750418334,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "Bravo",
+        "modes": [
+          "elimination",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-bravo-4",
+      "assetId": "gameplay.spawn_b",
+      "assetVersion": 1,
+      "name": "Старт Bravo 4",
+      "position": [
+        38,
+        0,
+        2
+      ],
+      "rotation": [
+        0,
+        -86.98721249581666,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "Bravo",
+        "modes": [
+          "elimination",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-bravo-5",
+      "assetId": "gameplay.spawn_b",
+      "assetVersion": 1,
+      "name": "Старт Bravo 5",
+      "position": [
+        38,
+        0,
+        6
+      ],
+      "rotation": [
+        0,
+        -81.02737338510362,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "Bravo",
+        "modes": [
+          "elimination",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-bravo-6",
+      "assetId": "gameplay.spawn_b",
+      "assetVersion": 1,
+      "name": "Старт Bravo 6",
+      "position": [
+        38,
+        0,
+        10
+      ],
+      "rotation": [
+        0,
+        -75.25643716352927,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "Bravo",
+        "modes": [
+          "elimination",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-bravo-7",
+      "assetId": "gameplay.spawn_b",
+      "assetVersion": 1,
+      "name": "Старт Bravo 7",
+      "position": [
+        41,
+        0,
+        -6
+      ],
+      "rotation": [
+        0,
+        -98.32565033042684,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "Bravo",
+        "modes": [
+          "elimination",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-bravo-8",
+      "assetId": "gameplay.spawn_b",
+      "assetVersion": 1,
+      "name": "Старт Bravo 8",
+      "position": [
+        41,
+        0,
+        6
+      ],
+      "rotation": [
+        0,
+        -81.67434966957316,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "Bravo",
+        "modes": [
+          "elimination",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-1",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 1",
+      "position": [
+        -39,
+        0,
+        -12
+      ],
+      "rotation": [
+        0,
+        107.10272896905236,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-2",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 2",
+      "position": [
+        -39,
+        0,
+        12
+      ],
+      "rotation": [
+        0,
+        72.89727103094764,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-3",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 3",
+      "position": [
+        -40,
+        0,
+        -28
+      ],
+      "rotation": [
+        0,
+        124.99202019855868,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-4",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 4",
+      "position": [
+        -40,
+        0,
+        28
+      ],
+      "rotation": [
+        0,
+        55.00797980144134,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-5",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 5",
+      "position": [
+        -29,
+        0,
+        -19
+      ],
+      "rotation": [
+        0,
+        123.23171106797936,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-6",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 6",
+      "position": [
+        -29,
+        0,
+        19
+      ],
+      "rotation": [
+        0,
+        56.768288932020646,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-7",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 7",
+      "position": [
+        -14,
+        0,
+        -31
+      ],
+      "rotation": [
+        0,
+        155.6954507340633,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-8",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 8",
+      "position": [
+        -4,
+        0,
+        -18
+      ],
+      "rotation": [
+        0,
+        167.47119229084848,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-9",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 9",
+      "position": [
+        -26,
+        0,
+        2
+      ],
+      "rotation": [
+        0,
+        85.60129464500447,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-10",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 10",
+      "position": [
+        -16,
+        0,
+        15
+      ],
+      "rotation": [
+        0,
+        46.8476102659946,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-11",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 11",
+      "position": [
+        -20,
+        0,
+        25
+      ],
+      "rotation": [
+        0,
+        38.65980825409009,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-12",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 12",
+      "position": [
+        -5,
+        0,
+        26
+      ],
+      "rotation": [
+        0,
+        10.885527054658738,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-13",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 13",
+      "position": [
+        -7,
+        0,
+        8
+      ],
+      "rotation": [
+        0,
+        41.18592516570965,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-14",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 14",
+      "position": [
+        -7,
+        0,
+        -5
+      ],
+      "rotation": [
+        0,
+        125.53767779197437,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-15",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 15",
+      "position": [
+        -29,
+        0,
+        30
+      ],
+      "rotation": [
+        0,
+        44.028978068920836,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-16",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 16",
+      "position": [
+        -41,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        90.0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-17",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 17",
+      "position": [
+        39,
+        0,
+        -12
+      ],
+      "rotation": [
+        0,
+        -107.10272896905236,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-18",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 18",
+      "position": [
+        39,
+        0,
+        12
+      ],
+      "rotation": [
+        0,
+        -72.89727103094764,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-19",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 19",
+      "position": [
+        40,
+        0,
+        -28
+      ],
+      "rotation": [
+        0,
+        -124.99202019855868,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-20",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 20",
+      "position": [
+        40,
+        0,
+        28
+      ],
+      "rotation": [
+        0,
+        -55.00797980144134,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-21",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 21",
+      "position": [
+        29,
+        0,
+        -19
+      ],
+      "rotation": [
+        0,
+        -123.23171106797936,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-22",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 22",
+      "position": [
+        29,
+        0,
+        19
+      ],
+      "rotation": [
+        0,
+        -56.768288932020646,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-23",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 23",
+      "position": [
+        14,
+        0,
+        -31
+      ],
+      "rotation": [
+        0,
+        -155.6954507340633,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-24",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 24",
+      "position": [
+        4,
+        0,
+        -18
+      ],
+      "rotation": [
+        0,
+        -167.47119229084848,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-25",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 25",
+      "position": [
+        26,
+        0,
+        2
+      ],
+      "rotation": [
+        0,
+        -85.60129464500447,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-26",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 26",
+      "position": [
+        16,
+        0,
+        15
+      ],
+      "rotation": [
+        0,
+        -46.8476102659946,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-27",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 27",
+      "position": [
+        20,
+        0,
+        25
+      ],
+      "rotation": [
+        0,
+        -38.65980825409009,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-28",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 28",
+      "position": [
+        5,
+        0,
+        26
+      ],
+      "rotation": [
+        0,
+        -10.885527054658738,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-29",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 29",
+      "position": [
+        7,
+        0,
+        8
+      ],
+      "rotation": [
+        0,
+        -41.18592516570965,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-30",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 30",
+      "position": [
+        7,
+        0,
+        -5
+      ],
+      "rotation": [
+        0,
+        -125.53767779197437,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-31",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 31",
+      "position": [
+        29,
+        0,
+        30
+      ],
+      "rotation": [
+        0,
+        -44.028978068920836,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-32",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 32",
+      "position": [
+        41,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        -90.0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "playable",
+      "assetId": "gameplay.playable",
+      "assetVersion": 1,
+      "name": "Игровая область",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        8.8,
+        6.4,
+        6.8
+      ],
+      "properties": {},
+      "group": "Gameplay"
+    },
+    {
+      "id": "light-1",
+      "assetId": "light.point",
+      "assetVersion": 1,
+      "name": "Точечный свет 1",
+      "position": [
+        0,
+        7,
+        -5.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "color": "#ff923c",
+        "intensity": 65,
+        "range": 22
+      },
+      "group": "Lighting"
+    },
+    {
+      "id": "sparks-1",
+      "assetId": "effect.rising-sparks",
+      "assetVersion": 1,
+      "name": "Искры печи",
+      "position": [
+        0,
+        8,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Lighting"
+    }
+  ],
+  "groups": [
+    {
+      "id": "Core",
+      "name": "Core"
+    },
+    {
+      "id": "Yard",
+      "name": "Yard"
+    },
+    {
+      "id": "Warehouse",
+      "name": "Warehouse"
+    },
+    {
+      "id": "Flanks",
+      "name": "Flanks"
+    },
+    {
+      "id": "Gameplay",
+      "name": "Gameplay"
+    },
+    {
+      "id": "Lighting",
+      "name": "Lighting"
+    }
+  ],
+  "settings": {
+    "modes": [
+      "elimination",
+      "tdm",
+      "dm"
+    ],
+    "respawnPolicy": "team",
+    "respawnFallback": true
+  }
+}

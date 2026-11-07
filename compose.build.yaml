@@ -1,0 +1,10 @@
+# Only the preparation machine uses this override. Runtime compose never builds/pulls.
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: deploy/Dockerfile.backend
+  nginx:
+    build:
+      context: .
+      dockerfile: deploy/Dockerfile.frontend

@@ -1,0 +1,67 @@
+.video-poker-combinations {
+  margin-top: 22px;
+  text-align: left;
+}
+.video-poker-combinations > h3 {
+  margin: 0 0 6px;
+}
+.video-poker-combinations > p {
+  color: #c3d8cf;
+  font-size: 12px;
+  line-height: 1.5;
+  margin: 0 0 12px;
+}
+.video-poker-combinations table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+  line-height: 1.4;
+  color: #e8f3ed;
+}
+.video-poker-combinations th,
+.video-poker-combinations td {
+  padding: 8px 10px;
+  border-bottom: 1px solid #ffffff20;
+  text-align: left;
+}
+.video-poker-combinations thead {
+  color: #d9c28c;
+}
+.video-poker-combinations th {
+  background: #123c30;
+  color: #e8f3ed;
+}
+.video-poker-combinations thead th {
+  color: #e5cb95;
+}
+.video-poker-combinations .current-combination th {
+  background: transparent;
+}
+.video-poker-combinations th:first-child {
+  width: 155px;
+}
+.video-poker-combinations td:last-child {
+  white-space: nowrap;
+  font-weight: 700;
+  color: #f8d788;
+}
+.video-poker-combinations .current-combination {
+  background: #f2cf8630;
+  outline: 1px solid #dfbf79;
+  outline-offset: -1px;
+}
+.video-poker-combinations th small {
+  display: block;
+  color: #ffe5aa;
+  margin-top: 3px;
+  font-weight: 400;
+}
+.video-poker-result {
+  display: grid;
+  gap: 6px;
+  text-align: left;
+}
+.video-poker-result span {
+  font-size: 13px;
+  font-weight: 400;
+}

@@ -1,0 +1,86 @@
+{
+  "results": [
+    {
+      "id": "depot_07",
+      "before": {
+        "frameMedian": 13.300000000000182,
+        "frameP95": 13.400000000000546,
+        "renderP95": 3.600000023841858,
+        "calls": 58,
+        "triangles": 3922,
+        "memory": {
+          "geometries": 24,
+          "textures": 25
+        },
+        "objects": 172
+      },
+      "after": {
+        "frameMedian": 13.300000000000182,
+        "frameP95": 13.5,
+        "renderP95": 3.8000000715255737,
+        "calls": 99,
+        "triangles": 4002,
+        "memory": {
+          "geometries": 62,
+          "textures": 19
+        },
+        "objects": 173
+      }
+    },
+    {
+      "id": "foundry",
+      "before": {
+        "frameMedian": 13.300000000001091,
+        "frameP95": 13.400000000001455,
+        "renderP95": 5.5,
+        "calls": 120,
+        "triangles": 18800,
+        "memory": {
+          "geometries": 14,
+          "textures": 12
+        },
+        "objects": 557
+      },
+      "after": {
+        "frameMedian": 13.300000000001091,
+        "frameP95": 13.5,
+        "renderP95": 6.100000023841858,
+        "calls": 130,
+        "triangles": 18820,
+        "memory": {
+          "geometries": 24,
+          "textures": 15
+        },
+        "objects": 557
+      }
+    },
+    {
+      "id": "outpost",
+      "before": {
+        "frameMedian": 13.30000000000291,
+        "frameP95": 13.400000000001455,
+        "renderP95": 5.200000047683716,
+        "calls": 113,
+        "triangles": 14094,
+        "memory": {
+          "geometries": 28,
+          "textures": 12
+        },
+        "objects": 507
+      },
+      "after": {
+        "frameMedian": 13.30000000000291,
+        "frameP95": 13.5,
+        "renderP95": 4.700000047683716,
+        "calls": 117,
+        "triangles": 14102,
+        "memory": {
+          "geometries": 31,
+          "textures": 13
+        },
+        "objects": 507
+      }
+    }
+  ],
+  "errors": []
+}

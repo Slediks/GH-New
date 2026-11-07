@@ -1,0 +1,131 @@
+.chat-stream {
+  position: relative;
+}
+.chat-stream .chat-feed {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+.chat-stream .casino-chat-messages {
+  overflow-anchor: none;
+  flex: 1;
+  min-height: 0;
+  margin: 0;
+  padding: 4px 0;
+}
+.chat-stream article.chat-message-row {
+  position: relative;
+  border: 0;
+  padding: 3px 25px 3px 4px;
+  font-size: 13px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+.chat-stream .chat-message-row:hover {
+  background: var(--surface-alt);
+}
+.chat-message-row time {
+  color: var(--muted-color);
+  font-size: 10px;
+}
+.chat-message-row strong {
+  color: var(--primary-strong);
+}
+.chat-message-row > span {
+  white-space: pre-wrap;
+}
+.chat-message-row.deleted {
+  color: var(--muted-color);
+  font-style: italic;
+}
+.chat-stream .chat-moderation-trigger {
+  position: absolute;
+  top: 2px;
+  right: 0;
+  padding: 2px;
+  opacity: 0;
+  pointer-events: none;
+  display: grid;
+  place-items: center;
+}
+.chat-message-row:hover .chat-moderation-trigger,
+.chat-message-row:focus-within .chat-moderation-trigger {
+  opacity: 1;
+  pointer-events: auto;
+}
+.chat-stream .chat-composer {
+  padding-top: 10px;
+  border-top: 1px solid var(--border);
+}
+.chat-compose-line {
+  display: flex;
+  gap: 6px;
+  align-items: flex-end;
+}
+.chat-stream .chat-composer textarea {
+  min-height: 40px;
+  height: 40px;
+  padding: 9px;
+  flex: 1;
+  resize: none;
+}
+.chat-composer button {
+  height: 40px;
+  padding: 10px;
+  display: grid;
+  place-items: center;
+}
+.chat-composer > small {
+  display: block;
+  font-size: 10px;
+  color: var(--muted-color);
+  margin-top: 5px;
+}
+.chat-jump {
+  position: absolute;
+  bottom: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  font-size: 11px;
+  box-shadow: 0 3px 10px #0004;
+}
+.chat-load-older {
+  font-size: 11px;
+  width: 100%;
+}
+.chat-moderation-panel {
+  position: absolute;
+  z-index: 2;
+  bottom: 80px;
+  left: 12px;
+  right: 12px;
+  max-height: calc(100% - 95px);
+  overflow: auto;
+  background: var(--surface-alt);
+  border: 1px solid var(--border-strong);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px #0005;
+  padding: 12px;
+}
+.chat-moderation-panel header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+.chat-moderation-panel header strong {
+  overflow-wrap: anywhere;
+}
+.chat-moderation-panel form,
+.chat-moderation-menu {
+  display: grid;
+  gap: 10px;
+  font-size: 12px;
+}
+.chat-moderation-panel p {
+  color: var(--danger);
+}

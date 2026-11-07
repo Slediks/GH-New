@@ -1,0 +1,12 @@
+<!doctype html><html lang="ru"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Змейка</title>
+<style>body{margin:0;background:#0f1a23;color:#ebf4fb;font:16px Segoe UI;text-align:center}canvas{background:#162532;width:min(88vw,420px);border:1px solid #2b4558;border-radius:12px}button{background:#1f4f67;color:#ebf4fb;border:1px solid #58bde9;border-radius:8px;padding:12px;margin:5px;cursor:pointer}h1{font-size:24px}p{color:#a8c0d1}</style>
+<h1>Змейка · <span id="score">0</span></h1><canvas id="board" width="400" height="400" aria-label="Игровое поле"></canvas><p id="message">Собирайте точки. Управляйте стрелками.</p><div><button data-dir="0,-1">↑</button></div><button data-dir="-1,0">←</button><button data-dir="0,1">↓</button><button data-dir="1,0">→</button><button id="restart">Заново</button>
+<script>
+const canvas=document.querySelector('canvas'),ctx=canvas.getContext('2d');let snake,dir,next,food,alive;
+function spawn(){do{food=[Math.floor(Math.random()*20),Math.floor(Math.random()*20)]}while(snake.some(p=>p[0]===food[0]&&p[1]===food[1]))}
+function reset(){snake=[[8,10],[7,10],[6,10]];dir=[1,0];next=dir;alive=true;spawn();document.querySelector('#message').textContent='Собирайте точки. Управляйте стрелками.'}
+function turn(d){if(d[0]!==-dir[0]||d[1]!==-dir[1])next=d}
+document.addEventListener('keydown',e=>{const d={ArrowUp:[0,-1],ArrowDown:[0,1],ArrowLeft:[-1,0],ArrowRight:[1,0]}[e.key];if(d){e.preventDefault();turn(d)}});
+document.querySelectorAll('[data-dir]').forEach(b=>b.onclick=()=>turn(b.dataset.dir.split(',').map(Number)));document.querySelector('#restart').onclick=reset;
+reset();setInterval(()=>{if(!alive)return;dir=next;const h=[snake[0][0]+dir[0],snake[0][1]+dir[1]];if(h.some(v=>v<0||v>=20)||snake.some(p=>p[0]===h[0]&&p[1]===h[1])){alive=false;document.querySelector('#message').textContent='Игра окончена. Попробуйте ещё раз!';return}snake.unshift(h);if(h[0]===food[0]&&h[1]===food[1])spawn();else snake.pop();ctx.clearRect(0,0,400,400);ctx.fillStyle='#f3cf69';ctx.beginPath();ctx.arc(food[0]*20+10,food[1]*20+10,7,0,7);ctx.fill();snake.forEach((p,i)=>{ctx.fillStyle=i?'#1f799d':'#9edcff';ctx.fillRect(p[0]*20+1,p[1]*20+1,18,18)});document.querySelector('#score').textContent=snake.length-3},135);
+</script></html>

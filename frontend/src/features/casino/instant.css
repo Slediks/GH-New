@@ -1,0 +1,115 @@
+.plinko-scene {
+  padding: 16px;
+  border: 1px solid #69a5d55c;
+  border-radius: 22px;
+  background: radial-gradient(ellipse at 50% 20%, #204b6b, #10263c);
+  color: #e8f2ff;
+}
+.plinko-scene.risk-medium {
+  background: radial-gradient(ellipse at 50% 20%, #543775, #1a1d3c);
+}
+.plinko-scene.risk-high {
+  background: radial-gradient(ellipse at 50% 20%, #733e60, #24152d);
+}
+.plinko-topline {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 12px;
+}
+.plinko-topline > span {
+  font-size: 10px;
+  letter-spacing: 0.1em;
+}
+.plinko-moving-ball {
+  transition: transform 0.14s linear;
+  filter: drop-shadow(0 0 6px #edc264aa);
+}
+.plinko-payouts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+  gap: 6px;
+}
+.plinko-paytable summary {
+  cursor: pointer;
+  padding: 12px 0;
+  font-size: 13px;
+}
+.plinko-payouts > span {
+  display: grid;
+  gap: 3px;
+  border: 1px solid #ffffff25;
+  border-radius: 10px;
+  padding: 7px;
+  background: #ffffff08;
+}
+.plinko-payouts small {
+  font-size: 9px;
+}
+.plinko-payouts strong {
+  font-size: 12px;
+}
+.plinko-payouts .landed {
+  background: #f0d38b;
+  color: #1e2b31;
+  box-shadow: 0 0 15px #f0d38b44;
+}
+.plinko-scene > p {
+  font-size: 11px;
+  margin-bottom: 0;
+  color: #bfd1e5;
+}
+.target-scene {
+  padding: 24px 12px;
+}
+.target-scene > small {
+  letter-spacing: 0.14em;
+  font-size: 11px;
+  color: #c8d1fa;
+}
+.target-scene > strong {
+  display: block;
+  font-variant-numeric: tabular-nums;
+  text-shadow: 0 0 30px #987ae966;
+}
+.target-range {
+  position: relative;
+  height: 22px;
+  margin: 30px 8px 10px;
+  border-radius: 20px;
+  background: #0d172d;
+  border: 1px solid #9495c955;
+}
+.target-range > span {
+  position: absolute;
+  height: 100%;
+  border-radius: 20px;
+  background: linear-gradient(90deg, #7958c4, #56b7b1);
+}
+.target-range > i {
+  position: absolute;
+  top: -9px;
+  bottom: -9px;
+  width: 3px;
+  transform: translateX(-50%);
+  background: #ffe2a2;
+  box-shadow: 0 0 10px #f7cf87;
+}
+.target-ticks {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  color: #b5bfdc;
+  margin: 0 8px;
+}
+.target-scene.won > strong {
+  color: #95e3be;
+}
+.target-scene.lost > strong {
+  color: #eeb5ca;
+}
+@media (prefers-reduced-motion: reduce) {
+  .plinko-moving-ball {
+    transition: none;
+  }
+}

@@ -1,0 +1,150 @@
+.casino-dialog {
+  width: min(620px, calc(100% - 24px));
+  max-height: calc(100dvh - 32px);
+  padding: 0;
+  border: 1px solid #b39456;
+  border-radius: 24px;
+  color: var(--text-color);
+  background: var(--surface-color);
+  box-shadow: 0 24px 90px #0008;
+  overflow: auto;
+}
+.casino-dialog::backdrop {
+  background: #031015bb;
+  backdrop-filter: blur(5px);
+}
+.casino-dialog-content {
+  padding: 20px;
+}
+.casino-dialog .panel {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+.casino-dialog .section-heading {
+  gap: 12px;
+  align-items: flex-start;
+}
+.casino-dialog h2 {
+  font-size: 23px;
+}
+.casino-dialog button {
+  min-height: 44px;
+}
+.casino-dialog form > button.primary {
+  width: 100%;
+  margin-top: 18px;
+}
+.casino-dialog input {
+  min-height: 48px;
+  font-size: 19px;
+}
+.exchange-direction {
+  display: grid;
+  grid-template-columns: 1fr 24px 1fr;
+  align-items: center;
+  gap: 10px;
+  margin: 22px 0 16px;
+}
+.exchange-direction > span {
+  display: grid;
+  gap: 10px;
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  font-size: 12px;
+  background: linear-gradient(135deg, #c29c4f18, transparent);
+}
+.exchange-direction strong {
+  font-size: 24px;
+  font-variant-numeric: tabular-nums;
+}
+.exchange-direction > b {
+  color: #b69448;
+  text-align: center;
+  font-size: 22px;
+}
+.exchange-rate {
+  font-weight: 700;
+}
+.exchange-rate-note {
+  padding: 12px 14px;
+  border-left: 3px solid #b99a53;
+  background: #b99a5312;
+  border-radius: 0 10px 10px 0;
+  font-size: 13px;
+}
+.casino-dialog .casino-quote {
+  padding: 16px;
+  border: 1px solid #b79a54;
+  border-radius: 16px;
+  background: #b99a530c;
+}
+.casino-quote > p:first-child,
+.casino-quote > p:nth-child(2) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px;
+}
+.casino-history-close {
+  float: right;
+  margin: 0 0 12px 12px;
+}
+.casino-ledger h2 {
+  min-height: 44px;
+}
+.casino-ledger-entry {
+  align-items: flex-start;
+  gap: 16px;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--border);
+}
+.casino-ledger-entry > div {
+  min-width: 0;
+}
+.casino-ledger-entry > div:last-child {
+  text-align: right;
+}
+.casino-ledger-entry.credit > div:last-child > strong {
+  color: #459c70;
+}
+.casino-ledger-entry.debit > div:last-child > strong {
+  color: #d36e77;
+}
+.casino-ledger-entry.transfer > div:last-child > strong {
+  color: var(--text-color);
+}
+.ledger-balance-label {
+  display: block;
+  color: var(--muted-color);
+  margin-top: 4px;
+  font-size: 10px;
+}
+.casino-ledger-entry details {
+  font-size: 11px;
+  overflow-wrap: anywhere;
+  margin-top: 10px;
+}
+.casino-ledger-entry summary {
+  cursor: pointer;
+  color: var(--muted-color);
+}
+.casino-ledger-entry p:empty {
+  display: none;
+}
+@media (max-width: 540px) {
+  .casino-dialog-content {
+    padding: 16px;
+  }
+  .casino-dialog h2 {
+    font-size: 20px;
+  }
+  .exchange-direction > span {
+    padding: 12px;
+  }
+  .exchange-direction strong {
+    font-size: 21px;
+  }
+}

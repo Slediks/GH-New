@@ -1,0 +1,112 @@
+name: gamehub
+x-python: &python
+  image: gamehub-backend:${GAMEHUB_VERSION:-3.1.0}
+  pull_policy: never
+  environment: &environment
+    DATABASE_URL: postgresql+psycopg://gamehub:${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env}@postgres/gamehub
+    REDIS_URL: redis://redis:6379/0
+    DATA_DIR: /data
+    APP_ENV: ${APP_ENV:-production}
+    AUTH_ADAPTER: ${AUTH_ADAPTER:-unconfigured}
+    AUTH_URL: ${AUTH_URL:-}
+    AUTH_CONTRACT: ${AUTH_CONTRACT:-}
+    AUTH_HEADERS: ${AUTH_HEADERS:-{}}
+    SECRET_KEY: ${SECRET_KEY:?Set SECRET_KEY in .env}
+    COOKIE_SECURE: ${COOKIE_SECURE:-false}
+    SESSION_SECONDS: ${SESSION_SECONDS:-43200}
+    FOOTBALL_DEBUG: ${FOOTBALL_DEBUG:-0}
+  volumes:
+    - game_files:/data
+  depends_on:
+    postgres: {condition: service_healthy}
+    redis: {condition: service_healthy}
+services:
+  postgres:
+    image: postgres:16-alpine
+    pull_policy: never
+    environment:
+      POSTGRES_DB: gamehub
+      POSTGRES_USER: gamehub
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD}
+    volumes: [postgres_data:/var/lib/postgresql/data]
+    healthcheck:
+      test: [CMD-SHELL, "pg_isready -U gamehub -d gamehub"]
+      interval: 5s
+      retries: 15
+    restart: unless-stopped
+  redis:
+    image: redis:7-alpine
+    pull_policy: never
+    healthcheck:
+      test: [CMD, redis-cli, ping]
+      interval: 5s
+      retries: 15
+    restart: unless-stopped
+  migrate:
+    <<: *python
+    command: [sh, -c, "alembic upgrade head && python -m backend.manage seed"]
+    restart: 'no'
+  backend:
+    <<: *python
+    depends_on:
+      migrate: {condition: service_completed_successfully}
+    healthcheck:
+      test: [CMD, python, -c, "import urllib.request; urllib.request.urlopen('http://localhost:5000/api/health')"]
+      interval: 15s
+      retries: 5
+    restart: unless-stopped
+  simulation:
+    <<: *python
+    command: [python, -m, simulation.worker]
+    depends_on:
+      migrate: {condition: service_completed_successfully}
+    healthcheck:
+      test: [CMD, python, -c, "import redis; assert redis.Redis(host='redis').get('gamehub:status')"]
+      interval: 20s
+      start_period: 120s
+      retries: 5
+    restart: unless-stopped
+  nginx:
+    image: gamehub-frontend:${GAMEHUB_VERSION:-3.1.0}
+    pull_policy: never
+    ports: ["0.0.0.0:${GAMEHUB_PORT:-8080}:80"]
+    depends_on:
+      backend: {condition: service_healthy, restart: true}
+      games: {condition: service_started}
+      arena: {condition: service_healthy}
+    healthcheck:
+      test: [CMD-SHELL, "wget -q -O /dev/null http://127.0.0.1/"]
+      interval: 15s
+      retries: 5
+    restart: unless-stopped
+  casino-worker:
+    <<: *python
+    command: [python, -m, backend.app.casino.worker]
+    depends_on:
+      migrate: {condition: service_completed_successfully}
+    restart: unless-stopped
+  arena:
+    <<: *python
+    command: [gunicorn, --workers, '1', --threads, '120', --bind, '0.0.0.0:5001', 'backend.app.arena.wsgi:app']
+    depends_on:
+      migrate: {condition: service_completed_successfully}
+    healthcheck:
+      test: [CMD, python, -c, "import urllib.request; urllib.request.urlopen('http://localhost:5001/health')"]
+      interval: 15s
+      start_period: 15s
+      retries: 5
+    restart: unless-stopped
+  games:
+    image: nginx:1.27-alpine
+    pull_policy: never
+    depends_on:
+      backend: {condition: service_healthy, restart: true}
+    volumes:
+      - game_files:/games:ro
+      - ./deploy/games.conf:/etc/nginx/conf.d/default.conf:ro
+    # Files reside in /data/games, so override the static root inside the volume.
+    command: [nginx, -g, "daemon off;"]
+    restart: unless-stopped
+volumes:
+  postgres_data:
+  game_files:

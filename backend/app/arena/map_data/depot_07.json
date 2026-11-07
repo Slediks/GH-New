@@ -1,0 +1,2844 @@
+{
+  "schemaVersion": 1,
+  "metadata": {
+    "name": "Depot 07",
+    "description": ""
+  },
+  "environment": {
+    "background": "#9faeb3",
+    "ambientColor": "#e9f4ff",
+    "ambientGround": "#6f766d",
+    "ambientIntensity": 2.5,
+    "sunColor": "#ffe9c7",
+    "sunPosition": [
+      -18,
+      35,
+      20
+    ],
+    "sunIntensity": 3.2,
+    "sunShadow": [
+      -30,
+      30,
+      26,
+      -26,
+      0.5,
+      85
+    ],
+    "fogEnabled": true,
+    "fogNear": 45,
+    "fogFar": 130,
+    "ground": false,
+    "cameraFar": 180
+  },
+  "objects": [
+    {
+      "id": "detail-0000",
+      "assetId": "system.decoration.fba14931fd",
+      "assetVersion": 1,
+      "name": "Деталь 0000",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "body-000",
+      "assetId": "system.boundary.7e0f9266ac",
+      "assetVersion": 1,
+      "name": "Периметр 1",
+      "position": [
+        -24,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "body-001",
+      "assetId": "system.boundary.8895fcfcb2",
+      "assetVersion": 1,
+      "name": "Периметр 2",
+      "position": [
+        24,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "body-002",
+      "assetId": "system.boundary.0330e0414c",
+      "assetVersion": 1,
+      "name": "Периметр 3",
+      "position": [
+        0,
+        0,
+        -20
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "body-003",
+      "assetId": "system.boundary.edf6044fb7",
+      "assetVersion": 1,
+      "name": "Периметр 4",
+      "position": [
+        0,
+        0,
+        20
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "body-004",
+      "assetId": "system.container.890edb6fb8",
+      "assetVersion": 1,
+      "name": "Контейнер 5",
+      "position": [
+        -9,
+        0,
+        -6
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "body-005",
+      "assetId": "system.container.61e4c554c1",
+      "assetVersion": 1,
+      "name": "Контейнер 6",
+      "position": [
+        9,
+        0,
+        6
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "body-006",
+      "assetId": "system.container.996fad13a6",
+      "assetVersion": 1,
+      "name": "Контейнер 7",
+      "position": [
+        -9,
+        0,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "body-007",
+      "assetId": "system.container.d7b0956980",
+      "assetVersion": 1,
+      "name": "Контейнер 8",
+      "position": [
+        9,
+        0,
+        -8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "body-008",
+      "assetId": "system.container.98fa56c56e",
+      "assetVersion": 1,
+      "name": "Контейнер 9",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "body-009",
+      "assetId": "system.container.fa373be98e",
+      "assetVersion": 1,
+      "name": "Контейнер 10",
+      "position": [
+        -18,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "body-010",
+      "assetId": "system.container.45e0141fef",
+      "assetVersion": 1,
+      "name": "Контейнер 11",
+      "position": [
+        18,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "body-011",
+      "assetId": "system.container.e794031384",
+      "assetVersion": 1,
+      "name": "Контейнер 12",
+      "position": [
+        -3,
+        0,
+        13
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "body-012",
+      "assetId": "system.container.f5344c1dd2",
+      "assetVersion": 1,
+      "name": "Контейнер 13",
+      "position": [
+        3,
+        0,
+        -13
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "detail-0001",
+      "assetId": "system.decoration.2687ed7d86",
+      "assetVersion": 1,
+      "name": "Деталь 0001",
+      "position": [
+        -21,
+        0.005,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "detail-0002",
+      "assetId": "system.decoration.d41f332c5e",
+      "assetVersion": 1,
+      "name": "Деталь 0002",
+      "position": [
+        -18,
+        0.005,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "detail-0003",
+      "assetId": "system.decoration.e923508991",
+      "assetVersion": 1,
+      "name": "Деталь 0003",
+      "position": [
+        -15,
+        0.005,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "detail-0004",
+      "assetId": "system.decoration.8569b8ff63",
+      "assetVersion": 1,
+      "name": "Деталь 0004",
+      "position": [
+        -12,
+        0.005,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "detail-0005",
+      "assetId": "system.decoration.80152b845d",
+      "assetVersion": 1,
+      "name": "Деталь 0005",
+      "position": [
+        -9,
+        0.005,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "detail-0006",
+      "assetId": "system.decoration.2fc9c75da4",
+      "assetVersion": 1,
+      "name": "Деталь 0006",
+      "position": [
+        -6,
+        0.005,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "detail-0007",
+      "assetId": "system.decoration.e6c8e6faa5",
+      "assetVersion": 1,
+      "name": "Деталь 0007",
+      "position": [
+        -3,
+        0.005,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "detail-0008",
+      "assetId": "system.decoration.2aa812fae2",
+      "assetVersion": 1,
+      "name": "Деталь 0008",
+      "position": [
+        0,
+        0.005,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "detail-0009",
+      "assetId": "system.decoration.f26977680b",
+      "assetVersion": 1,
+      "name": "Деталь 0009",
+      "position": [
+        3,
+        0.005,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "detail-0010",
+      "assetId": "system.decoration.51d9d9d302",
+      "assetVersion": 1,
+      "name": "Деталь 0010",
+      "position": [
+        6,
+        0.005,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "detail-0011",
+      "assetId": "system.decoration.1548746caa",
+      "assetVersion": 1,
+      "name": "Деталь 0011",
+      "position": [
+        9,
+        0.005,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "detail-0012",
+      "assetId": "system.decoration.f9a85e3807",
+      "assetVersion": 1,
+      "name": "Деталь 0012",
+      "position": [
+        12,
+        0.005,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "detail-0013",
+      "assetId": "system.decoration.b765ad8cb0",
+      "assetVersion": 1,
+      "name": "Деталь 0013",
+      "position": [
+        15,
+        0.005,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "detail-0014",
+      "assetId": "system.decoration.9b362e3566",
+      "assetVersion": 1,
+      "name": "Деталь 0014",
+      "position": [
+        18,
+        0.005,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "detail-0015",
+      "assetId": "system.decoration.19f1a1b47b",
+      "assetVersion": 1,
+      "name": "Деталь 0015",
+      "position": [
+        21,
+        0.005,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "detail-0016",
+      "assetId": "system.decoration.adca54a659",
+      "assetVersion": 1,
+      "name": "Деталь 0016",
+      "position": [
+        0,
+        0.006,
+        -18
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "detail-0017",
+      "assetId": "system.decoration.4ff6209ee9",
+      "assetVersion": 1,
+      "name": "Деталь 0017",
+      "position": [
+        0,
+        0.006,
+        -15
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "detail-0018",
+      "assetId": "system.decoration.b06de37dca",
+      "assetVersion": 1,
+      "name": "Деталь 0018",
+      "position": [
+        0,
+        0.006,
+        -12
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "detail-0019",
+      "assetId": "system.decoration.6dd5b36d02",
+      "assetVersion": 1,
+      "name": "Деталь 0019",
+      "position": [
+        0,
+        0.006,
+        -9
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "detail-0020",
+      "assetId": "system.decoration.fb6fa08d38",
+      "assetVersion": 1,
+      "name": "Деталь 0020",
+      "position": [
+        0,
+        0.006,
+        -6
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "detail-0021",
+      "assetId": "system.decoration.51dba6cfb9",
+      "assetVersion": 1,
+      "name": "Деталь 0021",
+      "position": [
+        0,
+        0.006,
+        -3
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "detail-0022",
+      "assetId": "system.decoration.46592d4c27",
+      "assetVersion": 1,
+      "name": "Деталь 0022",
+      "position": [
+        0,
+        0.006,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "detail-0023",
+      "assetId": "system.decoration.609dd77a99",
+      "assetVersion": 1,
+      "name": "Деталь 0023",
+      "position": [
+        0,
+        0.006,
+        3
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "detail-0024",
+      "assetId": "system.decoration.e06e5bbb08",
+      "assetVersion": 1,
+      "name": "Деталь 0024",
+      "position": [
+        0,
+        0.006,
+        6
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "detail-0025",
+      "assetId": "system.decoration.b440e1ffb6",
+      "assetVersion": 1,
+      "name": "Деталь 0025",
+      "position": [
+        0,
+        0.006,
+        9
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "detail-0026",
+      "assetId": "system.decoration.8dd72577f4",
+      "assetVersion": 1,
+      "name": "Деталь 0026",
+      "position": [
+        0,
+        0.006,
+        12
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "detail-0027",
+      "assetId": "system.decoration.253fd2f41e",
+      "assetVersion": 1,
+      "name": "Деталь 0027",
+      "position": [
+        0,
+        0.006,
+        15
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "detail-0028",
+      "assetId": "system.decoration.76a2cdabdf",
+      "assetVersion": 1,
+      "name": "Деталь 0028",
+      "position": [
+        0,
+        0.006,
+        18
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "detail-0029",
+      "assetId": "system.decoration.20ebaa9a82",
+      "assetVersion": 1,
+      "name": "Деталь 0029",
+      "position": [
+        -21.8,
+        0.018,
+        -17
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "detail-0030",
+      "assetId": "system.decoration.8901acfafa",
+      "assetVersion": 1,
+      "name": "Деталь 0030",
+      "position": [
+        -21.8,
+        0.018,
+        -14.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "detail-0031",
+      "assetId": "system.decoration.c4930c35c9",
+      "assetVersion": 1,
+      "name": "Деталь 0031",
+      "position": [
+        -21.8,
+        0.018,
+        -12
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "detail-0032",
+      "assetId": "system.decoration.9e28d180ba",
+      "assetVersion": 1,
+      "name": "Деталь 0032",
+      "position": [
+        -21.8,
+        0.018,
+        -9.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "detail-0033",
+      "assetId": "system.decoration.f59c31337b",
+      "assetVersion": 1,
+      "name": "Деталь 0033",
+      "position": [
+        -21.8,
+        0.018,
+        -7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "detail-0034",
+      "assetId": "system.decoration.19a29b3eb7",
+      "assetVersion": 1,
+      "name": "Деталь 0034",
+      "position": [
+        -21.8,
+        0.018,
+        -4.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "detail-0035",
+      "assetId": "system.decoration.203ea153b0",
+      "assetVersion": 1,
+      "name": "Деталь 0035",
+      "position": [
+        -21.8,
+        0.018,
+        -2
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "detail-0036",
+      "assetId": "system.decoration.a6a470341f",
+      "assetVersion": 1,
+      "name": "Деталь 0036",
+      "position": [
+        -21.8,
+        0.018,
+        0.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "detail-0037",
+      "assetId": "system.decoration.db6393ecf6",
+      "assetVersion": 1,
+      "name": "Деталь 0037",
+      "position": [
+        -21.8,
+        0.018,
+        3
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "detail-0038",
+      "assetId": "system.decoration.f44e9e751e",
+      "assetVersion": 1,
+      "name": "Деталь 0038",
+      "position": [
+        -21.8,
+        0.018,
+        5.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "detail-0039",
+      "assetId": "system.decoration.c7c3070cce",
+      "assetVersion": 1,
+      "name": "Деталь 0039",
+      "position": [
+        -21.8,
+        0.018,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "detail-0040",
+      "assetId": "system.decoration.476f6478fa",
+      "assetVersion": 1,
+      "name": "Деталь 0040",
+      "position": [
+        -21.8,
+        0.018,
+        10.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "detail-0041",
+      "assetId": "system.decoration.4a115dae96",
+      "assetVersion": 1,
+      "name": "Деталь 0041",
+      "position": [
+        -21.8,
+        0.018,
+        13
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "detail-0042",
+      "assetId": "system.decoration.5bbae695c5",
+      "assetVersion": 1,
+      "name": "Деталь 0042",
+      "position": [
+        -21.8,
+        0.018,
+        15.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "detail-0043",
+      "assetId": "system.decoration.cfc8e28b62",
+      "assetVersion": 1,
+      "name": "Деталь 0043",
+      "position": [
+        21.8,
+        0.018,
+        -17
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "detail-0044",
+      "assetId": "system.decoration.1cd15f32dc",
+      "assetVersion": 1,
+      "name": "Деталь 0044",
+      "position": [
+        21.8,
+        0.018,
+        -14.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "detail-0045",
+      "assetId": "system.decoration.7905c70be2",
+      "assetVersion": 1,
+      "name": "Деталь 0045",
+      "position": [
+        21.8,
+        0.018,
+        -12
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "detail-0046",
+      "assetId": "system.decoration.078c2d2d67",
+      "assetVersion": 1,
+      "name": "Деталь 0046",
+      "position": [
+        21.8,
+        0.018,
+        -9.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "detail-0047",
+      "assetId": "system.decoration.afa7e92a23",
+      "assetVersion": 1,
+      "name": "Деталь 0047",
+      "position": [
+        21.8,
+        0.018,
+        -7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "detail-0048",
+      "assetId": "system.decoration.028ab9d8be",
+      "assetVersion": 1,
+      "name": "Деталь 0048",
+      "position": [
+        21.8,
+        0.018,
+        -4.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "detail-0049",
+      "assetId": "system.decoration.0965957c80",
+      "assetVersion": 1,
+      "name": "Деталь 0049",
+      "position": [
+        21.8,
+        0.018,
+        -2
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "detail-0050",
+      "assetId": "system.decoration.b958b8dfe8",
+      "assetVersion": 1,
+      "name": "Деталь 0050",
+      "position": [
+        21.8,
+        0.018,
+        0.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "detail-0051",
+      "assetId": "system.decoration.706c62a55f",
+      "assetVersion": 1,
+      "name": "Деталь 0051",
+      "position": [
+        21.8,
+        0.018,
+        3
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "detail-0052",
+      "assetId": "system.decoration.aa850d4f03",
+      "assetVersion": 1,
+      "name": "Деталь 0052",
+      "position": [
+        21.8,
+        0.018,
+        5.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "detail-0053",
+      "assetId": "system.decoration.d9b5f77803",
+      "assetVersion": 1,
+      "name": "Деталь 0053",
+      "position": [
+        21.8,
+        0.018,
+        8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "detail-0054",
+      "assetId": "system.decoration.8ad21622b0",
+      "assetVersion": 1,
+      "name": "Деталь 0054",
+      "position": [
+        21.8,
+        0.018,
+        10.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "detail-0055",
+      "assetId": "system.decoration.6d3ce94a9a",
+      "assetVersion": 1,
+      "name": "Деталь 0055",
+      "position": [
+        21.8,
+        0.018,
+        13
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "detail-0056",
+      "assetId": "system.decoration.3d06c650a4",
+      "assetVersion": 1,
+      "name": "Деталь 0056",
+      "position": [
+        21.8,
+        0.018,
+        15.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "detail-0057",
+      "assetId": "system.decoration.19bcc6bf67",
+      "assetVersion": 1,
+      "name": "Покрытие 0057",
+      "position": [
+        0,
+        3.2,
+        -19.45
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "detail-0058",
+      "assetId": "system.decoration.db33a5df27",
+      "assetVersion": 1,
+      "name": "Покрытие 0058",
+      "position": [
+        0,
+        3.2,
+        19.45
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "detail-0059",
+      "assetId": "system.decoration.3312e87465",
+      "assetVersion": 1,
+      "name": "Деталь 0059",
+      "position": [
+        -16,
+        0.02,
+        -15
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "detail-0060",
+      "assetId": "system.decoration.4daa6ce85a",
+      "assetVersion": 1,
+      "name": "Надпись 0060",
+      "position": [
+        -16,
+        3.8,
+        -19.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "detail-0061",
+      "assetId": "system.decoration.7feb12f074",
+      "assetVersion": 1,
+      "name": "Деталь 0061",
+      "position": [
+        16,
+        0.02,
+        15
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "detail-0062",
+      "assetId": "system.decoration.ad2ebd3de9",
+      "assetVersion": 1,
+      "name": "Надпись 0062",
+      "position": [
+        16,
+        3.8,
+        19.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "detail-0063",
+      "assetId": "system.decoration.55f5787fbe",
+      "assetVersion": 1,
+      "name": "Надпись 0063",
+      "position": [
+        0,
+        4.8,
+        -19.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "detail-0064",
+      "assetId": "system.decoration.3174b1efa1",
+      "assetVersion": 1,
+      "name": "Деталь 0064",
+      "position": [
+        -22,
+        4,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "detail-0065",
+      "assetId": "system.decoration.24bd3aebc6",
+      "assetVersion": 1,
+      "name": "Деталь 0065",
+      "position": [
+        -22,
+        7.8,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "detail-0066",
+      "assetId": "system.decoration.1aaeea92de",
+      "assetVersion": 1,
+      "name": "Деталь 0066",
+      "position": [
+        22,
+        4,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "detail-0067",
+      "assetId": "system.decoration.9c6bc470ad",
+      "assetVersion": 1,
+      "name": "Деталь 0067",
+      "position": [
+        22,
+        7.8,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "detail-0068",
+      "assetId": "system.decoration.88f5ca7434",
+      "assetVersion": 1,
+      "name": "Деталь 0068",
+      "position": [
+        -32,
+        6,
+        -28
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "detail-0069",
+      "assetId": "system.decoration.8f2d4497fe",
+      "assetVersion": 1,
+      "name": "Деталь 0069",
+      "position": [
+        28,
+        8,
+        -32
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "detail-0070",
+      "assetId": "system.decoration.b8725f06e2",
+      "assetVersion": 1,
+      "name": "Деталь 0070",
+      "position": [
+        -26,
+        15,
+        24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "detail-0071",
+      "assetId": "system.decoration.eed51456f1",
+      "assetVersion": 1,
+      "name": "Деталь 0071",
+      "position": [
+        -10,
+        28,
+        24
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {},
+      "group": "Depot"
+    },
+    {
+      "id": "spawn-alpha-1",
+      "assetId": "gameplay.spawn_a",
+      "assetVersion": 1,
+      "name": "Старт Alpha 1",
+      "position": [
+        -20,
+        0,
+        -15
+      ],
+      "rotation": [
+        0,
+        126.86989764584402,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "Alpha",
+        "modes": [
+          "elimination",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-alpha-2",
+      "assetId": "gameplay.spawn_a",
+      "assetVersion": 1,
+      "name": "Старт Alpha 2",
+      "position": [
+        -16,
+        0,
+        -15
+      ],
+      "rotation": [
+        0,
+        133.1523897340054,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "Alpha",
+        "modes": [
+          "elimination",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-alpha-3",
+      "assetId": "gameplay.spawn_a",
+      "assetVersion": 1,
+      "name": "Старт Alpha 3",
+      "position": [
+        -12,
+        0,
+        -15
+      ],
+      "rotation": [
+        0,
+        141.34019174590992,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "Alpha",
+        "modes": [
+          "elimination",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-alpha-4",
+      "assetId": "gameplay.spawn_a",
+      "assetVersion": 1,
+      "name": "Старт Alpha 4",
+      "position": [
+        -20,
+        0,
+        -11
+      ],
+      "rotation": [
+        0,
+        118.81079374297306,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "Alpha",
+        "modes": [
+          "elimination",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-alpha-5",
+      "assetId": "gameplay.spawn_a",
+      "assetVersion": 1,
+      "name": "Старт Alpha 5",
+      "position": [
+        -16,
+        0,
+        -11
+      ],
+      "rotation": [
+        0,
+        124.50852298766841,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "Alpha",
+        "modes": [
+          "elimination",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-bravo-1",
+      "assetId": "gameplay.spawn_b",
+      "assetVersion": 1,
+      "name": "Старт Bravo 1",
+      "position": [
+        20,
+        0,
+        15
+      ],
+      "rotation": [
+        0,
+        -53.13010235415598,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "Bravo",
+        "modes": [
+          "elimination",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-bravo-2",
+      "assetId": "gameplay.spawn_b",
+      "assetVersion": 1,
+      "name": "Старт Bravo 2",
+      "position": [
+        16,
+        0,
+        15
+      ],
+      "rotation": [
+        0,
+        -46.8476102659946,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "Bravo",
+        "modes": [
+          "elimination",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-bravo-3",
+      "assetId": "gameplay.spawn_b",
+      "assetVersion": 1,
+      "name": "Старт Bravo 3",
+      "position": [
+        12,
+        0,
+        15
+      ],
+      "rotation": [
+        0,
+        -38.65980825409009,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "Bravo",
+        "modes": [
+          "elimination",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-bravo-4",
+      "assetId": "gameplay.spawn_b",
+      "assetVersion": 1,
+      "name": "Старт Bravo 4",
+      "position": [
+        20,
+        0,
+        11
+      ],
+      "rotation": [
+        0,
+        -61.189206257026946,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "Bravo",
+        "modes": [
+          "elimination",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-bravo-5",
+      "assetId": "gameplay.spawn_b",
+      "assetVersion": 1,
+      "name": "Старт Bravo 5",
+      "position": [
+        16,
+        0,
+        11
+      ],
+      "rotation": [
+        0,
+        -55.4914770123316,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "Bravo",
+        "modes": [
+          "elimination",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-1",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 1",
+      "position": [
+        -20,
+        0,
+        -15
+      ],
+      "rotation": [
+        0,
+        126.86989764584402,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-2",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 2",
+      "position": [
+        20,
+        0,
+        15
+      ],
+      "rotation": [
+        0,
+        -53.13010235415598,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-3",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 3",
+      "position": [
+        -20,
+        0,
+        15
+      ],
+      "rotation": [
+        0,
+        53.13010235415598,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-4",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 4",
+      "position": [
+        20,
+        0,
+        -15
+      ],
+      "rotation": [
+        0,
+        -126.86989764584402,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-5",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 5",
+      "position": [
+        0,
+        0,
+        17
+      ],
+      "rotation": [
+        0,
+        0.0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-6",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 6",
+      "position": [
+        0,
+        0,
+        -17
+      ],
+      "rotation": [
+        0,
+        180.0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-7",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 7",
+      "position": [
+        -20,
+        0,
+        -7
+      ],
+      "rotation": [
+        0,
+        109.29004621918874,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-8",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 8",
+      "position": [
+        20,
+        0,
+        7
+      ],
+      "rotation": [
+        0,
+        -70.70995378081128,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-9",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 9",
+      "position": [
+        -8,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        90.0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-10",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 10",
+      "position": [
+        8,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        -90.0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-11",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 11",
+      "position": [
+        -16,
+        0,
+        -17
+      ],
+      "rotation": [
+        0,
+        136.7357045889284,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-12",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 12",
+      "position": [
+        16,
+        0,
+        17
+      ],
+      "rotation": [
+        0,
+        -43.264295411071615,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-13",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 13",
+      "position": [
+        -16,
+        0,
+        17
+      ],
+      "rotation": [
+        0,
+        43.264295411071615,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-14",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 14",
+      "position": [
+        16,
+        0,
+        -17
+      ],
+      "rotation": [
+        0,
+        -136.7357045889284,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-15",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 15",
+      "position": [
+        -21,
+        0,
+        4
+      ],
+      "rotation": [
+        0,
+        79.2157021324374,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-16",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 16",
+      "position": [
+        21,
+        0,
+        -4
+      ],
+      "rotation": [
+        0,
+        -100.78429786756261,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-17",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 17",
+      "position": [
+        -5,
+        0,
+        -17
+      ],
+      "rotation": [
+        0,
+        163.61045966596524,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "spawn-neutral-18",
+      "assetId": "gameplay.spawn_dm",
+      "assetVersion": 1,
+      "name": "Старт neutral 18",
+      "position": [
+        5,
+        0,
+        17
+      ],
+      "rotation": [
+        0,
+        -16.389540334034784,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "properties": {
+        "team": "neutral",
+        "modes": [
+          "dm",
+          "tdm"
+        ]
+      },
+      "group": "Gameplay"
+    },
+    {
+      "id": "playable",
+      "assetId": "gameplay.playable",
+      "assetVersion": 1,
+      "name": "Игровая область",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        4.6,
+        6.4,
+        3.8
+      ],
+      "properties": {},
+      "group": "Gameplay"
+    }
+  ],
+  "groups": [
+    {
+      "id": "Depot",
+      "name": "Depot"
+    },
+    {
+      "id": "Gameplay",
+      "name": "Gameplay"
+    }
+  ],
+  "settings": {
+    "modes": [
+      "elimination",
+      "tdm",
+      "dm"
+    ],
+    "respawnPolicy": "neutral",
+    "respawnFallback": true
+  }
+}

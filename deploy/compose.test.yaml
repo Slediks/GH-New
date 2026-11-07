@@ -1,0 +1,16 @@
+# Disposable test database lives beside, never instead of, gamehub.
+services:
+  tests:
+    image: gamehub-backend:${GAMEHUB_VERSION:-2.0}
+    profiles: [test]
+    volumes:
+      - ./backend/tests:/app/backend/tests:ro
+      - ./simulation/tests:/app/simulation/tests:ro
+      - ./pyproject.toml:/app/pyproject.toml:ro
+    environment:
+      APP_ENV: development
+      AUTH_ADAPTER: mock
+      TEST_DATABASE_URL: postgresql+psycopg://gamehub:${POSTGRES_PASSWORD}@postgres/gamehub_test
+    command: [pytest, -q]
+    depends_on:
+      postgres: {condition: service_healthy}

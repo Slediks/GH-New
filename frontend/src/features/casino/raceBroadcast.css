@@ -1,0 +1,175 @@
+.casino-felt.common-scene.game-horses {
+  background: #142231;
+  border: 1px solid #415365;
+  border-radius: 12px;
+  padding: 18px;
+}
+.game-horses .race-course {
+  border-radius: 8px;
+  border: 1px solid #718093;
+  background: #e3ceb0;
+  color: #202c38;
+  box-shadow: 0 14px 30px #0003;
+}
+.game-horses .race-scoreboard {
+  background: linear-gradient(110deg, #0b1726, #283e56);
+  color: #f1f6fc;
+  padding: 18px 20px;
+  border-bottom: 3px solid #57c4ed;
+}
+.race-scoreboard > div {
+  display: grid;
+  gap: 5px;
+}
+.race-scoreboard small {
+  font-size: 12px;
+  letter-spacing: 0.02em;
+}
+.race-live-tag {
+  display: inline-block;
+  width: fit-content;
+  background: #b63243;
+  color: white;
+  font-weight: 800;
+  padding: 5px 8px;
+  border-radius: 3px;
+}
+.race-broadcast-status {
+  text-align: center;
+}
+.race-broadcast-status strong {
+  font-size: 24px;
+}
+.race-scoreboard .race-signal {
+  font-size: 11px;
+  letter-spacing: 0;
+  color: #b8cada;
+}
+.race-track-heading {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 48px 8px 18px;
+  background: #c8ae88;
+  color: #3e3328;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  font-weight: 800;
+}
+.game-horses .race-lanes {
+  background: repeating-linear-gradient(0deg, #dfc6a2 0 74px, #e9d5b8 74px 148px);
+  padding: 4px 16px;
+}
+.game-horses .race-rail {
+  border-bottom: 3px solid #f3e7d2;
+  background: repeating-linear-gradient(90deg, transparent 0 24%, #88694818 24% 25%);
+}
+.game-horses .race-lane {
+  border-bottom-color: #9a74464d;
+}
+.game-horses .race-lane.winner {
+  background: #ffffff60;
+  box-shadow: inset 3px 0 #207199;
+}
+.game-horses .race-label em {
+  color: #155471;
+}
+.race-saddle-number {
+  fill: white;
+  stroke: #000;
+  stroke-width: 0.6px;
+  paint-order: stroke;
+  font-size: 7px;
+  font-weight: 800;
+  text-anchor: middle;
+}
+.game-horses .race-caption {
+  background: #172838;
+  color: #c5d3df;
+  padding: 12px 18px;
+  line-height: 1.5;
+}
+.race-finish {
+  background: #eff4f8;
+  padding: 18px;
+  border-top: 4px solid #2283ad;
+}
+.race-finish small {
+  font-size: 10px;
+  color: #52677c;
+  letter-spacing: 0.1em;
+}
+.game-horses .race-finish h3 {
+  color: #142c41;
+  margin: 7px 0 12px;
+}
+.race-finish-order {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+}
+.race-finish-order li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.race-finish-order b {
+  color: #244b67;
+}
+.casino-horses-layout .race-bet-options {
+  grid-template-columns: 1fr;
+  gap: 7px;
+}
+.casino-horses-layout .race-bet-options > div {
+  padding: 0;
+  border-radius: 7px;
+  overflow: hidden;
+}
+.casino-horses-layout .race-bet-options button {
+  display: grid;
+  grid-template-columns: 26px 1fr;
+  gap: 5px 9px;
+  align-items: center;
+  text-align: left;
+  padding: 10px;
+  border: 0;
+  border-radius: 0;
+}
+.race-entry-number {
+  grid-row: span 2;
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 28px;
+  background: var(--silk);
+  color: white;
+  text-shadow: 0 1px 3px #000;
+  border-radius: 4px;
+}
+.casino-horses-layout .race-bet-options small {
+  margin: 0;
+  font-size: 11px;
+}
+.casino-horses-layout .race-bet-options .selected {
+  border: 2px solid var(--accent);
+}
+.casino-horses-layout .race-bet-options button:disabled {
+  opacity: 1;
+  cursor: default;
+}
+.game-horses > .casino-result {
+  background: #223b50;
+  color: #eff6fa;
+  border-left: 3px solid #57c4ed;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+.game-horses > .casino-result p {
+  margin: 0;
+}

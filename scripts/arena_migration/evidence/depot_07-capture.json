@@ -1,0 +1,1407 @@
+{
+  "groups": [
+    {
+      "key": "detail-0000",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "name": "Деталь 0000",
+      "region": "Depot",
+      "colliders": [],
+      "surface": "decoration"
+    },
+    {
+      "key": "body-000",
+      "position": [
+        -24,
+        0,
+        0
+      ],
+      "name": "Периметр 1",
+      "region": "Depot",
+      "colliders": [
+        [
+          0,
+          0,
+          0,
+          1,
+          6,
+          40
+        ]
+      ],
+      "surface": "boundary"
+    },
+    {
+      "key": "body-001",
+      "position": [
+        24,
+        0,
+        0
+      ],
+      "name": "Периметр 2",
+      "region": "Depot",
+      "colliders": [
+        [
+          0,
+          0,
+          0,
+          1,
+          6,
+          40
+        ]
+      ],
+      "surface": "boundary"
+    },
+    {
+      "key": "body-002",
+      "position": [
+        0,
+        0,
+        -20
+      ],
+      "name": "Периметр 3",
+      "region": "Depot",
+      "colliders": [
+        [
+          0,
+          0,
+          0,
+          49,
+          6,
+          1
+        ]
+      ],
+      "surface": "boundary"
+    },
+    {
+      "key": "body-003",
+      "position": [
+        0,
+        0,
+        20
+      ],
+      "name": "Периметр 4",
+      "region": "Depot",
+      "colliders": [
+        [
+          0,
+          0,
+          0,
+          49,
+          6,
+          1
+        ]
+      ],
+      "surface": "boundary"
+    },
+    {
+      "key": "body-004",
+      "position": [
+        -9,
+        0,
+        -6
+      ],
+      "name": "Контейнер 5",
+      "region": "Depot",
+      "colliders": [
+        [
+          0,
+          0,
+          0,
+          9,
+          3.4,
+          3
+        ]
+      ],
+      "surface": "container"
+    },
+    {
+      "key": "body-005",
+      "position": [
+        9,
+        0,
+        6
+      ],
+      "name": "Контейнер 6",
+      "region": "Depot",
+      "colliders": [
+        [
+          0,
+          0,
+          0,
+          9,
+          3.4,
+          3
+        ]
+      ],
+      "surface": "container"
+    },
+    {
+      "key": "body-006",
+      "position": [
+        -9,
+        0,
+        8
+      ],
+      "name": "Контейнер 7",
+      "region": "Depot",
+      "colliders": [
+        [
+          0,
+          0,
+          0,
+          5,
+          2.4,
+          4
+        ]
+      ],
+      "surface": "container"
+    },
+    {
+      "key": "body-007",
+      "position": [
+        9,
+        0,
+        -8
+      ],
+      "name": "Контейнер 8",
+      "region": "Depot",
+      "colliders": [
+        [
+          0,
+          0,
+          0,
+          5,
+          2.4,
+          4
+        ]
+      ],
+      "surface": "container"
+    },
+    {
+      "key": "body-008",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "name": "Контейнер 9",
+      "region": "Depot",
+      "colliders": [
+        [
+          0,
+          0,
+          0,
+          3,
+          4.5,
+          8
+        ]
+      ],
+      "surface": "container"
+    },
+    {
+      "key": "body-009",
+      "position": [
+        -18,
+        0,
+        0
+      ],
+      "name": "Контейнер 10",
+      "region": "Depot",
+      "colliders": [
+        [
+          0,
+          0,
+          0,
+          3,
+          2,
+          5
+        ]
+      ],
+      "surface": "container"
+    },
+    {
+      "key": "body-010",
+      "position": [
+        18,
+        0,
+        0
+      ],
+      "name": "Контейнер 11",
+      "region": "Depot",
+      "colliders": [
+        [
+          0,
+          0,
+          0,
+          3,
+          2,
+          5
+        ]
+      ],
+      "surface": "container"
+    },
+    {
+      "key": "body-011",
+      "position": [
+        -3,
+        0,
+        13
+      ],
+      "name": "Контейнер 12",
+      "region": "Depot",
+      "colliders": [
+        [
+          0,
+          0,
+          0,
+          5,
+          1.1,
+          2
+        ]
+      ],
+      "surface": "container"
+    },
+    {
+      "key": "body-012",
+      "position": [
+        3,
+        0,
+        -13
+      ],
+      "name": "Контейнер 13",
+      "region": "Depot",
+      "colliders": [
+        [
+          0,
+          0,
+          0,
+          5,
+          1.1,
+          2
+        ]
+      ],
+      "surface": "container"
+    },
+    {
+      "key": "detail-0001",
+      "position": [
+        -21,
+        0.005,
+        0
+      ],
+      "name": "Деталь 0001",
+      "region": "Depot",
+      "colliders": [],
+      "surface": "decoration"
+    },
+    {
+      "key": "detail-0002",
+      "position": [
+        -18,
+        0.005,
+        0
+      ],
+      "name": "Деталь 0002",
+      "region": "Depot",
+      "colliders": [],
+      "surface": "decoration"
+    },
+    {
+      "key": "detail-0003",
+      "position": [
+        -15,
+        0.005,
+        0
+      ],
+      "name": "Деталь 0003",
+      "region": "Depot",
+      "colliders": [],
+      "surface": "decoration"
+    },
+    {
+      "key": "detail-0004",
+      "position": [
+        -12,
+        0.005,
+        0
+      ],
+      "name": "Деталь 0004",
+      "region": "Depot",
+      "colliders": [],
+      "surface": "decoration"
+    },
+    {
+      "key": "detail-0005",
+      "position": [
+        -9,
+        0.005,
+        0
+      ],
+      "name": "Деталь 0005",
+      "region": "Depot",
+      "colliders": [],
+      "surface": "decoration"
+    },
+    {
+      "key": "detail-0006",
+      "position": [
+        -6,
+        0.005,
+        0
+      ],
+      "name": "Деталь 0006",
+      "region": "Depot",
+      "colliders": [],
+      "surface": "decoration"
+    },
+    {
+      "key": "detail-0007",
+      "position": [
+        -3,
+        0.005,
+        0
+      ],
+      "name": "Деталь 0007",
+      "region": "Depot",
+      "colliders": [],
+      "surface": "decoration"
+    },
+    {
+      "key": "detail-0008",
+      "position": [
+        0,
+        0.005,
+        0
+      ],
+      "name": "Деталь 0008",
+      "region": "Depot",
+      "colliders": [],
+      "surface": "decoration"
+    },
+    {
+      "key": "detail-0009",
+      "position": [
+        3,
+        0.005,
+        0
+      ],
+      "name": "Деталь 0009",
+      "region": "Depot",
+      "colliders": [],
+      "surface": "decoration"
+    },
+    {
+      "key": "detail-0010",
+      "position": [
+        6,
+        0.005,
+        0
+      ],
+      "name": "Деталь 0010",
+      "region": "Depot",
+      "colliders": [],
+      "surface": "decoration"
+    },
+    {
+      "key": "detail-0011",
+      "position": [
+        9,
+        0.005,
+        0
+      ],
+      "name": "Деталь 0011",
+      "region": "Depot",
+      "colliders": [],
+      "surface": "decoration"
+    },
+    {
+      "key": "detail-0012",
+      "position": [
+        12,
+        0.005,
+        0
+      ],
+      "name": "Деталь 0012",
+      "region": "Depot",
+      "colliders": [],
+      "surface": "decoration"
+    },
+    {
+      "key": "detail-0013",
+      "position": [
+        15,
+        0.005,
+        0
+      ],
+      "name": "Деталь 0013",
+      "region": "Depot",
+      "colliders": [],
+      "surface": "decoration"
+    },
+    {
+      "key": "detail-0014",
+      "position": [
+        18,
+        0.005,
+        0
+      ],
+      "name": "Деталь 0014",
+      "region": "Depot",
+      "colliders": [],
+      "surface": "decoration"
+    },
+    {
+      "key": "detail-0015",
+      "position": [
+        21,
+        0.005,
+        0
+      ],
+      "name": "Деталь 0015",
+      "region": "Depot",
+      "colliders": [],
+      "surface": "decoration"
+    },
+    {
+      "key": "detail-0016",
+      "position": [
+        0,
+        0.006,
+        -18
+      ],
+      "name": "Деталь 0016",
+      "region": "Depot",
+      "colliders": [],
+      "surface": "decoration"
+    },
+    {
+      "key": "detail-0017",
+      "position": [
+        0,
+        0.006,
+        -15
+      ],
+      "name": "Деталь 0017",
+      "region": "Depot",
+      "colliders": [],
+      "surface": "decoration"
+    },
+    {
+      "key": "detail-0018",
+      "position": [
+        0,
+        0.006,
+        -12
+      ],
+      "name": "Деталь 0018",
+      "region": "Depot",
+      "colliders": [],
+      "surface": "decoration"
+    },
+    {
+      "key": "detail-0019",
+      "position": [
+        0,
+        0.006,
+        -9
+      ],
+      "name": "Деталь 0019",
+      "region": "Depot",
+      "colliders": [],
+      "surface": "decoration"
+    },
+    {
+      "key": "detail-0020",
+      "position": [
+        0,
+        0.006,
+        -6
+      ],
+      "name": "Деталь 0020",
+      "region": "Depot",
+      "colliders": [],
+      "surface": "decoration"
+    },
+    {
+      "key": "detail-0021",
+      "position": [
+        0,
+        0.006,
+        -3
+      ],
+      "name": "Деталь 0021",
+      "region": "Depot",
+      "colliders": [],
+      "surface": "decoration"
+    },
+    {
+      "key": "detail-0022",
+      "position": [
+        0,
+        0.006,
+        0
+      ],
+      "name": "Деталь 0022",
+      "region": "Depot",
+      "colliders": [],
+      "surface": "decoration"
+    },
+    {
+      "key": "detail-0023",
+      "position": [
+        0,
+        0.006,
+        3
+      ],
+      "name": "Деталь 0023",
+      "region": "Depot",
+      "colliders": [],
+      "surface": "decoration"
+    },
+    {
+      "key": "detail-0024",
+      "position": [
+        0,
+        0.006,
+        6
+      ],
+      "name": "Деталь 0024",
+      "region": "Depot",
+      "colliders": [],
+      "surface": "decoration"
+    },
+    {
+      "key": "detail-0025",
+      "position": [
+        0,
+        0.006,
+        9
+      ],
+      "name": "Деталь 0025",
+      "region": "Depot",
+      "colliders": [],
+      "surface": "decoration"
+    },
+    {
+      "key": "detail-0026",
+      "position": [
+        0,
+        0.006,
+        12
+      ],
+      "name": "Деталь 0026",
+      "region": "Depot",
+      "colliders": [],
+      "surface": "decoration"
+    },
+    {
+      "key": "detail-0027",
+      "position": [
+        0,
+        0.006,
+        15
+      ],
+      "name": "Деталь 0027",
+      "region": "Depot",
+      "colliders": [],
+      "surface": "decoration"
+    },
+    {
+      "key": "detail-0028",
+      "position": [
+        0,
+        0.006,
+        18
+      ],
+      "name": "Деталь 0028",
+      "region": "Depot",
+      "colliders": [],
+      "surface": "decoration"
+    },
+    {
+      "key": "detail-0029",
+      "position": [
+        -21.8,
+        0.018,
+        -17
+      ],
+      "name": "Деталь 0029",
+      "region": "Depot",
+      "colliders": [],
+      "surface": "decoration"
+    },
+    {
+      "key": "detail-0030",
+      "position": [
+        -21.8,
+        0.018,
+        -14.5
+      ],
+      "name": "Деталь 0030",
+      "region": "Depot",
+      "colliders": [],
+      "surface": "decoration"
+    },
+    {
+      "key": "detail-0031",
+      "position": [
+        -21.8,
+        0.018,
+        -12
+      ],
+      "name": "Деталь 0031",
+      "region": "Depot",
+      "colliders": [],
+      "surface": "decoration"
+    },
+    {
+      "key": "detail-0032",
+      "position": [
+        -21.8,
+        0.018,
+        -9.5
+      ],
+      "name": "Деталь 0032",
+      "region": "Depot",
+      "colliders": [],
+      "surface": "decoration"
+    },
+    {
+      "key": "detail-0033",
+      "position": [
+        -21.8,
+        0.018,
+        -7
+      ],
+      "name": "Деталь 0033",
+      "region": "Depot",
+      "colliders": [],
+      "surface": "decoration"
+    },
+    {
+      "key": "detail-0034",
+      "position": [
+        -21.8,
+        0.018,
+        -4.5
+      ],
+      "name": "Деталь 0034",
+      "region": "Depot",
+      "colliders": [],
+      "surface": "decoration"
+    },
+    {
+      "key": "detail-0035",
+      "position": [
+        -21.8,
+        0.018,
+        -2
+      ],
+      "name": "Деталь 0035",
+      "region": "Depot",
+      "colliders": [],
+      "surface": "decoration"
+    },
+    {
+      "key": "detail-0036",
+      "position": [
+        -21.8,
+        0.018,
+        0.5
+      ],
+      "name": "Деталь 0036",
+      "region": "Depot",
+      "colliders": [],
+      "surface": "decoration"
+    },
+    {
+      "key": "detail-0037",
+      "position": [
+        -21.8,
+        0.018,
+        3
+      ],
+      "name": "Деталь 0037",
+      "region": "Depot",
+      "colliders": [],
+      "surface": "decoration"
+    },
+    {
+      "key": "detail-0038",
+      "position": [
+        -21.8,
+        0.018,
+        5.5
+      ],
+      "name": "Деталь 0038",
+      "region": "Depot",
+      "colliders": [],
+      "surface": "decoration"
+    },
+    {
+      "key": "detail-0039",
+      "position": [
+        -21.8,
+        0.018,
+        8
+      ],
+      "name": "Деталь 0039",
+      "region": "Depot",
+      "colliders": [],
+      "surface": "decoration"
+    },
+    {
+      "key": "detail-0040",
+      "position": [
+        -21.8,
+        0.018,
+        10.5
+      ],
+      "name": "Деталь 0040",
+      "region": "Depot",
+      "colliders": [],
+      "surface": "decoration"
+    },
+    {
+      "key": "detail-0041",
+      "position": [
+        -21.8,
+        0.018,
+        13
+      ],
+      "name": "Деталь 0041",
+      "region": "Depot",
+      "colliders": [],
+      "surface": "decoration"
+    },
+    {
+      "key": "detail-0042",
+      "position": [
+        -21.8,
+        0.018,
+        15.5
+      ],
+      "name": "Деталь 0042",
+      "region": "Depot",
+      "colliders": [],
+      "surface": "decoration"
+    },
+    {
+      "key": "detail-0043",
+      "position": [
+        21.8,
+        0.018,
+        -17
+      ],
+      "name": "Деталь 0043",
+      "region": "Depot",
+      "colliders": [],
+      "surface": "decoration"
+    },
+    {
+      "key": "detail-0044",
+      "position": [
+        21.8,
+        0.018,
+        -14.5
+      ],
+      "name": "Деталь 0044",
+      "region": "Depot",
+      "colliders": [],
+      "surface": "decoration"
+    },
+    {
+      "key": "detail-0045",
+      "position": [
+        21.8,
+        0.018,
+        -12
+      ],
+      "name": "Деталь 0045",
+      "region": "Depot",
+      "colliders": [],
+      "surface": "decoration"
+    },
+    {
+      "key": "detail-0046",
+      "position": [
+        21.8,
+        0.018,
+        -9.5
+      ],
+      "name": "Деталь 0046",
+      "region": "Depot",
+      "colliders": [],
+      "surface": "decoration"
+    },
+    {
+      "key": "detail-0047",
+      "position": [
+        21.8,
+        0.018,
+        -7
+      ],
+      "name": "Деталь 0047",
+      "region": "Depot",
+      "colliders": [],
+      "surface": "decoration"
+    },
+    {
+      "key": "detail-0048",
+      "position": [
+        21.8,
+        0.018,
+        -4.5
+      ],
+      "name": "Деталь 0048",
+      "region": "Depot",
+      "colliders": [],
+      "surface": "decoration"
+    },
+    {
+      "key": "detail-0049",
+      "position": [
+        21.8,
+        0.018,
+        -2
+      ],
+      "name": "Деталь 0049",
+      "region": "Depot",
+      "colliders": [],
+      "surface": "decoration"
+    },
+    {
+      "key": "detail-0050",
+      "position": [
+        21.8,
+        0.018,
+        0.5
+      ],
+      "name": "Деталь 0050",
+      "region": "Depot",
+      "colliders": [],
+      "surface": "decoration"
+    },
+    {
+      "key": "detail-0051",
+      "position": [
+        21.8,
+        0.018,
+        3
+      ],
+      "name": "Деталь 0051",
+      "region": "Depot",
+      "colliders": [],
+      "surface": "decoration"
+    },
+    {
+      "key": "detail-0052",
+      "position": [
+        21.8,
+        0.018,
+        5.5
+      ],
+      "name": "Деталь 0052",
+      "region": "Depot",
+      "colliders": [],
+      "surface": "decoration"
+    },
+    {
+      "key": "detail-0053",
+      "position": [
+        21.8,
+        0.018,
+        8
+      ],
+      "name": "Деталь 0053",
+      "region": "Depot",
+      "colliders": [],
+      "surface": "decoration"
+    },
+    {
+      "key": "detail-0054",
+      "position": [
+        21.8,
+        0.018,
+        10.5
+      ],
+      "name": "Деталь 0054",
+      "region": "Depot",
+      "colliders": [],
+      "surface": "decoration"
+    },
+    {
+      "key": "detail-0055",
+      "position": [
+        21.8,
+        0.018,
+        13
+      ],
+      "name": "Деталь 0055",
+      "region": "Depot",
+      "colliders": [],
+      "surface": "decoration"
+    },
+    {
+      "key": "detail-0056",
+      "position": [
+        21.8,
+        0.018,
+        15.5
+      ],
+      "name": "Деталь 0056",
+      "region": "Depot",
+      "colliders": [],
+      "surface": "decoration"
+    },
+    {
+      "key": "detail-0057",
+      "position": [
+        0,
+        3.2,
+        -19.45
+      ],
+      "name": "Покрытие 0057",
+      "region": "Depot",
+      "colliders": [],
+      "surface": "decoration"
+    },
+    {
+      "key": "detail-0058",
+      "position": [
+        0,
+        3.2,
+        19.45
+      ],
+      "name": "Покрытие 0058",
+      "region": "Depot",
+      "colliders": [],
+      "surface": "decoration"
+    },
+    {
+      "key": "detail-0059",
+      "position": [
+        -16,
+        0.02,
+        -15
+      ],
+      "name": "Деталь 0059",
+      "region": "Depot",
+      "colliders": [],
+      "surface": "decoration"
+    },
+    {
+      "key": "detail-0060",
+      "position": [
+        -16,
+        3.8,
+        -19.4
+      ],
+      "name": "Надпись 0060",
+      "region": "Depot",
+      "colliders": [],
+      "surface": "decoration"
+    },
+    {
+      "key": "detail-0061",
+      "position": [
+        16,
+        0.02,
+        15
+      ],
+      "name": "Деталь 0061",
+      "region": "Depot",
+      "colliders": [],
+      "surface": "decoration"
+    },
+    {
+      "key": "detail-0062",
+      "position": [
+        16,
+        3.8,
+        19.4
+      ],
+      "name": "Надпись 0062",
+      "region": "Depot",
+      "colliders": [],
+      "surface": "decoration"
+    },
+    {
+      "key": "detail-0063",
+      "position": [
+        0,
+        4.8,
+        -19.4
+      ],
+      "name": "Надпись 0063",
+      "region": "Depot",
+      "colliders": [],
+      "surface": "decoration"
+    },
+    {
+      "key": "detail-0064",
+      "position": [
+        -22,
+        4,
+        0
+      ],
+      "name": "Деталь 0064",
+      "region": "Depot",
+      "colliders": [],
+      "surface": "decoration"
+    },
+    {
+      "key": "detail-0065",
+      "position": [
+        -22,
+        7.8,
+        0
+      ],
+      "name": "Деталь 0065",
+      "region": "Depot",
+      "colliders": [],
+      "surface": "decoration"
+    },
+    {
+      "key": "detail-0066",
+      "position": [
+        22,
+        4,
+        0
+      ],
+      "name": "Деталь 0066",
+      "region": "Depot",
+      "colliders": [],
+      "surface": "decoration"
+    },
+    {
+      "key": "detail-0067",
+      "position": [
+        22,
+        7.8,
+        0
+      ],
+      "name": "Деталь 0067",
+      "region": "Depot",
+      "colliders": [],
+      "surface": "decoration"
+    },
+    {
+      "key": "detail-0068",
+      "position": [
+        -32,
+        6,
+        -28
+      ],
+      "name": "Деталь 0068",
+      "region": "Depot",
+      "colliders": [],
+      "surface": "decoration"
+    },
+    {
+      "key": "detail-0069",
+      "position": [
+        28,
+        8,
+        -32
+      ],
+      "name": "Деталь 0069",
+      "region": "Depot",
+      "colliders": [],
+      "surface": "decoration"
+    },
+    {
+      "key": "detail-0070",
+      "position": [
+        -26,
+        15,
+        24
+      ],
+      "name": "Деталь 0070",
+      "region": "Depot",
+      "colliders": [],
+      "surface": "decoration"
+    },
+    {
+      "key": "detail-0071",
+      "position": [
+        -10,
+        28,
+        24
+      ],
+      "name": "Деталь 0071",
+      "region": "Depot",
+      "colliders": [],
+      "surface": "decoration"
+    }
+  ],
+  "lights": [],
+  "effects": [],
+  "environment": {
+    "background": "#9faeb3",
+    "ambientColor": "#e9f4ff",
+    "ambientGround": "#6f766d",
+    "ambientIntensity": 2.5,
+    "sunColor": "#ffe9c7",
+    "sunPosition": [
+      -18,
+      35,
+      20
+    ],
+    "sunIntensity": 3.2,
+    "sunShadow": [
+      -30,
+      30,
+      26,
+      -26,
+      0.5,
+      85
+    ],
+    "fogEnabled": true,
+    "fogNear": 45,
+    "fogFar": 130,
+    "ground": false,
+    "cameraFar": 180
+  },
+  "meshes": 85,
+  "resource": "a755f43626ee8813c9fa9a558b82ff913575d9de10c139b2de86ab3d5045aaec.glb",
+  "legacy": {
+    "id": "depot_07",
+    "name": "Depot 07",
+    "version": 1,
+    "enabled": true,
+    "boxes": [
+      [
+        -24,
+        0,
+        0,
+        1,
+        6,
+        40
+      ],
+      [
+        24,
+        0,
+        0,
+        1,
+        6,
+        40
+      ],
+      [
+        0,
+        0,
+        -20,
+        49,
+        6,
+        1
+      ],
+      [
+        0,
+        0,
+        20,
+        49,
+        6,
+        1
+      ],
+      [
+        -9,
+        0,
+        -6,
+        9,
+        3.4,
+        3
+      ],
+      [
+        9,
+        0,
+        6,
+        9,
+        3.4,
+        3
+      ],
+      [
+        -9,
+        0,
+        8,
+        5,
+        2.4,
+        4
+      ],
+      [
+        9,
+        0,
+        -8,
+        5,
+        2.4,
+        4
+      ],
+      [
+        0,
+        0,
+        0,
+        3,
+        4.5,
+        8
+      ],
+      [
+        -18,
+        0,
+        0,
+        3,
+        2,
+        5
+      ],
+      [
+        18,
+        0,
+        0,
+        3,
+        2,
+        5
+      ],
+      [
+        -3,
+        0,
+        13,
+        5,
+        1.1,
+        2
+      ],
+      [
+        3,
+        0,
+        -13,
+        5,
+        1.1,
+        2
+      ]
+    ],
+    "spawns": {
+      "Alpha": [
+        [
+          -20,
+          -15
+        ],
+        [
+          -16,
+          -15
+        ],
+        [
+          -12,
+          -15
+        ],
+        [
+          -20,
+          -11
+        ],
+        [
+          -16,
+          -11
+        ]
+      ],
+      "Bravo": [
+        [
+          20,
+          15
+        ],
+        [
+          16,
+          15
+        ],
+        [
+          12,
+          15
+        ],
+        [
+          20,
+          11
+        ],
+        [
+          16,
+          11
+        ]
+      ],
+      "neutral": [
+        [
+          -20,
+          -15
+        ],
+        [
+          20,
+          15
+        ],
+        [
+          -20,
+          15
+        ],
+        [
+          20,
+          -15
+        ],
+        [
+          0,
+          17
+        ],
+        [
+          0,
+          -17
+        ],
+        [
+          -20,
+          -7
+        ],
+        [
+          20,
+          7
+        ],
+        [
+          -8,
+          0
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          -16,
+          -17
+        ],
+        [
+          16,
+          17
+        ],
+        [
+          -16,
+          17
+        ],
+        [
+          16,
+          -17
+        ],
+        [
+          -21,
+          4
+        ],
+        [
+          21,
+          -4
+        ],
+        [
+          -5,
+          -17
+        ],
+        [
+          5,
+          17
+        ]
+      ]
+    },
+    "bounds": {
+      "bound_x": 23,
+      "bound_z": 19
+    }
+  }
+}

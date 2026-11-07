@@ -1,0 +1,11 @@
+FROM python:3.11-slim
+WORKDIR /app
+COPY requirements.lock ./
+RUN pip install --no-cache-dir -r requirements.lock
+COPY shared ./shared
+COPY backend ./backend
+COPY simulation ./simulation
+COPY demo-games ./demo-games
+COPY alembic.ini ./
+ENV PYTHONUNBUFFERED=1
+CMD ["gunicorn", "--workers", "1", "--threads", "120", "--bind", "0.0.0.0:5000", "backend.wsgi:app"]

@@ -1,0 +1,10 @@
+# Explicit build definition for an air-gapped package. Runtime compose never builds.
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: deploy/Dockerfile.backend.offline
+  nginx:
+    build:
+      context: .
+      dockerfile: deploy/Dockerfile.frontend.offline

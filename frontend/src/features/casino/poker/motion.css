@@ -1,0 +1,46 @@
+@keyframes holdem-deal {
+  from {
+    opacity: 0;
+    transform: translateY(-18px) rotate(-5deg);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes holdem-bet {
+  from {
+    opacity: 0.2;
+    transform: translate(var(--chip-x), var(--chip-y));
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes holdem-award {
+  from {
+    opacity: 0.3;
+    translate: var(--pot-x) var(--pot-y);
+  }
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+@keyframes holdem-action {
+  0%,
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.45;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .holdem-room *,
+  .holdem-room *::before {
+    animation: none !important;
+    transition: none !important;
+  }
+}

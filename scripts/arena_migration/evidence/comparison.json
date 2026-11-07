@@ -1,0 +1,119 @@
+{
+  "results": [
+    {
+      "id": "depot_07",
+      "before": {
+        "id": "depot_07",
+        "view": {
+          "x": -18,
+          "y": 9,
+          "z": 15,
+          "yaw": 0.8,
+          "pitch": -0.3,
+          "crouched": false
+        },
+        "frameMedian": 13.300000000000182,
+        "frameP95": 13.5,
+        "renderP95": 2.6999999284744263,
+        "calls": 37,
+        "triangles": 3922,
+        "memory": {
+          "geometries": 36,
+          "textures": 25
+        },
+        "objects": 40,
+        "bytes": 535528,
+        "groups": 85
+      },
+      "after": {
+        "frameMedian": 13.300000000000182,
+        "frameP95": 13.5,
+        "renderP95": 2.5,
+        "calls": 58,
+        "triangles": 3922,
+        "memory": {
+          "geometries": 24,
+          "textures": 25
+        },
+        "objects": 172
+      }
+    },
+    {
+      "id": "foundry",
+      "before": {
+        "id": "foundry",
+        "view": {
+          "x": -46,
+          "y": 42,
+          "z": 47,
+          "yaw": 0.78,
+          "pitch": -0.64,
+          "crouched": false
+        },
+        "frameMedian": 13.300000000000182,
+        "frameP95": 13.5,
+        "renderP95": 3.299999952316284,
+        "calls": 81,
+        "triangles": 18800,
+        "memory": {
+          "geometries": 14,
+          "textures": 12
+        },
+        "objects": 16,
+        "bytes": 463396,
+        "groups": 384
+      },
+      "after": {
+        "frameMedian": 13.300000000000182,
+        "frameP95": 13.5,
+        "renderP95": 5.700000047683716,
+        "calls": 120,
+        "triangles": 18800,
+        "memory": {
+          "geometries": 14,
+          "textures": 12
+        },
+        "objects": 557
+      }
+    },
+    {
+      "id": "outpost",
+      "before": {
+        "id": "outpost",
+        "view": {
+          "x": -54,
+          "y": 45,
+          "z": 46,
+          "yaw": 0.8,
+          "pitch": -0.58,
+          "crouched": false
+        },
+        "frameMedian": 13.300000000001091,
+        "frameP95": 13.5,
+        "renderP95": 4.100000023841858,
+        "calls": 112,
+        "triangles": 14074,
+        "memory": {
+          "geometries": 28,
+          "textures": 12
+        },
+        "objects": 29,
+        "bytes": 371032,
+        "groups": 338
+      },
+      "after": {
+        "frameMedian": 13.300000000001091,
+        "frameP95": 13.5,
+        "renderP95": 3.399999976158142,
+        "calls": 113,
+        "triangles": 14094,
+        "memory": {
+          "geometries": 28,
+          "textures": 12
+        },
+        "objects": 507
+      }
+    }
+  ],
+  "errors": []
+}

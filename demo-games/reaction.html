@@ -1,0 +1,7 @@
+<!doctype html><html lang="ru"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Точный момент</title>
+<style>body{background:#0f1a23;color:#ebf4fb;font:16px Segoe UI;text-align:center;margin:24px}button{display:block;background:#1f4f67;border:1px solid #58bde9;color:white;border-radius:12px;width:min(90%,500px);min-height:260px;margin:24px auto;font:24px Segoe UI;cursor:pointer}p{color:#a8c0d1}</style>
+<h1>Точный момент</h1><p>Дождитесь зелёного сигнала и нажмите. Пять попыток.</p><button id="target">Начать</button><p id="result"></p><script>
+const target=document.querySelector('#target'),result=document.querySelector('#result');let state='idle',started=0,timer,results=[];
+function round(){state='waiting';target.style.background='#7a3948';target.textContent='Ждите зелёный…';timer=setTimeout(()=>{started=performance.now();state='ready';target.style.background='#267c4b';target.textContent='Нажимайте!'},1200+Math.random()*2600)}
+target.onclick=()=>{if(state==='idle'){results=[];round()}else if(state==='waiting'){clearTimeout(timer);state='retry';target.textContent='Слишком рано! Ещё раз'}else if(state==='retry')round();else if(state==='ready'){results.push(Math.round(performance.now()-started));result.textContent='Попытки: '+results.join(' / ')+' мс';if(results.length===5){target.textContent='Среднее: '+Math.round(results.reduce((a,b)=>a+b)/5)+' мс. Ещё раз';target.style.background='#1f4f67';state='idle'}else{target.textContent='Следующая попытка';state='retry'}}};
+</script></html>

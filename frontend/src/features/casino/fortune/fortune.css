@@ -1,0 +1,210 @@
+.casino-felt.common-scene.game-wheel {
+  --fortune-glow: #f0c765;
+  background: radial-gradient(ellipse at 50% 40%, #604127 0, #22162d 55%, #101927 100%);
+}
+.casino-felt.common-scene.game-wheel.risk-medium {
+  --fortune-glow: #8eddeb;
+  background: radial-gradient(ellipse at 50% 40%, #274471, #271736 65%, #121923);
+}
+.casino-felt.common-scene.game-wheel.risk-high {
+  --fortune-glow: #ed9ed9;
+  background: radial-gradient(ellipse at 50% 40%, #5b2769, #19162e 65%, #151523);
+}
+.fortune-show {
+  display: grid;
+  justify-items: center;
+  color: #fff1d2;
+}
+.fortune-title {
+  text-align: center;
+}
+.fortune-title small,
+.fortune-announcement small {
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  color: var(--fortune-glow);
+}
+.fortune-title h3 {
+  margin: 5px 0 0;
+  font-size: 26px;
+}
+.fortune-machine {
+  width: min(100%, 490px);
+}
+.fortune-machine svg {
+  width: 100%;
+  overflow: visible;
+  filter: drop-shadow(0 18px 18px #0008);
+}
+.fortune-rim {
+  fill: #161a2a;
+  stroke: #cda858;
+  stroke-width: 8;
+}
+.fortune-bulb {
+  fill: #ffe8a2;
+}
+.fortune-rotor {
+  will-change: transform;
+}
+.fortune-sector path {
+  stroke: #ffe4a2;
+  stroke-width: 1.2;
+}
+.fortune-sector.alternate path {
+  filter: brightness(1.2);
+}
+.fortune-sector text {
+  text-anchor: middle;
+  fill: #fff9ed;
+  font-weight: 800;
+  paint-order: stroke;
+  stroke: #0006;
+  stroke-width: 2px;
+}
+.fortune-glyph {
+  font-size: 23px;
+}
+.fortune-value {
+  font-size: 13px;
+}
+.fortune-hub {
+  fill: #c59b4e;
+  stroke: #ffe9a6;
+  stroke-width: 4;
+}
+.fortune-hub-inner {
+  fill: #202536;
+  stroke: #7d5e30;
+  stroke-width: 3;
+}
+.fortune-hub-icon {
+  fill: #ffe39a;
+  font-size: 32px;
+  text-anchor: middle;
+}
+.fortune-hub-label {
+  fill: #ffe39a;
+  font-size: 9px;
+  letter-spacing: 0.13em;
+  text-anchor: middle;
+}
+.fortune-needle {
+  fill: #fff8d7;
+  stroke: #613b16;
+  stroke-width: 3;
+  filter: drop-shadow(0 3px 3px #000a);
+}
+.phase-spinning .fortune-rim,
+.phase-accelerating .fortune-rim,
+.phase-braking .fortune-rim {
+  stroke: var(--fortune-glow);
+  filter: drop-shadow(0 0 7px var(--fortune-glow));
+}
+.fortune-sector.winner path {
+  stroke: #fff;
+  stroke-width: 5;
+  filter: brightness(1.5);
+}
+.fortune-announcement {
+  min-height: 70px;
+  display: grid;
+  align-content: center;
+  gap: 4px;
+  text-align: center;
+}
+.fortune-announcement strong {
+  font-size: 25px;
+}
+.phase-result .fortune-announcement strong {
+  animation: fortune-reveal 0.5s ease-out;
+}
+.fortune-paytable {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+.fortune-paytable > span {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 8px 10px;
+  border: 1px solid #ffe4aa38;
+  border-radius: 10px;
+  background: #111a2c;
+  font-size: 12px;
+}
+.fortune-paytable i {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid #fff8;
+}
+.casino-fortune-layout .casino-controls > button {
+  border-left: 4px solid var(--sector-color);
+  min-height: 48px;
+}
+.casino-fortune-layout .casino-controls > button:hover:not(:disabled) {
+  box-shadow: 0 0 14px #dfbd5640;
+}
+@keyframes fortune-reveal {
+  from {
+    opacity: 0.5;
+    transform: scale(0.94);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .fortune-show * {
+    animation: none !important;
+  }
+}
+
+.casino-fortune-layout .game-wheel > .casino-result {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 24px;
+  margin-top: 18px;
+}
+.casino-fortune-layout .game-wheel > .casino-result p {
+  margin: 0;
+}
+.fortune-bet-badge {
+  display: block;
+  color: var(--accent);
+  font-weight: 700;
+}
+.fortune-my-bets p {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+.fortune-my-bets p:last-child {
+  border-top: 1px solid var(--border);
+  padding-top: 12px;
+}
+.personal-wheel-result {
+  min-height: 62px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 12px;
+  margin-top: 18px;
+  background: #fff1a415;
+  border-radius: 10px;
+  padding: 12px;
+}
+.personal-wheel-history > div:not(.actions) {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+}

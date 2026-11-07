@@ -1,0 +1,533 @@
+.holdem-room {
+  margin-top: 20px;
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  background: var(--surface-color);
+  overflow: hidden;
+}
+.holdem-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 26px;
+  border-bottom: 1px solid var(--border);
+}
+.holdem-header > div {
+  display: grid;
+  gap: 6px;
+}
+.holdem-header small,
+.holdem-secondary small {
+  color: var(--muted-color);
+}
+.holdem-menu {
+  position: relative;
+}
+.holdem-menu summary {
+  font-size: 26px;
+  cursor: pointer;
+  list-style: none;
+  padding: 0 12px;
+}
+.holdem-menu button,
+.holdem-menu > span {
+  position: absolute;
+  right: 0;
+  top: 40px;
+  z-index: 20;
+  min-width: 210px;
+  background: var(--surface-color);
+  padding: 14px;
+  box-shadow: 0 8px 24px #0004;
+}
+.holdem-room-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 190px;
+  gap: 12px;
+  padding: 12px;
+}
+.holdem-play-area {
+  min-width: 0;
+}
+.holdem-secondary {
+  padding: 16px 8px;
+  font-size: 12px;
+  border-left: 1px solid var(--border);
+}
+.holdem-hand-number {
+  display: block;
+  margin-bottom: 18px;
+}
+.holdem-join {
+  display: grid;
+  gap: 12px;
+}
+.holdem-join input {
+  width: 100%;
+}
+.holdem-table {
+  position: relative;
+  height: 700px;
+  isolation: isolate;
+  color: #f3eee2;
+  background: radial-gradient(ellipse, #1b353a, #0d242c);
+  border-radius: 24px;
+  overflow: hidden;
+}
+.holdem-felt {
+  position: absolute;
+  inset: 80px 55px 100px;
+  border: 12px solid #594738;
+  border-radius: 46%;
+  background: radial-gradient(ellipse at 50% 40%, #206b53, #104236);
+  box-shadow:
+    0 0 0 3px #342c24,
+    inset 0 0 0 2px #a59067,
+    inset 0 0 50px #0005,
+    0 15px 30px #0005;
+  z-index: -1;
+}
+.holdem-board {
+  position: absolute;
+  top: 43%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  max-width: 55%;
+  text-align: center;
+  display: grid;
+  justify-items: center;
+  gap: 18px;
+}
+.holdem-street {
+  letter-spacing: 0.18em;
+  font-size: 11px;
+  color: #e6d3a9;
+}
+.holdem-pot {
+  display: grid;
+  gap: 5px;
+  justify-items: center;
+}
+.holdem-pot > small {
+  letter-spacing: 0.15em;
+  font-size: 10px;
+  color: #c3d2c4;
+}
+.holdem-pot .holdem-chips {
+  font-size: 34px;
+  font-weight: 800;
+}
+.holdem-chips {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.holdem-chips i {
+  display: grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  border: 3px dashed #ffe7bd;
+  border-radius: 50%;
+  background: #ad4846;
+  box-shadow:
+    0 2px #612f2e,
+    0 4px 6px #0004;
+  color: #ffe7bd;
+  font-size: 7px;
+  font-style: normal;
+}
+.holdem-community {
+  display: flex;
+  gap: 6px;
+}
+.holdem-board-card {
+  animation: holdem-deal 220ms ease-out both;
+}
+.holdem-table .holdem-community .casino-cards {
+  margin: 0;
+  gap: 0;
+}
+.holdem-table .casino-card {
+  box-shadow: 0 3px 7px #0004;
+}
+.holdem-table .holdem-community .casino-card {
+  width: 82px;
+  min-height: 118px;
+}
+.holdem-seat {
+  position: absolute;
+  width: 146px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+}
+.holdem-seat.slot-0 {
+  left: 50%;
+  top: 83%;
+}
+.holdem-seat.slot-1 {
+  left: 14%;
+  top: 66%;
+}
+.holdem-seat.slot-2 {
+  left: 14%;
+  top: 29%;
+}
+.holdem-seat.slot-3 {
+  left: 50%;
+  top: 13%;
+}
+.holdem-seat.slot-4 {
+  left: 86%;
+  top: 29%;
+}
+.holdem-seat.slot-5 {
+  left: 86%;
+  top: 66%;
+}
+.holdem-seat-info {
+  position: relative;
+  background: linear-gradient(#243b40, #162d33);
+  border: 1px solid #63716b;
+  border-radius: 16px;
+  padding: 7px 8px;
+  box-shadow: 0 4px 12px #0004;
+  display: grid;
+  gap: 2px;
+}
+.holdem-seat-info > strong {
+  font-size: 13px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.holdem-seat-info strong small {
+  font-size: 8px;
+  background: #ffffff22;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+.holdem-nickname {
+  font-size: 10px;
+  color: #b7cac8;
+}
+.holdem-stack {
+  font-size: 21px;
+  color: #f3ddb1;
+  font-variant-numeric: tabular-nums;
+}
+.holdem-seat.own .holdem-stack {
+  font-size: 25px;
+}
+.holdem-seat.own .holdem-seat-info {
+  background: linear-gradient(#29535e, #1a3e49);
+  border-color: #91cbd8;
+}
+.holdem-seat.active .holdem-seat-info {
+  border-color: #efd080;
+  box-shadow:
+    0 0 0 2px #efd08044,
+    0 0 18px #eaca5725;
+}
+.holdem-seat.winner .holdem-seat-info {
+  border-color: #b5e094;
+  box-shadow: 0 0 20px #a7db6d44;
+}
+.holdem-seat-status {
+  font-size: 10px;
+  color: #e4d19e;
+}
+.holdem-misses {
+  font-size: 10px;
+  color: #f1b6a3;
+}
+.holdem-seat-positions {
+  position: absolute;
+  left: -29px;
+  top: 8px;
+  display: grid;
+  gap: 5px;
+}
+.holdem-seat-positions span {
+  font-size: 9px;
+  background: #2b4650;
+  border: 1px solid #8ba7ab;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+}
+.holdem-seat-positions .holdem-dealer {
+  background: #eee9d8;
+  color: #283b37;
+  border-color: #fff;
+  box-shadow: 0 2px 3px #0005;
+  font-size: 13px;
+}
+.holdem-table .holdem-hole .casino-cards {
+  justify-content: center;
+  gap: 4px;
+  margin: 5px 0 0;
+  transition:
+    transform 240ms ease,
+    opacity 240ms ease;
+  animation: holdem-deal 240ms ease-out;
+}
+.holdem-table .holdem-hole .casino-card {
+  width: 45px;
+  min-height: 66px;
+}
+.holdem-table .holdem-hole .casino-card-emblem {
+  font-size: 24px;
+}
+.holdem-table .holdem-hole .casino-card-corner {
+  font-size: 12px;
+  top: 3px;
+  left: 4px;
+}
+.holdem-table .holdem-hole .casino-card-corner i {
+  font-size: 9px;
+}
+.holdem-table .holdem-hole .casino-card-corner.bottom {
+  top: auto;
+  left: auto;
+  right: 4px;
+  bottom: 3px;
+}
+.holdem-seat.own .casino-card {
+  width: 66px;
+  min-height: 96px;
+}
+.holdem-seat.own .casino-card-emblem {
+  font-size: 32px;
+}
+.holdem-seat.own .casino-card-corner {
+  font-size: 17px;
+}
+.holdem-seat.own .casino-card-corner i {
+  font-size: 12px;
+}
+.holdem-table .holdem-seat.folded .holdem-hole .casino-cards {
+  transform: translateY(10px) rotate(-7deg) scale(0.85);
+  opacity: 0.35;
+}
+.holdem-seat.folded .holdem-seat-info {
+  opacity: 0.65;
+}
+.holdem-individual-bet {
+  position: absolute;
+  left: 50%;
+  top: -44px;
+  transform: translateX(-50%);
+  font-size: 14px;
+  text-shadow: 0 1px 3px #000;
+}
+.slot-1 .holdem-individual-bet,
+.slot-2 .holdem-individual-bet {
+  left: calc(100% + 25px);
+  top: 45%;
+  transform: none;
+}
+.slot-4 .holdem-individual-bet,
+.slot-5 .holdem-individual-bet {
+  left: auto;
+  right: calc(100% + 25px);
+  top: 45%;
+  transform: none;
+}
+.slot-3 .holdem-individual-bet {
+  top: calc(100% + 10px);
+}
+.holdem-seat {
+  --chip-x: 0px;
+  --chip-y: 35px;
+  --pot-x: 0px;
+  --pot-y: -190px;
+}
+.slot-1,
+.slot-2 {
+  --chip-x: -55px;
+  --chip-y: 0px;
+  --pot-x: 200px;
+  --pot-y: 0px;
+}
+.slot-4,
+.slot-5 {
+  --chip-x: 55px;
+  --chip-y: 0px;
+  --pot-x: -200px;
+  --pot-y: 0px;
+}
+.slot-3 {
+  --chip-y: -35px;
+  --pot-y: 140px;
+}
+.bet-motion {
+  animation: holdem-bet 240ms ease-out;
+}
+.holdem-award {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  color: #d2f2ac;
+  font-weight: bold;
+  animation: holdem-award 300ms ease-out;
+}
+.holdem-last-action {
+  display: block;
+  font-size: 10px;
+  color: #f6dda4;
+  margin-top: 4px;
+  animation: holdem-action 4s ease-out forwards;
+}
+.holdem-timer {
+  font-size: 10px;
+  display: grid;
+  gap: 3px;
+  margin-top: 5px;
+  color: #eed8a9;
+}
+.holdem-timer progress {
+  height: 5px;
+  width: 100%;
+  accent-color: #cfa444;
+}
+.holdem-timer.urgent {
+  color: #f6a7a4;
+}
+.holdem-timer.urgent progress {
+  accent-color: #d26b68;
+}
+.holdem-actions {
+  margin: 12px 0 0;
+  padding: 16px;
+  display: grid;
+  gap: 12px;
+}
+.holdem-decision-context {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+.holdem-decision-context span {
+  color: var(--muted-color);
+  font-size: 12px;
+}
+.holdem-primary-actions {
+  display: flex;
+  gap: 10px;
+}
+.holdem-primary-actions button {
+  flex: 1;
+  font-size: 17px;
+  min-height: 48px;
+}
+.holdem-primary-actions .holdem-raise-submit {
+  border-color: #b99b57;
+  background: #a0813522;
+}
+.holdem-sizing {
+  display: grid;
+  grid-template-columns: 130px 190px minmax(80px, 1fr);
+  gap: 10px;
+  align-items: center;
+}
+.holdem-sizing label {
+  font-size: 12px;
+}
+.holdem-size-input {
+  display: grid;
+  grid-template-columns: 35px minmax(0, 1fr) 35px;
+  gap: 4px;
+}
+.holdem-size-input button {
+  padding: 4px;
+}
+.holdem-size-input input {
+  width: 100%;
+  text-align: center;
+  font-weight: 700;
+  min-height: 38px;
+  padding: 6px;
+}
+.holdem-sizing input[type='range'] {
+  width: 100%;
+  accent-color: #ba9850;
+  min-height: 30px;
+  padding: 0;
+}
+.holdem-presets {
+  display: flex;
+  gap: 6px;
+  grid-column: 1/-1;
+}
+.holdem-presets button {
+  flex: 1;
+  font-size: 12px;
+  padding: 8px;
+}
+.holdem-sizing > small {
+  grid-column: 1/-1;
+  color: var(--muted-color);
+  font-size: 11px;
+}
+.holdem-sizing > small.invalid {
+  color: #c75c5c;
+}
+.holdem-wait-status {
+  padding: 24px;
+  text-align: center;
+  color: var(--muted-color);
+  font-size: 14px;
+}
+.holdem-history summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+.holdem-history ol {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 12px;
+}
+.holdem-history li {
+  display: grid;
+  gap: 3px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 8px;
+}
+.holdem-history li strong {
+  font-size: 11px;
+}
+.holdem-history li small {
+  font-size: 9px;
+}
+.holdem-settlement {
+  border-top: 1px solid var(--border);
+  padding-top: 16px;
+}
+.holdem-settlement p {
+  font-size: 12px;
+}
+.holdem-leave-dialog {
+  max-width: 460px;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 24px;
+  background: var(--surface-color);
+  color: var(--text-color);
+}
+.holdem-leave-dialog::backdrop {
+  background: #0009;
+}
+.holdem-leave-dialog button {
+  margin: 6px;
+}
