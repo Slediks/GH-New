@@ -49,6 +49,10 @@
 /frontend/e2e/screenshots/
 /frontend/e2e/captures/
 /frontend/e2e/recordings/
+/scripts/arena_migration/evidence/browser.json
+/scripts/arena_migration/evidence/comparison.json
+/scripts/arena_migration/evidence/labels-performance.json
+/scripts/arena_migration/evidence/parameter-comparison.json
 *.log
 *.trace
 .coverage

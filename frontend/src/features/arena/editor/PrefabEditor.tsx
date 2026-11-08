@@ -6,6 +6,7 @@ import { useScene } from './useScene';
 import { assetFor, type Asset, type Definition, type MapObject, type Vec3 } from './types';
 import { MapViewport } from './viewport';
 import { fingerprint } from './definitionState';
+import { useAuth } from '../../../app/Auth';
 
 const root = '/arena/maps-admin/prefabs';
 type Source = {
@@ -23,6 +24,7 @@ function document(source: Source): Definition {
 export function PrefabEditor({ initial, assets, onClose }: {
   initial: Draft; assets: Record<string, Asset>; onClose: () => void;
 }) {
+  const { user } = useAuth();
   const [saved, setSaved] = useState(initial), [source, setSource] = useState(initial.definition);
   const [message, setMessage] = useState('Черновик prefab'), [busy, setBusy] = useState(false);
   const [mode, setMode] = useState<'select' | 'translate' | 'rotate' | 'scale'>('translate');
@@ -33,8 +35,10 @@ export function PrefabEditor({ initial, assets, onClose }: {
   const savedRef = useRef(saved); savedRef.current = saved;
   const saving = useRef<Promise<Draft> | null>(null);
   const failed = useRef<string | null>(null), conflicted = useRef(false);
+  const [accessLost, setAccessLost] = useState(false);
   const d = document(source);
   const change = (next: Definition) => {
+    if (accessLost) return;
     setHistory((h) => ({ past: [...h.past, live.current].slice(-100), future: [] }));
     setSource({ ...live.current, metadata: { ...live.current.metadata, name: next.metadata.name,
       description: next.metadata.description }, objects: next.objects, groups: next.groups,
@@ -87,11 +91,12 @@ export function PrefabEditor({ initial, assets, onClose }: {
     } catch (e) {
       failed.current = fingerprint(current);
       conflicted.current = e instanceof ApiError && e.status === 409;
+      if (e instanceof ApiError && e.status === 403) setAccessLost(true);
       throw e;
     } finally { saving.current = null; setBusy(false); }
   }
   useEffect(() => {
-    if (busy || conflicted.current || failed.current === fingerprint(source) ||
+    if (busy || accessLost || conflicted.current || failed.current === fingerprint(source) ||
       fingerprint(source) === fingerprint(saved.definition)) return;
     const timer = window.setTimeout(() => { void save().catch((e) => setMessage((e as Error).message)); }, 1800);
     return () => clearTimeout(timer);
@@ -112,13 +117,13 @@ export function PrefabEditor({ initial, assets, onClose }: {
     onKeyDown={(e) => { if ((e.ctrlKey || e.metaKey) && e.code === 'KeyZ' &&
       !(e.target as HTMLElement).matches('input,textarea,select')) { e.preventDefault(); undo(e.shiftKey); } }}>
     <div className="prefab-editor-head"><strong>Editing Prefab: {source.metadata.name} · rev {saved.revision} · draft {saved.draftVersion}{fingerprint(source) !== fingerprint(saved.definition) ? ' · несохранено *' : ''}</strong>
-      <button onClick={() => { void save(true).then(onClose).catch((e) => setMessage(e.message)); }} disabled={busy}>Сохранить и закрыть</button>
-      <button onClick={() => void save(true).catch((e) => setMessage(e.message))} disabled={busy}>Сохранить черновик</button>
-      <button onClick={() => void publish()} disabled={busy}>Опубликовать</button>
+      <button onClick={() => { if (accessLost) onClose(); else void save(true).then(onClose).catch((e) => setMessage(e.message)); }} disabled={busy}>К карте</button>
+      <button onClick={() => void save(true).catch((e) => setMessage(e.message))} disabled={busy || accessLost}>Сохранить черновик</button>
+      {user?.role === 'admin' && <button onClick={() => void publish()} disabled={busy || accessLost}>Опубликовать</button>}
       <button onClick={() => undo()} disabled={!history.past.length}>Отменить</button>
       <button onClick={() => undo(true)} disabled={!history.future.length}>Повторить</button>
     </div>
-    <p role="status">{message}</p>
+    <p role="status">{accessLost ? 'Доступ отозван. Автосохранение остановлено.' : message}</p>
     <div className="prefab-editor-tools">
       {(['select', 'translate', 'rotate', 'scale'] as const).map((m, i) =>
         <button key={m} className={mode === m ? 'active' : ''} onClick={() => setMode(m)}>

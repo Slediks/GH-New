@@ -7,8 +7,8 @@ from backend.app.arena.world import box_distance, wall_distance
 
 
 def _config():
-    from backend.app.arena.grenades import CONFIG
-    return CONFIG["molotov"]
+    from backend.app.arena.grenade_settings import DEFAULTS
+    return DEFAULTS["molotov"]
 
 
 def _surface(box, x, z, start_y, max_drop, min_normal_y):
@@ -56,8 +56,8 @@ def _connected(boxes, a, b):
     return wall_distance(start, direction, boxes) >= distance - 0.04
 
 
-def patches_for(game, position, grenade_id):
-    cfg = _config()
+def patches_for(game, position, grenade_id, cfg=None):
+    cfg = cfg or _config()
     boxes = game.map["boxes"]
     # A wall hit may ignite the nearest floor, but never a surface far below.
     base = surface_at(boxes, position[0], position[2], position[1]+0.5,
@@ -93,18 +93,18 @@ def patches_for(game, position, grenade_id):
 
 
 def ignite(game, grenade, normal):
-    cfg = _config()
+    cfg = grenade.get("config", _config())
     position = grenade["position"][:]
     game.event("molotov_break", grenade=grenade["id"], player=grenade["owner"],
                sequence=grenade["sequence"],
                position=position, normal=normal[:])
-    patches = patches_for(game, position, grenade["id"])
+    patches = patches_for(game, position, grenade["id"], cfg)
     if patches:
         game.fire_area_id += 1
         owner = game.players[grenade["owner"]]
         area = dict(id=game.fire_area_id, owner=owner["id"], team=owner["team"],
                     start=game.time, end=game.time+cfg["fire_lifetime"],
-                    patches=patches, inside={})
+                    patches=patches, inside={}, config=cfg.copy())
         game.fire_areas.append(area)
         game.event("fire_spawn", fire_area=area["id"], player=owner["id"],
                    position=patches[0]["center"], end=area["end"])
@@ -122,10 +122,10 @@ def _overlap(player, area, existing):
 
 
 def step(game):
-    cfg = _config()
     damage = {}
     remaining = []
     for area in game.fire_areas:
+        cfg = area.get("config", _config())
         if game.time >= area["end"]:
             game.event("fire_remove", fire_area=area["id"],
                        position=area["patches"][0]["center"])
@@ -157,7 +157,8 @@ def step(game):
         target = game.players[identity]
         if target["hp"] <= 0:
             continue
-        amount = min(cfg["max_stacked_fire_damage"], sum(source[1] for source in sources))
+        amount = min(max(source[0].get("config", _config())["max_stacked_fire_damage"]
+                         for source in sources), sum(source[1] for source in sources))
         area, _, center = max(sources, key=lambda source: source[1])
         owner = game.players.get(area["owner"])
         if owner:

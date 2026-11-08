@@ -81,8 +81,13 @@ def connect(auth):
             return False
         if not room or room.status not in ("loading", "active"):
             return False
-        if room.settings.get("_test") and db.get(User, claim["user"]).role != "admin":
+        record = db.get(ArenaMatch, room.match_id) if room.match_id else None
+        if not record or record.status not in ("loading", "active"):
             return False
+        if room.settings.get("_test"):
+            from backend.app.arena.routes import _can_view_test_room
+            if not _can_view_test_room(db, db.get(User, claim["user"]), room):
+                return False
         if not any(s.user_id == claim["user"] for s in seats(db, room.id)):
             return False
         with guard:
@@ -156,15 +161,32 @@ def recover():
 
 def synchronize():
     with SessionLocal.begin() as db:
+        from backend.app.arena import grenade_settings
+
+        active_grenades = grenade_settings.current(db)
         room_ids = list(db.scalars(select(ArenaRoom.id).where(ArenaRoom.status != "closed")))
         for room_id in room_ids:
             room = lock(db, ArenaRoom, room_id)
             members = seats(db, room.id)
             game = matches.get(room.match_id) if room.status != "lobby" else None
+            record = lock(db, ArenaMatch, room.match_id) if room.match_id else None
+            if record and record.status == "cancelled":
+                room.status = "finished"
+                for member in members:
+                    member.ready = False
+                for sid, peer in list(peers.items()):
+                    if peer["match"] == record.id:
+                        socket.emit("cancelled", record.result, to=sid)
+                        peers.pop(sid)
+                        socket.server.disconnect(sid)
+                matches.pop(record.id, None)
+                continue
             if room.status == "loading" and not game:
-                record = db.get(ArenaMatch, room.match_id)
                 game = matches[record.id] = Match(record.id, record.settings, record.roster)
             if game:
+                if game.grenade_version != active_grenades["version"]:
+                    game.grenade_config = active_grenades["config"]
+                    game.grenade_version = active_grenades["version"]
                 for s in members[:]:
                     player = game.players.get(s.user_id)
                     if player and player["eliminated"] and not player["connected"]:

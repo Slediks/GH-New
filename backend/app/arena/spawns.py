@@ -108,7 +108,7 @@ def spawn(game, p, fixed=False):
     p["pitch"], p["hp"], p["heat"] = 0.0, game.rules["common"]["health"], 0.0
     p["ammo"] = {k: [w["magazine"], w["reserve"]] for k, w in game.weapons.items()}
     from backend.app.arena.grenades import inventory
-    p["grenades"] = inventory()
+    p["grenades"] = inventory(game.grenade_config)
     p["reload_until"], p["next_shot"], p["damages"] = 0.0, game.time, {}
     p["protection"] = game.time + (0 if fixed else game.options["protection"])
     p["step_distance"], p["fire_id"], p["fire_index"] = 0.0, None, 0

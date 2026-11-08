@@ -4,8 +4,11 @@ import type { Asset, Draft, MapRow } from './types';
 import { assetRegistry } from './types';
 import { MapEditor } from './Editor';
 import './editor.css';
+import { useAuth } from '../../../app/Auth';
 export function ArenaMaps() {
+  const { user } = useAuth();
   const [maps, setMaps] = useState<MapRow[]>([]),
+    [sources, setSources] = useState<MapRow[]>([]),
     [assets, setAssets] = useState<Record<string, Asset>>({}),
     [draft, setDraft] = useState<Draft | null>(null);
   const [message, setMessage] = useState(''),
@@ -15,11 +18,13 @@ export function ArenaMaps() {
     [busy, setBusy] = useState(false);
   async function load() {
     try {
-      const [m, a] = await Promise.all([
+      const [m, a, s] = await Promise.all([
         api<{ maps: MapRow[] }>('/arena/maps-admin'),
         api<{ assets: Asset[] }>('/arena/maps-admin/assets'),
+        api<{ maps: MapRow[] }>('/arena/maps-admin/sources'),
       ]);
       setMaps(m.maps);
+      setSources(s.maps);
       setAssets(assetRegistry(a.assets));
     } catch (e) {
       setMessage((e as Error).message);
@@ -51,13 +56,17 @@ export function ArenaMaps() {
         }}
       />
     );
+  const groups: [string, MapRow[]][] = user?.role === 'admin' ? [['Все карты', maps]] : [
+    ['Мои карты', maps.filter((map) => map.accessRole === 'owner')],
+    ['Доступные мне', maps.filter((map) => map.accessRole === 'editor')],
+  ];
   return (
     <section className="arena-maps">
       <header>
         <small>ARENA / MAPS</small>
         <h2>Карты и версии</h2>
         <p>
-          Черновики доступны администраторам. Публикация добавляет карту в список новых матчей;
+          Свои карты и карты с доступом редактора можно менять совместно. Публикация доступна администратору;
           начатые матчи сохраняют свою версию.
         </p>
       </header>
@@ -93,7 +102,7 @@ export function ArenaMaps() {
           Основа
           <select value={source} onChange={(e) => setSource(e.target.value)}>
             <option value="">Пустая карта</option>
-            {maps.map((m) => (
+            {sources.map((m) => (
               <option key={m.id} value={m.id}>
                 {m.name}
               </option>
@@ -102,15 +111,16 @@ export function ArenaMaps() {
         </label>
         <button disabled={busy || !Object.keys(assets).length}>Создать карту</button>
       </form>
-      {maps.find((m) => m.id === source)?.system && (
+      {sources.find((m) => m.id === source)?.system && (
         <p>
           Копия системной карты переносит игровые препятствия и старты в редактируемые блоки.
           Авторское декоративное оформление оригинала остаётся в оригинальной карте.
         </p>
       )}
       <p role="status">{message}</p>
-      <div className="map-list">
-        {maps.map((m) => (
+      {groups.map(([title, rows]) => <section key={title}>
+        <h3>{title} · {rows.length}</h3>
+        <div className="map-list">{rows.map((m) => (
           <article key={m.id}>
             <div>
               <h3>{m.name}</h3>
@@ -118,6 +128,7 @@ export function ArenaMaps() {
               <p>
                 {m.status} · rev {m.revision}
                 {m.system ? ' · системная карта' : ''}
+                {' · Владелец: ' + m.ownerLogin + ' · ' + ({admin: 'Администратор', owner: 'Владелец', editor: 'Редактор', viewer: 'Просмотр'}[m.accessRole])}
               </p>
               <small>
                 {m.updatedAt ? new Date(m.updatedAt * 1000).toLocaleString() : ''} {m.updatedBy}
@@ -143,25 +154,26 @@ export function ArenaMaps() {
               >
                 Дублировать
               </button>
-              {!m.system && !m.revision && (
+              {!m.system && m.status !== 'Published' && (m.accessRole === 'admin' || (m.accessRole === 'owner' && !m.revision)) && (
                 <button
                   disabled={busy}
-                  onClick={() =>
+                  onClick={() => {
+                    if (!window.confirm(`Удалить карту «${m.name}» полностью, включая черновик и опубликованные версии?`)) return;
                     void run(async () => {
                       await api(`/arena/maps-admin/${m.id}/delete`, 'POST', {
                         version: m.draftVersion,
                       });
                       await load();
-                    })
-                  }
+                    });
+                  }}
                 >
-                  Удалить черновик
+                  {m.revision ? 'Удалить карту' : 'Удалить черновик'}
                 </button>
               )}
             </div>
           </article>
-        ))}
-      </div>
+        ))}</div>
+      </section>)}
     </section>
   );
 }

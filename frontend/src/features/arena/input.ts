@@ -63,7 +63,8 @@ export class ArenaInput {
     if (action === 'reload' && !e.repeat) c.requestReload();
     if (!e.repeat && e.code === 'Digit5') {
       const kinds = (['frag', 'smoke', 'flash', 'molotov'] as typeof c.grenadeType[])
-        .filter((kind) => kind in (c.manifest.grenades ?? {}));
+        .filter((kind) => c.manifest.grenades?.[kind]?.enabled &&
+          (c.snapshot?.players.find((p) => p.id === c.self)?.grenades?.[kind] ?? 0) > 0);
       if (c.grenadeSlot && kinds.length)
         c.grenadeType = kinds[(kinds.indexOf(c.grenadeType) + 1) % kinds.length];
       c.grenadeSlot = true;

@@ -39,6 +39,7 @@ def install(db):
                 published_revision=version,
                 enabled=True,
                 updated_by=author.id,
+                owner_user_id=author.id,
             )
         )
         db.flush()

@@ -14,6 +14,7 @@ from backend.app.arena.maps import DEFAULT_MAP, get_map
 from backend.app.arena.modes import MODES
 from backend.app.arena.movement_state import apply_state, clean_state
 from backend.app.arena.settings import defaults
+from backend.app.arena.grenade_settings import defaults as grenade_defaults
 
 
 def clean_input(data):
@@ -60,6 +61,8 @@ class Match:
             _playable=self.map.get("playable", []), _excluded=self.map.get("excluded", [])
         )
         self.weapons = self.rules["weapons"]
+        self.grenade_config = copy.deepcopy(config.get("_grenades", grenade_defaults()))
+        self.grenade_version = 0
         self.options = self.rules["modes"][config["mode"]]
         self.mode = MODES[config["mode"]]()
         self.rng = rng or random.SystemRandom()
@@ -97,7 +100,7 @@ class Match:
                 queue=deque(maxlen=4),
                 weapon="rifle",
                 ammo={},
-                grenades=grenades.inventory(),
+                grenades=grenades.inventory(self.grenade_config),
                 grenade_sequence=0,
                 reload_until=0.0,
                 next_shot=0.0,
@@ -388,6 +391,7 @@ class Match:
                            sequence=g["sequence"], position=g["position"][:],
                            velocity=g["velocity"][:], born=g["born"], active=g["active"],
                            expires=g["expires"]) for g in self.grenades],
+            grenade_config=self.grenade_config,
             fire_areas=[dict(id=a["id"], owner=a["owner"], team=a["team"],
                              start=a["start"], end=a["end"],
                              patches=a["patches"]) for a in self.fire_areas],

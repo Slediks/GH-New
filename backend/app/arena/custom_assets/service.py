@@ -9,13 +9,14 @@ import tempfile
 from sqlalchemy import select
 
 from backend.app.admin.service import audit
+from backend.app.arena.editor.permissions import public_owner, require_owner_or_admin
 from backend.app.arena.custom_assets.configuration import compile_asset, initial, validate
 from backend.app.arena.custom_assets.importer import MAX_BYTES, inspect_model, require
 from shared.arena_asset_models import ArenaAsset, ArenaAssetRevision
 from shared.config import DATA_DIR
 from shared.db import lock
 from shared.errors import DomainError
-from shared.models import now, uid
+from shared.models import User, now, uid
 
 
 def resource_path(resource):
@@ -49,7 +50,7 @@ def store_upload(file):
     return resource, info
 
 
-def public(row, full=False):
+def public(row, full=False, db=None, viewer=None):
     value = dict(
         id=row.id,
         name=row.draft["name"],
@@ -67,6 +68,9 @@ def public(row, full=False):
         draftVersion=row.draft_version,
         updatedAt=row.updated_at,
         updatedBy=row.updated_by,
+        ownerUserId=row.owner_user_id,
+        ownerLogin=public_owner(db, row.owner_user_id) if db else None,
+        editable=bool(viewer and (viewer.role == "admin" or viewer.id == row.owner_user_id)),
     )
     if full:
         value["definition"] = copy.deepcopy(row.draft)
@@ -87,29 +91,35 @@ def create(db, actor, file):
         id="custom." + uid(),
         draft=initial((file.filename or "Model").replace("\\", "/").split("/")[-1], resource, info),
         updated_by=actor,
+        owner_user_id=actor,
     )
     db.add(row)
     db.flush()
     audit(db, actor, "arena_asset_created", {"asset": row.id, "resource": resource})
-    return public(row, True)
+    return public(row, True, db, db.get(User, actor))
 
 
 def mutate(db, actor, identity, version, action, definition=None, file=None):
     row = lock(db, ArenaAsset, identity)
     if not row:
         raise DomainError("Asset не найден", 404)
+    user = db.get(User, actor)
+    require_owner_or_admin(user, row.owner_user_id)
+    if action in ("publish", "disable", "archive", "enable") and user.role != "admin":
+        raise DomainError("Публикация доступна администратору", 403)
     if type(version) is not int or version != row.draft_version:
         raise DomainError(
             "Asset изменён другим администратором. Обновите данные; локальные изменения можно экспортировать.",
             409,
         )
     if action == "duplicate":
-        clone = ArenaAsset(id="custom." + uid(), draft=copy.deepcopy(row.draft), updated_by=actor)
+        clone = ArenaAsset(id="custom." + uid(), draft=copy.deepcopy(row.draft),
+                           updated_by=actor, owner_user_id=actor)
         clone.draft["name"] = clone.draft["name"][:90] + " — копия"
         db.add(clone)
         db.flush()
         audit(db, actor, "arena_asset_created", {"asset": clone.id, "source": identity})
-        return public(clone, True)
+        return public(clone, True, db, user)
     if action == "replace":
         resource, info = store_upload(file)
         new = initial(row.draft["name"], resource, info)
@@ -119,7 +129,7 @@ def mutate(db, actor, identity, version, action, definition=None, file=None):
     elif action in ("save", "publish"):
         value = validate(definition, row.draft)
         if action == "save" and value == row.draft:
-            return public(row, True)
+            return public(row, True, db, user)
         row.draft = value
         path = resource_path(row.draft["resource"])
         require(path.is_file(), "resource отсутствует; загрузите модель заново")
@@ -156,7 +166,7 @@ def mutate(db, actor, identity, version, action, definition=None, file=None):
         {"asset": identity, "revision": row.published_revision, "draftVersion": row.draft_version},
     )
     db.flush()
-    return public(row, True)
+    return public(row, True, db, user)
 
 
 def resolve(db, identity, revision):

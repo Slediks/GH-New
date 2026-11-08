@@ -32,6 +32,18 @@ def test_inventory_dedupe_and_respawn():
     assert owner["grenades"] == {"frag": 1, "smoke": 1, "flash": 1, "molotov": 1}
 
 
+def test_existing_projectile_keeps_parameters_after_balance_change():
+    match, owner, enemy = positioned()
+    match.grenade_config["frag"]["max_damage"] = 20
+    assert grenades.throw(match, owner, "frag", 1)
+    thrown = match.grenades[0]
+    assert thrown["config"]["max_damage"] == 20
+    match.grenade_config["frag"]["max_damage"] = 200
+    grenades._damage(match, thrown | {"position": [0, 0.85, 0]})
+    assert enemy["hp"] > 0
+    assert thrown["config"]["max_damage"] == 20
+
+
 def test_frag_falloff_self_damage_and_wall_cover():
     match, owner, enemy = positioned()
     grenade = dict(id=1, owner=owner["id"], position=[0, 0.85, 0])

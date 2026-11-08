@@ -88,6 +88,8 @@ export interface PrefabRow {
   draftVersion: number;
   status: string;
   updatedAt: number;
+  ownerLogin?: string;
+  editable?: boolean;
 }
 export interface Asset {
   snapPoints?: Vec3[];
@@ -155,6 +157,9 @@ export interface MapRow {
   updatedAt?: number;
   updatedBy?: string;
   system: boolean;
+  ownerUserId: string;
+  ownerLogin: string;
+  accessRole: 'admin' | 'owner' | 'editor' | 'viewer';
 }
 export interface Draft extends MapRow {
   definition: Definition;

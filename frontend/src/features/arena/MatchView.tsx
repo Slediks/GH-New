@@ -100,6 +100,7 @@ export function MatchView({
   );
   const spectating = !!me && !me.alive && room.settings.mode === 'elimination';
   const ended = snapshot?.phase === 'finished' || room.status === 'finished';
+  const cancelled = room.result?.reason_code === 'map_unpublished';
   const phase = snapshot?.phase;
   const confirmLeave = useMatchLeaveGuard(!ended && ['loading', 'active'].includes(room.status));
   const sorted = [...(snapshot?.players ?? room.result?.players ?? [])].sort(
@@ -265,7 +266,9 @@ export function MatchView({
           <div>
             <small aria-label="Гранаты">
               {client.current?.grenadeSlot ? '● ' : ''}
-              {['frag', 'smoke', 'flash', 'molotov'].filter((kind) => kind in (manifest.grenades ?? {})).map((kind) =>
+              {['frag', 'smoke', 'flash', 'molotov'].filter((kind) =>
+                (client.current?.manifest.grenades?.[kind]?.enabled ?? true) &&
+                (me.grenades?.[kind] ?? 0) > 0).map((kind) =>
                 `${kind === 'molotov' ? 'Molotov' : kind === 'flash' ? 'Flash' : kind === 'smoke' ? 'Smoke' : 'Frag'} ×${me.grenades?.[kind] ?? 0}`).join(' · ')}
               {' · выбрана '}{client.current?.grenadeType === 'molotov' ? 'Molotov'
                 : client.current?.grenadeType === 'flash' ? 'Flash'
@@ -323,6 +326,18 @@ export function MatchView({
       )}
       {(tab || ended) && (
         <div className="arena-score-layer">
+          {cancelled ? (
+            <>
+              <h2>Матч отменён</h2>
+              <p role="alert">{room.result?.reason}</p>
+              <p>Результат не учитывается в статистике и истории.</p>
+              <div className="arena-actions">
+                {room.host_id === self && <button onClick={lobby}>Выбрать другую карту</button>}
+                {room.host_id !== self && <button onClick={lobby}>Вернуться в комнату</button>}
+                <button onClick={leave}>Покинуть комнату</button>
+              </div>
+            </>
+          ) : <>
           <h2>
             {ended ? (winnerName ? `Победа: ${winnerName}` : 'Матч завершён') : 'Таблица счёта'}
           </h2>
@@ -363,6 +378,7 @@ export function MatchView({
               <button onClick={leave}>Покинуть комнату</button>
             </div>
           )}
+          </>}
         </div>
       )}
       {showPauseMenu(locked, ended, tab, expanded, fullscreenMenuRequested) && (

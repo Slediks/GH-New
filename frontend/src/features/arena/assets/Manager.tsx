@@ -8,10 +8,13 @@ import type { AssetDefinition, AssetDraft, AssetRow } from './types';
 import { AssetMaterials } from './Materials';
 import { draftErrors } from './validation';
 import './assets.css';
+import { useAuth } from '../../../app/Auth';
 
 const root = '/arena/assets-admin';
 const categories = ['Base', 'Industrial', 'Military', 'Urban', 'Nature', 'Decoration', 'Other'];
 export function AssetManager() {
+  const { user } = useAuth();
+  const isAdmin = user?.role === 'admin';
   const [custom, setCustom] = useState<AssetRow[]>([]),
     [system, setSystem] = useState<Asset[]>([]);
   const [current, setCurrent] = useState<AssetDraft | null>(null),
@@ -21,12 +24,17 @@ export function AssetManager() {
     [origin, setOrigin] = useState('custom'),
     [category, setCategory] = useState('Все');
   const [systemSelection, setSystemSelection] = useState<Asset | null>(null);
+  const [published, setPublished] = useState<Asset[]>([]);
   const upload = useRef<HTMLInputElement>(null);
   const dirty = useRef(false);
   async function load() {
-    const data = await api<{ custom: AssetRow[]; system: Asset[] }>(root);
+    const [data, library] = await Promise.all([
+      api<{ custom: AssetRow[]; system: Asset[] }>(root),
+      api<{ assets: Asset[] }>('/arena/maps-admin/assets'),
+    ]);
     setCustom(data.custom);
     setSystem(data.system.filter((a) => !a.internal && !a.deprecated));
+    setPublished(library.assets);
   }
   useEffect(() => {
     void load().catch((e: Error) => setMessage(e.message));
@@ -128,6 +136,9 @@ export function AssetManager() {
                     if (origin === 'system') {
                       setCurrent(null);
                       setSystemSelection(a as Asset);
+                    } else if (!(a as AssetRow).editable) {
+                      setCurrent(null);
+                      setSystemSelection(published.find((asset) => asset.id === a.id && asset.version === (a as AssetRow).revision) ?? null);
                     } else {
                       setCurrent(await api<AssetDraft>(`${root}/${a.id}`));
                       setSystemSelection(null);
@@ -137,7 +148,7 @@ export function AssetManager() {
               >
                 <strong>{a.name}</strong>
                 <small>
-                  {a.category} · {'status' in a ? `${a.status} · rev ${a.revision}` : 'System'}
+                  {a.category} · {'status' in a ? `${a.status} · rev ${a.revision} · ${(a as AssetRow).ownerLogin ?? ''}` : 'System'}
                 </small>
               </button>
             ))}
@@ -146,6 +157,7 @@ export function AssetManager() {
           <AssetWorkbench
             key={current.id + ':' + current.draftVersion}
             initial={current}
+            isAdmin={isAdmin}
             busy={busy}
             setDirty={(v) => {
               dirty.current = v;
@@ -210,7 +222,7 @@ function SystemPreview({ asset }: { asset: Asset }) {
   }, [asset]);
   return (
     <div>
-      <h3>{asset.name} · System · только чтение</h3>
+      <h3>{asset.name} · {asset.origin === 'custom' ? 'Опубликованный источник' : 'System'} · только чтение</h3>
       <div className="asset-preview" ref={host} />
       <p>
         {asset.id} · v{asset.version} · {asset.colliders.length} коллайдеров
@@ -221,12 +233,14 @@ function SystemPreview({ asset }: { asset: Asset }) {
 
 function AssetWorkbench({
   initial,
+  isAdmin,
   busy,
   setDirty,
   submit,
   replace,
 }: {
   initial: AssetDraft;
+  isAdmin: boolean;
   busy: boolean;
   setDirty: (v: boolean) => void;
   submit: (action: string, d: AssetDefinition) => void;
@@ -388,9 +402,9 @@ function AssetWorkbench({
         <button disabled={busy} onClick={() => submit('save', d)}>
           Сохранить Draft
         </button>
-        <button disabled={busy || !!issues.length} onClick={() => submit('publish', d)}>
+        {isAdmin && <button disabled={busy || !!issues.length} onClick={() => submit('publish', d)}>
           Publish asset
-        </button>
+        </button>}
         <button
           disabled={busy || dirty}
           title="Сначала сохраните изменения"
@@ -398,15 +412,15 @@ function AssetWorkbench({
         >
           Дублировать
         </button>
-        <button
+        {isAdmin && <button
           disabled={busy || dirty}
           onClick={() => submit(initial.status === 'Published' ? 'disable' : 'enable', d)}
         >
           {initial.status === 'Published' ? 'Отключить' : 'Включить'}
-        </button>
-        <button disabled={busy || dirty} onClick={() => submit('archive', d)}>
+        </button>}
+        {isAdmin && <button disabled={busy || dirty} onClick={() => submit('archive', d)}>
           Архивировать
-        </button>
+        </button>}
         <button
           onClick={() =>
             download(

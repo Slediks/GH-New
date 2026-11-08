@@ -1,4 +1,5 @@
 import { ArenaHistory } from './AdminHistory';
+import { GrenadeAdmin } from './GrenadeAdmin';
 import './arena.css';
 import { lazy, Suspense, useEffect, useState } from 'react';
 import { api } from '../../shared/api';
@@ -152,6 +153,7 @@ export function ArenaAdmin() {
         {[
           'assets',
           'maps',
+          'grenades',
           'history',
           'common',
           'elimination',
@@ -168,6 +170,7 @@ export function ArenaAdmin() {
               {
                 assets: 'Assets · Модели',
                 maps: 'Maps · Карты',
+                grenades: 'Grenade Configuration',
                 history: 'История матчей',
                 common: 'Общие',
                 movement: 'Движение',
@@ -190,6 +193,8 @@ export function ArenaAdmin() {
         </Suspense>
       ) : tab === 'history' ? (
         <ArenaHistory />
+      ) : tab === 'grenades' ? (
+        <GrenadeAdmin />
       ) : (
         <form
           onSubmit={async (e) => {

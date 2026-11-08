@@ -80,6 +80,8 @@ def test_bootstrap_idempotent_and_publish_pins_history(database):
         definition["metadata"]["name"] = "Edited foundry"
         mutate(db, row.updated_by, row.id, row.draft_version, "save", definition)
         assert published(db, row.id) == original
+        from shared.models import User
+        db.get(User, row.updated_by).role = "admin"
         mutate(db, row.updated_by, row.id, row.draft_version, "publish")
         assert published(db, row.id)["name"] == "Edited foundry"
         assert published(db, row.id, original["version"]) == original

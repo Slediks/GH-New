@@ -40,8 +40,9 @@ export class FlashEffect {
     const previous = this.state(now);
     const nextStrength = clamp(Math.max(previous.visual, strength) +
       (previous.visual > 0 && strength > 0.15 ? 0.08 * strength : 0));
-    const blind = (config.flash.max_blind_duration ?? 2.4) * nextStrength * 1000;
-    const fade = (config.flash.max_fade_duration ?? 3.2) * nextStrength * 1000;
+    const effect = event.effect_config ?? config.flash;
+    const blind = (effect.max_blind_duration ?? 2.4) * nextStrength * 1000;
+    const fade = (effect.max_fade_duration ?? 3.2) * nextStrength * 1000;
     const newEnd = now + Math.max(0, blind + fade - age);
     const oldEnd = this.started + this.blind + this.fade;
     if (newEnd >= oldEnd || strength > previous.visual) {
@@ -51,7 +52,7 @@ export class FlashEffect {
       this.fade = fade;
     }
     this.audioStrength = Math.max(previous.audio, audio);
-    this.audioDuration = Math.min(6000, (config.flash.max_audio_duration ?? 4) *
+    this.audioDuration = Math.min(6000, (effect.max_audio_duration ?? 4) *
       this.audioStrength * 1000);
     return audio;
   }

@@ -16,6 +16,13 @@ class ArenaMap(Base):
     enabled: Mapped[bool] = mapped_column(default=False)
     updated_at: Mapped[float] = mapped_column(default=now)
     updated_by: Mapped[str] = mapped_column(ForeignKey("users.id"))
+    owner_user_id: Mapped[str] = mapped_column(ForeignKey("users.id"), index=True)
+
+
+class ArenaMapEditor(Base):
+    __tablename__ = "arena_map_editors"
+    map_id: Mapped[str] = mapped_column(ForeignKey("arena_maps.id", ondelete="CASCADE"), primary_key=True)
+    user_id: Mapped[str] = mapped_column(ForeignKey("users.id"), primary_key=True)
 
 
 class ArenaMapRevision(Base):

@@ -4,6 +4,7 @@ from flask import Blueprint, g, request, send_file
 from sqlalchemy import select
 
 from backend.app.arena.custom_assets import service
+from backend.app.arena.editor.permissions import require_owner_or_admin
 from backend.app.arena.editor.assets import registry
 from backend.app.arena.editor.routes import body
 from backend.app.common.http import roles
@@ -15,7 +16,7 @@ asset_resources = Blueprint("arena_asset_resources", __name__)
 
 
 @assets_admin.before_request
-@roles("admin")
+@roles("author", "admin")
 def authorize():
     return None
 
@@ -25,8 +26,9 @@ def listing():
     return dict(
         system=registry(),
         custom=[
-            service.public(row)
+            service.public(row, db=g.db, viewer=g.user)
             for row in g.db.scalars(select(ArenaAsset).order_by(ArenaAsset.updated_at.desc()))
+            if g.user.role == "admin" or row.owner_user_id == g.user.id or (row.enabled and not row.archived)
         ],
     )
 
@@ -38,11 +40,16 @@ def create():
 
 @assets_admin.get("/<identity>")
 def get(identity):
-    return service.public(service.get(g.db, identity), True)
+    row = service.get(g.db, identity)
+    require_owner_or_admin(g.user, row.owner_user_id)
+    return service.public(row, True, g.db, g.user)
 
 
 @assets_admin.get("/<identity>/revisions")
 def revisions(identity):
+    row = service.get(g.db, identity)
+    if g.user.role != "admin" and row.owner_user_id != g.user.id and not row.enabled:
+        raise DomainError("Asset недоступен", 403)
     return dict(
         revisions=[
             dict(
@@ -90,7 +97,11 @@ def resource(resource):
         .limit(1)
     )
     g.arena_public_resource = bool(allowed or bundled)
-    if g.user.role != "admin" and not (allowed or bundled):
+    owned = g.db.scalar(select(ArenaAsset.id).where(
+        ArenaAsset.owner_user_id == g.user.id,
+        ArenaAsset.draft["resource"].as_string() == resource,
+    ).limit(1)) if g.user.role == "author" else None
+    if g.user.role != "admin" and not (allowed or bundled or owned):
         raise DomainError("Ресурс не опубликован", 404)
     if not path.is_file():
         raise DomainError("Файл модели отсутствует", 404)

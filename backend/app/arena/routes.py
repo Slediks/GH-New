@@ -1,15 +1,17 @@
 import os
 
-from flask import Blueprint, g, request
+from flask import Blueprint, g, has_request_context, request
 from itsdangerous import URLSafeTimedSerializer
 from redis import Redis
 from sqlalchemy import select
 
 from backend.app.arena import settings as policy
+from backend.app.arena import grenade_settings
 from backend.app.arena.config import DEFAULTS, EYE, RADIUS, SPEED, TICK, VERSION
 from backend.app.arena.maps import DEFAULT_MAP, catalog, get_map
 from backend.app.common.http import roles
 from shared.arena_models import ArenaMatch, ArenaRoom, ArenaSeat
+from shared.arena_map_models import ArenaMap
 from shared.config import REDIS_URL
 from shared.db import lock
 from shared.errors import DomainError
@@ -22,12 +24,15 @@ def seats(db, room_id):
     return list(db.scalars(select(ArenaSeat).where(ArenaSeat.room_id == room_id)))
 
 
-def public(room, members):
+def public(room, members, available_maps=None):
     return dict(
         id=room.id,
         name=room.name,
         testRoom=bool(room.settings.get("_test")),
         mapName=(room.settings.get("_draft_map") or room.settings.get("_map") or {}).get("name"),
+        mapAvailable=(room.settings.get("_draft_map") is not None or
+                      room.settings.get("map_id", DEFAULT_MAP) in available_maps)
+        if available_maps is not None else None,
         host_id=room.host_id,
         settings={"map_id": DEFAULT_MAP}
         | {k: v for k, v in room.settings.items() if not k.startswith("_")},
@@ -41,6 +46,11 @@ def settings(data):
     if not isinstance(data, dict):
         raise DomainError("Некорректные настройки")
     value = DEFAULTS | {k: v for k, v in data.items() if k in DEFAULTS}
+    if "map_id" not in data and not any(m["id"] == DEFAULT_MAP for m in catalog()):
+        available = catalog()
+        if not available:
+            raise DomainError("Нет опубликованных карт Arena", 409)
+        value["map_id"] = available[0]["id"]
     get_map(value["map_id"], require_enabled=True)
     if value["mode"] not in ("elimination", "tdm", "dm"):
         raise DomainError("Неизвестный режим")
@@ -70,11 +80,15 @@ def check_start(config, members):
 
 @arena.get("/manifest")
 def manifest():
-    return make_manifest(policy.current(g.db))
+    available = catalog()
+    if not available:
+        raise DomainError("Нет опубликованных карт Arena", 409)
+    selected = DEFAULT_MAP if any(m["id"] == DEFAULT_MAP for m in available) else available[0]["id"]
+    return make_manifest(policy.current(g.db), selected)
 
 
 def make_manifest(rules, map_id=DEFAULT_MAP, world=None):
-    from backend.app.arena.grenades import CONFIG as GRENADE_CONFIG
+    from backend.app.arena import grenade_settings
     world = world if world is not None else get_map(map_id)
     config = rules["config"]
     return dict(
@@ -96,12 +110,24 @@ def make_manifest(rules, map_id=DEFAULT_MAP, world=None):
         speed=SPEED,
         radius=RADIUS,
         eye=EYE,
-        grenades=GRENADE_CONFIG,
+        grenades=(grenade_settings.current(g.db)["config"] if has_request_context()
+                  else grenade_settings.defaults()),
     )
+
+
+def _can_view_test_room(db, user, room):
+    if user.role == "admin":
+        return True
+    from backend.app.arena.editor.permissions import can_edit_map
+    from shared.arena_map_models import ArenaMap
+
+    row = db.get(ArenaMap, room.settings.get("map_id"))
+    return bool(row and can_edit_map(db, user, row))
 
 
 @arena.get("/rooms")
 def rooms():
+    available_maps = {m["id"] for m in catalog()}
     records = g.db.scalars(
         select(ArenaRoom)
         .where(ArenaRoom.status != "closed")
@@ -110,9 +136,9 @@ def rooms():
     )
     return {
         "rooms": [
-            public(r, seats(g.db, r.id))
+            public(r, seats(g.db, r.id), available_maps)
             for r in records
-            if not r.settings.get("_test") or g.user.role == "admin"
+            if not r.settings.get("_test") or _can_view_test_room(g.db, g.user, r)
         ],
         "online": bool(Redis.from_url(REDIS_URL).get("gamehub:arena:alive")),
     }
@@ -154,9 +180,9 @@ def room_get(room_id):
     room = g.db.get(ArenaRoom, room_id)
     if not room:
         raise DomainError("Комната не найдена", 404)
-    if room.settings.get("_test") and g.user.role != "admin":
-        raise DomainError("Тестовая комната доступна администраторам", 403)
-    result = public(room, seats(g.db, room_id))
+    if room.settings.get("_test") and not _can_view_test_room(g.db, g.user, room):
+        raise DomainError("Тестовая комната недоступна", 403)
+    result = public(room, seats(g.db, room_id), {m["id"] for m in catalog()})
     match = g.db.get(ArenaMatch, room.match_id) if room.match_id else None
     result["result"] = match.result if match else None
     if match and room.status != "lobby":
@@ -174,8 +200,8 @@ def command(room_id, action):
     room = lock(g.db, ArenaRoom, room_id)
     if not room or room.status == "closed":
         raise DomainError("Комната закрыта", 404)
-    if room.settings.get("_test") and g.user.role != "admin":
-        raise DomainError("Тестовая комната доступна администраторам", 403)
+    if room.settings.get("_test") and action != "leave" and not _can_view_test_room(g.db, g.user, room):
+        raise DomainError("Тестовая комната недоступна", 403)
     members = seats(g.db, room.id)
     member = next((s for s in members if s.user_id == g.user.id), None)
     data = request.get_json(silent=True) or {}
@@ -252,6 +278,10 @@ def command(room_id, action):
                 raise DomainError("Сервер Арены временно недоступен", 503)
             rules = policy.current(g.db)
             policy.available(rules["config"], room.settings)
+            if not room.settings.get("_draft_map"):
+                map_row = lock(g.db, ArenaMap, room.settings.get("map_id", DEFAULT_MAP))
+                if not map_row or not map_row.enabled:
+                    raise DomainError("Карта снята с публикации. Выберите другую карту.", 409)
             world = room.settings.get("_draft_map") or get_map(
                 room.settings.get("map_id", DEFAULT_MAP), require_enabled=True
             )
@@ -273,7 +303,8 @@ def command(room_id, action):
                 id=uid(),
                 room_id=room.id,
                 settings={k: v for k, v in room.settings.items() if k != "_draft_map"}
-                | {"_rules": rules, "_map": world, "map_revision": world["version"]},
+                | {"_rules": rules, "_map": world, "map_revision": world["version"],
+                   "_grenades": grenade_settings.current(g.db)["config"]},
                 roster=public(room, members)["players"],
                 status="loading",
             )
@@ -299,7 +330,7 @@ def history():
     page = max(1, page or 1)
     records = g.db.scalars(
         select(ArenaMatch)
-        .where(ArenaMatch.finished_at.is_not(None))
+        .where(ArenaMatch.status == "finished")
         .order_by(ArenaMatch.created_at.desc())
         .offset((page - 1) * 25)
         .limit(26)
@@ -343,6 +374,36 @@ def admin_save():
     if not isinstance(data, dict):
         raise DomainError("Ожидается объект")
     return policy.save(g.db, g.user.id, data.get("version"), data.get("config"))
+
+
+@arena.get("/admin/grenades")
+@roles("admin")
+def grenade_admin_get():
+    from backend.app.arena import grenade_settings
+
+    return grenade_settings.current(g.db) | {"ranges": grenade_settings.RANGES}
+
+
+@arena.post("/admin/grenades")
+@roles("admin")
+def grenade_admin_save():
+    from backend.app.arena import grenade_settings
+
+    data = request.get_json(silent=True)
+    if not isinstance(data, dict):
+        raise DomainError("Ожидается объект")
+    return grenade_settings.save(g.db, g.user.id, data.get("version"), data.get("config"))
+
+
+@arena.post("/admin/grenades/reset")
+@roles("admin")
+def grenade_admin_reset():
+    from backend.app.arena import grenade_settings
+
+    data = request.get_json(silent=True)
+    if not isinstance(data, dict):
+        raise DomainError("Ожидается объект")
+    return grenade_settings.save(g.db, g.user.id, data.get("version"), None, reset=True)
 
 
 @arena.get("/profile")

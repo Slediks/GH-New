@@ -308,6 +308,8 @@ def test_socket_ticket_membership_and_single_controller(client, database, monkey
     with database.begin() as db:
         record = db.get(ArenaRoom, room["id"])
         record.status, record.match_id = "loading", "wire-match"
+        db.add(ArenaMatch(id="wire-match", room_id=room["id"], settings=DEFAULTS,
+                          roster=[], status="loading"))
     match = Match("wire-match", DEFAULTS, [dict(id=one["id"], name="wire", team="Alpha")])
     server.matches[match.id] = match
     sockets = []

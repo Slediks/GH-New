@@ -29,6 +29,8 @@ function Settings({
           value={value.map_id ?? 'depot_07'}
           onChange={(e) => onChange({ ...value, map_id: e.target.value })}
         >
+          {value.map_id && !(maps ?? []).some((map) => map.id === value.map_id) &&
+            <option value={value.map_id} disabled>Снята с публикации · выберите другую</option>}
           {(maps ?? [{ id: 'depot_07', name: 'Depot 07', enabled: true }]).map((map) => (
             <option key={map.id} value={map.id} disabled={!map.enabled}>
               {map.name}
@@ -169,6 +171,9 @@ export function ArenaPage() {
         setRooms(data.rooms);
         setOnline(data.online);
         const mine = data.rooms.find((r) => r.players.some((p) => p.id === self));
+        if (mine?.mapAvailable === false) {
+          void api<Manifest>('/arena/manifest').then(setManifest).catch(() => {});
+        }
         if (!mine || mine.status === 'lobby') {
           snapshot = undefined;
           setRoom(mine ?? null);
@@ -231,6 +236,8 @@ export function ArenaPage() {
   );
   const startReason = !room
     ? ''
+    : room.mapAvailable === false
+      ? 'Карта снята с публикации. Владелец комнаты должен выбрать другую карту.'
     : !online
       ? 'Сервер недоступен'
       : room.players.length < 2
@@ -298,6 +305,7 @@ export function ArenaPage() {
                       mapName(room.settings.map_id)}
                     {room.testRoom ? ' · Тестовая комната · только администраторы' : ''}
                   </p>
+                  {room.mapAvailable === false && <p role="alert">Карта больше не опубликована. Выберите другую карту в настройках комнаты.</p>}
                 </div>
                 <button disabled={busy} onClick={() => void act('leave')}>
                   <ArrowLeft size={16} /> Покинуть
@@ -454,6 +462,8 @@ export function ArenaPage() {
                       const selected = policy?.config.modes[mode];
                       setConfig({
                         ...defaults,
+                        map_id: manifest?.maps?.find((map) => map.id === 'depot_07')?.id ??
+                          manifest?.maps?.[0]?.id ?? 'depot_07',
                         mode,
                         size: Math.min(
                           mode === 'dm' ? 6 : 3,

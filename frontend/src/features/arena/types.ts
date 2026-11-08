@@ -19,11 +19,13 @@ export interface Member {
 export interface Result {
   winner: string | null;
   reason: string;
+  reason_code?: string;
   scores?: Record<string, number>;
   duration?: number;
   players: Player[];
 }
 export interface Room {
+  mapAvailable?: boolean;
   mapName?: string;
   testRoom?: boolean;
   id: string;
@@ -88,7 +90,7 @@ export interface Manifest {
   speed: number;
   radius: number;
   eye: number;
-  grenades?: Record<string, { count: number; force: number; radius?: number; fuse?: number;
+  grenades?: Record<string, { enabled?: boolean; count: number; force: number; radius?: number; fuse?: number;
     activation?: number; lifetime?: number; full_effect_distance?: number;
     max_effect_distance?: number; max_blind_duration?: number; max_fade_duration?: number;
     max_audio_duration?: number; min_effect_threshold?: number;
@@ -174,6 +176,8 @@ export interface GameEvent {
   base?: number;
   distance_factor?: number;
   occlusion_factor?: number;
+  effect_config?: { max_blind_duration: number; max_fade_duration: number;
+    max_audio_duration: number };
   normal?: number[];
   fire_area?: number;
   source?: string;
@@ -199,6 +203,7 @@ export interface Snapshot {
   overtime: boolean;
   players: Player[];
   grenades?: GrenadeState[];
+  grenade_config?: Manifest['grenades'];
   fire_areas?: FireAreaState[];
   events: GameEvent[];
 }

@@ -25,6 +25,9 @@ import { CasinoPage } from '../features/casino/Page';
 const ArenaPage = lazy(() =>
   import('../features/arena/Page').then((m) => ({ default: m.ArenaPage })),
 );
+const ArenaCreator = lazy(() =>
+  import('../features/arena/Creator').then((m) => ({ default: m.ArenaCreator })),
+);
 
 function ThemeButton() {
   const [theme, setTheme] = useState(() => localStorage.getItem('gamehub-theme') ?? 'dark');
@@ -175,6 +178,12 @@ export function App() {
           Личный кабинет
         </NavLink>
         {user.role !== 'user' && (
+          <NavLink to="/arena/creator">
+            <Gamepad2 size={16} />
+            Редактор Арены
+          </NavLink>
+        )}
+        {user.role !== 'user' && (
           <NavLink to="/author">
             <Upload size={16} />
             Кабинет автора
@@ -203,6 +212,9 @@ export function App() {
             }
           />
           <Route path="/casino" element={<CasinoPage />} />
+          <Route path="/arena/creator" element={user.role !== 'user' ? (
+            <Suspense fallback={<Loading />}><ArenaCreator /></Suspense>
+          ) : <ErrorBox message="Требуется право автора" />} />
           <Route path="/casino/:gameId" element={<CasinoPage />} />
           <Route path="/matches" element={<HistoryPage />} />
           <Route path="/matches/:id" element={<MatchPage />} />

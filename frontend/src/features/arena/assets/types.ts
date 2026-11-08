@@ -28,6 +28,8 @@ export interface AssetRow {
   status: string;
   revision: number;
   draftVersion: number;
+  ownerLogin?: string;
+  editable?: boolean;
 }
 export interface AssetDraft extends AssetRow {
   definition: AssetDefinition;

@@ -4,32 +4,16 @@ import math
 
 from backend.app.arena.oriented import local_ray
 from backend.app.arena import fire_areas
+from backend.app.arena.grenade_settings import DEFAULTS as CONFIG
 from backend.app.arena.world import ray_box, wall_distance
-
-CONFIG = {
-    "frag": dict(count=1, force=13.0, fuse=2.8, max_damage=115, inner_radius=1.0,
-                 radius=5.0, restitution=0.46, friction=0.77),
-    "smoke": dict(count=1, force=12.0, activation=2.0, radius=4.0, lifetime=14.0,
-                  restitution=0.38, friction=0.72),
-    "flash": dict(count=1, force=13.0, fuse=2.2, full_effect_distance=2.0,
-                  max_effect_distance=16.0, max_blind_duration=2.4,
-                  max_fade_duration=3.2, max_audio_duration=4.0,
-                  min_effect_threshold=0.04, affects_teammates=True,
-                  restitution=0.43, friction=0.75),
-    "molotov": dict(count=1, force=12.0, min_break_impact_speed=3.5,
-                    max_projectile_lifetime=4.0, spread_radius=2.3,
-                    patch_count=7, patch_radius=0.85, max_patch_height_delta=0.48,
-                    max_surface_slope=35, fire_lifetime=10.0, entry_damage=4,
-                    damage_per_tick=6, tick_interval=0.5, max_stacked_fire_damage=12,
-                    affects_teammates=True, restitution=0.32, friction=0.72),
-}
 GRAVITY = 19.0
 RADIUS = 0.13
 MAX_ACTIVE = 32
 
 
-def inventory():
-    return {kind: cfg["count"] for kind, cfg in CONFIG.items()}
+def inventory(config=None):
+    return {kind: cfg["count"] if cfg["enabled"] else 0
+            for kind, cfg in (config or CONFIG).items()}
 
 
 def _hit_box(start, delta, box):
@@ -72,8 +56,9 @@ def _collision(start, delta, boxes):
 
 
 def throw(game, player, kind, sequence):
+    cfg = game.grenade_config[kind] if kind in game.grenade_config else None
     if (game.phase != "active" or player["hp"] <= 0 or not player["connected"]
-            or kind not in CONFIG or player["grenades"].get(kind, 0) < 1
+            or not cfg or not cfg["enabled"] or player["grenades"].get(kind, 0) < 1
             or type(sequence) is not int or sequence <= player["grenade_sequence"]
             or len(game.grenades) >= MAX_ACTIVE):
         return False
@@ -86,14 +71,15 @@ def throw(game, player, kind, sequence):
     direction = [math.sin(yaw)*math.cos(pitch), math.sin(pitch), -math.cos(yaw)*math.cos(pitch)]
     start = [player["x"] + direction[0]*0.55, player["y"] + 1.25 + direction[1]*0.25,
              player["z"] + direction[2]*0.55]
-    force = CONFIG[kind]["force"]
+    force = cfg["force"]
     velocity = [direction[0]*force, direction[1]*force + 2.6, direction[2]*force]
     game.grenade_id += 1
     grenade = dict(id=game.grenade_id, owner=player["id"], kind=kind, sequence=sequence,
                    position=start, velocity=velocity, born=game.time, active=False, bounces=0,
-                   expires=game.time + (CONFIG[kind].get("fuse") or
-                   CONFIG[kind].get("max_projectile_lifetime") or
-                   CONFIG[kind].get("activation", 0) + CONFIG[kind].get("lifetime", 0)))
+                   config=cfg.copy(),
+                   expires=game.time + (cfg.get("fuse") or
+                   cfg.get("max_projectile_lifetime") or
+                   cfg.get("activation", 0) + cfg.get("lifetime", 0)))
     game.grenades.append(grenade)
     game.event("grenade_throw", grenade=grenade["id"], player=player["id"],
                grenade_type=kind, sequence=sequence, start=start, velocity=velocity)
@@ -102,7 +88,7 @@ def throw(game, player, kind, sequence):
 
 def _damage(game, grenade):
     origin = grenade["position"]
-    cfg = CONFIG["frag"]
+    cfg = grenade.get("config", CONFIG["frag"])
     owner = game.players[grenade["owner"]]
     for target in game.players.values():
         if target["hp"] <= 0 or target["eliminated"] or target["protection"] > game.time:
@@ -132,7 +118,7 @@ def _damage(game, grenade):
 
 def _flash(game, grenade):
     """Server owns distance, wall cover and eligibility; camera angle is sampled locally."""
-    cfg = CONFIG["flash"]
+    cfg = grenade.get("config", CONFIG["flash"])
     origin = grenade["position"]
     owner = game.players[grenade["owner"]]
     game.event("grenade_flash_detonate", grenade=grenade["id"], player=owner["id"],
@@ -162,13 +148,15 @@ def _flash(game, grenade):
         if base >= cfg["min_effect_threshold"]:
             game.event("flash_effect", grenade=grenade["id"], player=target["id"],
                        position=origin[:], base=base, distance_factor=round(distance_factor, 4),
-                       occlusion_factor=cover)
+                       occlusion_factor=cover,
+                       effect_config={key: cfg[key] for key in (
+                           "max_blind_duration", "max_fade_duration", "max_audio_duration")})
 
 
 def step(game, dt):
     retained = []
     for grenade in tuple(game.grenades):
-        cfg = CONFIG[grenade["kind"]]
+        cfg = grenade.get("config", CONFIG[grenade["kind"]])
         if grenade["active"]:
             if game.time >= grenade["expires"]:
                 game.event("grenade_remove", grenade=grenade["id"])

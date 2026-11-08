@@ -1,64 +1,64 @@
-# HTTP API Рё realtime
+# HTTP API и realtime
 
-Р’СЃРµ РїСѓС‚Рё РЅРёР¶Рµ РЅР°С‡РёРЅР°СЋС‚СЃСЏ СЃ `/api`. JSON РІ UTF-8, РґР°С‚С‹ вЂ” Unix seconds UTC.
-РЎСѓРјРјС‹ РѕС‡РєРѕРІ вЂ” integer РІ СЃРѕС‚С‹С…: 10000 = 100 РѕС‡РєРѕРІ. РљРѕСЌС„С„РёС†РёРµРЅС‚ 190 = 1,90.
-Р’СЃРµ Р·Р°РїСЂРѕСЃС‹ РєСЂРѕРјРµ `/auth/session`, `/auth/login` Рё СЃР»СѓР¶РµР±РЅРѕРіРѕ `/health` С‚СЂРµР±СѓСЋС‚
-РґРµР№СЃС‚РІСѓСЋС‰СѓСЋ СЃРµСЂРІРµСЂРЅСѓСЋ СЃРµСЃСЃРёСЋ. РР·РјРµРЅСЏСЋС‰РёРµ Р·Р°РїСЂРѕСЃС‹ С‚СЂРµР±СѓСЋС‚ `X-CSRF-Token` РёР· session.
-Cookie HttpOnly Р°РІС‚РѕРјР°С‚РёС‡РµСЃРєРё РїРµСЂРµРґР°С‘С‚СЃСЏ Р±СЂР°СѓР·РµСЂРѕРј РЅР° origin РїСЂРёР»РѕР¶РµРЅРёСЏ.
+Все пути ниже начинаются с `/api`. JSON в UTF-8, даты — Unix seconds UTC.
+Суммы очков — integer в сотых: 10000 = 100 очков. Коэффициент 190 = 1,90.
+Все запросы кроме `/auth/session`, `/auth/login` и служебного `/health` требуют
+действующую серверную сессию. Изменяющие запросы требуют `X-CSRF-Token` из session.
+Cookie HttpOnly автоматически передаётся браузером на origin приложения.
 
-РћС€РёР±РєР° РёРјРµРµС‚ РµРґРёРЅС‹Р№ С„РѕСЂРјР°С‚ Рё РїРѕРґС…РѕРґСЏС‰РёР№ HTTP-СЃС‚Р°С‚СѓСЃ:
+Ошибка имеет единый формат и подходящий HTTP-статус:
 
 ```json
-{"error":{"code":"insufficient_balance","message":"РќРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РѕС‡РєРѕРІ"}}
+{"error":{"code":"insufficient_balance","message":"Недостаточно очков"}}
 ```
 
-РћСЃРЅРѕРІРЅС‹Рµ СЃС‚Р°С‚СѓСЃС‹: 400 РІР°Р»РёРґР°С†РёСЏ, 401 РІС…РѕРґ, 403 РїСЂР°РІР°/CSRF, 404 РѕС‚СЃСѓС‚СЃС‚РІРёРµ РѕР±СЉРµРєС‚Р°,
-409 РєРѕРЅС„Р»РёРєС‚/Р·Р°РєСЂС‹С‚РѕРµ РѕРєРЅРѕ, 413 СЂР°Р·РјРµСЂ С„Р°Р№Р»Р°, 503 РЅРµРґРѕСЃС‚СѓРїРЅРѕСЃС‚СЊ РёРЅС‚РµРіСЂР°С†РёРё/Р‘Р”.
-РџР°РіРёРЅР°С†РёСЏ: `page` СЃ 1, РїРѕ 24 Р·Р°РїРёСЃРё; РєР°С‚Р°Р»РѕРі Рё РёСЃС‚РѕСЂРёСЏ РјР°С‚С‡РµР№ С‚Р°РєР¶Рµ РІРѕР·РІСЂР°С‰Р°СЋС‚ total.
+Основные статусы: 400 валидация, 401 вход, 403 права/CSRF, 404 отсутствие объекта,
+409 конфликт/закрытое окно, 413 размер файла, 503 недоступность интеграции/БД.
+Пагинация: `page` с 1, по 24 записи; каталог и история матчей также возвращают total.
 
-## РђРІС‚РѕСЂРёР·Р°С†РёСЏ
+## Авторизация
 
-| РњРµС‚РѕРґ Рё РїСѓС‚СЊ | Р—Р°РїСЂРѕСЃ | Р РµР·СѓР»СЊС‚Р°С‚ |
+| Метод и путь | Запрос | Результат |
 |---|---|---|
-| GET /auth/session | вЂ” | `{user: User|null, csrf: string}`; СЃРѕР·РґР°С‘С‚ РіРѕСЃС‚РµРІСѓСЋ CSRF-СЃРµСЃСЃРёСЋ |
-| POST /auth/login | `{login:"Alice"}` | User Рё РЅРѕРІС‹Р№ csrf; РЅРѕРІС‹Р№ session cookie |
-| POST /auth/logout | `{}` | `{ok:true}`; Р·Р°РІРµСЂС€РµРЅРёРµ session Рё sockets |
-| GET /health | вЂ” | `{status:"ok"}`, РїСЂРѕРІРµСЂРєР° Р‘Р” Рё Redis |
+| GET /auth/session | — | `{user: User|null, csrf: string}`; создаёт гостевую CSRF-сессию |
+| POST /auth/login | `{login:"Alice"}` | User и новый csrf; новый session cookie |
+| POST /auth/logout | `{}` | `{ok:true}`; завершение session и sockets |
+| GET /health | — | `{status:"ok"}`, проверка БД и Redis |
 
 User: id, login, role (`user`, `author`, `admin`), balance, active_seconds,
-activity_earned. РЈСЃРїРµС€РЅС‹Р№ login СЃРѕР·РґР°С‘С‚ РїСЂРѕС„РёР»СЊ Рё СЃС‚Р°СЂС‚РѕРІС‹Р№ Р¶СѓСЂРЅР°Р» С‚РѕР»СЊРєРѕ РѕРґРёРЅ СЂР°Р·.
+activity_earned. Успешный login создаёт профиль и стартовый журнал только один раз.
 
-## РљР°С‚Р°Р»РѕРі Рё Р°РІС‚РѕСЂ
+## Каталог и автор
 
-| РњРµС‚РѕРґ Рё РїСѓС‚СЊ | РџР°СЂР°РјРµС‚СЂС‹ / С‚РµР»Рѕ |
+| Метод и путь | Параметры / тело |
 |---|---|
-| GET /categories | СЃРїРёСЃРѕРє `{items:[{id,name}]}` |
+| GET /categories | список `{items:[{id,name}]}` |
 | GET /games | q, category (ID), sort=new/popular/rating, favorites=1, mine=1, page |
-| GET /games/:id | РѕР±СЉРµРєС‚ РёРіСЂС‹, reviews, my_rating; Р°РІС‚РѕСЂСѓ/Р°РґРјРёРЅСѓ С‚Р°РєР¶Рµ versions |
-| POST /games | multipart/form-data, РїСЂР°РІРѕ Р°РІС‚РѕСЂР° |
-| PUT /games/:id | multipart/form-data, СЃРІРѕР№ РѕР±СЉРµРєС‚ РёР»Рё admin |
-| POST /games/:id/launch | `{}` в†’ `{session_id,url}` |
-| PUT /games/:id/favorite | `{favorite:true}` РёР»Рё false |
+| GET /games/:id | объект игры, reviews, my_rating; автору/админу также versions |
+| POST /games | multipart/form-data, право автора |
+| PUT /games/:id | multipart/form-data, свой объект или admin |
+| POST /games/:id/launch | `{}` → `{session_id,url}` |
+| PUT /games/:id/favorite | `{favorite:true}` или false |
 | PUT /games/:id/rating | `{value:1..5}` |
-| PUT /games/:id/review | `{text:"..."}`, 1вЂ“2000 СЃРёРјРІРѕР»РѕРІ |
-| GET /covers/:filename | РЅРѕСЂРјР°Р»РёР·РѕРІР°РЅРЅР°СЏ WebP-РѕР±Р»РѕР¶РєР° |
+| PUT /games/:id/review | `{text:"..."}`, 1–2000 символов |
+| GET /covers/:filename | нормализованная WebP-обложка |
 
-`launch.url` вЂ” РѕС‚РЅРѕСЃРёС‚РµР»СЊРЅС‹Р№ `/play/<filename>?ticket=<capability>#session=<id>`
-РЅР° С‚РµРєСѓС‰РµРј Р°РґСЂРµСЃРµ РїСЂРёР»РѕР¶РµРЅРёСЏ. РќРёРєР°РєРѕРіРѕ РѕС‚РґРµР»СЊРЅРѕРіРѕ GAME_ORIGIN РЅРµ С‚СЂРµР±СѓРµС‚СЃСЏ.
-Ticket РѕРіСЂР°РЅРёС‡РµРЅ С„Р°Р№Р»РѕРј, СЃСЂРѕРєРѕРј Рё РґРµР№СЃС‚РІСѓСЋС‰РµР№ СЃРµСЃСЃРёРµР№. РРіСЂРѕРІС‹Рµ РѕС‚РІРµС‚С‹ СЃРѕРґРµСЂР¶Р°С‚
-СЃРѕР±СЃС‚РІРµРЅРЅСѓСЋ HTTP CSP sandbox; РїСЂРёР»РѕР¶РµРЅРёРµ РЅРµ СЂР°Р·СЂРµС€Р°РµС‚ API-РґРѕСЃС‚СѓРї origin=null.
+`launch.url` — относительный `/play/<filename>?ticket=<capability>#session=<id>`
+на текущем адресе приложения. Никакого отдельного GAME_ORIGIN не требуется.
+Ticket ограничен файлом, сроком и действующей сессией. Игровые ответы содержат
+собственную HTTP CSP sandbox; приложение не разрешает API-доступ origin=null.
 
-РџРѕР»СЏ multipart: title, description, category_id, tags (С‡РµСЂРµР· Р·Р°РїСЏС‚СѓСЋ),
-status (`draft`/`published`), html (С„Р°Р№Р» .html), cover (PNG/JPEG/WebP).
-РќРѕРІС‹Р№ html СЃРѕР·РґР°С‘С‚ РІРµСЂСЃРёСЋ; РѕС‚СЃСѓС‚СЃС‚РІРёРµ html РїСЂРё СЂРµРґР°РєС‚РёСЂРѕРІР°РЅРёРё СЃРѕС…СЂР°РЅСЏРµС‚ С‚РµРєСѓС‰СѓСЋ.
-РЈ С‡РµСЂРЅРѕРІРёРєР° РјРѕР¶РµС‚ РЅРµ Р±С‹С‚СЊ С„Р°Р№Р»Р°. Р”Р»СЏ РїСѓР±Р»РёРєР°С†РёРё РЅСѓР¶РЅР° С…РѕС‚СЏ Р±С‹ РѕРґРЅР° РІРµСЂСЃРёСЏ.
-РџРѕСЃР»Рµ СЃРєСЂС‹С‚РёСЏ Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂРѕРј Р°РІС‚РѕСЂ РЅРµ РјРѕР¶РµС‚ СЃР°РјРѕСЃС‚РѕСЏС‚РµР»СЊРЅРѕ РІРµСЂРЅСѓС‚СЊ РёРіСЂСѓ.
+Поля multipart: title, description, category_id, tags (через запятую),
+status (`draft`/`published`), html (файл .html), cover (PNG/JPEG/WebP).
+Новый html создаёт версию; отсутствие html при редактировании сохраняет текущую.
+У черновика может не быть файла. Для публикации нужна хотя бы одна версия.
+После скрытия администратором автор не может самостоятельно вернуть игру.
 
 Game: id, title, description, category_id, category, tags, author, author_id,
-cover (URL Р»РѕРєР°Р»СЊРЅРѕР№ РѕР±Р»РѕР¶РєРё), status, launches, created_at, rating, rating_count,
-favorite. РћС‚Р·С‹РІС‹ вЂ” С‚РµРєСЃС‚, React СЌРєСЂР°РЅРёСЂСѓРµС‚ СЃРѕРґРµСЂР¶РёРјРѕРµ.
+cover (URL локальной обложки), status, launches, created_at, rating, rating_count,
+favorite. Отзывы — текст, React экранирует содержимое.
 
-## РђРєС‚РёРІРЅРѕСЃС‚СЊ Рё РєРѕС€РµР»С‘Рє
+## Активность и кошелёк
 
 ```http
 POST /api/activity/start
@@ -68,69 +68,69 @@ Content-Type: application/json
 {"source":"football"}
 ```
 
-РћС‚РІРµС‚ `{session_id:"..."}`. Р”Р»СЏ РёРіСЂС‹ СЃРµСЃСЃРёСЋ СЃРѕР·РґР°С‘С‚ launch, РїСЂРѕРёР·РІРѕР»СЊРЅР°СЏ source РЅРµ РґРѕРїСѓСЃРєР°РµС‚СЃСЏ.
+Ответ `{session_id:"..."}`. Для игры сессию создаёт launch, произвольная source не допускается.
 
 ```json
 {
-  "session_id":"СЃРµСЂРІРµСЂРЅС‹Р№ id",
+  "session_id":"серверный id",
   "sequence":2,
   "eligible":true,
   "input_seen":true
 }
 ```
 
-Р­С‚Рѕ С‚РµР»Рѕ POST `/activity/heartbeat`. `eligible` РѕР·РЅР°С‡Р°РµС‚ РІРёРґРёРјРѕСЃС‚СЊ, С„РѕРєСѓСЃ Рё
-РЅРµРґР°РІРЅРёР№ РІРІРѕРґ, `input_seen` вЂ” РЅРѕРІС‹Р№ РІРІРѕРґ СЃ РїСЂРµРґС‹РґСѓС‰РµРіРѕ heartbeat, Р° РЅРµ РїРѕСЃС‚РѕСЏРЅРЅРѕ
-СѓСЃС‚Р°РЅРѕРІР»РµРЅРЅС‹Р№ С„Р»Р°Рі. РћС‚РІРµС‚: active, credited_seconds, balance, РёРЅРѕРіРґР° reason.
-РЎРµРєСѓРЅРґС‹ Рё СЂР°Р·РјРµСЂ РЅР°С‡РёСЃР»РµРЅРёСЏ РєР»РёРµРЅС‚ РЅРµ Р·Р°РґР°С‘С‚.
+Это тело POST `/activity/heartbeat`. `eligible` означает видимость, фокус и
+недавний ввод, `input_seen` — новый ввод с предыдущего heartbeat, а не постоянно
+установленный флаг. Ответ: active, credited_seconds, balance, иногда reason.
+Секунды и размер начисления клиент не задаёт.
 
-GET `/profile?page=1` в†’ user, transactions, bets.
+GET `/profile?page=1` → user, transactions, bets.
 Transaction: id, kind, amount, balance_after, reason, created_at.
 Bet: id, match_id, side (0/1), team_name, created_at, amount, odds, status (pending/won/lost/refunded),
-payout, net (null РґРѕ СЂРµР·СѓР»СЊС‚Р°С‚Р°). GET `/leaderboard?metric=balance|activity|bets&page=1`
-РІРѕР·РІСЂР°С‰Р°РµС‚ items СЃ id, login, balance, active_seconds, net. РџСЂРё СЂР°РІРµРЅСЃС‚РІРµ РїРѕСЂСЏРґРѕРє РїРѕ ID.
+payout, net (null до результата). GET `/leaderboard?metric=balance|activity|bets&page=1`
+возвращает items с id, login, balance, active_seconds, net. При равенстве порядок по ID.
 
-## Р¤СѓС‚Р±РѕР» Рё СЃС‚Р°РІРєРё
+## Футбол и ставки
 
-| РњРµС‚РѕРґ Рё РїСѓС‚СЊ | Р РµР·СѓР»СЊС‚Р°С‚ / С‚РµР»Рѕ |
+| Метод и путь | Результат / тело |
 |---|---|
-| GET /football | matches (С‚РµРєСѓС‰РёР№ Рё СЃР»РµРґСѓСЋС‰РёРµ), snapshot, previous |
-| GET /matches?page=1 | Р·Р°РІРµСЂС€С‘РЅРЅС‹Рµ Рё РѕС‚РјРµРЅС‘РЅРЅС‹Рµ РјР°С‚С‡Рё, total |
-| GET /matches/:id | Match Рё СЃРѕС…СЂР°РЅС‘РЅРЅС‹Рµ events |
-| POST /matches/:id/bet | `{side:0, amount:2000}` в†’ id, amount, odds |
+| GET /football | matches (текущий и следующие), snapshot, previous |
+| GET /matches?page=1 | завершённые и отменённые матчи, total |
+| GET /matches/:id | Match и сохранённые events |
+| POST /matches/:id/bet | `{side:0, amount:2000}` → id, amount, odds |
 
-Match СЃРѕРґРµСЂР¶РёС‚ id, state, teams (РґРІР° Р·Р°С„РёРєСЃРёСЂРѕРІР°РЅРЅС‹С… РѕР±СЉРµРєС‚Р°), score, penalties,
+Match содержит id, state, teams (два зафиксированных объекта), score, penalties,
 odds, starts_at, finished_at, winner (0/1/null), statistics, model_version,
-probability_a (0вЂ¦10000), rules. Seed РІРѕР·РІСЂР°С‰Р°РµС‚СЃСЏ С‚РѕР»СЊРєРѕ РІ finished.
-Р”Р»СЏ scheduled РєРѕСЌС„С„РёС†РёРµРЅС‚С‹ РІ РёРЅС‚РµСЂС„РµР№СЃРµ СЃС‡РёС‚Р°СЋС‚СЃСЏ РЅРµРїРѕРґРіРѕС‚РѕРІР»РµРЅРЅС‹РјРё: СЃС‚Р°РІРєРё
-РЅРµРІРѕР·РјРѕР¶РЅС‹ РґРѕ betting_open. РћРґРЅСѓ СЃС‚Р°РІРєСѓ РЅР° РјР°С‚С‡ РЅРµР»СЊР·СЏ РёР·РјРµРЅРёС‚СЊ РёР»Рё РѕС‚РјРµРЅРёС‚СЊ.
-РџРѕРІС‚РѕСЂ С‚РѕР№ Р¶Рµ СЃСѓРјРјС‹ Рё РєРѕРјР°РЅРґС‹ РІРѕР·РІСЂР°С‰Р°РµС‚ СѓР¶Рµ СЃРѕР·РґР°РЅРЅСѓСЋ СЃС‚Р°РІРєСѓ.
+probability_a (0…10000), rules. Seed возвращается только в finished.
+Для scheduled коэффициенты в интерфейсе считаются неподготовленными: ставки
+невозможны до betting_open. Одну ставку на матч нельзя изменить или отменить.
+Повтор той же суммы и команды возвращает уже созданную ставку.
 
-## РђРґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂ
+## Администратор
 
-Р’СЃРµ `/admin/*` С‚СЂРµР±СѓСЋС‚ role=admin Рё Р¶СѓСЂРЅР°Р»РёСЂСѓСЋС‚СЃСЏ РїСЂРё РёР·РјРµРЅРµРЅРёСЏС….
+Все `/admin/*` требуют role=admin и журналируются при изменениях.
 
-- GET `/admin`: rules, metrics, simulation, teams, РїРѕСЃР»РµРґРЅРёРµ 50 audit.
-- GET `/admin/users?q=&page=1`: РїСЂРѕС„РёР»Рё Рё Р±Р°Р»Р°РЅСЃ.
-- GET `/admin/users/:id/transactions?page=1`: РѕРїРµСЂР°С†РёРё РІС‹Р±СЂР°РЅРЅРѕРіРѕ РїСЂРѕС„РёР»СЏ.
-- GET `/admin/games?page=1`, `/admin/reviews?page=1`: РєРѕРЅС‚РµРЅС‚, РІ С‚РѕРј С‡РёСЃР»Рµ СЃРєСЂС‹С‚С‹Р№.
+- GET `/admin`: rules, metrics, simulation, teams, последние 50 audit.
+- GET `/admin/users?q=&page=1`: профили и баланс.
+- GET `/admin/users/:id/transactions?page=1`: операции выбранного профиля.
+- GET `/admin/games?page=1`, `/admin/reviews?page=1`: контент, в том числе скрытый.
 - POST `/admin/role`: `{user_id,role}`.
-- POST `/admin/balance`: `{user_id,amount,reason,request_id}`. amount вЂ” РїРѕРґРїРёСЃР°РЅРЅРѕРµ
-  С†РµР»РѕРµ РІ СЃРѕС‚С‹С…. Р”Р»СЏ РїРѕРІС‚РѕСЂРЅРѕР№ РґРѕСЃС‚Р°РІРєРё СЃРѕС…СЂР°РЅСЏР№С‚Рµ request_id.
-- POST `/admin/category`: `{name,id?}` вЂ” СЃРѕР·РґР°РЅРёРµ/РїРµСЂРµРёРјРµРЅРѕРІР°РЅРёРµ.
-- POST `/admin/game`: `{game_id,hidden}`. Р’РѕР·РІСЂР°С‚ СЃРєСЂС‹С‚РѕР№ РёРіСЂС‹ РїРµСЂРµРІРѕРґРёС‚ РµС‘ РІ draft.
+- POST `/admin/balance`: `{user_id,amount,reason,request_id}`. amount — подписанное
+  целое в сотых. Для повторной доставки сохраняйте request_id.
+- POST `/admin/category`: `{name,id?}` — создание/переименование.
+- POST `/admin/game`: `{game_id,hidden}`. Возврат скрытой игры переводит её в draft.
 - POST `/admin/review`: `{game_id,user_id,hidden}`.
-- POST `/admin/settings`: РёР·РјРµРЅСЏРµРјС‹Рµ РєР»СЋС‡Рё РїСЂР°РІРёР» РёР· docs/economy; paused boolean.
-- POST `/admin/team`: `{id,tactic,attributes}`. Р’СЃРµ РІРѕСЃРµРјСЊ С…Р°СЂР°РєС‚РµСЂРёСЃС‚РёРє РѕС‚ 40 РґРѕ 80.
-- POST `/admin/cancel`: `{match_id}` вЂ” С‚РµС…РЅРёС‡РµСЃРєР°СЏ РѕС‚РјРµРЅР° Рё РІРѕР·РІСЂР°С‚.
+- POST `/admin/settings`: изменяемые ключи правил из docs/economy; paused boolean.
+- POST `/admin/team`: `{id,tactic,attributes}`. Все восемь характеристик от 40 до 80.
+- POST `/admin/cancel`: `{match_id}` — техническая отмена и возврат.
 
 ## Socket.IO
 
-Endpoint `/socket.io/`, СЃС‚Р°РЅРґР°СЂС‚РЅС‹Р№ Engine.IO transport. РђРІС‚РѕСЂРёР·Р°С†РёСЏ С‡РµСЂРµР· С‚РѕС‚ Р¶Рµ
-host-only session cookie, Origin РїСЂРѕРІРµСЂСЏРµС‚СЃСЏ Socket.IO. РџРѕР»СЊР·РѕРІР°С‚РµР»СЊСЃРєРёС… room/join
-РєРѕРјР°РЅРґ РЅРµС‚. РЎРµСЂРІРµСЂ РґРѕР±Р°РІР»СЏРµС‚ СЃРѕРµРґРёРЅРµРЅРёРµ С‚РѕР»СЊРєРѕ РІ `user:<СЃРІРѕР№ user_id>`.
+Endpoint `/socket.io/`, стандартный Engine.IO transport. Авторизация через тот же
+host-only session cookie, Origin проверяется Socket.IO. Пользовательских room/join
+команд нет. Сервер добавляет соединение только в `user:<свой user_id>`.
 
-РЎРѕР±С‹С‚РёРµ `snapshot` (10/СЃ):
+Событие `snapshot` (10/с):
 
 ```json
 {
@@ -141,17 +141,17 @@ host-only session cookie, Origin РїСЂРѕРІРµСЂСЏРµС‚СЃСЏ S
 }
 ```
 
-Р’ СЂРµР°Р»СЊРЅРѕРј snapshot РІСЃРµРіРґР° 10 РёРіСЂРѕРєРѕРІ. Canvas СЂРёСЃСѓРµС‚ С‡РµСЂРµР· requestAnimationFrame,
-РёРЅС‚РµСЂРїРѕР»РёСЂСѓРµС‚ Р·Р° ~100 РјСЃ, РЅРµ СЌРєСЃС‚СЂР°РїРѕР»РёСЂСѓРµС‚ СЃС‡С‘С‚. РЎС‚Р°СЂС‹Рµ match_id Рё sequence
-РѕС‚Р±СЂР°СЃС‹РІР°СЋС‚СЃСЏ. РџРѕСЃР»Рµ connect/reconnect СЃРµСЂРІРµСЂ РѕС‚РїСЂР°РІР»СЏРµС‚ РїРѕСЃР»РµРґРЅРёР№ snapshot, Р°
-frontend РґРѕРїРѕР»РЅРёС‚РµР»СЊРЅРѕ GET /football Рё РёСЃС‚РѕСЂРёСЋ РєРѕРјРјРµРЅС‚Р°СЂРёРµРІ С‚РµРєСѓС‰РµРіРѕ РјР°С‚С‡Р°.
+В реальном snapshot всегда 10 игроков. Canvas рисует через requestAnimationFrame,
+интерполирует за ~100 мс, не экстраполирует счёт. Старые match_id и sequence
+отбрасываются. После connect/reconnect сервер отправляет последний snapshot, а
+frontend дополнительно GET /football и историю комментариев текущего матча.
 
-Р”СЂСѓРіРёРµ СЃРѕР±С‹С‚РёСЏ:
+Другие события:
 
-- `phase`: `{match_id,state}` вЂ” РѕР±РЅРѕРІРёС‚СЊ HTTP-РґР°РЅРЅС‹Рµ РјР°С‚С‡Р° Рё РїСЂР°РІРёР»Р°.
-- `comment`: `{match_id,kind,text,elapsed}` вЂ” СЃРѕР±С‹С‚РёРµ С‚РѕРіРѕ Р¶Рµ РјР°С‚С‡Р°.
-- `balance`: `{balance}` вЂ” С‚РѕР»СЊРєРѕ room РІР»Р°РґРµР»СЊС†Р° РїРѕСЃР»Рµ commit РѕРїРµСЂР°С†РёРё; UI РѕР±РЅРѕРІР»СЏРµС‚ РїСЂРѕС„РёР»СЊ.
+- `phase`: `{match_id,state}` — обновить HTTP-данные матча и правила.
+- `comment`: `{match_id,kind,text,elapsed}` — событие того же матча.
+- `balance`: `{balance}` — только room владельца после commit операции; UI обновляет профиль.
 
-Р”Р»СЏ СЃРѕР±СЃС‚РІРµРЅРЅС‹С… РѕРїРµСЂР°С†РёР№ HTTP СѓР¶Рµ РІРѕР·РІСЂР°С‰Р°РµС‚ СЂРµР·СѓР»СЊС‚Р°С‚; РґРѕРїРѕР»РЅРёС‚РµР»СЊРЅРѕ session
-РѕР±РЅРѕРІР»СЏРµС‚СЃСЏ РєР°Р¶РґС‹Рµ 15 СЃРµРєСѓРЅРґ. РњРµР¶РґСѓ РїСЂРѕРёРіСЂС‹РІР°РЅРёРµРј Рё РѕРєРЅРѕРј СЃС‚Р°РІРѕРє РЅРѕРІС‹С… СЃРЅРёРјРєРѕРІ РЅРµС‚;
-РёРЅС‚РµСЂС„РµР№СЃ РїРѕРєР°Р·С‹РІР°РµС‚ РїРѕРґРіРѕС‚РѕРІРєСѓ. РџСЂРё disconnect РІС‹РІРѕРґРёС‚СЃСЏ СЃРѕСЃС‚РѕСЏРЅРёРµ РїРµСЂРµРїРѕРґРєР»СЋС‡РµРЅРёСЏ.
+Для собственных операций HTTP уже возвращает результат; дополнительно session
+обновляется каждые 15 секунд. Между проигрыванием и окном ставок новых снимков нет;
+интерфейс показывает подготовку. При disconnect выводится состояние переподключения.

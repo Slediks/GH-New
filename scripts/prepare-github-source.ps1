@@ -6,10 +6,12 @@ $target = [IO.Path]::GetFullPath((Join-Path $root $Destination))
 if (Test-Path -LiteralPath $target) { throw 'Destination already exists; choose a new folder.' }
 $excludedDirectories = @('node_modules', 'dist', '.review', 'test-results', 'playwright-report', '__pycache__', '.pytest_cache', '.ruff_cache', '.git', '.idea', 'screenshots', 'frontend', '_logs')
 $excludedDocs = @('offline-audit.md', 'casino-audit-2026-09.md', 'football-v2-report.md', 'delivery.md', 'verification.md', 'plinko-todo.md', 'offline-start.md')
+$excludedGeneratedEvidence = @('browser.json', 'comparison.json', 'labels-performance.json', 'parameter-comparison.json')
 function Copy-SourceTree([string]$from, [string]$to, [bool]$isDocs = $false) {
     New-Item -ItemType Directory -Path $to -Force | Out-Null
     foreach ($item in Get-ChildItem -LiteralPath $from -Force) {
         if ($item.Name -in $excludedDirectories -or $item.Name -match '\.pyc$|\.tsbuildinfo$') { continue }
+        if ($item.FullName -match '[\\/]scripts[\\/]arena_migration[\\/]evidence[\\/]' -and $item.Name -in $excludedGeneratedEvidence) { continue }
         if ($isDocs -and ($item.Name -in $excludedDocs -or $item.Name -in @('football-visual-review', 'audio') -or $item.Extension -eq '.json')) { continue }
         $destination = Join-Path $to $item.Name
         if ($item.PSIsContainer) { Copy-SourceTree $item.FullName $destination $isDocs }

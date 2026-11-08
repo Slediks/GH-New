@@ -745,3 +745,10 @@
 .arena-match-top {
   z-index: 4;
 }
+.arena-grenade-admin details { margin: 12px 0; padding: 12px 16px; border: 1px solid var(--border); border-radius: 12px; background: var(--surface-color); }
+.arena-grenade-admin summary { cursor: pointer; font-weight: 700; }
+.arena-grenade-fields { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-top: 16px; }
+.arena-grenade-fields label { display: grid; gap: 5px; align-content: start; }
+.arena-grenade-fields label input[type='number'] { width: 100%; }
+.arena-grenade-fields label input[type='checkbox'] { width: 20px; height: 20px; }
+.arena-grenade-fields label small { opacity: .7; }

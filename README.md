@@ -3,10 +3,11 @@
 Автономная поставка и пересборка без интернета: [установка](OFFLINE_INSTALL.md), [обновление](OFFLINE_UPDATE.md), [резервные копии](BACKUP_RESTORE.md), [откат](ROLLBACK.md).
 
 Редактор карт Arena: [инструкция администратора, архитектура и проверки](docs/arena-map-editor.md).
+Права авторов Arena и совместное редактирование: [мастерская и владение](docs/arena-creator.md).
 Пользовательские 3D-модели: [Custom Asset Manager](docs/arena-custom-assets.md).
 
 **Текущая рабочая тестовая установка:** HTTP `:8080`, Compose-проект `gamehub`,
-версия образов `3.1.1`. С 11.10.2026 разработка и проверки выполняются на ней;
+версия образов задаётся в локальном `.env`. С 11.10.2026 разработка и проверки выполняются на ней;
 отдельный стенд `18080` больше не используется. Существующие данные сохраняются.
 См. [порядок обновления и резервная копия](docs/deployment-8080.md).
 
@@ -62,7 +63,7 @@ docker compose exec backend python -m backend.manage admin ВАШ_ЛОГИН
 2. Оставьте `APP_ENV=production`. **Mock в production запрещён на уровне кода.**
 3. Получите контракт существующего API и настройте адаптер по
    [docs/auth.md](docs/auth.md). До настройки новые входы отклоняются с понятной ошибкой.
-4. Задайте `GAMEHUB_PORT=8080`, `GAMEHUB_VERSION=3.1.1`, `COOKIE_SECURE=false`.
+4. Задайте `GAMEHUB_PORT=8080`, `GAMEHUB_VERSION=3.2.0`, `COOKIE_SECURE=false`.
    Адрес существующего локального API авторизации задаётся в `AUTH_URL`.
 5. Заранее соберите и загрузите образы по [инструкции офлайн-переноса](docs/operations.md).
 6. Выполните **`docker compose up -d`** и откройте **`http://<IP-компьютера>:<GAMEHUB_PORT>`**.
@@ -86,21 +87,25 @@ docker compose exec backend python -m backend.manage admin ВАШ_ЛОГИН
 - [Обновление, резервные копии, офлайн-перенос](docs/operations.md)
 - [Казино: правила, экономика и сопровождение](docs/casino.md)
 
-## Offline development
+## Offline Development
 
-Dependency bundle рассчитан на `linux/amd64`: Node `22.23.4`, npm `10.9.9`, Python `3.11.18`. На Windows для автономной сборки используйте Docker. Точные версии, хеши lockfile и инструкции проверки находятся в `offline/dependencies.json`.
+В GH-New лежат исходники и **оба набора зависимостей**: npm cache в `offline/npm/cache` и Python wheelhouse в `offline/python/wheels`. Они рассчитаны на Windows x64 и Linux/amd64. Нужны Node 22 и Python 3.11; проверенные версии указаны в `offline/dependencies.json`. Файлы lockfile и SHA-256 также записаны там.
 
-С одним Docker и без установленного на хосте Node/Python: `scripts/offline.ps1 check` в PowerShell или `bash scripts/offline.sh check` в Linux. Команда запускает чистую сборку backend/frontend с отключённой сетью. После изменения исходников используйте `update`; порядок описан в [OFFLINE_UPDATE.md](OFFLINE_UPDATE.md).
+**Локальная разработка на Windows с установленными Node и Python:** из корня проекта выполните:
 
-При установленном совместимом Node/Python на Linux:
-
-```bash
+```powershell
 cd frontend
-npm ci --offline --cache ../offline/npm/cache --no-audit --no-fund
+npm ci --include=optional --offline --cache ../offline/npm/cache --no-audit --no-fund
 npm run build
 cd ..
-python -m pip install --no-index --find-links=offline/python/wheels -r requirements.lock
+py -3.11 -m venv .venv
+.\.venv\Scripts\python.exe -m pip install --no-index --find-links offline/python/wheels -r requirements.lock
+.\.venv\Scripts\python.exe -m pytest backend/tests/test_arena_creator_access.py -q
 ```
+
+На Linux замените `py -3.11 -m venv .venv` на `python3.11 -m venv .venv`, а путь к интерпретатору — на `./.venv/bin/python`. Для работы приложения нужны PostgreSQL и Redis; автономный запуск всего стека выполняет Docker.
+
+**Разработка через Docker без Node/Python на хосте:** `./scripts/offline.ps1 check -Clean` в PowerShell или `bash scripts/offline.sh check` на Linux. Команда выполняет чистую сборку с отключённой сетью. После изменения исходников используйте `update` по [инструкции](OFFLINE_UPDATE.md).
 
 Исходники TypeScript, CSS, Python, локальные модели и звуки можно менять без обновления bundle. Для новой внешней npm/Python-библиотеки нужен новый offline cache/wheelhouse. `node_modules`, виртуальное окружение, Docker-образы и готовый deployment archive в Git не входят.
 

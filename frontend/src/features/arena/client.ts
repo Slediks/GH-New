@@ -245,6 +245,15 @@ export class ArenaClient {
         this.input.dispose();
         this.onError('Комната закрыта. Вернитесь к списку комнат.');
       });
+      socket.on('cancelled', () => {
+        this.stopped = true;
+        this.connected = false;
+        this.audio.stopWorld();
+        this.soundEvents.reset();
+        this.input.dispose();
+        clearTimeout(this.retry);
+        this.onError('Матч завершён: карта снята с публикации администратором.');
+      });
     } catch (error) {
       this.onError((error as Error).message);
       if (!this.stopped) this.retry = setTimeout(() => void this.connect(), 2000);
@@ -328,6 +337,16 @@ export class ArenaClient {
       return;
     const me = s.players.find((p) => p.id === this.self);
     if (!me) return;
+    if (s.grenade_config) {
+      this.manifest.grenades = s.grenade_config;
+      this.scene.world.grenades = s.grenade_config;
+      if (!s.grenade_config[this.grenadeType]?.enabled ||
+          (me.grenades?.[this.grenadeType] ?? 0) <= 0) {
+        const available = (['frag', 'smoke', 'flash', 'molotov'] as const).find(
+          (kind) => s.grenade_config?.[kind]?.enabled && (me.grenades?.[kind] ?? 0) > 0);
+        if (available) this.grenadeType = available;
+      }
+    }
     const firstSnapshot = this.fresh;
     const arrival = performance.now();
     this.serverClockOffset = Math.min(this.serverClockOffset, arrival - s.time * 1000);

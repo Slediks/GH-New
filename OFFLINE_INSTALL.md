@@ -32,4 +32,6 @@ GameHub сохраняет прежний API авторизации. Укажи
 
 ## Что входит в пакет
 
-Исходники frontend, backend, Arena, редактора, миграции, скрипты и локальные ресурсы; полный Linux npm cache и Python wheelhouse; образы GameHub backend/frontend, Node 22 Alpine, Python 3.11 slim, PostgreSQL 16 Alpine, Redis 7 Alpine и nginx 1.27 Alpine. Список и хеши находятся в `offline/manifest.json`. Секреты, пользователи, БД и загруженные файлы разработчика в дистрибутив не входят.
+Исходники frontend, backend, Arena, редактора, миграции, скрипты и локальные ресурсы; npm cache и Python wheelhouse для Windows x64 и Linux/amd64; образы GameHub backend/frontend, Node 22 Alpine, Python 3.11 slim, PostgreSQL 16 Alpine, Redis 7 Alpine и nginx 1.27 Alpine. Список и хеши находятся в `offline/manifest.json` и `offline/dependencies.json`. Секреты, пользователи, БД и загруженные файлы разработчика в дистрибутив не входят.
+
+Для работы с исходниками на хосте после скачивания GH-New Node 22 и Python 3.11 можно установить заранее. Локальные команды установки пакетов и сборки приведены в [README](README.md#offline-development) и [OFFLINE_UPDATE.md](OFFLINE_UPDATE.md). Кэш и wheelhouse входят как в Git-репозиторий, так и в полный офлайн-пакет; Docker-образы не являются единственным источником пакетов.

@@ -79,6 +79,8 @@ def test_new_map_text_is_published_independently(database):
         sign['textOverrides'] = {'front': {'text': 'СКЛАД / WAREHOUSE'}}
         mutate(db, row.updated_by, row.id, row.draft_version, 'save', draft)
         assert published(db, row.id) == previous
+        from shared.models import User
+        db.get(User, row.updated_by).role = 'admin'
         mutate(db, row.updated_by, row.id, row.draft_version, 'publish')
         latest = published(db, row.id)
         updated = next(o for o in latest['definition']['objects'] if o['id'] == sign['id'])

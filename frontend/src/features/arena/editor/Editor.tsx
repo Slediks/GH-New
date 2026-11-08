@@ -17,6 +17,8 @@ import { MapViewport } from './viewport';
 import { Inspector } from './Inspector';
 import { Appearance } from './Appearance';
 import { fingerprint } from './definitionState';
+import { useAuth } from '../../../app/Auth';
+import { MapAccess } from './MapAccess';
 
 const root = '/arena/maps-admin';
 // getRandomValues also works on the supported plain HTTP LAN address.
@@ -33,6 +35,8 @@ export function MapEditor({
   assets: Record<string, Asset>;
   onClose: () => void;
 }) {
+  const { user } = useAuth();
+  const isAdmin = user?.role === 'admin';
   const [draft, setDraft] = useState(initial),
     [definition, setDefinition] = useState(initial.definition);
   const [initialTransform] = useState(preference);
@@ -53,6 +57,7 @@ export function MapEditor({
     description: '', origin: 'center', replace: false });
   const [message, setMessage] = useState('Черновик загружен'),
     [busy, setBusy] = useState(false),
+    [accessLost, setAccessLost] = useState(false),
     [conflict, setConflict] = useState(false),
     [playing, setPlaying] = useState(false),
     [report, setReport] = useState<Report | null>(null),
@@ -128,11 +133,12 @@ export function MapEditor({
     return () => window.removeEventListener('arena-asset-error', failed);
   }, []);
   function change(d: Definition) {
+    if (accessLost) return;
     const previous = live.current.definition;
     setHistory((h) => ({ past: [...h.past, previous].slice(-100), future: [] }));
     live.current.definition = d;
     live.current.changedAt = Date.now();
-    if (!live.current.conflicted) live.current.blocked = false;
+    if (!live.current.conflicted && !accessLost) live.current.blocked = false;
     setDefinition(d);
     setReport(null);
   }
@@ -203,6 +209,7 @@ export function MapEditor({
       return saved;
     } catch (e) {
       live.current.blocked = true;
+      if (e instanceof ApiError && e.status === 403) setAccessLost(true);
       live.current.conflicted = e instanceof ApiError && e.status === 409;
       setConflict(e instanceof ApiError && e.status === 409);
       setMessage((e as Error).message);
@@ -524,7 +531,7 @@ export function MapEditor({
           disabled={busy || playing}
           onClick={() =>
             void run(async () => {
-              await save();
+              if (!accessLost) await save();
               onClose();
             })
           }
@@ -532,7 +539,7 @@ export function MapEditor({
           К списку
         </button>
         <button
-          disabled={busy || playing}
+          disabled={busy || playing || accessLost}
           onClick={() =>
             void run(async () => {
               live.current.blocked = conflict;
@@ -552,8 +559,8 @@ export function MapEditor({
         >
           Проверить
         </button>
-        <button
-          disabled={busy || playing || conflict}
+        {isAdmin && <button
+          disabled={busy || playing || conflict || accessLost}
           onClick={() =>
             void run(async () => {
               const p = await preview();
@@ -564,13 +571,47 @@ export function MapEditor({
           }
         >
           Опубликовать
-        </button>
-        <button
-          disabled={busy || playing || !draft.revision}
-          onClick={() => void run(() => action(draft.status === 'Disabled' ? 'enable' : 'disable'))}
-        >
-          {draft.status === 'Disabled' ? 'Включить' : 'Отключить'}
-        </button>
+        </button>}
+        {isAdmin && draft.status === 'Published' && <button
+          disabled={busy || playing}
+          onClick={() => void run(async () => {
+            const active = await api<{ count: number }>(`${root}/${draft.id}/active-matches`);
+            if (!window.confirm(`Снять карту с публикации? Она пропадёт из выбора для новых матчей. Сейчас на ней идёт матчей: ${active.count}. Все они немедленно завершатся и не попадут в статистику и историю.`)) return;
+            await action('unpublish');
+          })}
+        >Снять с публикации</button>}
+        {!!draft.revision && <button
+          disabled={busy || playing || conflict}
+          onClick={() => void run(async () => {
+            if (!window.confirm('Все текущие изменения черновика будут потеряны. Черновик будет восстановлен до последней опубликованной версии.')) return;
+            const next = await api<Draft>(`${root}/${draft.id}/rollback`, 'POST', {
+              version: live.current.draft.draftVersion,
+            });
+            live.current.draft = next;
+            live.current.definition = next.definition;
+            live.current.blocked = false;
+            live.current.conflicted = false;
+            localStorage.removeItem(cacheKey);
+            setRecovery(null);
+            setConflict(false);
+            setDraft(next);
+            setDefinition(next.definition);
+            setHistory({ past: [], future: [] });
+            setReport(null);
+            setMessage(`Черновик восстановлен до опубликованной версии ${next.revision}`);
+          })}
+        >Откатить черновик</button>}
+        {draft.status !== 'Published' && (isAdmin || (draft.accessRole === 'owner' && !draft.revision)) && <button
+          disabled={busy || playing}
+          onClick={() => {
+            if (!window.confirm(`Удалить карту «${draft.name}» полностью?`)) return;
+            void run(async () => {
+              await api(`${root}/${draft.id}/delete`, 'POST', { version: live.current.draft.draftVersion });
+              localStorage.removeItem(cacheKey);
+              onClose();
+            });
+          }}
+        >Удалить карту</button>}
         <button
           onClick={() =>
             void (document.fullscreenElement
@@ -581,6 +622,8 @@ export function MapEditor({
           На весь экран
         </button>
       </header>
+      {accessLost && <div role="alert" className="error-box">Доступ к карте отозван. Автосохранение остановлено. Вернитесь к списку карт.</div>}
+      <MapAccess draft={draft} />
       <div className="map-toolbar">
         <fieldset className="scene-toolbar-filter" disabled={playing}>
           <SelectionTools
@@ -905,7 +948,7 @@ export function MapEditor({
                 {prefabs.filter((p) => (category === 'Все' || category === p.category) &&
                   `${p.name} ${p.id}`.toLowerCase().includes(query.toLowerCase())).map((p) =>
                   <div className="prefab-card" key={p.id}>
-                    <strong>▦ {p.name}</strong><small>{p.id} · {p.category} · rev {p.revision} · {p.status}</small>
+                    <strong>▦ {p.name}</strong><small>{p.id} · {p.category} · rev {p.revision} · {p.status} · {p.ownerLogin}</small>
                     <button disabled={!p.revision || p.status !== 'Published' || playing} onClick={() => void run(async () => {
                       const source = await api<{ definition: { objects: MapObject[] } }>(`${root}/prefabs/${p.id}/revisions/${p.revision}`);
                       const placeholder = assets['base.block'];
@@ -922,28 +965,28 @@ export function MapEditor({
                       setPending(p.name);
                       setMessage('Щёлкните по поверхности, чтобы поставить prefab. Esc — отмена.');
                     })}>Разместить</button>
-                    <button disabled={playing} onClick={() => void run(async () => {
+                    {p.editable && <button disabled={playing} onClick={() => void run(async () => {
                       const entry = await api<React.ComponentProps<typeof PrefabEditor>['initial']>(`${root}/prefabs/${p.id}`);
                       setPrefabEditing(entry);
-                    })}>Открыть</button>
-                    <button onClick={() => void run(async () => {
+                    })}>Открыть</button>}
+                    {p.editable && <button onClick={() => void run(async () => {
                       const use = await api<{ drafts: { map: string; prefabRevision: number }[];
                         published: { map: string; mapRevision: number; prefabRevision: number }[] }>(`${root}/prefabs/${p.id}/usages`);
                       setMessage(`Prefab ${p.id}: ${use.drafts.length} экземпляров в черновиках, ${use.published.length} в опубликованных версиях карт`);
-                    })}>Где используется</button>
+                    })}>Где используется</button>}
                     <button disabled={playing || busy} onClick={() => void run(async () => {
                       const id = window.prompt('ID копии prefab', p.id + '-copy');
                       if (!id) return;
                       await api(`${root}/prefabs/${p.id}/duplicate`, 'POST', { id, name: p.name + ' — копия' });
                       await refreshPrefabs();
                     })}>Дублировать</button>
-                    <button disabled={playing || busy} onClick={() => void run(async () => {
+                    {isAdmin && <button disabled={playing || busy} onClick={() => void run(async () => {
                       const entry = await api<{ draftVersion: number }>(`${root}/prefabs/${p.id}`);
                       await api(`${root}/prefabs/${p.id}/${p.status === 'Archived' ? 'enable' : 'archive'}`, 'POST',
                         { version: entry.draftVersion });
                       await refreshPrefabs();
-                    })}>{p.status === 'Archived' ? 'Вернуть' : 'Архивировать'}</button>
-                    {p.revision > 0 && p.status !== 'Archived' && <button onClick={() => void run(async () => {
+                    })}>{p.status === 'Archived' ? 'Вернуть' : 'Архивировать'}</button>}
+                    {isAdmin && p.revision > 0 && p.status !== 'Archived' && <button onClick={() => void run(async () => {
                       const entry = await api<{ draftVersion: number }>(`${root}/prefabs/${p.id}`);
                       await api(`${root}/prefabs/${p.id}/${p.status === 'Disabled' ? 'enable' : 'disable'}`, 'POST',
                         { version: entry.draftVersion });
@@ -961,12 +1004,12 @@ export function MapEditor({
                 <select aria-label="Точка prefab" value={prefabForm.origin} onChange={(e) => setPrefabForm({ ...prefabForm, origin: e.target.value })}>
                   <option value="center">Центр выделения</option><option value="active">Активный объект</option><option value="bottom">Центр основания</option>
                 </select>
-                <label><input type="checkbox" checked={prefabForm.replace} onChange={(e) => setPrefabForm({ ...prefabForm, replace: e.target.checked })} />Заменить выделение опубликованным экземпляром</label>
-                {!prefabForm.replace && <small>Исходные объекты останутся на карте.</small>}
+                {isAdmin && <label><input type="checkbox" checked={prefabForm.replace} onChange={(e) => setPrefabForm({ ...prefabForm, replace: e.target.checked })} />Заменить выделение опубликованным экземпляром</label>}
+                {(!prefabForm.replace || !isAdmin) && <small>Исходные объекты останутся на карте. Новый prefab появится в библиотеке после публикации администратором.</small>}
                 <button disabled={selected.length < 2 || busy || playing} onClick={() => void run(async () => {
                   const created = await api<{ id: string; draftVersion: number; definition: { origin: [number, number, number] } }>(`${root}/prefabs`, 'POST', { ...prefabForm, definition, selected,
                     active: selected.at(-1) });
-                  if (prefabForm.replace) {
+                  if (prefabForm.replace && isAdmin) {
                     await api(`${root}/prefabs/${created.id}/publish`, 'POST', { version: created.draftVersion });
                     const remove = new Set(selected);
                     change({ ...definition, objects: definition.objects.filter((o) => !remove.has(o.id)),
@@ -976,7 +1019,7 @@ export function MapEditor({
                     scene.choose([]);
                   }
                   await refreshPrefabs();
-                  setMessage(prefabForm.replace ? 'Выделение заменено экземпляром prefab' :
+                  setMessage(prefabForm.replace && isAdmin ? 'Выделение заменено экземпляром prefab' :
                     'Prefab сохранён как черновик. Опубликуйте его перед размещением.');
                 })}>Сохранить prefab</button>
               </details>

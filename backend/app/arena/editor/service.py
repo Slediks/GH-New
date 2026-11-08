@@ -7,28 +7,35 @@ from sqlalchemy import select
 
 from backend.app.admin.service import audit
 from backend.app.arena.editor.format import compile_map, empty, validate
-from shared.arena_map_models import ArenaMap, ArenaMapRevision
+from backend.app.arena.editor.permissions import can_edit_map, public_owner, visible_maps
+from shared.arena_map_models import ArenaMap, ArenaMapEditor, ArenaMapRevision
+from shared.arena_models import ArenaMatch
 from shared.db import lock
 from shared.errors import DomainError
 from shared.models import User, now
 
 
-def public(row, db):
+def public(row, db, viewer=None):
     actor = db.get(User, row.updated_by)
     return dict(
         id=row.id,
         name=row.name,
-        status="Published" if row.enabled else "Disabled" if row.published_revision else "Draft",
+        status="Published" if row.enabled else "Draft",
         revision=row.published_revision,
         draftVersion=row.draft_version,
         updatedAt=row.updated_at,
         updatedBy=actor.login if actor else None,
         system=False,
+        ownerUserId=row.owner_user_id,
+        ownerLogin=public_owner(db, row.owner_user_id),
+        accessRole=("admin" if viewer and viewer.role == "admin" else
+                    "owner" if viewer and viewer.id == row.owner_user_id else
+                    "editor" if viewer and can_edit_map(db, viewer, row) else "viewer"),
     )
 
 
-def list_maps(db):
-    return [public(r, db) for r in db.scalars(select(ArenaMap).order_by(ArenaMap.updated_at.desc()))]
+def list_maps(db, viewer):
+    return [public(r, db, viewer) for r in visible_maps(db, viewer)]
 
 
 def published(db, identity, revision=None, require_enabled=False):
@@ -58,27 +65,47 @@ def create(db, actor, slug, name, source=None):
         row = db.get(ArenaMap, source)
         if not row:
             raise DomainError("Исходная карта не найдена", 404)
-        v = copy.deepcopy(row.draft)
+        user = db.get(User, actor)
+        if user.role == "admin" or row.owner_user_id == actor:
+            v = copy.deepcopy(row.draft)
+        elif row.published_revision and row.enabled:
+            revision = db.scalar(select(ArenaMapRevision).where(
+                ArenaMapRevision.map_id == source,
+                ArenaMapRevision.revision == row.published_revision))
+            v = copy.deepcopy(revision.definition)
+        else:
+            raise DomainError("Исходная карта недоступна", 403)
         v["metadata"]["name"] = name
     v = validate(v)
-    row = ArenaMap(id=slug, name=name, draft=v, updated_by=actor)
+    row = ArenaMap(id=slug, name=name, draft=v, updated_by=actor, owner_user_id=actor)
     db.add(row)
     db.flush()
     audit(db, actor, "arena.map.create", dict(map=slug, source=source))
-    return public(row, db) | dict(definition=row.draft)
+    return public(row, db, db.get(User, actor)) | dict(definition=row.draft)
 
 
-def draft(db, identity):
+def draft(db, identity, viewer):
     row = db.get(ArenaMap, identity)
     if not row:
         raise DomainError("Черновик не найден.", 404)
-    return public(row, db) | dict(definition=row.draft)
+    if not can_edit_map(db, viewer, row):
+        raise DomainError("Черновик недоступен", 403)
+    return public(row, db, viewer) | dict(definition=row.draft)
 
 
 def mutate(db, actor, identity, version, action, definition=None):
     row = lock(db, ArenaMap, identity)
     if not row:
         raise DomainError("Карта не найдена", 404)
+    user = db.get(User, actor)
+    if not can_edit_map(db, user, row):
+        raise DomainError("Нет прав на редактирование карты", 403)
+    if action in ("publish", "disable", "enable", "unpublish") and user.role != "admin":
+        raise DomainError("Публикация доступна администратору", 403)
+    if action == "delete" and user.role != "admin" and (
+        row.owner_user_id != actor or row.published_revision
+    ):
+        raise DomainError("Удалить можно только свой неопубликованный черновик", 403)
     if type(version) is not int or version != row.draft_version:
         raise DomainError(
             "Черновик изменён в другой вкладке. Сохраните локальную копию или обновите данные.", 409
@@ -88,7 +115,7 @@ def mutate(db, actor, identity, version, action, definition=None):
 
         definition = validate(definition)
         if definition == row.draft:
-            return public(row, db) | dict(definition=row.draft)
+            return public(row, db, user) | dict(definition=row.draft)
         if definition.get("prefabInstances"):
             from shared.arena_prefab_models import ArenaPrefab
 
@@ -137,20 +164,62 @@ def mutate(db, actor, identity, version, action, definition=None):
         )
         row.published_revision = rev
         row.enabled = True
-    elif action == "disable":
+    elif action in ("disable", "unpublish"):
+        if not row.enabled:
+            raise DomainError("Карта уже снята с публикации", 409)
+        # The map row is locked before this query. Match start takes the same lock,
+        # so no newly committed match can escape cancellation.
         row.enabled = False
+        for match in db.scalars(select(ArenaMatch).where(
+            ArenaMatch.status.in_(("loading", "active")),
+            ArenaMatch.settings["map_id"].as_string() == identity,
+        )):
+            match.status = "cancelled"
+            match.finished_at = now()
+            match.result = {"reason_code": "map_unpublished",
+                            "reason": "Матч завершён: карта снята с публикации администратором.",
+                            "players": []}
+        # Keep the current draft and all published revisions until explicit deletion.
     elif action == "enable":
-        if not row.published_revision:
-            raise DomainError("Сначала опубликуйте карту")
-        row.enabled = True
+        raise DomainError("Опубликуйте новый релиз карты", 409)
     elif action == "delete":
-        if row.published_revision:
+        if row.enabled:
             raise DomainError(
-                "Опубликованные версии сохраняются для истории. Используйте отключение.", 409
+                "Сначала снимите карту с публикации.", 409
             )
+        # Match history owns a map name/revision snapshot in settings._map.
+        for match in db.scalars(select(ArenaMatch).where(
+            ArenaMatch.status == "finished",
+            ArenaMatch.settings["map_id"].as_string() == identity,
+        )):
+            if not match.settings.get("_map", {}).get("name"):
+                raise DomainError("История матча не содержит снимка названия карты", 409)
+        for revision in db.scalars(select(ArenaMapRevision).where(
+            ArenaMapRevision.map_id == identity,
+        )):
+            db.delete(revision)
+        for editor in db.scalars(select(ArenaMapEditor).where(ArenaMapEditor.map_id == identity)):
+            db.delete(editor)
+        db.flush()
         db.delete(row)
         audit(db, actor, "arena.map.delete", dict(map=identity))
         return dict(deleted=True)
+    elif action == "rollback":
+        if not row.published_revision:
+            raise DomainError("У карты нет опубликованной версии", 409)
+        revision = db.scalar(select(ArenaMapRevision).where(
+            ArenaMapRevision.map_id == identity,
+            ArenaMapRevision.revision == row.published_revision,
+        ))
+        if not revision:
+            raise DomainError("Опубликованная версия не найдена", 409)
+        from .prefab_resolver import load_sources
+
+        restored = validate(copy.deepcopy(revision.definition))
+        compile_map(restored, identity, row.published_revision,
+                    prefab_sources=load_sources(restored, db))
+        row.draft = restored
+        row.name = restored["metadata"]["name"]
     else:
         raise DomainError("Неизвестное действие")
     row.draft_version += 1
@@ -162,4 +231,4 @@ def mutate(db, actor, identity, version, action, definition=None):
         "arena.map." + action,
         dict(map=identity, version=row.draft_version, revision=row.published_revision),
     )
-    return public(row, db) | dict(definition=row.draft)
+    return public(row, db, user) | dict(definition=row.draft)

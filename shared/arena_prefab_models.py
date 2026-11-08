@@ -18,6 +18,7 @@ class ArenaPrefab(Base):
     archived: Mapped[bool] = mapped_column(default=False)
     updated_at: Mapped[float] = mapped_column(default=now)
     updated_by: Mapped[str] = mapped_column(ForeignKey("users.id"))
+    owner_user_id: Mapped[str] = mapped_column(ForeignKey("users.id"), index=True)
 
 
 class ArenaPrefabRevision(Base):

@@ -2,7 +2,7 @@ param([switch]$Staged)
 $ErrorActionPreference = 'Stop'
 $root = Split-Path -Parent $PSScriptRoot
 Set-Location -LiteralPath $root
-$paths = if ($Staged) { @(& git diff --cached --name-only) } else { @(& git ls-files) }
+$paths = if ($Staged) { @(& git diff --cached --name-only --diff-filter=ACMR) } else { @(& git ls-files) }
 if ($LASTEXITCODE -ne 0 -or $paths.Count -eq 0) { throw 'No Git files found.' }
 $forbidden = @(
     '^\.env$', '^release/', '^backups/', '^data/', '^frontend/node_modules/',
