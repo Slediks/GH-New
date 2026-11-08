@@ -1,6 +1,6 @@
 param(
-    [string]$Version = '3.2.1',
-    [string]$Destination = "release/gamehub-offline-3.2.1",
+    [string]$Version = '3.2.2',
+    [string]$Destination = "release/gamehub-offline-3.2.2",
     [switch]$SkipBuild
 )
 $ErrorActionPreference = 'Stop'

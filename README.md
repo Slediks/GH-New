@@ -63,7 +63,7 @@ docker compose exec backend python -m backend.manage admin ВАШ_ЛОГИН
 2. Оставьте `APP_ENV=production`. **Mock в production запрещён на уровне кода.**
 3. Получите контракт существующего API и настройте адаптер по
    [docs/auth.md](docs/auth.md). До настройки новые входы отклоняются с понятной ошибкой.
-4. Задайте `GAMEHUB_PORT=8080`, `GAMEHUB_VERSION=3.2.1`, `COOKIE_SECURE=false`.
+4. Задайте `GAMEHUB_PORT=8080`, `GAMEHUB_VERSION=3.2.2`, `COOKIE_SECURE=false`.
    Адрес существующего локального API авторизации задаётся в `AUTH_URL`.
 5. Заранее соберите и загрузите образы по [инструкции офлайн-переноса](docs/operations.md).
 6. Выполните **`docker compose up -d`** и откройте **`http://<IP-компьютера>:<GAMEHUB_PORT>`**.
