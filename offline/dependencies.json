@@ -13,13 +13,13 @@
   "python_linux": "3.11.18",
   "python_windows": "3.11",
   "package_lock_sha256": "3d15acd918fa335b931ffc67388df72b1e2b7625f313f2019eb66c78b6f711ea",
-  "requirements_lock_sha256": "efe0be726b8e169f2656c919dac0e3723d23d5417b7329cf29116636d65b89fc",
+  "requirements_lock_sha256": "2b27b1c1a539db4bad380a8fc1e7d8a93a234e56ae042958ae1036625dc01baa",
   "frontend_bundle_sha256": "7c916f12e98a45c866318c1857a2d1091eae9a9cb58db370fd0c84aca73b4645",
-  "backend_bundle_sha256": "57ce0a64b94dbaa237db85847049a0eb2011df51d0b167fb89d922c0217843bd",
+  "backend_bundle_sha256": "a0805b597433262dc805be900dce5079f1b8fd8fa5ed4db8b1c87ed13b501b34",
   "frontend_bundle_bytes": 47493648.0,
-  "backend_bundle_bytes": 52252997.0,
+  "backend_bundle_bytes": 61295768.0,
   "npm_cache_files": 486,
-  "python_wheels": 52,
-  "created_utc": "2026-11-08T02:49:09.9216086Z",
+  "python_wheels": 57,
+  "created_utc": "2026-11-08T16:17:12.5504230Z",
   "license_note": "Package licenses are retained inside npm cache tarballs and wheel distributions; Arena audio credits are in frontend/public/audio/arena/CREDITS.md."
 }

@@ -63,8 +63,10 @@ docker compose exec backend python -m backend.manage admin ВАШ_ЛОГИН
 2. Оставьте `APP_ENV=production`. **Mock в production запрещён на уровне кода.**
 3. Получите контракт существующего API и настройте адаптер по
    [docs/auth.md](docs/auth.md). До настройки новые входы отклоняются с понятной ошибкой.
-4. Задайте `GAMEHUB_PORT=8080`, `GAMEHUB_VERSION=3.2.2`, `COOKIE_SECURE=false`.
+4. Задайте `GAMEHUB_PORT=8080`, `GAMEHUB_VERSION=3.2.3`, `COOKIE_SECURE=false`.
    Адрес существующего локального API авторизации задаётся в `AUTH_URL`.
+   При необходимости зашифрованного адреса клиента настройте общий ключ и API по
+   [инструкции авторизации](docs/auth.md).
 5. Заранее соберите и загрузите образы по [инструкции офлайн-переноса](docs/operations.md).
 6. Выполните **`docker compose up -d`** и откройте **`http://<IP-компьютера>:<GAMEHUB_PORT>`**.
    PostgreSQL, Redis, backend и сервер игровых файлов наружу не публикуются.
@@ -102,6 +104,15 @@ py -3.11 -m venv .venv
 .\.venv\Scripts\python.exe -m pip install --no-index --find-links offline/python/wheels -r requirements.lock
 .\.venv\Scripts\python.exe -m pytest backend/tests/test_arena_creator_access.py -q
 ```
+
+**Frontend в dev-режиме с работающим backend:** сначала запустите офлайн-
+Docker-стек на `8080`, затем из `frontend/` выполните `npm run dev` и откройте
+`http://localhost:5173`. Vite пересылает `/api`, оба Socket.IO пути и `/play`
+на `http://127.0.0.1:8080`; отдельный порт backend открывать не нужно. Если
+Docker работает на другом компьютере, перед `npm run dev` задайте переменную
+`GAMEHUB_DEV_BACKEND=http://IP:8080`. Во время разработки через Vite входной
+Nginx видит адрес dev-прокси; для проверки реального адреса игрока используйте
+сайт через `8080`.
 
 На Linux замените `py -3.11 -m venv .venv` на `python3.11 -m venv .venv`, а путь к интерпретатору — на `./.venv/bin/python`. Для работы приложения нужны PostgreSQL и Redis; автономный запуск всего стека выполняет Docker.
 

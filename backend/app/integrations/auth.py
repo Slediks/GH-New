@@ -10,6 +10,7 @@ from dataclasses import dataclass
 
 import requests
 
+from backend.app.integrations.auth_context import DEFAULT_HEADER, seal_context
 from shared.errors import DomainError
 
 
@@ -19,7 +20,7 @@ class Identity:
     login: str
 
 
-def authenticate(login: str) -> Identity:
+def authenticate(login: str, client_ip: str | None = None) -> Identity:
     mode = os.getenv("AUTH_ADAPTER", "unconfigured")
     if mode == "mock":
         if os.getenv("APP_ENV", "production") != "development":
@@ -34,11 +35,24 @@ def authenticate(login: str) -> Identity:
         method = contract["method"]
         if method not in ("GET", "POST") or contract["transport"] not in ("json", "params", "data"):
             raise ValueError("Unsupported contract")
+        headers = json.loads(os.getenv("AUTH_HEADERS", "{}"))
+        if not isinstance(headers, dict) or not all(
+            isinstance(name, str) and isinstance(value, str) for name, value in headers.items()
+        ):
+            raise ValueError("AUTH_HEADERS must be a JSON object")
+        key = os.getenv("AUTH_CONTEXT_KEY", "")
+        if key:
+            name, value = seal_context(
+                login, client_ip, key, os.getenv("AUTH_CONTEXT_HEADER", DEFAULT_HEADER)
+            )
+            if any(existing.lower() == name.lower() for existing in headers):
+                raise ValueError("Auth context header conflicts with AUTH_HEADERS")
+            headers[name] = value
         response = requests.request(
             method,
             os.environ["AUTH_URL"],
             **{contract["transport"]: {contract["login_field"]: login}},
-            headers=json.loads(os.getenv("AUTH_HEADERS", "{}")),
+            headers=headers,
             timeout=(3, 5),
             allow_redirects=False,
         )

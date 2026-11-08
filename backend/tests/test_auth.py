@@ -1,7 +1,10 @@
+import base64
+import json
 from unittest.mock import Mock
 
 import pytest
 import requests
+from cryptography.hazmat.primitives.ciphers.aead import AESGCM
 from sqlalchemy import func, select
 
 from backend.app.integrations.auth import authenticate
@@ -34,6 +37,8 @@ def test_csrf_and_anonymous_access(client):
 @pytest.fixture
 def contract(monkeypatch):
     monkeypatch.setenv("AUTH_ADAPTER", "json")
+    monkeypatch.delenv("AUTH_CONTEXT_KEY", raising=False)
+    monkeypatch.delenv("AUTH_HEADERS", raising=False)
     monkeypatch.setenv("AUTH_URL", "https://auth.example.test/check")
     monkeypatch.setenv(
         "AUTH_CONTRACT",
@@ -53,6 +58,71 @@ def test_adapter_transmits_only_login_using_configured_contract(contract, monkey
     assert kwargs["json"] == {"account": "Alice"}
     assert kwargs["headers"] == {}
     assert kwargs["allow_redirects"] is False
+
+
+def test_adapter_sends_opaque_context_from_trusted_peer(contract, monkeypatch):
+    monkeypatch.setenv("AUTH_CONTEXT_KEY", "a1" * 32)
+    monkeypatch.setenv("AUTH_CONTEXT_HEADER", "X-Request-Context")
+    response = Mock(status_code=200)
+    response.json.return_value = {"ok": True, "login": "Alice", "subject": "stable-123"}
+    sender = Mock(return_value=response)
+    monkeypatch.setattr(requests, "request", sender)
+
+    authenticate("Alice", "192.0.2.42")
+    first = sender.call_args.kwargs["headers"]["X-Request-Context"]
+    authenticate("Alice", "192.0.2.42")
+    second = sender.call_args.kwargs["headers"]["X-Request-Context"]
+    assert first != second
+    assert "192.0.2.42" not in first
+    assert "ip" not in sender.call_args.kwargs["headers"]
+    version, encoded = first.split(".", 1)
+    assert version == "v1"
+    raw = base64.urlsafe_b64decode(encoded + "=" * (-len(encoded) % 4))
+    data = json.loads(
+        AESGCM(bytes.fromhex("a1" * 32)).decrypt(raw[:12], raw[12:], b"gamehub-auth-context-v1")
+    )
+    assert data["login"] == "Alice"
+    assert data["peer"] == "192.0.2.42"
+    assert data["version"] == 1
+    assert len(data["request_id"]) == 32
+
+
+def test_login_route_uses_internal_peer_header(client, contract, monkeypatch):
+    monkeypatch.setenv("AUTH_CONTEXT_KEY", "b2" * 32)
+    response = Mock(status_code=200)
+    response.json.return_value = {"ok": True, "login": "Alice", "subject": "stable-123"}
+    sender = Mock(return_value=response)
+    monkeypatch.setattr(requests, "request", sender)
+    csrf = client.get("/api/auth/session").json["csrf"]
+    result = client.post(
+        "/api/auth/login",
+        json={"login": "Alice"},
+        headers={
+            "X-CSRF-Token": csrf,
+            "X-Edge-Context": "2001:db8::42",
+        },
+    )
+    assert result.status_code == 200
+    value = sender.call_args.kwargs["headers"]["X-Request-Context"]
+    encoded = value.split(".", 1)[1]
+    raw = base64.urlsafe_b64decode(encoded + "=" * (-len(encoded) % 4))
+    data = json.loads(
+        AESGCM(bytes.fromhex("b2" * 32)).decrypt(raw[:12], raw[12:], b"gamehub-auth-context-v1")
+    )
+    assert data["peer"] == "2001:db8::42"
+
+
+@pytest.mark.parametrize(
+    "key,peer", [("bad", "192.0.2.42"), ("a1" * 32, None), ("a1" * 32, "not an address")]
+)
+def test_context_configuration_fails_closed(contract, monkeypatch, key, peer):
+    monkeypatch.setenv("AUTH_CONTEXT_KEY", key)
+    sender = Mock()
+    monkeypatch.setattr(requests, "request", sender)
+    with pytest.raises(DomainError) as result:
+        authenticate("Alice", peer)
+    assert result.value.status == 503
+    sender.assert_not_called()
 
 
 @pytest.mark.parametrize(

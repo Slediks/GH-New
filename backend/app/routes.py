@@ -88,7 +88,9 @@ def login():
     login_name = body().get("login")
     if not isinstance(login_name, str) or not 1 <= len(login_name) <= 100:
         raise DomainError("Введите логин до 100 символов")
-    identity = authenticate(login_name)
+    # Nginx overwrites this internal header with the address of its direct peer.
+    # Never take an untrusted browser-supplied X-Forwarded-For value here.
+    identity = authenticate(login_name, request.headers.get("X-Edge-Context"))
     g.user = resolve_identity(g.db, identity)
     if g.session:
         g.db.delete(g.session)
