@@ -1,6 +1,6 @@
 param(
-    [string]$Version = '3.2.0',
-    [string]$Destination = "release/gamehub-offline-3.2.0",
+    [string]$Version = '3.2.1',
+    [string]$Destination = "release/gamehub-offline-3.2.1",
     [switch]$SkipBuild
 )
 $ErrorActionPreference = 'Stop'
@@ -24,8 +24,8 @@ foreach ($path in @('offline/npm/cache/_cacache', 'offline/python/wheels', 'fron
     if (-not (Test-Path -LiteralPath $path)) { throw "Missing offline dependency: $path. Run scripts/vendor-deps.ps1 on the preparation machine." }
 }
 Invoke-Docker @('version', '--format', '{{.Server.Version}}')
-foreach ($tag in @('node:22-alpine', 'python:3.11-slim', 'nginx:1.27-alpine', 'postgres:16-alpine', 'redis:7-alpine')) {
-    Invoke-Docker @('image', 'inspect', '--format', '{{.Id}}', $tag)
+foreach ($imageTag in @('node:22-alpine', 'python:3.11-slim', 'nginx:1.27-alpine', 'postgres:16-alpine', 'redis:7-alpine')) {
+    Invoke-Docker @('image', 'inspect', '--format', '{{.Id}}', $imageTag)
 }
 if (-not $SkipBuild) {
     Invoke-Docker @('build', '--pull=false', '--network', 'none', '-f', 'deploy/Dockerfile.backend.offline', '-t', "gamehub-backend:$Version", '.')
